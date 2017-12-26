@@ -31,7 +31,6 @@ class PopupViewController: UIViewController {
     var totalQuestions = 0
     var reviewCorrectFlag = false
     let realm = try! Realm()
-    
     var reviewArray = try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true)
     
    
