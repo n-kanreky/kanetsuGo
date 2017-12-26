@@ -8,20 +8,125 @@
 
 /* Begin PBXBuildFile section */
 		6A12E1341F9B3ACA0008D7C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12E1331F9B3ACA0008D7C3 /* AppDelegate.swift */; };
-		6A12E1361F9B3ACA0008D7C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12E1351F9B3ACA0008D7C3 /* ViewController.swift */; };
-		6A12E1391F9B3ACA0008D7C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A12E1371F9B3ACA0008D7C3 /* Main.storyboard */; };
-		6A12E13B1F9B3ACA0008D7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A12E13A1F9B3ACA0008D7C3 /* Assets.xcassets */; };
-		6A12E13E1F9B3ACA0008D7C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A12E13C1F9B3ACA0008D7C3 /* LaunchScreen.storyboard */; };
+		6AA5D0451FEA62400096966F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0441FEA62400096966F /* Main.storyboard */; };
+		6AA5D0491FEA63190096966F /* QSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D0481FEA63180096966F /* QSelectionViewController.swift */; };
+		6AA5D04B1FEA63500096966F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D04A1FEA634F0096966F /* Review.swift */; };
+		6AA5D04D1FEA638D0096966F /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D04C1FEA638D0096966F /* PopupViewController.swift */; };
+		6AA5D04F1FEA63C20096966F /* ReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D04E1FEA63C20096966F /* ReviewListViewController.swift */; };
+		6AA5D0511FEA64020096966F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D0501FEA64020096966F /* ViewController.swift */; };
+		6AA5D0531FEA646D0096966F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0521FEA646D0096966F /* Info.plist */; };
+		6AA5D05E1FEA6A010096966F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D05D1FEA6A010096966F /* Assets.xcassets */; };
+		6AA5D08C1FEA6C1E0096966F /* Shinbun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D05F1FEA6C150096966F /* Shinbun.mp3 */; };
+		6AA5D08D1FEA6C1E0096966F /* Shinyou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0601FEA6C150096966F /* Shinyou.mp3 */; };
+		6AA5D08E1FEA6C1E0096966F /* Shuppan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0611FEA6C160096966F /* Shuppan.mp3 */; };
+		6AA5D08F1FEA6C1E0096966F /* Joujun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0621FEA6C160096966F /* Joujun.mp3 */; };
+		6AA5D0901FEA6C1E0096966F /* Shutsuryoku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0631FEA6C160096966F /* Shutsuryoku.mp3 */; };
+		6AA5D0911FEA6C1E0096966F /* Doui.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0641FEA6C160096966F /* Doui.mp3 */; };
+		6AA5D0921FEA6C1E0096966F /* Senmon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0651FEA6C160096966F /* Senmon.mp3 */; };
+		6AA5D0931FEA6C1E0096966F /* Jouriku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0661FEA6C160096966F /* Jouriku.mp3 */; };
+		6AA5D0941FEA6C1E0096966F /* Chuui.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0671FEA6C170096966F /* Chuui.mp3 */; };
+		6AA5D0951FEA6C1E0096966F /* Anshinin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0681FEA6C170096966F /* Anshinin.mp3 */; };
+		6AA5D0961FEA6C1E0096966F /* Seito.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0691FEA6C170096966F /* Seito.mp3 */; };
+		6AA5D0971FEA6C1E0096966F /* Iken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D06A1FEA6C170096966F /* Iken.mp3 */; };
+		6AA5D0981FEA6C1E0096966F /* Choujou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D06B1FEA6C170096966F /* Choujou.mp3 */; };
+		6AA5D0991FEA6C1E0096966F /* Dasshutsu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D06C1FEA6C180096966F /* Dasshutsu.mp3 */; };
+		6AA5D09A1FEA6C1E0096966F /* Seigen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D06D1FEA6C180096966F /* Seigen.mp3 */; };
+		6AA5D09B1FEA6C1E0096966F /* Shinrai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D06E1FEA6C180096966F /* Shinrai.mp3 */; };
+		6AA5D09C1FEA6C1E0096966F /* Shusseki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D06F1FEA6C180096966F /* Shusseki.mp3 */; };
+		6AA5D09D1FEA6C1E0096966F /* Teishutsu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0701FEA6C180096966F /* Teishutsu.mp3 */; };
+		6AA5D09E1FEA6C1E0096966F /* Genkai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0711FEA6C180096966F /* Genkai.mp3 */; };
+		6AA5D09F1FEA6C1E0096966F /* Akui.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0721FEA6C190096966F /* Akui.mp3 */; };
+		6AA5D0A01FEA6C1E0096966F /* Densha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0731FEA6C190096966F /* Densha.mp3 */; };
+		6AA5D0A11FEA6C1E0096966F /* Ijou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0741FEA6C190096966F /* Ijou.mp3 */; };
+		6AA5D0A21FEA6C1E0096966F /* Seisan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0751FEA6C190096966F /* Seisan.mp3 */; };
+		6AA5D0A31FEA6C1E0096966F /* Gensho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0761FEA6C190096966F /* Gensho.mp3 */; };
+		6AA5D0A41FEA6C1E0096966F /* Chuusha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0771FEA6C190096966F /* Chuusha.mp3 */; };
+		6AA5D0A51FEA6C1E0096966F /* Ondo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0781FEA6C1A0096966F /* Ondo.mp3 */; };
+		6AA5D0A61FEA6C1E0096966F /* Tsuushin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0791FEA6C1A0096966F /* Tsuushin.mp3 */; };
+		6AA5D0A71FEA6C1E0096966F /* Seizon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D07A1FEA6C1A0096966F /* Seizon.mp3 */; };
+		6AA5D0A81FEA6C1E0096966F /* Shutsugen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D07B1FEA6C1A0096966F /* Shutsugen.mp3 */; };
+		6AA5D0A91FEA6C1E0096966F /* Shuppatsu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D07C1FEA6C1B0096966F /* Shuppatsu.mp3 */; };
+		6AA5D0AA1FEA6C1E0096966F /* Tsuuyaku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D07D1FEA6C1B0096966F /* Tsuuyaku.mp3 */; };
+		6AA5D0AB1FEA6C1E0096966F /* Shinpai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D07E1FEA6C1B0096966F /* Shinpai.mp3 */; };
+		6AA5D0AC1FEA6C1E0096966F /* Shusshin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D07F1FEA6C1B0096966F /* Shusshin.mp3 */; };
+		6AA5D0AD1FEA6C1E0096966F /* Anshin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0801FEA6C1B0096966F /* Anshin.mp3 */; };
+		6AA5D0AE1FEA6C1E0096966F /* Kaidan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0811FEA6C1C0096966F /* Kaidan.mp3 */; };
+		6AA5D0AF1FEA6C1E0096966F /* Jouge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0821FEA6C1C0096966F /* Jouge.mp3 */; };
+		6AA5D0B01FEA6C1E0096966F /* Tsuukou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0831FEA6C1C0096966F /* Tsuukou.mp3 */; };
+		6AA5D0B11FEA6C1E0096966F /* Shusshi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0841FEA6C1C0096966F /* Shusshi.mp3 */; };
+		6AA5D0B21FEA6C1E0096966F /* Tsuuka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0851FEA6C1C0096966F /* Tsuuka.mp3 */; };
+		6AA5D0B31FEA6C1E0096966F /* Shoukai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0861FEA6C1D0096966F /* Shoukai.mp3 */; };
+		6AA5D0B41FEA6C1E0096966F /* Tsuuchi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0871FEA6C1D0096966F /* Tsuuchi.mp3 */; };
+		6AA5D0B51FEA6C1E0096966F /* Joushou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0881FEA6C1D0096966F /* Joushou.mp3 */; };
+		6AA5D0B61FEA6C1E0096966F /* Joukyuu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0891FEA6C1D0096966F /* Joukyuu.mp3 */; };
+		6AA5D0B71FEA6C1E0096966F /* Gakusei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D08A1FEA6C1D0096966F /* Gakusei.mp3 */; };
+		6AA5D0B81FEA6C1E0096966F /* Seikatsu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D08B1FEA6C1D0096966F /* Seikatsu.mp3 */; };
+		6AA5D0BD1FEA6F570096966F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0BC1FEA6F560096966F /* LaunchScreen.storyboard */; };
+		6ABDD6021F9CD82400E005A0 /* HintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABDD6011F9CD82400E005A0 /* HintViewController.swift */; };
+		B154A8276A0B4F0EBF5E47D7 /* Pods_KanetsuGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2567F2ED18E6380782A858F /* Pods_KanetsuGo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A12E1301F9B3ACA0008D7C3 /* KanetsuGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanetsuGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A12E1331F9B3ACA0008D7C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A12E1351F9B3ACA0008D7C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6A12E1381F9B3ACA0008D7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6A12E13A1F9B3ACA0008D7C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6A12E13D1F9B3ACA0008D7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6A12E13F1F9B3ACA0008D7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AA5D0441FEA62400096966F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6AA5D0481FEA63180096966F /* QSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSelectionViewController.swift; sourceTree = "<group>"; };
+		6AA5D04A1FEA634F0096966F /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		6AA5D04C1FEA638D0096966F /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		6AA5D04E1FEA63C20096966F /* ReviewListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewListViewController.swift; sourceTree = "<group>"; };
+		6AA5D0501FEA64020096966F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6AA5D0521FEA646D0096966F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AA5D05D1FEA6A010096966F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Volumes/TimeMachineBuffalo/KanetsuGo/KanetsuGo/Assets.xcassets; sourceTree = "<group>"; };
+		6AA5D05F1FEA6C150096966F /* Shinbun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shinbun.mp3; sourceTree = "<group>"; };
+		6AA5D0601FEA6C150096966F /* Shinyou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shinyou.mp3; sourceTree = "<group>"; };
+		6AA5D0611FEA6C160096966F /* Shuppan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shuppan.mp3; sourceTree = "<group>"; };
+		6AA5D0621FEA6C160096966F /* Joujun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Joujun.mp3; sourceTree = "<group>"; };
+		6AA5D0631FEA6C160096966F /* Shutsuryoku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shutsuryoku.mp3; sourceTree = "<group>"; };
+		6AA5D0641FEA6C160096966F /* Doui.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Doui.mp3; sourceTree = "<group>"; };
+		6AA5D0651FEA6C160096966F /* Senmon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Senmon.mp3; sourceTree = "<group>"; };
+		6AA5D0661FEA6C160096966F /* Jouriku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jouriku.mp3; sourceTree = "<group>"; };
+		6AA5D0671FEA6C170096966F /* Chuui.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chuui.mp3; sourceTree = "<group>"; };
+		6AA5D0681FEA6C170096966F /* Anshinin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Anshinin.mp3; sourceTree = "<group>"; };
+		6AA5D0691FEA6C170096966F /* Seito.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Seito.mp3; sourceTree = "<group>"; };
+		6AA5D06A1FEA6C170096966F /* Iken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Iken.mp3; sourceTree = "<group>"; };
+		6AA5D06B1FEA6C170096966F /* Choujou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Choujou.mp3; sourceTree = "<group>"; };
+		6AA5D06C1FEA6C180096966F /* Dasshutsu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dasshutsu.mp3; sourceTree = "<group>"; };
+		6AA5D06D1FEA6C180096966F /* Seigen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Seigen.mp3; sourceTree = "<group>"; };
+		6AA5D06E1FEA6C180096966F /* Shinrai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shinrai.mp3; sourceTree = "<group>"; };
+		6AA5D06F1FEA6C180096966F /* Shusseki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shusseki.mp3; sourceTree = "<group>"; };
+		6AA5D0701FEA6C180096966F /* Teishutsu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Teishutsu.mp3; sourceTree = "<group>"; };
+		6AA5D0711FEA6C180096966F /* Genkai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Genkai.mp3; sourceTree = "<group>"; };
+		6AA5D0721FEA6C190096966F /* Akui.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Akui.mp3; sourceTree = "<group>"; };
+		6AA5D0731FEA6C190096966F /* Densha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Densha.mp3; sourceTree = "<group>"; };
+		6AA5D0741FEA6C190096966F /* Ijou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ijou.mp3; sourceTree = "<group>"; };
+		6AA5D0751FEA6C190096966F /* Seisan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Seisan.mp3; sourceTree = "<group>"; };
+		6AA5D0761FEA6C190096966F /* Gensho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gensho.mp3; sourceTree = "<group>"; };
+		6AA5D0771FEA6C190096966F /* Chuusha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chuusha.mp3; sourceTree = "<group>"; };
+		6AA5D0781FEA6C1A0096966F /* Ondo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ondo.mp3; sourceTree = "<group>"; };
+		6AA5D0791FEA6C1A0096966F /* Tsuushin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tsuushin.mp3; sourceTree = "<group>"; };
+		6AA5D07A1FEA6C1A0096966F /* Seizon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Seizon.mp3; sourceTree = "<group>"; };
+		6AA5D07B1FEA6C1A0096966F /* Shutsugen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shutsugen.mp3; sourceTree = "<group>"; };
+		6AA5D07C1FEA6C1B0096966F /* Shuppatsu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shuppatsu.mp3; sourceTree = "<group>"; };
+		6AA5D07D1FEA6C1B0096966F /* Tsuuyaku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tsuuyaku.mp3; sourceTree = "<group>"; };
+		6AA5D07E1FEA6C1B0096966F /* Shinpai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shinpai.mp3; sourceTree = "<group>"; };
+		6AA5D07F1FEA6C1B0096966F /* Shusshin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shusshin.mp3; sourceTree = "<group>"; };
+		6AA5D0801FEA6C1B0096966F /* Anshin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Anshin.mp3; sourceTree = "<group>"; };
+		6AA5D0811FEA6C1C0096966F /* Kaidan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kaidan.mp3; sourceTree = "<group>"; };
+		6AA5D0821FEA6C1C0096966F /* Jouge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jouge.mp3; sourceTree = "<group>"; };
+		6AA5D0831FEA6C1C0096966F /* Tsuukou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tsuukou.mp3; sourceTree = "<group>"; };
+		6AA5D0841FEA6C1C0096966F /* Shusshi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shusshi.mp3; sourceTree = "<group>"; };
+		6AA5D0851FEA6C1C0096966F /* Tsuuka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tsuuka.mp3; sourceTree = "<group>"; };
+		6AA5D0861FEA6C1D0096966F /* Shoukai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shoukai.mp3; sourceTree = "<group>"; };
+		6AA5D0871FEA6C1D0096966F /* Tsuuchi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tsuuchi.mp3; sourceTree = "<group>"; };
+		6AA5D0881FEA6C1D0096966F /* Joushou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Joushou.mp3; sourceTree = "<group>"; };
+		6AA5D0891FEA6C1D0096966F /* Joukyuu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Joukyuu.mp3; sourceTree = "<group>"; };
+		6AA5D08A1FEA6C1D0096966F /* Gakusei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gakusei.mp3; sourceTree = "<group>"; };
+		6AA5D08B1FEA6C1D0096966F /* Seikatsu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Seikatsu.mp3; sourceTree = "<group>"; };
+		6AA5D0BC1FEA6F560096966F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6ABDD6011F9CD82400E005A0 /* HintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintViewController.swift; sourceTree = "<group>"; };
+		A6F546E6A3AA79DC11926AC9 /* Pods-KanetsuGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanetsuGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanetsuGo/Pods-KanetsuGo.debug.xcconfig"; sourceTree = "<group>"; };
+		D2567F2ED18E6380782A858F /* Pods_KanetsuGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KanetsuGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B8315F86604791F44942C7 /* Pods-KanetsuGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanetsuGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanetsuGo/Pods-KanetsuGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B154A8276A0B4F0EBF5E47D7 /* Pods_KanetsuGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +146,8 @@
 			children = (
 				6A12E1321F9B3ACA0008D7C3 /* KanetsuGo */,
 				6A12E1311F9B3ACA0008D7C3 /* Products */,
+				D7FB38E931F49682C50FC363 /* Pods */,
+				E7B65B14C9E5448E1C1E16C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +162,97 @@
 		6A12E1321F9B3ACA0008D7C3 /* KanetsuGo */ = {
 			isa = PBXGroup;
 			children = (
-				6A12E1331F9B3ACA0008D7C3 /* AppDelegate.swift */,
-				6A12E1351F9B3ACA0008D7C3 /* ViewController.swift */,
-				6A12E1371F9B3ACA0008D7C3 /* Main.storyboard */,
-				6A12E13A1F9B3ACA0008D7C3 /* Assets.xcassets */,
-				6A12E13C1F9B3ACA0008D7C3 /* LaunchScreen.storyboard */,
-				6A12E13F1F9B3ACA0008D7C3 /* Info.plist */,
+				6AA5D0BA1FEA6D970096966F /* View Controllers */,
+				6AA5D0441FEA62400096966F /* Main.storyboard */,
+				6AA5D0BC1FEA6F560096966F /* LaunchScreen.storyboard */,
+				6AA5D0521FEA646D0096966F /* Info.plist */,
+				6AA5D05D1FEA6A010096966F /* Assets.xcassets */,
+				6AA5D0BB1FEA6E180096966F /* Pronunciation */,
 			);
 			path = KanetsuGo;
+			sourceTree = "<group>";
+		};
+		6AA5D0BA1FEA6D970096966F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A12E1331F9B3ACA0008D7C3 /* AppDelegate.swift */,
+				6AA5D04A1FEA634F0096966F /* Review.swift */,
+				6AA5D0481FEA63180096966F /* QSelectionViewController.swift */,
+				6AA5D04C1FEA638D0096966F /* PopupViewController.swift */,
+				6AA5D0501FEA64020096966F /* ViewController.swift */,
+				6AA5D04E1FEA63C20096966F /* ReviewListViewController.swift */,
+				6ABDD6011F9CD82400E005A0 /* HintViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6AA5D0BB1FEA6E180096966F /* Pronunciation */ = {
+			isa = PBXGroup;
+			children = (
+				6AA5D0721FEA6C190096966F /* Akui.mp3 */,
+				6AA5D0801FEA6C1B0096966F /* Anshin.mp3 */,
+				6AA5D0681FEA6C170096966F /* Anshinin.mp3 */,
+				6AA5D06B1FEA6C170096966F /* Choujou.mp3 */,
+				6AA5D0671FEA6C170096966F /* Chuui.mp3 */,
+				6AA5D0771FEA6C190096966F /* Chuusha.mp3 */,
+				6AA5D06C1FEA6C180096966F /* Dasshutsu.mp3 */,
+				6AA5D0731FEA6C190096966F /* Densha.mp3 */,
+				6AA5D0641FEA6C160096966F /* Doui.mp3 */,
+				6AA5D08A1FEA6C1D0096966F /* Gakusei.mp3 */,
+				6AA5D0711FEA6C180096966F /* Genkai.mp3 */,
+				6AA5D0761FEA6C190096966F /* Gensho.mp3 */,
+				6AA5D0741FEA6C190096966F /* Ijou.mp3 */,
+				6AA5D06A1FEA6C170096966F /* Iken.mp3 */,
+				6AA5D0821FEA6C1C0096966F /* Jouge.mp3 */,
+				6AA5D0621FEA6C160096966F /* Joujun.mp3 */,
+				6AA5D0891FEA6C1D0096966F /* Joukyuu.mp3 */,
+				6AA5D0661FEA6C160096966F /* Jouriku.mp3 */,
+				6AA5D0881FEA6C1D0096966F /* Joushou.mp3 */,
+				6AA5D0811FEA6C1C0096966F /* Kaidan.mp3 */,
+				6AA5D0781FEA6C1A0096966F /* Ondo.mp3 */,
+				6AA5D06D1FEA6C180096966F /* Seigen.mp3 */,
+				6AA5D08B1FEA6C1D0096966F /* Seikatsu.mp3 */,
+				6AA5D0751FEA6C190096966F /* Seisan.mp3 */,
+				6AA5D0691FEA6C170096966F /* Seito.mp3 */,
+				6AA5D07A1FEA6C1A0096966F /* Seizon.mp3 */,
+				6AA5D0651FEA6C160096966F /* Senmon.mp3 */,
+				6AA5D05F1FEA6C150096966F /* Shinbun.mp3 */,
+				6AA5D07E1FEA6C1B0096966F /* Shinpai.mp3 */,
+				6AA5D06E1FEA6C180096966F /* Shinrai.mp3 */,
+				6AA5D0601FEA6C150096966F /* Shinyou.mp3 */,
+				6AA5D0861FEA6C1D0096966F /* Shoukai.mp3 */,
+				6AA5D0611FEA6C160096966F /* Shuppan.mp3 */,
+				6AA5D07C1FEA6C1B0096966F /* Shuppatsu.mp3 */,
+				6AA5D06F1FEA6C180096966F /* Shusseki.mp3 */,
+				6AA5D0841FEA6C1C0096966F /* Shusshi.mp3 */,
+				6AA5D07F1FEA6C1B0096966F /* Shusshin.mp3 */,
+				6AA5D07B1FEA6C1A0096966F /* Shutsugen.mp3 */,
+				6AA5D0631FEA6C160096966F /* Shutsuryoku.mp3 */,
+				6AA5D0701FEA6C180096966F /* Teishutsu.mp3 */,
+				6AA5D0871FEA6C1D0096966F /* Tsuuchi.mp3 */,
+				6AA5D0851FEA6C1C0096966F /* Tsuuka.mp3 */,
+				6AA5D0831FEA6C1C0096966F /* Tsuukou.mp3 */,
+				6AA5D0791FEA6C1A0096966F /* Tsuushin.mp3 */,
+				6AA5D07D1FEA6C1B0096966F /* Tsuuyaku.mp3 */,
+			);
+			path = Pronunciation;
+			sourceTree = "<group>";
+		};
+		D7FB38E931F49682C50FC363 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6F546E6A3AA79DC11926AC9 /* Pods-KanetsuGo.debug.xcconfig */,
+				E3B8315F86604791F44942C7 /* Pods-KanetsuGo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E7B65B14C9E5448E1C1E16C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2567F2ED18E6380782A858F /* Pods_KanetsuGo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A12E1421F9B3ACA0008D7C3 /* Build configuration list for PBXNativeTarget "KanetsuGo" */;
 			buildPhases = (
+				8AF36704AC4833703AE5D733 /* [CP] Check Pods Manifest.lock */,
 				6A12E12C1F9B3ACA0008D7C3 /* Sources */,
 				6A12E12D1F9B3ACA0008D7C3 /* Frameworks */,
 				6A12E12E1F9B3ACA0008D7C3 /* Resources */,
+				1D8556B22D82FA6EE44C163D /* [CP] Embed Pods Frameworks */,
+				69FB4C1451270976B14B3EAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -91,7 +285,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = NC;
 				TargetAttributes = {
 					6A12E12F1F9B3ACA0008D7C3 = {
@@ -123,44 +317,124 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A12E13E1F9B3ACA0008D7C3 /* LaunchScreen.storyboard in Resources */,
-				6A12E13B1F9B3ACA0008D7C3 /* Assets.xcassets in Resources */,
-				6A12E1391F9B3ACA0008D7C3 /* Main.storyboard in Resources */,
+				6AA5D0AE1FEA6C1E0096966F /* Kaidan.mp3 in Resources */,
+				6AA5D09B1FEA6C1E0096966F /* Shinrai.mp3 in Resources */,
+				6AA5D0A71FEA6C1E0096966F /* Seizon.mp3 in Resources */,
+				6AA5D0B71FEA6C1E0096966F /* Gakusei.mp3 in Resources */,
+				6AA5D0981FEA6C1E0096966F /* Choujou.mp3 in Resources */,
+				6AA5D0951FEA6C1E0096966F /* Anshinin.mp3 in Resources */,
+				6AA5D0B01FEA6C1E0096966F /* Tsuukou.mp3 in Resources */,
+				6AA5D0A01FEA6C1E0096966F /* Densha.mp3 in Resources */,
+				6AA5D0B11FEA6C1E0096966F /* Shusshi.mp3 in Resources */,
+				6AA5D0B51FEA6C1E0096966F /* Joushou.mp3 in Resources */,
+				6AA5D0A81FEA6C1E0096966F /* Shutsugen.mp3 in Resources */,
+				6AA5D0A41FEA6C1E0096966F /* Chuusha.mp3 in Resources */,
+				6AA5D0921FEA6C1E0096966F /* Senmon.mp3 in Resources */,
+				6AA5D09A1FEA6C1E0096966F /* Seigen.mp3 in Resources */,
+				6AA5D09C1FEA6C1E0096966F /* Shusseki.mp3 in Resources */,
+				6AA5D0AB1FEA6C1E0096966F /* Shinpai.mp3 in Resources */,
+				6AA5D0971FEA6C1E0096966F /* Iken.mp3 in Resources */,
+				6AA5D09F1FEA6C1E0096966F /* Akui.mp3 in Resources */,
+				6AA5D0B41FEA6C1E0096966F /* Tsuuchi.mp3 in Resources */,
+				6AA5D09D1FEA6C1E0096966F /* Teishutsu.mp3 in Resources */,
+				6AA5D0941FEA6C1E0096966F /* Chuui.mp3 in Resources */,
+				6AA5D0A21FEA6C1E0096966F /* Seisan.mp3 in Resources */,
+				6AA5D0B61FEA6C1E0096966F /* Joukyuu.mp3 in Resources */,
+				6AA5D0A61FEA6C1E0096966F /* Tsuushin.mp3 in Resources */,
+				6AA5D0931FEA6C1E0096966F /* Jouriku.mp3 in Resources */,
+				6AA5D08E1FEA6C1E0096966F /* Shuppan.mp3 in Resources */,
+				6AA5D0451FEA62400096966F /* Main.storyboard in Resources */,
+				6AA5D08D1FEA6C1E0096966F /* Shinyou.mp3 in Resources */,
+				6AA5D0AD1FEA6C1E0096966F /* Anshin.mp3 in Resources */,
+				6AA5D0A51FEA6C1E0096966F /* Ondo.mp3 in Resources */,
+				6AA5D08F1FEA6C1E0096966F /* Joujun.mp3 in Resources */,
+				6AA5D0B31FEA6C1E0096966F /* Shoukai.mp3 in Resources */,
+				6AA5D0BD1FEA6F570096966F /* LaunchScreen.storyboard in Resources */,
+				6AA5D09E1FEA6C1E0096966F /* Genkai.mp3 in Resources */,
+				6AA5D0A11FEA6C1E0096966F /* Ijou.mp3 in Resources */,
+				6AA5D0AF1FEA6C1E0096966F /* Jouge.mp3 in Resources */,
+				6AA5D0901FEA6C1E0096966F /* Shutsuryoku.mp3 in Resources */,
+				6AA5D0B21FEA6C1E0096966F /* Tsuuka.mp3 in Resources */,
+				6AA5D0961FEA6C1E0096966F /* Seito.mp3 in Resources */,
+				6AA5D0A91FEA6C1E0096966F /* Shuppatsu.mp3 in Resources */,
+				6AA5D05E1FEA6A010096966F /* Assets.xcassets in Resources */,
+				6AA5D0991FEA6C1E0096966F /* Dasshutsu.mp3 in Resources */,
+				6AA5D08C1FEA6C1E0096966F /* Shinbun.mp3 in Resources */,
+				6AA5D0AC1FEA6C1E0096966F /* Shusshin.mp3 in Resources */,
+				6AA5D0531FEA646D0096966F /* Info.plist in Resources */,
+				6AA5D0AA1FEA6C1E0096966F /* Tsuuyaku.mp3 in Resources */,
+				6AA5D0B81FEA6C1E0096966F /* Seikatsu.mp3 in Resources */,
+				6AA5D0A31FEA6C1E0096966F /* Gensho.mp3 in Resources */,
+				6AA5D0911FEA6C1E0096966F /* Doui.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D8556B22D82FA6EE44C163D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KanetsuGo/Pods-KanetsuGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69FB4C1451270976B14B3EAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KanetsuGo/Pods-KanetsuGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AF36704AC4833703AE5D733 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A12E12C1F9B3ACA0008D7C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A12E1361F9B3ACA0008D7C3 /* ViewController.swift in Sources */,
+				6ABDD6021F9CD82400E005A0 /* HintViewController.swift in Sources */,
+				6AA5D04B1FEA63500096966F /* Review.swift in Sources */,
+				6AA5D04F1FEA63C20096966F /* ReviewListViewController.swift in Sources */,
+				6AA5D0511FEA64020096966F /* ViewController.swift in Sources */,
 				6A12E1341F9B3ACA0008D7C3 /* AppDelegate.swift in Sources */,
+				6AA5D04D1FEA638D0096966F /* PopupViewController.swift in Sources */,
+				6AA5D0491FEA63190096966F /* QSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		6A12E1371F9B3ACA0008D7C3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A12E1381F9B3ACA0008D7C3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6A12E13C1F9B3ACA0008D7C3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A12E13D1F9B3ACA0008D7C3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6A12E1401F9B3ACA0008D7C3 /* Debug */ = {
@@ -272,29 +546,35 @@
 		};
 		6A12E1431F9B3ACA0008D7C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6F546E6A3AA79DC11926AC9 /* Pods-KanetsuGo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9UVAFWC82;
 				INFOPLIST_FILE = KanetsuGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nc.KanetsuGo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kanetsugo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6A12E1441F9B3ACA0008D7C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3B8315F86604791F44942C7 /* Pods-KanetsuGo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9UVAFWC82;
 				INFOPLIST_FILE = KanetsuGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nc.KanetsuGo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kanetsugo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

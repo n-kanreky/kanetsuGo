@@ -15,13 +15,13 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.6</string>
+	<string>1.0.5</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.6</string>
+	<string>1.0.5</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>音声認識のために、マイクを使って録音してもいいですか。</string>
+	<string>あなたの日本語の発音を音声認識するため、マイク使用の許可をお願いします。</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>音声認識をスタートしてもいいですか。</string>
 	<key>UILaunchStoryboardName</key>
