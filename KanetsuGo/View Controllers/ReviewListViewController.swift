@@ -37,7 +37,7 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        let realm = try! Realm()
+        
         reviewArray = Array(try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true))
         self.reviewView.reloadData() //table view (reviewView)の更新
         print("viewWilAppearの中")

@@ -144,7 +144,9 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         try audioSession.setActive(true, with: .notifyOthersOnDeactivation)
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         
-        guard let inputNode:AVAudioInputNode = audioEngine.inputNode else { fatalError("Audio engine has no input node") }
+        
+        let inputNode:AVAudioInputNode = audioEngine.inputNode
+
         guard let recognitionRequest = recognitionRequest else { fatalError("Unable to create a SFSpeechAudioBufferRecognitionRequest object") }
         
         // 録音が完了する前のリクエストを作るかどうかのフラグ。
@@ -314,13 +316,15 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     
     @IBAction func skipQuestion(_ sender: Any) {
         self.review = Review()
-        var reviewArray = try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true)
+        //次のエラーが出るので、letに変えて見た　Variable 'skippedQuestionNumber' was never mutated; consider changing to 'let' constant
+        let reviewArray = try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true)
         if reviewArray.count != 0 {
             self.review.id = reviewArray.max(ofProperty: "id")! + 1
         } else {
             self.review.id = 0
         }
-        var skippedQuestionNumber = questionNumber
+        //次のエラーが出るので、letに変えて見た　Variable 'skippedQuestionNumber' was never mutated; consider changing to 'let' constant
+        let skippedQuestionNumber = questionNumber
         let alertController = UIAlertController(title: "スキップしますか？", message: "", preferredStyle: UIAlertControllerStyle.alert)
         
         let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{

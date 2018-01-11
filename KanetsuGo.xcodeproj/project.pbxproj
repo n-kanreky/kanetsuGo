@@ -14,7 +14,6 @@
 		6AA5D04D1FEA638D0096966F /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D04C1FEA638D0096966F /* PopupViewController.swift */; };
 		6AA5D04F1FEA63C20096966F /* ReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D04E1FEA63C20096966F /* ReviewListViewController.swift */; };
 		6AA5D0511FEA64020096966F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D0501FEA64020096966F /* ViewController.swift */; };
-		6AA5D0531FEA646D0096966F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0521FEA646D0096966F /* Info.plist */; };
 		6AA5D05E1FEA6A010096966F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D05D1FEA6A010096966F /* Assets.xcassets */; };
 		6AA5D08C1FEA6C1E0096966F /* Shinbun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D05F1FEA6C150096966F /* Shinbun.mp3 */; };
 		6AA5D08D1FEA6C1E0096966F /* Shinyou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0601FEA6C150096966F /* Shinyou.mp3 */; };
@@ -361,7 +360,6 @@
 				6AA5D0991FEA6C1E0096966F /* Dasshutsu.mp3 in Resources */,
 				6AA5D08C1FEA6C1E0096966F /* Shinbun.mp3 in Resources */,
 				6AA5D0AC1FEA6C1E0096966F /* Shusshin.mp3 in Resources */,
-				6AA5D0531FEA646D0096966F /* Info.plist in Resources */,
 				6AA5D0AA1FEA6C1E0096966F /* Tsuuyaku.mp3 in Resources */,
 				6AA5D0B81FEA6C1E0096966F /* Seikatsu.mp3 in Resources */,
 				6AA5D0A31FEA6C1E0096966F /* Gensho.mp3 in Resources */,
