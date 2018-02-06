@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5P0-xH-bVl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8of-aW-woh">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83f-QE-urK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1991" y="325"/>
+            <point key="canvasLocation" x="2019" y="310"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GTS-kf-HaV">
@@ -409,6 +409,159 @@
             </objects>
             <point key="canvasLocation" x="2046" y="1076"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="vja-jg-Jh3">
+            <objects>
+                <viewController storyboardIdentifier="WT1" id="rgJ-oD-7Cy" customClass="WT1ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1xI-j4-d8B"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xbu-TX-9vc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bpT-zE-adh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WT1" translatesAutoresizingMaskIntoConstraints="NO" id="LJS-oa-S47">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LJS-oa-S47" firstAttribute="top" secondItem="bpT-zE-adh" secondAttribute="top" id="2Bb-6U-Evt"/>
+                            <constraint firstAttribute="trailing" secondItem="LJS-oa-S47" secondAttribute="trailing" id="FOU-gQ-QIn"/>
+                            <constraint firstItem="Xbu-TX-9vc" firstAttribute="top" secondItem="LJS-oa-S47" secondAttribute="bottom" id="ZvV-XA-ZSZ"/>
+                            <constraint firstItem="LJS-oa-S47" firstAttribute="leading" secondItem="bpT-zE-adh" secondAttribute="leading" id="bVM-C2-lxa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXY-p0-cji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1599.375" y="1774.6478873239437"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="dhi-xe-jXF">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="8of-aW-woh" customClass="PageViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aX2-Ja-eSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="1784"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jBD-xt-K1v">
+            <objects>
+                <viewController storyboardIdentifier="WT2" id="ZwB-Ch-Ybt" customClass="WT2ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G4t-Au-Pb3"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgc-UC-jvp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P6s-I4-zVq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WT2" translatesAutoresizingMaskIntoConstraints="NO" id="TDJ-Ep-hCv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wgc-UC-jvp" firstAttribute="top" secondItem="TDJ-Ep-hCv" secondAttribute="bottom" id="Aku-E8-yRH"/>
+                            <constraint firstItem="TDJ-Ep-hCv" firstAttribute="top" secondItem="P6s-I4-zVq" secondAttribute="top" id="Fa6-Cf-pcM"/>
+                            <constraint firstItem="TDJ-Ep-hCv" firstAttribute="leading" secondItem="P6s-I4-zVq" secondAttribute="leading" id="emL-D4-giL"/>
+                            <constraint firstAttribute="trailing" secondItem="TDJ-Ep-hCv" secondAttribute="trailing" id="sCY-RT-BM8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FK-aN-fWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2300.625" y="1774.6478873239437"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ha6-R0-wd2">
+            <objects>
+                <viewController storyboardIdentifier="WT3" id="XWX-UV-KtS" customClass="WT3ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zVI-Qz-tJZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OrG-Bk-Ypi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rns-ZD-Fdr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WT3" translatesAutoresizingMaskIntoConstraints="NO" id="l83-4t-5nr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l83-4t-5nr" firstAttribute="leading" secondItem="rns-ZD-Fdr" secondAttribute="leading" id="S0t-nQ-ryE"/>
+                            <constraint firstItem="OrG-Bk-Ypi" firstAttribute="top" secondItem="l83-4t-5nr" secondAttribute="bottom" id="Sq6-Ha-e4f"/>
+                            <constraint firstAttribute="trailing" secondItem="l83-4t-5nr" secondAttribute="trailing" id="x8e-BF-ize"/>
+                            <constraint firstItem="l83-4t-5nr" firstAttribute="top" secondItem="rns-ZD-Fdr" secondAttribute="top" id="zls-cI-meV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5X-3Z-XA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2973.75" y="1774.6478873239437"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nk1-Ql-AqP">
+            <objects>
+                <viewController storyboardIdentifier="WT4" id="5aC-kT-dA4" customClass="WT4ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="InC-wS-iQ3"/>
+                        <viewControllerLayoutGuide type="bottom" id="11P-yS-hiX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B5v-FQ-vSK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WT4" translatesAutoresizingMaskIntoConstraints="NO" id="IpO-8s-1e2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IpO-8s-1e2" firstAttribute="leading" secondItem="B5v-FQ-vSK" secondAttribute="leading" id="Pg3-EZ-S4a"/>
+                            <constraint firstItem="11P-yS-hiX" firstAttribute="top" secondItem="IpO-8s-1e2" secondAttribute="bottom" id="SYL-bX-fkQ"/>
+                            <constraint firstAttribute="trailing" secondItem="IpO-8s-1e2" secondAttribute="trailing" id="bfw-Jo-63h"/>
+                            <constraint firstItem="IpO-8s-1e2" firstAttribute="top" secondItem="B5v-FQ-vSK" secondAttribute="top" id="eea-fz-h0q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlb-oA-8mA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3639.375" y="1761.9718309859154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rPF-wR-3vP">
+            <objects>
+                <viewController storyboardIdentifier="WT5" id="0am-kj-Ta2" customClass="WT5ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Liv-Ra-LaR"/>
+                        <viewControllerLayoutGuide type="bottom" id="ap9-gd-rDO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hl7-ZU-F81">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WT5" translatesAutoresizingMaskIntoConstraints="NO" id="WsY-CU-vMs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ap9-gd-rDO" firstAttribute="top" secondItem="WsY-CU-vMs" secondAttribute="bottom" id="4sk-GN-918"/>
+                            <constraint firstItem="WsY-CU-vMs" firstAttribute="top" secondItem="Hl7-ZU-F81" secondAttribute="top" id="7gb-86-1Ry"/>
+                            <constraint firstItem="WsY-CU-vMs" firstAttribute="leading" secondItem="Hl7-ZU-F81" secondAttribute="leading" id="EY1-QW-REI"/>
+                            <constraint firstAttribute="trailing" secondItem="WsY-CU-vMs" secondAttribute="trailing" id="y78-z8-Ouv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="041-BA-fdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4321.875" y="1760.9154929577464"/>
+        </scene>
         <!--Popup View Controller-->
         <scene sceneID="OMN-gO-Bui">
             <objects>
@@ -615,6 +768,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="WT1" width="375" height="667"/>
+        <image name="WT2" width="375" height="667"/>
+        <image name="WT3" width="375" height="667"/>
+        <image name="WT4" width="375" height="667"/>
+        <image name="WT5" width="375" height="667"/>
         <image name="batten" width="80" height="80"/>
         <image name="speaker" width="93" height="82"/>
         <image name="unfilledCircle" width="115" height="115"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WT3ViewController: UIPageViewController {
+class WT3ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

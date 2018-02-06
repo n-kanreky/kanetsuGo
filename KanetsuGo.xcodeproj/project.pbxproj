@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		6A12E1341F9B3ACA0008D7C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12E1331F9B3ACA0008D7C3 /* AppDelegate.swift */; };
+		6A319E012021ED6500F73760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A319E002021ED6400F73760 /* Assets.xcassets */; };
+		6A319E03202282C700F73760 /* WT1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A319E02202282C700F73760 /* WT1ViewController.swift */; };
+		6A319E05202282E200F73760 /* WT2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A319E04202282E200F73760 /* WT2ViewController.swift */; };
+		6A319E07202282F800F73760 /* WT3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A319E06202282F800F73760 /* WT3ViewController.swift */; };
+		6A319E092022831500F73760 /* WT4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A319E082022831500F73760 /* WT4ViewController.swift */; };
+		6A319E0B2022832A00F73760 /* WT5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A319E0A2022832A00F73760 /* WT5ViewController.swift */; };
+		6A53A4EA2022EA6C002AA049 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A53A4E92022EA6C002AA049 /* PageViewController.swift */; };
 		6AA5D0451FEA62400096966F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0441FEA62400096966F /* Main.storyboard */; };
 		6AA5D0491FEA63190096966F /* QSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D0481FEA63180096966F /* QSelectionViewController.swift */; };
 		6AA5D04B1FEA63500096966F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D04A1FEA634F0096966F /* Review.swift */; };
 		6AA5D04D1FEA638D0096966F /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D04C1FEA638D0096966F /* PopupViewController.swift */; };
 		6AA5D04F1FEA63C20096966F /* ReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D04E1FEA63C20096966F /* ReviewListViewController.swift */; };
 		6AA5D0511FEA64020096966F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D0501FEA64020096966F /* ViewController.swift */; };
-		6AA5D05E1FEA6A010096966F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D05D1FEA6A010096966F /* Assets.xcassets */; };
 		6AA5D08C1FEA6C1E0096966F /* Shinbun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D05F1FEA6C150096966F /* Shinbun.mp3 */; };
 		6AA5D08D1FEA6C1E0096966F /* Shinyou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0601FEA6C150096966F /* Shinyou.mp3 */; };
 		6AA5D08E1FEA6C1E0096966F /* Shuppan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0611FEA6C160096966F /* Shuppan.mp3 */; };
@@ -68,6 +74,13 @@
 /* Begin PBXFileReference section */
 		6A12E1301F9B3ACA0008D7C3 /* KanetsuGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanetsuGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A12E1331F9B3ACA0008D7C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A319E002021ED6400F73760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A319E02202282C700F73760 /* WT1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WT1ViewController.swift; sourceTree = "<group>"; };
+		6A319E04202282E200F73760 /* WT2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WT2ViewController.swift; sourceTree = "<group>"; };
+		6A319E06202282F800F73760 /* WT3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WT3ViewController.swift; sourceTree = "<group>"; };
+		6A319E082022831500F73760 /* WT4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WT4ViewController.swift; sourceTree = "<group>"; };
+		6A319E0A2022832A00F73760 /* WT5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WT5ViewController.swift; sourceTree = "<group>"; };
+		6A53A4E92022EA6C002AA049 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		6AA5D0441FEA62400096966F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6AA5D0481FEA63180096966F /* QSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSelectionViewController.swift; sourceTree = "<group>"; };
 		6AA5D04A1FEA634F0096966F /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
@@ -75,7 +88,6 @@
 		6AA5D04E1FEA63C20096966F /* ReviewListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewListViewController.swift; sourceTree = "<group>"; };
 		6AA5D0501FEA64020096966F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6AA5D0521FEA646D0096966F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6AA5D05D1FEA6A010096966F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Volumes/TimeMachineBuffalo/KanetsuGo/KanetsuGo/Assets.xcassets; sourceTree = "<group>"; };
 		6AA5D05F1FEA6C150096966F /* Shinbun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shinbun.mp3; sourceTree = "<group>"; };
 		6AA5D0601FEA6C150096966F /* Shinyou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shinyou.mp3; sourceTree = "<group>"; };
 		6AA5D0611FEA6C160096966F /* Shuppan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shuppan.mp3; sourceTree = "<group>"; };
@@ -163,9 +175,15 @@
 			children = (
 				6AA5D0BA1FEA6D970096966F /* View Controllers */,
 				6AA5D0441FEA62400096966F /* Main.storyboard */,
+				6A53A4E92022EA6C002AA049 /* PageViewController.swift */,
+				6A319E0A2022832A00F73760 /* WT5ViewController.swift */,
+				6A319E082022831500F73760 /* WT4ViewController.swift */,
+				6A319E06202282F800F73760 /* WT3ViewController.swift */,
+				6A319E04202282E200F73760 /* WT2ViewController.swift */,
+				6A319E02202282C700F73760 /* WT1ViewController.swift */,
 				6AA5D0BC1FEA6F560096966F /* LaunchScreen.storyboard */,
 				6AA5D0521FEA646D0096966F /* Info.plist */,
-				6AA5D05D1FEA6A010096966F /* Assets.xcassets */,
+				6A319E002021ED6400F73760 /* Assets.xcassets */,
 				6AA5D0BB1FEA6E180096966F /* Pronunciation */,
 			);
 			path = KanetsuGo;
@@ -341,6 +359,7 @@
 				6AA5D0B61FEA6C1E0096966F /* Joukyuu.mp3 in Resources */,
 				6AA5D0A61FEA6C1E0096966F /* Tsuushin.mp3 in Resources */,
 				6AA5D0931FEA6C1E0096966F /* Jouriku.mp3 in Resources */,
+				6A319E012021ED6500F73760 /* Assets.xcassets in Resources */,
 				6AA5D08E1FEA6C1E0096966F /* Shuppan.mp3 in Resources */,
 				6AA5D0451FEA62400096966F /* Main.storyboard in Resources */,
 				6AA5D08D1FEA6C1E0096966F /* Shinyou.mp3 in Resources */,
@@ -356,7 +375,6 @@
 				6AA5D0B21FEA6C1E0096966F /* Tsuuka.mp3 in Resources */,
 				6AA5D0961FEA6C1E0096966F /* Seito.mp3 in Resources */,
 				6AA5D0A91FEA6C1E0096966F /* Shuppatsu.mp3 in Resources */,
-				6AA5D05E1FEA6A010096966F /* Assets.xcassets in Resources */,
 				6AA5D0991FEA6C1E0096966F /* Dasshutsu.mp3 in Resources */,
 				6AA5D08C1FEA6C1E0096966F /* Shinbun.mp3 in Resources */,
 				6AA5D0AC1FEA6C1E0096966F /* Shusshin.mp3 in Resources */,
@@ -423,12 +441,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ABDD6021F9CD82400E005A0 /* HintViewController.swift in Sources */,
+				6A53A4EA2022EA6C002AA049 /* PageViewController.swift in Sources */,
+				6A319E0B2022832A00F73760 /* WT5ViewController.swift in Sources */,
 				6AA5D04B1FEA63500096966F /* Review.swift in Sources */,
 				6AA5D04F1FEA63C20096966F /* ReviewListViewController.swift in Sources */,
 				6AA5D0511FEA64020096966F /* ViewController.swift in Sources */,
 				6A12E1341F9B3ACA0008D7C3 /* AppDelegate.swift in Sources */,
+				6A319E07202282F800F73760 /* WT3ViewController.swift in Sources */,
+				6A319E03202282C700F73760 /* WT1ViewController.swift in Sources */,
 				6AA5D04D1FEA638D0096966F /* PopupViewController.swift in Sources */,
 				6AA5D0491FEA63190096966F /* QSelectionViewController.swift in Sources */,
+				6A319E05202282E200F73760 /* WT2ViewController.swift in Sources */,
+				6A319E092022831500F73760 /* WT4ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

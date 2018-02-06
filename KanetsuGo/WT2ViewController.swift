@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WT2ViewController: UIPageViewController {
+class WT2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

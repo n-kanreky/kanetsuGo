@@ -8,11 +8,11 @@
 
 import UIKit
 
-class WT1ViewController: UIPageViewController {
+class WT1ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("print OK")
         // Do any additional setup after loading the view.
     }
 
