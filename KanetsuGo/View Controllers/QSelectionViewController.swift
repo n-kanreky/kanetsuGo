@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+class QSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var questions = [["注射","注意","意見","温度","専門"],
                      ["出席","出発","出版","出身","提出"],
                      ["上級","上下","上旬","頂上","以上"],
@@ -87,7 +87,7 @@ import UIKit
           ["留学生として日本で4年間生活した。\n\n Tôi đã sống ở Nhật Bản trong 4 năm với tư cách là du học sinh. \n\n海外でぜいたくな生活を送りたい。\n\n Tôi muốn sống một cuộc sống xa hoa ở nước ngoài."]]]
     
    
-class QSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
     @IBOutlet weak var questionLevel: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questions.count // N個のデータがあるという意味 変数questionsの中の値（カンマ区切り）を数える
@@ -129,6 +129,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         questionLevel.dataSource = self
         questionLevel.delegate = self
         // Do any additional setup after loading the view.
+        UserDefaults.standard.set(1, forKey: "hajimeteFlag")
     }
     
     override func didReceiveMemoryWarning() {
