@@ -132,6 +132,12 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         UserDefaults.standard.set(1, forKey: "hajimeteFlag")
     }
     
+    @IBAction func reEntryInstruction(_ sender: Any) {
+        DispatchQueue.main.async {
+            let pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "pageView")
+            self.present(pageViewController!, animated: true, completion: nil)
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

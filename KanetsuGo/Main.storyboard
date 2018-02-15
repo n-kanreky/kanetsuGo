@@ -12,6 +12,7 @@
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-BoldItalic</string>
         </array>
         <array key="HiraginoKakuGothic.ttc">
             <string>HiraginoSans-W6</string>
@@ -87,6 +88,14 @@
                                     <segue destination="cMk-YC-AGt" kind="presentation" id="tem-jY-KOk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fq-Dg-atT">
+                                <rect key="frame" x="234" y="68" width="77" height="30"/>
+                                <state key="normal" title="使いかたへ"/>
+                                <connections>
+                                    <action selector="reEntryInstruction:" destination="8sa-Tb-hfE" eventType="touchUpInside" id="OJB-jo-xbZ"/>
+                                    <action selector="tutorial:" destination="B1o-m1-8D5" eventType="touchUpInside" id="L8I-mT-EyN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -95,8 +104,10 @@
                             <constraint firstItem="6Ab-V1-9j3" firstAttribute="top" secondItem="kxc-Xn-ads" secondAttribute="bottom" constant="42" id="6P1-4S-fzU"/>
                             <constraint firstItem="Igb-bl-cQ1" firstAttribute="leading" secondItem="ahm-v0-FiD" secondAttribute="leading" id="FhO-TW-X49"/>
                             <constraint firstItem="Igb-bl-cQ1" firstAttribute="top" secondItem="e7E-Kw-rev" secondAttribute="bottom" id="MFs-s4-pUf"/>
+                            <constraint firstItem="7fq-Dg-atT" firstAttribute="top" secondItem="ahm-v0-FiD" secondAttribute="top" constant="68" id="RTz-v3-65d"/>
                             <constraint firstAttribute="trailing" secondItem="e7E-Kw-rev" secondAttribute="trailing" id="U49-Lp-aiI"/>
                             <constraint firstItem="6Ab-V1-9j3" firstAttribute="centerX" secondItem="e7E-Kw-rev" secondAttribute="centerX" id="ces-xP-uCY"/>
+                            <constraint firstAttribute="trailing" secondItem="7fq-Dg-atT" secondAttribute="trailing" constant="9" id="i6l-9N-ZR8"/>
                             <constraint firstItem="6Ab-V1-9j3" firstAttribute="leading" secondItem="ahm-v0-FiD" secondAttribute="leadingMargin" constant="61" id="mZg-LG-RR7"/>
                             <constraint firstItem="e7E-Kw-rev" firstAttribute="top" secondItem="6Ab-V1-9j3" secondAttribute="bottom" constant="21" id="t09-jL-GNU"/>
                             <constraint firstItem="e7E-Kw-rev" firstAttribute="leading" secondItem="ahm-v0-FiD" secondAttribute="leading" id="ysP-w8-iBQ"/>
@@ -109,8 +120,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83f-QE-urK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="B1o-m1-8D5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2019" y="310"/>
+            <point key="canvasLocation" x="2017.5" y="309.50704225352115"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GTS-kf-HaV">
@@ -424,27 +436,38 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WT1" translatesAutoresizingMaskIntoConstraints="NO" id="LJS-oa-S47">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="ACW-yi-N8J">
+                                <rect key="frame" x="116" y="531" width="88" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.50838789139999996" blue="0.20106788279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="PageDot:" destination="rgJ-oD-7Cy" eventType="valueChanged" id="7AF-Ax-Kgl"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LJS-oa-S47" firstAttribute="top" secondItem="bpT-zE-adh" secondAttribute="top" id="2Bb-6U-Evt"/>
                             <constraint firstAttribute="trailing" secondItem="LJS-oa-S47" secondAttribute="trailing" id="FOU-gQ-QIn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ACW-yi-N8J" secondAttribute="trailing" constant="100" id="T2d-yn-USH"/>
                             <constraint firstItem="Xbu-TX-9vc" firstAttribute="top" secondItem="LJS-oa-S47" secondAttribute="bottom" id="ZvV-XA-ZSZ"/>
+                            <constraint firstItem="ACW-yi-N8J" firstAttribute="leading" secondItem="bpT-zE-adh" secondAttribute="leadingMargin" constant="100" id="aTT-bA-8F5"/>
                             <constraint firstItem="LJS-oa-S47" firstAttribute="leading" secondItem="bpT-zE-adh" secondAttribute="leading" id="bVM-C2-lxa"/>
+                            <constraint firstItem="Xbu-TX-9vc" firstAttribute="top" secondItem="ACW-yi-N8J" secondAttribute="bottom" id="z6A-0l-Joo"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXY-p0-cji" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1599.375" y="1774.6478873239437"/>
+            <point key="canvasLocation" x="1629" y="1740"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="dhi-xe-jXF">
             <objects>
-                <pageViewController storyboardIdentifier="pageView" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="8of-aW-woh" customClass="PageViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="pageView" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="8of-aW-woh" customClass="PageViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aX2-Ja-eSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827" y="1226"/>
+            <point key="canvasLocation" x="1091" y="1239"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jBD-xt-K1v">
@@ -461,19 +484,30 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WT2" translatesAutoresizingMaskIntoConstraints="NO" id="TDJ-Ep-hCv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="csv-sV-qvo">
+                                <rect key="frame" x="116" y="531" width="88" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.50838789139999996" blue="0.20106788279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="PageDot:" destination="ZwB-Ch-Ybt" eventType="valueChanged" id="xa2-oG-jTd"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wgc-UC-jvp" firstAttribute="top" secondItem="TDJ-Ep-hCv" secondAttribute="bottom" id="Aku-E8-yRH"/>
                             <constraint firstItem="TDJ-Ep-hCv" firstAttribute="top" secondItem="P6s-I4-zVq" secondAttribute="top" id="Fa6-Cf-pcM"/>
+                            <constraint firstItem="wgc-UC-jvp" firstAttribute="top" secondItem="csv-sV-qvo" secondAttribute="bottom" id="UvI-8U-2TJ"/>
                             <constraint firstItem="TDJ-Ep-hCv" firstAttribute="leading" secondItem="P6s-I4-zVq" secondAttribute="leading" id="emL-D4-giL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="csv-sV-qvo" secondAttribute="trailing" constant="100" id="fSK-Lk-HoF"/>
                             <constraint firstAttribute="trailing" secondItem="TDJ-Ep-hCv" secondAttribute="trailing" id="sCY-RT-BM8"/>
+                            <constraint firstItem="csv-sV-qvo" firstAttribute="leading" secondItem="P6s-I4-zVq" secondAttribute="leadingMargin" constant="100" id="xaH-4H-lad"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9FK-aN-fWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300.625" y="1774.6478873239437"/>
+            <point key="canvasLocation" x="2293" y="1740"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ha6-R0-wd2">
@@ -487,14 +521,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="swk-IG-S9N">
+                                <rect key="frame" x="116" y="531" width="88" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.50838789139999996" blue="0.20106788279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="PageDot:" destination="XWX-UV-KtS" eventType="valueChanged" id="Y0Q-cK-0g1"/>
+                                </connections>
+                            </pageControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WT3" translatesAutoresizingMaskIntoConstraints="NO" id="l83-4t-5nr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="OrG-Bk-Ypi" firstAttribute="top" secondItem="swk-IG-S9N" secondAttribute="bottom" id="3dP-yQ-eoi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="swk-IG-S9N" secondAttribute="trailing" constant="100" id="DQX-UW-hfV"/>
                             <constraint firstItem="l83-4t-5nr" firstAttribute="leading" secondItem="rns-ZD-Fdr" secondAttribute="leading" id="S0t-nQ-ryE"/>
                             <constraint firstItem="OrG-Bk-Ypi" firstAttribute="top" secondItem="l83-4t-5nr" secondAttribute="bottom" id="Sq6-Ha-e4f"/>
+                            <constraint firstItem="swk-IG-S9N" firstAttribute="leading" secondItem="rns-ZD-Fdr" secondAttribute="leadingMargin" constant="100" id="lds-Vx-eBY"/>
                             <constraint firstAttribute="trailing" secondItem="l83-4t-5nr" secondAttribute="trailing" id="x8e-BF-ize"/>
                             <constraint firstItem="l83-4t-5nr" firstAttribute="top" secondItem="rns-ZD-Fdr" secondAttribute="top" id="zls-cI-meV"/>
                         </constraints>
@@ -519,13 +564,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WT4" translatesAutoresizingMaskIntoConstraints="NO" id="IpO-8s-1e2">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="3" translatesAutoresizingMaskIntoConstraints="NO" id="wAy-7m-sye">
+                                <rect key="frame" x="116" y="531" width="88" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.50838789139999996" blue="0.20106788279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="PageDot:" destination="5aC-kT-dA4" eventType="valueChanged" id="S2K-lw-Xdc"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="wAy-7m-sye" firstAttribute="leading" secondItem="B5v-FQ-vSK" secondAttribute="leadingMargin" constant="100" id="OQ6-hg-UhJ"/>
                             <constraint firstItem="IpO-8s-1e2" firstAttribute="leading" secondItem="B5v-FQ-vSK" secondAttribute="leading" id="Pg3-EZ-S4a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wAy-7m-sye" secondAttribute="trailing" constant="100" id="Qn2-yD-0oa"/>
                             <constraint firstItem="11P-yS-hiX" firstAttribute="top" secondItem="IpO-8s-1e2" secondAttribute="bottom" id="SYL-bX-fkQ"/>
                             <constraint firstAttribute="trailing" secondItem="IpO-8s-1e2" secondAttribute="trailing" id="bfw-Jo-63h"/>
                             <constraint firstItem="IpO-8s-1e2" firstAttribute="top" secondItem="B5v-FQ-vSK" secondAttribute="top" id="eea-fz-h0q"/>
+                            <constraint firstItem="11P-yS-hiX" firstAttribute="top" secondItem="wAy-7m-sye" secondAttribute="bottom" id="rBW-D2-hc7"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -549,23 +605,41 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXc-Xj-4g1">
-                                <rect key="frame" x="174" y="304" width="114" height="30"/>
+                                <rect key="frame" x="151" y="232" width="148" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="スタート">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" red="1" green="0.96214724829999998" blue="0.45566309179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="0.98809868135320378" blue="0.42274612438546588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="start:" destination="0am-kj-Ta2" eventType="touchUpInside" id="FzO-3I-o3l"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ここをクリック" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pYS-Bq-JG7">
+                                <rect key="frame" x="151" y="304" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="4" translatesAutoresizingMaskIntoConstraints="NO" id="nAg-Fc-ljZ">
+                                <rect key="frame" x="116" y="531" width="88" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.50838789139999996" blue="0.20106788279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="PageDot:" destination="0am-kj-Ta2" eventType="valueChanged" id="Nfb-gJ-8R1"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ap9-gd-rDO" firstAttribute="top" secondItem="WsY-CU-vMs" secondAttribute="bottom" id="4sk-GN-918"/>
                             <constraint firstItem="WsY-CU-vMs" firstAttribute="top" secondItem="Hl7-ZU-F81" secondAttribute="top" id="7gb-86-1Ry"/>
                             <constraint firstItem="WsY-CU-vMs" firstAttribute="leading" secondItem="Hl7-ZU-F81" secondAttribute="leading" id="EY1-QW-REI"/>
+                            <constraint firstItem="nAg-Fc-ljZ" firstAttribute="leading" secondItem="Hl7-ZU-F81" secondAttribute="leadingMargin" constant="100" id="MgN-D6-MtH"/>
+                            <constraint firstItem="ap9-gd-rDO" firstAttribute="top" secondItem="nAg-Fc-ljZ" secondAttribute="bottom" id="nXp-ud-BRA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nAg-Fc-ljZ" secondAttribute="trailing" constant="100" id="vks-SW-zP8"/>
                             <constraint firstAttribute="trailing" secondItem="WsY-CU-vMs" secondAttribute="trailing" id="y78-z8-Ouv"/>
                         </constraints>
                     </view>

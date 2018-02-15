@@ -9,7 +9,9 @@
 import UIKit
 
 class WT4ViewController: UIViewController {
-
+    @IBAction func PageDot(_ sender: UIPageControl) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
