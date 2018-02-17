@@ -11,7 +11,9 @@ import UIKit
 class WT1ViewController: UIViewController {
     @IBAction func PageDot(_ sender: UIPageControl) {
     }
-    
+    @IBAction func skip(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         print("print OK")

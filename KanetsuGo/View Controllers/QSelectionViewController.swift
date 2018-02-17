@@ -126,6 +126,12 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if UserDefaults.standard.object(forKey: "hajimeteFlag") == nil {
+            DispatchQueue.main.async {
+                let pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "pageView")
+                self.present(pageViewController!, animated: true, completion: nil)
+            }
+        }
         questionLevel.dataSource = self
         questionLevel.delegate = self
         // Do any additional setup after loading the view.
