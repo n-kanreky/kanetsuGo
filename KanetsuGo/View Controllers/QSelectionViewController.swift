@@ -2,7 +2,7 @@
 //  QSelectionViewController.swift
 //  KanetsuGo
 //
-//  Created by クロス尚美 on 2017/10/22.
+//  Created by n.kanreky on 2017/10/22.
 //  Copyright © 2017年 NC. All rights reserved.
 //
 
@@ -89,6 +89,28 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
    
 
     @IBOutlet weak var questionLevel: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if UserDefaults.standard.object(forKey: "hajimeteFlag") == nil {
+            DispatchQueue.main.async {
+                let pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "pageView")
+                self.present(pageViewController!, animated: true, completion: nil)
+            }
+        }
+       
+        questionLevel.dataSource = self
+        questionLevel.delegate = self
+        // Do any additional setup after loading the view.
+        UserDefaults.standard.set(1, forKey: "hajimeteFlag")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questions.count // N個のデータがあるという意味 変数questionsの中の値（カンマ区切り）を数える
     }
@@ -119,24 +141,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             break // do nothing
         }
         
-        
         return cell
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        if UserDefaults.standard.object(forKey: "hajimeteFlag") == nil {
-            DispatchQueue.main.async {
-                let pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "pageView")
-                self.present(pageViewController!, animated: true, completion: nil)
-            }
-        }
-        questionLevel.dataSource = self
-        questionLevel.delegate = self
-        // Do any additional setup after loading the view.
-        UserDefaults.standard.set(1, forKey: "hajimeteFlag")
-    }
     
     @IBAction func reEntryInstruction(_ sender: Any) {
         DispatchQueue.main.async {
@@ -144,11 +152,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             self.present(pageViewController!, animated: true, completion: nil)
         }
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+   
     // 各セルを選択した時に実行されるメソッド
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         

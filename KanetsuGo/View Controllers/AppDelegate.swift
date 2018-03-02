@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  KanetsuGo
 //
-//  Created by クロス尚美 on 2017/10/21.
+//  Created by n.kanreky on 2017/10/21.
 //  Copyright © 2017年 NC. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  PopupViewController.swift
 //  KanetsuGo
 //
-//  Created by クロス尚美 on 2017/10/22.
+//  Created by n.kanreky on 2017/10/22.
 //  Copyright © 2017年 NC. All rights reserved.
 //
 

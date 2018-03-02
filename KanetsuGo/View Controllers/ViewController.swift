@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  KanetsuGo
 //
-//  Created by クロス尚美 on 2017/10/22.
+//  Created by n.kanreky on 2017/10/22.
 //  Copyright © 2017年 NC. All rights reserved.
 //
 
@@ -36,7 +36,6 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     private var recognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
     
-    
     @IBOutlet weak var qNumber: UILabel!
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var vWord: UILabel!
@@ -49,18 +48,6 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     // ここからRealmSwift 関連のコード　＊＊＊＊＊＊＊
     // Realmインスタンスを取得する
     let realm = try! Realm()
-    
-    // DB内の復習項目が格納されるリスト。
-    
-    
-    
-    // 復習項目を削除するには、テーブル行を左にスワイプして削除ボタンを表示しタップします。
-    //    try! realm.write {
-    //    self.realm.delete(self.reviewArray[indexPath.row])
-    //    tableView.deleteRows(at: [indexPath as IndexPath], with: UITableViewRowAnimation.fade)
-    //    }
-    //
-    // ここまでRealmSwift 関連のコード　＊＊＊＊＊＊＊
     
     override func viewDidLoad() {
         super.viewDidLoad()

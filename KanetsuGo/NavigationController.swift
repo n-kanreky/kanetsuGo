@@ -2,7 +2,7 @@
 //  NavigationController.swift
 //  KanetsuGo
 //
-//  Created by クロス尚美 on 2018/02/06.
+//  Created by n.kanreky on 2018/02/06.
 //  Copyright © 2018年 NC. All rights reserved.
 //
 
