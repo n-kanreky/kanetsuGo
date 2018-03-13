@@ -46,12 +46,8 @@ class PopupViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        print("********review array")
-        print(reviewArray)
-        print("**********")
-        
+       
         if  pickQList == "QSelection" {
-            print ("QSelection")
             if reviewArray.count != 0 {
                 self.review.id = reviewArray.max(ofProperty: "id")! + 1
             }
@@ -73,16 +69,13 @@ class PopupViewController: UIViewController {
             }
         }else if pickQList == "ReviewList"{ self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
             if questionCount == self.totalQuestions {
-                //if　正解かどうか 「不正解」はない！
-                
-                    print(questionCount)
-                    popUpLabel.text = "正解です！"
-                    correctCountLabel.text = "\(questionCount)問中\(questionCount-skipCount)問正解です"
+              
+                    popUpLabel.text = "復習リストに再登録されました"
+                    correctCountLabel.text = " "
                     nextLevelButton.setTitle("復習リストに戻りましょう", for: UIControlState.normal)
                     addReviewButton.isHidden = true
                 
-                
-                //Reviewリストに戻る　popup VCの両画面を消してReviewに戻る
+                //Reviewリストに戻る　popup VCとVC画面を消してReviewに戻る
                 
                 
                 

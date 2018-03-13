@@ -10,13 +10,15 @@ import UIKit
 import Speech
 import AVFoundation
 import RealmSwift
-var flag = "QSelection"
+
+var flag = "QSelection" //通常(QSelection)の問題か、復習(Review)リストの問題かを判別するフラグ
 class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerDelegate {
+    //DelegateのSFSpeechRecognizerDelegateとAVAudioPlayerDelegateは、SpeechとAVFoundationのフレームワークの中の機能を使うためにプロトコルを宣言
     var questions = [""]
     var katakana = [""]
     var vietnamese = [""]
-    var pronunciationJ = [""]
-    var reibunJ = [[""]]
+    var pronunciationJ = [""] //ここまでは配列
+    var reibunJ = [[""]] //これは２次元配列
     
     var questionNumber = 0
     var player:AVAudioPlayer!
@@ -31,6 +33,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     var review: Review! = Review()
     var reviewArray = try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true)
     // "ja-JP"を指定して日本語に設定
+    //このクラス内でしか使えない変数・定数をprivateとして設定
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))!
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
@@ -54,7 +57,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     //  問題を設定する
         setQuestions(Int: questionNumber)
         kWord.text = "ヒントはここをタップ"
-        
+    //正解が３回になったら、リセットする　　c330 NotificationCenter.default.post(notification)に対応
     NotificationCenter.default.addObserver(
         self,
         selector: #selector( ViewController.resetCount(_:)),
@@ -65,36 +68,28 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     
     override func viewWillAppear(_ animated: Bool) {
         
-        
-        print(reviewArray)
         label.text = ""
-        print(flag)
-        
     }
+    // 以下で問題の設定　Intはゼロから始まる
     func setQuestions(Int:Int){
         
         if Int < self.questions.count {
-            // print("VC：Intをチェック")
-            // print (Int)
-            
             qNumber.text = "第 \(Int + 1) 問"
             question.text = questions[Int]
             vWord.text = vietnamese[Int]
             kWord.text = katakana[Int]
         }
     }
+    // 以下で、AudioEngineは問題提示時にSTOP状態
     func stopAudio(){
         if audioEngine.isRunning {
-            //print("Engine stop")
             audioEngine.stop()
             recognitionRequest?.endAudio()
         }
     }
-    // 音声認識を開始/停止
-
+    // STARTを押して音声認識を開始
     @IBAction func startButtonTapped(_ sender: Any) {
         if audioEngine.isRunning {
-            // print("Engine 停止")
             audioEngine.stop()
             recognitionRequest?.endAudio()
             startButton.isEnabled = false
@@ -114,13 +109,13 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         self.correct3.image = UIImage(named:"unfilledCircle")
     }
     
-    
     @IBAction func hintButton(_ sender: Any) {
         setQuestions(Int: questionNumber)
     }
     
     var reviewCorrectFlag = false
     var gCount =  0
+    //以下のメソッドを呼び出すことで音声録音開始
     private func startRecording() throws {
         refreshTask()
         
@@ -130,60 +125,58 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         try audioSession.setMode(AVAudioSessionModeDefault)
         try audioSession.setActive(true, with: .notifyOthersOnDeactivation)
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
-        
-        
         let inputNode:AVAudioInputNode = audioEngine.inputNode
 
         guard let recognitionRequest = recognitionRequest else { fatalError("Unable to create a SFSpeechAudioBufferRecognitionRequest object") }
         
-        // 録音が完了する前のリクエストを作るかどうかのフラグ。
-        // trueだと現在-1回目のリクエスト結果が返ってくる模様。falseだとボタンをオフにしたときに音声認識の結果が返ってくる設定。
+        // 以下がtrueとなっている時、音声認識開始
         recognitionRequest.shouldReportPartialResults = true
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { [weak self] result, error in
             guard let `self` = self else { return }
             
             var isFinal = false
             
-            if let result = result {
-                isFinal = result.isFinal
+            if let result = result { //if let 定数＝定数　→ optional bindingであり、右に値があった場合は左側に代入を許す。result はオプショナル型で、変数にnil(false)の代入を許す　＝＞　中に値が入っていれば（true),代入が行われる。nilであれば、処理が行われない/安全に処理が行われる
+                
+                isFinal = result.isFinal //文字列が最後になったら、ループを抜ける
                 if self.questionNumber < self.questions.count{
-                    let str = result.bestTranscription.formattedString
+                    let str = result.bestTranscription.formattedString //strに認識された文字列が入る
                     //                検索する文字列
                     let word = self.questions[self.questionNumber] //＊＊＊　var を　let　に変えてみた　"Variable "word" was never mutated"　黄色エラーが消えた
                     //var word = self.questions[self.questionNumber]
-                    self.count = 0
-                    // print(str)
+                    self.count = 0 //正解数のカウントを初期化
                     
-                    var nextRange = str.startIndex..<str.endIndex //最初は文字列全体から探す
+                    //以下で最大の長さの文字列をとってきて、例「アンシンする」とすると、startIndexは０番で”ア”、endIndexdは”る”で５番という範囲をいれる
+                    //startIndex = 0, endIndex = 5となる
+                    var nextRange = str.startIndex..<str.endIndex //Index Range
                     
-                    while let range = str.range(of: word, options: .caseInsensitive, range: nextRange) {
-                        //.caseInsensitiveで探す方が、lowercaseStringを作ってから探すより普通は早い
-                        self.count += 1
-                        if self.gCount < self.count {
+                    // rangeにはインデックス番号が振ってあり、０からはじまる。while let であるためオプショナルバインディング」となり、右辺の判定式がnilでなければ代入を行う。
+                    // ここで代入というのは、上のstr(長い文字列）に含まれていれば、ここで代入する
+                    // 以下の右辺に値が入っていれば、左辺のrangeに代入する。　str.rangeに求めるワードが入っていたら、true
+                    while let range = str.range(of: word, options: .caseInsensitive, range: nextRange){ //正解判定　（true／false）
+
+                        self.count += 1 //正解判定がtureだった場合、カウントを＋１
+                        if self.gCount < self.count { //1回のループが終わった時に、gCountに文字列が入った＝trueにする、そしてself.countがself.gCountより大きい場合
                             self.correctFlag = true
                             self.gCount = self.count
                         }else{
                             self.correctFlag = false
                         }
-                        self.label.text = self.question.text!
+                        self.label.text = self.question.text! //labelにquestionの値を代入　「正解」の文字列をlabelに入れる
                         nextRange = range.upperBound..<str.endIndex //見つけた単語の次(range.upperBound)から元の文字列の最後までの範囲で次を探す
                         
                     }
-                    // print("self.correctFlagは以下の通り")
-                    // print(self.correctFlag)
                     
-                    if self.correctFlag == false {
+                    if self.correctFlag == false { //判定式（＝＝）で、「答え」が間違っていたら、以下を行う
                         self.label.text = "もう一度！"
                         self.gCount = self.count
                     }
                     
-                    self.correctFlag = false
-                    
+                    self.correctFlag = false //correctFlagをfalseにする
                 }
                 
                 if self.count == 1 {
                     
-                    print("self.count ==１回目")
                     self.correct1.image = UIImage(named:"tick_orange")
                     self.correct2.image = UIImage(named:"unfilledCircle")
                     self.correct3.image = UIImage(named:"unfilledCircle")
@@ -209,13 +202,12 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                         self.label.text = ""
                         self.questionNumber += 1
                         self.setQuestions(Int: self.questionNumber)
-                        
                         self.kWord.text = "ヒントはここをタップ" //ヒントをクリアして、初期状態に戻している
                     }
                     self.performSegue(withIdentifier:"modal", sender:nil)
-                    //ここでprepare(for segueを呼び出す
+                    //ここでprepare for segueを呼び出す
                 }
-                isFinal = result.isFinal
+                isFinal = result.isFinal //これがtrueになったら、一旦音声認識のループから外れる。
             }
             
             // エラーがある、もしくは最後の認識結果だった場合の処理
@@ -229,7 +221,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                 self.startButton.setTitle("START", for: [])
             }
         }
-        
+  
         // マイクから取得した音声バッファをリクエストに渡す
         let recordingFormat = inputNode.outputFormat(forBus: 0)
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
@@ -238,6 +230,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         try startAudioEngine()
     }
     
+    //refreshTaskが呼ばれると、音声認識のリセットがおこおなわれる
     private func refreshTask() {
         if let recognitionTask = recognitionTask {
             recognitionTask.cancel()
@@ -303,14 +296,14 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     
     @IBAction func skipQuestion(_ sender: Any) {
         self.review = Review()
-        //次のエラーが出るので、letに変えて見た　Variable 'skippedQuestionNumber' was never mutated; consider changing to 'let' constant
+        
         let reviewArray = try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true)
         if reviewArray.count != 0 {
             self.review.id = reviewArray.max(ofProperty: "id")! + 1
         } else {
             self.review.id = 0
         }
-        //次のエラーが出るので、letに変えて見た　Variable 'skippedQuestionNumber' was never mutated; consider changing to 'let' constant
+       
         let skippedQuestionNumber = questionNumber
         let alertController = UIAlertController(title: "スキップしますか？", message: "", preferredStyle: UIAlertControllerStyle.alert)
         
@@ -329,6 +322,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                 self.questionNumber = self.questions.count
                 self.performSegue(withIdentifier: "modal", sender: nil)
             }
+            
+            //ここから復習リストへの追加がスタート
             try! self.realm.write {
                 
                 //　問題
@@ -345,10 +340,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                 
                 // 音声ファイル
                 self.review.pronunciationJ = self.pronunciationJ[skippedQuestionNumber]
-                
-                
-
-
+       
                 //            // 書き込み処理
                 self.realm.add(self.review, update: true)
                 //
@@ -357,13 +349,13 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
             }
         })
         
+        //アラートが出て、キャンセルを行う
         let cancelAction = UIAlertAction(title: "cancel", style: UIAlertActionStyle.cancel, handler:{
             (action:UIAlertAction!) -> Void in
             
             
         }
         )
-        
         
         alertController.addAction(action)
         alertController.addAction(cancelAction)
@@ -389,21 +381,18 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
             popup.vietnamese = vietnamese[self.questionNumber - 1]
             popup.reibunJ = reibunJ[self.questionNumber - 1][0]
             popup.pronunciationJ = pronunciationJ[self.questionNumber - 1]
-            
-            //
             // *******************************************************************************
             
             
             
         }
+        //以下で、説明ポップアップへ移動
         if(segue.identifier == "toExplanation"){
             let popup:HintViewController = (segue.destination as! HintViewController)
             popup.questionWord = self.question.text!
             popup.pronunciation = self.pronunciationJ[questionNumber]
-            
             popup.reibun = self.reibunJ[questionNumber]
-            print(self.pronunciationJ[questionNumber])
-            print("VVCからExplanationへ")
+            
             self.stopAudio()
         }
         
