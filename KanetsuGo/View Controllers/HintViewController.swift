@@ -22,53 +22,34 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     @IBOutlet weak var reibunJ: UILabel!
     //   @IBOutlet weak var reibun2J: UILabel!
     
-    
-    
     override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        
-        
-        
+        super.viewDidLoad() // overrideで上書きしたが、もともとあるものも使いたい場合
+       
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print(reibun[0])
-        print("Rヒントの例文")
+        
         reibunJ.text = reibun[0]
-        
         question.text = questionWord
+        //端末の中の音声ファイルを指定して取り出す
         let soundFilePath : String = Bundle.main.path(forResource: "\(pronunciation)", ofType: "mp3")!
-        print(pronunciation)
-        print("pronunciationの中身")
-        
+        //ファイルのURLを指定して、do 処理
         let fileURL : URL = URL(fileURLWithPath: soundFilePath);
-        do {
-            try player = AVAudioPlayer(contentsOf:fileURL)
-            
+        do { //do = 例外処理
+            //try = error handling 例外処理の補足処理　nilであっても落ちない
+            try player = AVAudioPlayer(contentsOf:fileURL) //playerの起動
             //発音モデルをバッファに読み込んでおく
             player.prepareToPlay()
             let audioSession:AVAudioSession = AVAudioSession.sharedInstance()
-            try! audioSession.setCategory(AVAudioSessionCategoryPlayback)
+            try! audioSession.setCategory(AVAudioSessionCategoryPlayback) //try! 例外（エラー）を強制的に無視する
             
         } catch {
-            print(error)
+            //例外（エラー）が起きた時にコンソールに表示
         }
         
     }
-    //画像ドラッグ？なぜtouchesBegan/touchesMovedがないのに、いきなりtouchesEnded?
-    //背景を押した時に戻るため
-    //    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-    //        super.touchesEnded(touches, with: event)
-    //        for touch: UITouch in touches {
-    //            let tag = touch.view!.tag
-    //            print(tag)
-    //            if tag == 1 {
-    //                dismiss(animated: true, completion: nil)
-    //            }
-    //        }
-    //    }
+    
     @IBAction func wordSound(_ sender: Any) {
         player.play()
     }
@@ -81,17 +62,6 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     @IBAction func returnToQuestion(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
 

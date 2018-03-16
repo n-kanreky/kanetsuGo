@@ -74,21 +74,18 @@ class PopupViewController: UIViewController {
                     correctCountLabel.text = " "
                     nextLevelButton.setTitle("復習リストに戻りましょう", for: UIControlState.normal)
                     addReviewButton.isHidden = true
-                
                 //Reviewリストに戻る　popup VCとVC画面を消してReviewに戻る
                 
-                
-                
-                
+               
             }
         }
     }
-    
-    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    // dismissを発火する
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         for touch: UITouch in touches {
@@ -118,8 +115,7 @@ class PopupViewController: UIViewController {
             // 音声ファイル
             self.review.pronunciationJ = self.pronunciationJ
             
-            
-            //            // 書き込み処理
+            // 書き込み処理
             self.realm.add(self.review, update: true)
             //
             
@@ -143,9 +139,7 @@ class PopupViewController: UIViewController {
             dismiss(animated: true, completion: nil)
             
         }
-        print(self.questionCount)
-        print(totalQuestions)
-        print(pickQList)
+
     }
     
     

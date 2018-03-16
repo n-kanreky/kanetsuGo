@@ -9,13 +9,13 @@
 import UIKit
 import RealmSwift
 
-@available(iOS 10.0, *)
+@available(iOS 10.0, *) //iOS 10.0以上に対応
 class ReviewListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var questionCount = 0
     var correctAnswer = 0
     var skipCount = 0
-    var review: Review! = Review()
+    var review: Review! = Review() //復習リストに追加したインスタンス
     var question = ""
     var katakana = ""
     var vietnamese = ""
@@ -29,19 +29,14 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        reviewView.dataSource = self
-        reviewView.delegate = self
-        
-        // Do any additional setup after loading the view.
+        reviewView.dataSource = self //TableViewのセルにデータを反映させるメソッドを利用可能にする
+        reviewView.delegate = self //delegateメソッド　TableViewの動的処理（タップなど）のメソッドを利用可能にする
     }
-    //comment
-    override func viewWillAppear(_ animated: Bool) {
+   
+    override func viewWillAppear(_ animated: Bool) { //画面が現れたら、以下のメソッドを実行する
         super.viewWillAppear(true)
-        
         reviewArray = Array(try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true))
         self.reviewView.reloadData() //table view (reviewView)の更新
-        print("viewWilAppearの中")
-        print(self.reviewArray)
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,19 +54,16 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
         // 文字色変更
         cell.textLabel?.textColor = UIColor.init(red: 64/255, green: 131/255, blue: 174/255, alpha: 1)
-    
         //文字の大きさを変える
         cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 20)
         // 値を設定する.
-        
         cell.textLabel!.text = reviewArray[indexPath.row].questions
         return cell
     }
     // 各セルを選択した時に実行されるメソッド
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-    
-        performSegue(withIdentifier: "reviewSegue",sender: indexPath.row)
+       performSegue(withIdentifier: "reviewSegue",sender: indexPath.row)
         
     }
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
@@ -84,47 +76,31 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
         // 削除されたタスクを取得する
         let review = self.reviewArray[indexPath.row]
         // データベースから削除する
-        try! realm.write {
+        try! realm.write { //transaction＝　DBとの通信　を行うメソッドを走らせる
             self.realm.delete(review)
-            
         }
-        return [deleteButton]
+        return [deleteButton] //return ＝　返り値　line69のfunctionに対して、値を返す
     }
+    
     @IBAction func returnToQSelection(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          //   var questions = [reviewArray[sender as!Int]]
             if(segue.identifier == "reviewSegue"){
-    
-                    let viewController:ViewController = (segue.destination as! ViewController)
-                
-                    // Fallback on earlier versions
-    
+                let viewController:ViewController = (segue.destination as! ViewController)
                 let review = reviewArray[sender as!Int]
     
                 viewController.questions = [review.questions]
-    
-   
-                // Fallback on earlier versions ViewController.
                 viewController.katakana = [review.katakana]
                 viewController.vietnamese = [review.vietnamese]
                 viewController.pronunciationJ = [review.pronunciationJ]
                 viewController.reibunJ = [[review.reibunJ]]
                flag = "ReviewList"
                 
-            }
-    
-       }
+         }
+     }
 }
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destinationViewController.
- // Pass the selected object to the new view controller.
- }
- */
+
 
