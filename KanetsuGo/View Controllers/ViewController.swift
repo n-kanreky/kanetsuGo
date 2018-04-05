@@ -183,13 +183,13 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                     
                 }else if self.count == 2{
                     
-                    print("self.count ==2 ２回目")
+                    
                     self.correct1.image = UIImage(named:"tick_orange")
                     self.correct2.image = UIImage(named:"tick_orange")
                     self.correct3.image = UIImage(named:"unfilledCircle")
                 }else if self.count == 3 {
                     
-                    print("self.count ==3 ３回目")
+                   
                     self.correct1.image = UIImage(named:"tick_orange")
                     self.correct2.image = UIImage(named:"tick_orange")
                     self.correct3.image = UIImage(named:"tick_orange")
