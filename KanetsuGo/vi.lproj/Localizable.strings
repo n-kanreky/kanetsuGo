@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  KanetsuGo
+
+  Created by クロス尚美 on 2018/04/05.
+  Copyright © 2018年 NC. All rights reserved.
+*/
+//使い方
+"Instruction" = "Cách sử dụng";
+"Step1" = "Bước 1  Chọn câu";
+"Step2" = "Bước 2  Ấn START và phát âm 3 lần";
+"IfNotSure" = "Nếu vẫn chưa hiểu...";
+"PressHint" = "Để xem một ScreenTip";
+"Listen" = "Hoặc Nghe cách phát âm";
+"SkipQ" = "Có thể SKI";
+"RevisionList" = "Nếu nhấn SKIP, câu đó sẽ được thêm vào phần ôn tập";
+"Begin" = "Nào, bắt đầu thôi!";
+"Start" = "Bắt đầu!";
+"ClickHere" = "Nhấn vào đây";
+
+//問題のページ
+"PronunciationExamples" = "Mô hình tiếng nói và ví dụ";
+"KWord" = "Mẹo để tap";

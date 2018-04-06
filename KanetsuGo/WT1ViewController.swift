@@ -9,6 +9,8 @@
 import UIKit
 
 class WT1ViewController: UIViewController {
+    //以下にアウトレット接続して、ラベルに名前をつける
+    @IBOutlet weak var Instruction: UILabel!
     @IBAction func PageDot(_ sender: UIPageControl) {
     }
     @IBAction func skip(_ sender: Any) {
@@ -16,7 +18,10 @@ class WT1ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("print OK")
+        //以下でラベルの数だけローカライズ
+       Instruction.text = "\(NSLocalizedString("Instruction", comment: ""))"
+   
+        
         // Do any additional setup after loading the view.
     }
 

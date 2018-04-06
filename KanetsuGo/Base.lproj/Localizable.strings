@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  KanetsuGo
+
+  Created by クロス尚美 on 2018/04/05.
+  Copyright © 2018年 NC. All rights reserved.
+*/
+
+"Instruction" = "Instructions";
+"Step1" = "Step 1  Choose questions";
+"Step2" = "Step 2  Press START and pronounce the word 3 times";
+"IfNotSure" = "If you are not sure...";
+"PressHint" = "Press the hint button, or";
+"Listen" = "Listen to the model pronunciation";
+"SkipQ" = "You can skip the question";
+"RevisionList" = "If you skip, the question will be added to your revision list";
+"Begin" = "Now, let us begin!";
+"Start" = "Start";
+"ClickHere" = "Click here";
+
+//問題のページ
+"PronunciationExamples" = "Model Pronunciation and Examples";
+"KWord" = "Click Here for hint";

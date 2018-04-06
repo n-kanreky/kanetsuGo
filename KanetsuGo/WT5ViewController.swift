@@ -9,12 +9,16 @@
 import UIKit
 
 class WT5ViewController: UIViewController {
+    @IBOutlet weak var Begin: UILabel!
+    @IBOutlet weak var ClickHere: UITextField!
     @IBAction func PageDot(_ sender: UIPageControl) {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Begin.text = "\(NSLocalizedString("Begin", comment: ""))"
+        ClickHere.text = "\(NSLocalizedString("ClickHere", comment: ""))"
+        
         // Do any additional setup after loading the view.
     }
 
