@@ -13,6 +13,11 @@ import RealmSwift
 
 var flag = "QSelection" //通常(QSelection)の問題か、復習(Review)リストの問題かを判別するフラグ
 class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerDelegate {
+    //ローカライズ
+    @IBOutlet weak var PronunciationExamples: UILabel!
+    @IBOutlet weak var hintWord: UILabel!
+   
+    
     //DelegateのSFSpeechRecognizerDelegateとAVAudioPlayerDelegateは、SpeechとAVFoundationのフレームワークの中の機能を使うためにプロトコルを宣言
     var questions = [""]
     var katakana = [""]
@@ -48,6 +53,11 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     @IBOutlet weak var correct1: UIImageView!
     @IBOutlet weak var correct2: UIImageView!
     @IBOutlet weak var correct3: UIImageView!
+   
+    //オートレイアウトをiPhoneのサイズによって調整
+    @IBOutlet weak var defaulConst: NSLayoutConstraint!
+    @IBOutlet weak var XConst: NSLayoutConstraint!
+    
     // ここからRealmSwift 関連のコード　＊＊＊＊＊＊＊
     // Realmインスタンスを取得する
     let realm = try! Realm()
@@ -55,16 +65,35 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     override func viewDidLoad() {
         super.viewDidLoad()
     //  問題を設定する
-        setQuestions(Int: questionNumber)
-        kWord.text = "ヒントはここをタップ"
+    setQuestions(Int: questionNumber)
+        
+    // ”ヒントはここをタップ”のhintWordをローカライズ
+    kWord.text = "\(NSLocalizedString("hintWord", comment: ""))"
+    //「発音と用例」ボタンをローカライズ
+    PronunciationExamples.text = "\(NSLocalizedString("PronunciationExamples", comment: ""))"
+    
     //正解が３回になったら、リセットする　　c330 NotificationCenter.default.post(notification)に対応
     NotificationCenter.default.addObserver(
         self,
         selector: #selector( ViewController.resetCount(_:)),
         name: NSNotification.Name(rawValue: "RESETCOUNT"),
         object: nil)
-        startButton.isEnabled = false
+    startButton.isEnabled = false
+        
     }
+    
+
+    override func viewWillLayoutSubviews(){
+        super.viewWillLayoutSubviews()
+    //iPhoneサイズによる画面調整
+        //print(self.view.frame.height) //これで高さをプリントした
+        //以下で、PlusとX（サイズ　736.6以上）の場合、Constraintsの選択でXの場合が稼働し、トップから150ポイント下げる設定をした
+        if self.view.frame.height >= 736.0 {
+        NSLayoutConstraint.deactivate([defaulConst]) //サイズのデフォルト値を選択
+        NSLayoutConstraint.activate([XConst]) //サイズのX値を選択
+        }
+    }
+
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -109,6 +138,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         self.correct3.image = UIImage(named:"unfilledCircle")
     }
     
+   
     @IBAction func hintButton(_ sender: Any) {
         setQuestions(Int: questionNumber)
     }
@@ -151,7 +181,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                     var nextRange = str.startIndex..<str.endIndex //Index Range
                     
                     // rangeにはインデックス番号が振ってあり、０からはじまる。while let であるためオプショナルバインディング」となり、右辺の判定式がnilでなければ代入を行う。
-                    // ここで代入というのは、上のstr(長い文字列）に含まれていれば、ここで代入する
+                    // 上のstr(長い文字列）に含まれていれば、ここで代入する
                     // 以下の右辺に値が入っていれば、左辺のrangeに代入する。　str.rangeに求めるワードが入っていたら、true
                     while let range = str.range(of: word, options: .caseInsensitive, range: nextRange){ //正解判定　（true／false）
 
@@ -202,7 +232,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                         self.label.text = ""
                         self.questionNumber += 1
                         self.setQuestions(Int: self.questionNumber)
-                        self.kWord.text = "ヒントはここをタップ" //ヒントをクリアして、初期状態に戻している
+                        self.kWord.text = "\(NSLocalizedString("hintWord", comment: ""))"//ヒントをクリアして、初期状態に戻している
+                      
                     }
                     self.performSegue(withIdentifier:"modal", sender:nil)
                     //ここでprepare for segueを呼び出す
@@ -263,7 +294,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     }
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+    //ローカライズ設定
+    hintWord.text = "\(NSLocalizedString("hintWord", comment: ""))"
         requestRecognizerAuthorization()
     }
     private func requestRecognizerAuthorization() {
@@ -314,7 +346,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
             self.questionNumber += 1
             self.setQuestions(Int: self.questionNumber)
             self.skipCount += 1
-            self.kWord.text = "ヒントはここをタップ" //ヒントをクリアして、初期状態に戻している
+            self.kWord.text = "\(NSLocalizedString("hintWord", comment: ""))"//ヒントをクリアして、初期状態に戻している
+            
             let notification: Notification = Notification(name: Notification.Name(rawValue: "RESETCOUNT"), object: nil, userInfo: nil)
             
             NotificationCenter.default.post(notification)

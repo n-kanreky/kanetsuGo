@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 
 class HintViewController: UIViewController,AVAudioPlayerDelegate {
+    //ローカライズ
+    @IBOutlet weak var TapListen: UILabel!
     
     var player:AVAudioPlayer!
     var questionWord = ""
@@ -24,10 +26,11 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad() // overrideで上書きしたが、もともとあるものも使いたい場合
-       
+    TapListen.text = "\(NSLocalizedString("TapListen", comment: ""))"
         // Do any additional setup after loading the view.
     }
     
+
     override func viewWillAppear(_ animated: Bool) {
         
         reibunJ.text = reibun[0]

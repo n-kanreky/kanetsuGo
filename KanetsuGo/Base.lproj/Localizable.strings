@@ -5,7 +5,11 @@
   Created by クロス尚美 on 2018/04/05.
   Copyright © 2018年 NC. All rights reserved.
 */
+//Q Selection
+"QSelect" = "Select Questions";
+"toInstruction" = "To Instruction";
 
+//使い方
 "Instruction" = "Instructions";
 "Step1" = "Step 1  Choose questions";
 "Step2" = "Step 2  Press START and pronounce the word 3 times";
@@ -19,5 +23,7 @@
 "ClickHere" = "Click here";
 
 //問題のページ
-"PronunciationExamples" = "Model Pronunciation and Examples";
-"KWord" = "Click Here for hint";
+"PronunciationExamples" = "Pronunciation＆Examples";
+"hintWord" = "Click here for hint";
+//
+"TapListen" = "Tap and Listen";

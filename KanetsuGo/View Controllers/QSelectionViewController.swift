@@ -88,9 +88,15 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
    
 
+//ローカライズ
+    @IBOutlet weak var toInstruction: UILabel!
+    @IBOutlet weak var QSelect: UILabel!
+    
     @IBOutlet weak var questionLevel: UITableView!
     
+    
     override func viewDidLoad() {
+       
         super.viewDidLoad()
         if UserDefaults.standard.object(forKey: "hajimeteFlag") == nil {
             DispatchQueue.main.async {
@@ -98,7 +104,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                 self.present(pageViewController!, animated: true, completion: nil)
             }
         }
-       
+        //ローカライズ
+        toInstruction.text = "\(NSLocalizedString("toInstruction", comment: ""))"
+        QSelect.text = "\(NSLocalizedString("QSelect", comment: ""))"
+        
         questionLevel.dataSource = self
         questionLevel.delegate = self
         // Do any additional setup after loading the view.
@@ -156,30 +165,20 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     // 各セルを選択した時に実行されるメソッド
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //        print(indexPath)
-        //        print(indexPath.row)
-        //        print(questions[indexPath.row])
-        //        print(questions[indexPath.row].count)
         performSegue(withIdentifier: "cellSegue",sender: indexPath.row)
         
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "cellSegue"){
-          //  print(questions[sender as!Int])
-            
+          
             let ViewController:ViewController = (segue.destination as! ViewController)
             ViewController.questions = questions[sender as!Int]
             ViewController.katakana = katakana[sender as!Int]
             ViewController.vietnamese = vietnamese[sender as!Int]
             ViewController.pronunciationJ = pronunciationJ[sender as!Int]
             ViewController.reibunJ = reibunJ[sender as!Int]
-//            questions = [questions[sender as!Int]]
-//            katakana = [katakana[sender as!Int]]
-//            vietnamese = [vietnamese[sender as!Int]]
-//            pronunciationJ = [pronunciationJ[sender as!Int]]
-//            reibunJ = [reibunJ[sender as!Int]]
-//            //print(reibunJ)
+
         }
         
     }

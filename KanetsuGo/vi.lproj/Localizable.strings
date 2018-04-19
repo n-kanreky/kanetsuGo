@@ -5,6 +5,10 @@
   Created by クロス尚美 on 2018/04/05.
   Copyright © 2018年 NC. All rights reserved.
 */
+//Q Selection
+"QSelect" = "Select Questions";
+"toInstruction" = "To Tutorial";
+
 //使い方
 "Instruction" = "Cách sử dụng";
 "Step1" = "Bước 1  Chọn câu";
@@ -20,4 +24,6 @@
 
 //問題のページ
 "PronunciationExamples" = "Mô hình tiếng nói và ví dụ";
-"KWord" = "Mẹo để tap";
+"hintWord" = "Nhấp vào đây để biết các gợi ý";
+//
+"TapListen" = "Nghe một mô hình";

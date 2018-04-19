@@ -5,10 +5,14 @@
   Created by クロス尚美 on 2018/04/05.
   Copyright © 2018年 NC. All rights reserved.
 */
+//Q Selection
+"QSelect" = "練習問題を選ぶ";
+"toInstruction" = "使い方へ";
+
 //使い方
-"Instructions" = "使い方";
-"Step1" = "ステップ 1  問題を選びましょう";
-"Step2" = "ステップ 2  Press START を押して、３回発音します";
+"Instruction" = "使い方";
+"Step1" = "ステップ 1  \n問題を選びましょう";
+"Step2" = "ステップ 2  \nSTART を押して、\n３回発音します";
 "IfNotSure" = "わからなかったら...";
 "PressHint" = "ヒントを見たり";
 "Listen" = "お手本の発音を聞いたりしましょう";
@@ -20,4 +24,6 @@
 
 //問題のページ
 "PronunciationExamples" = "モデル発音と用例";
-"KWord" = "ヒントはここをタップ";
+"hintWord" = "ヒントはここをクリック";
+//
+"TapListen" = "モデル発音を聞く";

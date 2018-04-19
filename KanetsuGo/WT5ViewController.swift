@@ -9,8 +9,9 @@
 import UIKit
 
 class WT5ViewController: UIViewController {
+    
     @IBOutlet weak var Begin: UILabel!
-    @IBOutlet weak var ClickHere: UITextField!
+    @IBOutlet weak var ClickHere: UILabel!
     @IBAction func PageDot(_ sender: UIPageControl) {
     }
     
@@ -25,6 +26,7 @@ class WT5ViewController: UIViewController {
     @IBAction func start(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
