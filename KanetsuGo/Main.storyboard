@@ -160,7 +160,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.96214724831940834" blue="0.45566309184648501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="95" id="RI2-Ij-UuB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="95" id="RI2-Ij-UuB">
                                         <rect key="frame" x="0.0" y="28" width="375" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RI2-Ij-UuB" id="1u6-Lu-RlJ">
@@ -227,6 +227,7 @@
                     <navigationItem key="navigationItem" id="paV-0S-jMp"/>
                     <connections>
                         <outlet property="QSelect" destination="6Ab-V1-9j3" id="hVd-nD-FD7"/>
+                        <outlet property="ToRevisionList" destination="Igb-bl-cQ1" id="GFI-67-AQp"/>
                         <outlet property="questionLevel" destination="e7E-Kw-rev" id="Vwk-pL-c9n"/>
                         <outlet property="toInstruction" destination="lLs-dY-Cfe" id="zbj-IN-lLr"/>
                         <segue destination="T70-Tr-koE" kind="presentation" identifier="cellSegue" id="u0w-48-aPl"/>
@@ -516,7 +517,7 @@
                                 <color key="sectionIndexColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.89458956940000001" blue="0.60660827360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="82" id="o7m-rk-3ql">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="82" id="o7m-rk-3ql">
                                         <rect key="frame" x="0.0" y="28" width="375" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o7m-rk-3ql" id="GIS-Bc-YQo">
@@ -1184,6 +1185,6 @@ STARTを押して３回発音します</string>
         <image name="unfilledCircle" width="115" height="115"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u0w-48-aPl"/>
+        <segue reference="Qln-Kj-2vK"/>
     </inferredMetricsTieBreakers>
 </document>

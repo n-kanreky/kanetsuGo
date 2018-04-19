@@ -337,7 +337,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         }
        
         let skippedQuestionNumber = questionNumber
-        let alertController = UIAlertController(title: "スキップしますか？", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        //アラートの文言をローカライズ
+        let alertController = UIAlertController(title: "\(NSLocalizedString("SkipQuestion", comment: ""))", message: "", preferredStyle: UIAlertControllerStyle.alert)
         
         let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
             (action:UIAlertAction!) -> Void in

@@ -92,6 +92,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var toInstruction: UILabel!
     @IBOutlet weak var QSelect: UILabel!
     
+    @IBOutlet weak var ToRevisionList: UIButton!
     @IBOutlet weak var questionLevel: UITableView!
     
     
@@ -107,6 +108,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         //ローカライズ
         toInstruction.text = "\(NSLocalizedString("toInstruction", comment: ""))"
         QSelect.text = "\(NSLocalizedString("QSelect", comment: ""))"
+        //復習リストのボタンを以下に置き換えて、ローカライズ
+        ToRevisionList.setTitle("\(NSLocalizedString("ToRevisionList", comment: ""))", for:UIControlState.normal)
+        
+        
         
         questionLevel.dataSource = self
         questionLevel.delegate = self

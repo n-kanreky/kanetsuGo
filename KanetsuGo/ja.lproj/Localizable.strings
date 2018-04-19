@@ -27,3 +27,5 @@
 "hintWord" = "ヒントはここをクリック";
 //
 "TapListen" = "モデル発音を聞く";
+"ToRevisionList" = "復習リスト";
+"SkipQuestion" = "本当にスキップしますか?";
