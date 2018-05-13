@@ -32,6 +32,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     
     var skipCount = 0
     var correctFlag = false
+    var cellNumber = 0
     //問題が通常のリストから、あるいは復習リストから来ているかを見極めるフラグ　VCの名前を入れる
     var pickQList = ""
     //review class のインスタンス
@@ -63,6 +64,16 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     let realm = try! Realm()
     
     override func viewDidLoad() {
+        //Groupごとの説明文を入れる　非同期処理***************
+//        if UserDefaults.standard.object(forKey: "lessonFlag") == nil {
+//            //以下で非同期処理をする
+//            DispatchQueue.main.async {
+//                let pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "GroupIntroduction")
+//                self.present(pageViewController!, animated: false, completion: nil)
+//            }
+//        }
+        //**********************************************
+        print(cellNumber)
         super.viewDidLoad()
     //  問題を設定する
     setQuestions(Int: questionNumber)
@@ -198,7 +209,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                     }
                     
                     if self.correctFlag == false { //判定式（＝＝）で、「答え」が間違っていたら、以下を行う
-                        self.label.text = "もう一度！"
+                        self.label.text = "\(NSLocalizedString("again", comment: ""))"
                         self.gCount = self.count
                     }
                     
@@ -235,7 +246,9 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                         self.kWord.text = "\(NSLocalizedString("hintWord", comment: ""))"//ヒントをクリアして、初期状態に戻している
                       
                     }
+                    sleep(UInt32(0.2)) //０.２秒間処理を遅らせることでエラー回避
                     self.performSegue(withIdentifier:"modal", sender:nil)
+                    
                     //ここでprepare for segueを呼び出す
                 }
                 isFinal = result.isFinal //これがtrueになったら、一旦音声認識のループから外れる。
@@ -273,8 +286,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         // startの前にリソースを確保しておく。
         audioEngine.prepare()
         try audioEngine.start()
-        label.text = "発音してください。"
-    }
+        //label.text = "発音してください。"
+        label.text = "\(NSLocalizedString("ReadOut", comment: ""))"    }
     
     
     // 音声認識の可否が変更したときに呼ばれるdelegate
@@ -420,7 +433,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
             
             
         }
-        //以下で、説明ポップアップへ移動
+        //以下で、モデル音声と用例のポップアップへ移動
         if(segue.identifier == "toExplanation"){
             let popup:HintViewController = (segue.destination as! HintViewController)
             popup.questionWord = self.question.text!

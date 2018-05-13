@@ -11,6 +11,8 @@ import RealmSwift
 
 @available(iOS 10.0, *) //iOS 10.0以上に対応
 class ReviewListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var ReviewList: UILabel! //ローカライズ
+    @IBOutlet weak var ToSelectQuestions: UIButton! //ローカライズ　ボタン
     
     var questionCount = 0
     var correctAnswer = 0
@@ -29,6 +31,8 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ReviewList.text = "\(NSLocalizedString("ReviewList", comment: ""))" //ローカライズ
+        ToSelectQuestions.setTitle("\(NSLocalizedString("ToSelectQuestions", comment: ""))", for:UIControlState.normal) //ボタンのローカライズ
         reviewView.dataSource = self //TableViewのセルにデータを反映させるメソッドを利用可能にする
         reviewView.delegate = self //delegateメソッド　TableViewの動的処理（タップなど）のメソッドを利用可能にする
     }
@@ -67,19 +71,22 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
         
     }
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
-        let deleteButton: UITableViewRowAction = UITableViewRowAction(style: .normal, title: "削除") { (action, index) -> Void in
+
+        let deleteButton: UITableViewRowAction = UITableViewRowAction(style: .normal, title: "\(NSLocalizedString("Delete", comment: ""))") { (action, index) -> Void in
            self.reviewArray.remove(at: indexPath.row)
           tableView.deleteRows(at: [indexPath as IndexPath], with: UITableViewRowAnimation.fade)
         }
         deleteButton.backgroundColor = UIColor.red
         // 削除されたタスクを取得する
         let review = self.reviewArray[indexPath.row]
+       
         // データベースから削除する
         try! realm.write { //transaction＝　DBとの通信　を行うメソッドを走らせる
-            self.realm.delete(review)
+        self.realm.delete(review)
         }
+      
         return [deleteButton] //return ＝　返り値　line69のfunctionに対して、値を返す
+        
     }
     
     @IBAction func returnToQSelection(_ sender: Any) {

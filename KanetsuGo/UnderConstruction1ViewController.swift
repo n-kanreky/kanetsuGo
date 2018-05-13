@@ -1,23 +1,19 @@
 //
-//  WT2ViewController.swift
+//  UnderConstruction1ViewController.swift
 //  KanetsuGo
 //
-//  Created by n.kanreky on 2018/02/01.
+//  Created by クロス尚美 on 2018/04/26.
 //  Copyright © 2018年 NC. All rights reserved.
 //
 
 import UIKit
 
-class WT2ViewController: UIViewController {
-    @IBOutlet weak var Step1: UILabel!
-    @IBAction func PageDot(_ sender: UIPageControl) {
-    }
-    @IBAction func skip(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+class UnderConstruction1ViewController: UIViewController {
+    @IBOutlet weak var UnderConstruction: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    Step1.text = "\(NSLocalizedString("Step1", comment: ""))" //ローカライズ
+        UnderConstruction.text = "\(NSLocalizedString("UnderConstruction", comment: ""))" //ローカライズ
         // Do any additional setup after loading the view.
     }
 

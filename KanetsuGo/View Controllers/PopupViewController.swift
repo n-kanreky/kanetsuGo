@@ -17,6 +17,7 @@ class PopupViewController: UIViewController {
     @IBOutlet weak var correctCountLabel: UILabel!
     @IBOutlet weak var addReviewButton: UIButton!
     
+    
     var questionCount = 0
     var correctAnswer = 0
     var skipCount = 0
@@ -36,13 +37,18 @@ class PopupViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //復習リストのボタンを以下に置き換えて、ローカライズ
+        popUpLabel.text = "\(NSLocalizedString("GoToNextQuestion", comment: ""))"
+        addReviewButton.setTitle("\(NSLocalizedString("AddToReviewList", comment: ""))", for: UIControlState.normal)
+        
         //以下でボタンの文字列を複数行にして表示可能とした
         nextLevelButton.titleLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
         nextLevelButton.titleLabel!.numberOfLines = 2
         nextLevelButton.titleLabel!.textAlignment = NSTextAlignment.center
         // Do any additional setup after loading the view.
+        
+       // print(NSLocale.preferredLanguages)// ["ja-JP", "en-GB", "en-JP"]    }
     }
-    
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,27 +59,42 @@ class PopupViewController: UIViewController {
             }
             if questionCount == self.totalQuestions {
                 if skipCount == 0 {
-                    print(questionCount)
-                    popUpLabel.text = "おめでとう！全問正解です"
-                    print("omedeto")
+                    
+                    popUpLabel.text = "\(NSLocalizedString("AllCorrect", comment: ""))"
                     addReviewButton.isHidden = true
                     correctCountLabel.text = "\(questionCount)/\(questionCount-skipCount)"
-                    nextLevelButton.setTitle("次のレベルに進みましょう", for: UIControlState.normal)
+                    nextLevelButton.setTitle("\(NSLocalizedString("LetsGoOnToNextLevel", comment: ""))", for: UIControlState.normal)
                 }else{
-                    popUpLabel.text = "頑張りましょう！"
-                    correctCountLabel.text = "\(questionCount)問中\(questionCount-skipCount)問正解です"
-                    nextLevelButton.setTitle("練習一覧に戻る", for: UIControlState.normal)
+                    popUpLabel.text = "\(NSLocalizedString("YouCanDoIt", comment: ""))"
+                    
+        //設定言語の先頭にある言語でローカライズ する　["vi-US" 越語, "ja-US", "en-GB", "fr-US", "en", "ja-JP 日本語"]
+                    if (NSLocale.preferredLanguages.first == "ja-JP"){ // "ja-JP"
+                        correctCountLabel.text = "\(questionCount)問中\(questionCount-skipCount)問正解"
+                    }else if
+                       (NSLocale.preferredLanguages.first == "vi-US"){
+                       correctCountLabel.text = "\(questionCount-skipCount) trong số \(questionCount)câu hỏi Câu trả lời đúng"
+                    }else if
+                       (NSLocale.preferredLanguages.first == "en"){
+                        correctCountLabel.text = "Of \(questionCount) question(s)\(questionCount-skipCount) were questios correct"
+                    }else{
+                        correctCountLabel.text = "\(questionCount)問中\(questionCount-skipCount)問正解"
+                        
+                    }
+                    //***************ローカライズ はここから上まで＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+                    nextLevelButton.setTitle("\(NSLocalizedString("ReturnToQuestionList", comment: ""))", for: UIControlState.normal)
                     addReviewButton.isHidden = true
                 }
                 
             }
         }else if pickQList == "ReviewList"{ self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
             if questionCount == self.totalQuestions {
-              
-                    popUpLabel.text = "復習リストに再登録されました"
-                    correctCountLabel.text = " "
-                    nextLevelButton.setTitle("復習リストに戻りましょう", for: UIControlState.normal)
-                    addReviewButton.isHidden = true
+                //以下でローカライズ
+                popUpLabel.text = "\(NSLocalizedString("CorrectAnswer", comment: ""))"
+                correctCountLabel.text = " "
+                nextLevelButton.setTitle("\(NSLocalizedString("LetsReturnToReviewList", comment: ""))", for: UIControlState.normal)
+                //nextLevelButton.setTitle("\(NSLocalizedString("AddedToReviewList", comment: ""))", for: UIControlState.normal)
+                
+                addReviewButton.isHidden = true
                 //Reviewリストに戻る　popup VCとVC画面を消してReviewに戻る
                 
                

@@ -6,8 +6,8 @@
   Copyright © 2018年 NC. All rights reserved.
 */
 //Q Selection
-"QSelect" = "Select Questions";
-"toInstruction" = "To Tutorial";
+"QSelect" = "Chọn một vấn đề";
+"toInstruction" = "Cách sử dụng";
 
 //使い方
 "Instruction" = "Cách sử dụng";
@@ -21,11 +21,40 @@
 "Begin" = "Nào, bắt đầu thôi!";
 "Start" = "Bắt đầu!";
 "ClickHere" = "Nhấn vào đây";
-
+"CorrectAnswer" = "Đúng";
 //問題のページ
 "PronunciationExamples" = "Mô hình tiếng nói và ví dụ";
 "hintWord" = "Nhấp vào đây để biết các gợi ý";
-//
+"again" ="Một lần nữa";
 "TapListen" = "Nghe một mô hình";
-"ToRevisionList" = "To Revision List";
-"SkipQuestion" = "Are you sure?";
+"ToRevisionList" = "Đến danh sách đánh giá";
+"SkipQuestion" = "Nó có thực sự tốt?";
+"LetsSelectCourse" = "Vui lòng chọn khóa học";
+"AllCorrect" = "Tất cả câu trả lời đúng";
+"ReadOut" = "Xin hãy phát âm nó";
+"ForN1" = "Khóa học chuẩn bị cho N1";
+"ForN2" = "Khóa học chuẩn bị cho N２";
+"ToSelectQuestions" = "< Lựa chọn vấn đề";
+
+"ReviewList" = "Danh sách đánh giá";
+"UnderConstruction" = "Trang này đang được xây dựng\nVui lòng thử thêm một chút";
+"Delete" = "Xóa";
+"AddedToReviewList" = "Nó đã được thêm vào danh sách đánh giá";
+"AddToReviewList" = "Thêm vào danh sách đánh giá";
+"LetsReturnToReviewList" = "Hãy quay trở lại danh sách đánh giá";
+"ReAddedToRevisionList" = "Tôi đã thêm nó vào danh sách đánh giá";
+"YouCanDoIt" = "Hãy làm hết sức mình.";
+"ReturnToQuestionList" = "Hãy quay trở lại bài tập";
+"LetsGoOnToNextLevel" = "Thách thức danh sách các vấn đề tiếp theo";
+"GoToNextQuestion" = "Vấn đề tiếp theo";
+//グループごとの説明
+"Group_1" = "Group 1 では、漢越語の発音と、それに対応する日本語の中の漢語の発音がよく似ているものを集めました。意味もよく似ていませんか？";
+"Group_2" = "Group 2 では、漢越語の中に「出」という漢字を含むものを集めました。漢越語の中の「出」xuất は、「シュツ」と発音します";
+"Group_3" = "Group 3 では、漢越語の中に「上」という漢字を含むものを集めました。漢越語の中の「上」thượng は、「ジョウ」と発音します";
+"Group_4" = "Group 4 では、漢越語の中に「通」という漢字を含むものを集めました。漢越語の中の「通」thông は、「ツウ」と発音します";
+"Group_5" = "Group 5 では、漢越語の中に「生」という漢字を含むものを集めました。漢越語の中の「生」sinh は、「セイ」と発音します";
+"Group_6" = "Group 6 では、漢越語と、それに対応する日本語の中の漢語とが、同じ形（同じ字が元になっている）で、意味も同じものを集めました。";
+"Group_7" = "Group 7 では、漢越語と、それに対応する日本語の中の漢語とが、同じ形（同じが元になっている）けれど、意味が違うものを集めました。";
+"Group_8" = "Group 8 では、漢越語と、それに対応する日本語の中の漢語の字の順番が、逆になっているものを集めました。";
+"Group_9" = "Group 9 では、漢越語と、それに対応する日本語で作られた漢語、「和製漢語」を集めました。";
+

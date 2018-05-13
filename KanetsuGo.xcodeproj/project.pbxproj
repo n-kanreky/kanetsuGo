@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A12269F2091F6E300AEFF86 /* UnderConstruction1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12269E2091F6E300AEFF86 /* UnderConstruction1ViewController.swift */; };
 		6A12E1341F9B3ACA0008D7C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12E1331F9B3ACA0008D7C3 /* AppDelegate.swift */; };
 		6A319E012021ED6500F73760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A319E002021ED6400F73760 /* Assets.xcassets */; };
 		6A319E03202282C700F73760 /* WT1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A319E02202282C700F73760 /* WT1ViewController.swift */; };
@@ -15,6 +16,26 @@
 		6A319E092022831500F73760 /* WT4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A319E082022831500F73760 /* WT4ViewController.swift */; };
 		6A319E0B2022832A00F73760 /* WT5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A319E0A2022832A00F73760 /* WT5ViewController.swift */; };
 		6A53A4EA2022EA6C002AA049 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A53A4E92022EA6C002AA049 /* PageViewController.swift */; };
+		6A6C99ED209C977900A9E169 /* Koujou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99D4209C977700A9E169 /* Koujou.mp3 */; };
+		6A6C99EE209C977900A9E169 /* Ryouri.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99D5209C977700A9E169 /* Ryouri.mp3 */; };
+		6A6C99EF209C977900A9E169 /* Inshou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99D6209C977700A9E169 /* Inshou.mp3 */; };
+		6A6C99F0209C977900A9E169 /* Kagaku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99D7209C977800A9E169 /* Kagaku.mp3 */; };
+		6A6C99F2209C977900A9E169 /* Houkoku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99D9209C977800A9E169 /* Houkoku.mp3 */; };
+		6A6C99F4209C977900A9E169 /* Bunka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99DB209C977800A9E169 /* Bunka.mp3 */; };
+		6A6C99F5209C977900A9E169 /* Gozen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99DC209C977800A9E169 /* Gozen.mp3 */; };
+		6A6C99F6209C977900A9E169 /* Houfu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99DD209C977800A9E169 /* Houfu.mp3 */; };
+		6A6C99F7209C977900A9E169 /* Kessoku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99DE209C977800A9E169 /* Kessoku.mp3 */; };
+		6A6C99F9209C977900A9E169 /* Benkyou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99E0209C977800A9E169 /* Benkyou.mp3 */; };
+		6A6C99FB209C977900A9E169 /* Sekai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99E2209C977800A9E169 /* Sekai.mp3 */; };
+		6A6C99FC209C977900A9E169 /* Meiwaku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99E3209C977800A9E169 /* Meiwaku.mp3 */; };
+		6A6C99FD209C977900A9E169 /* Koucha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99E4209C977900A9E169 /* Koucha.mp3 */; };
+		6A6C99FE209C977900A9E169 /* Genkan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99E5209C977900A9E169 /* Genkan.mp3 */; };
+		6A6C99FF209C977900A9E169 /* Riyou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99E6209C977900A9E169 /* Riyou.mp3 */; };
+		6A6C9A00209C977900A9E169 /* Undou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99E7209C977900A9E169 /* Undou.mp3 */; };
+		6A6C9A02209C977900A9E169 /* Renraku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99E9209C977900A9E169 /* Renraku.mp3 */; };
+		6A6C9A03209C977900A9E169 /* Gohan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99EA209C977900A9E169 /* Gohan.mp3 */; };
+		6A6C9A04209C977900A9E169 /* Gogo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99EB209C977900A9E169 /* Gogo.mp3 */; };
+		6A6C9A05209C977900A9E169 /* Houritsu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A6C99EC209C977900A9E169 /* Houritsu.mp3 */; };
 		6AA21294207652B700971FE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AA21296207652B700971FE8 /* Localizable.strings */; };
 		6AA5D0451FEA62400096966F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0441FEA62400096966F /* Main.storyboard */; };
 		6AA5D0491FEA63190096966F /* QSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D0481FEA63180096966F /* QSelectionViewController.swift */; };
@@ -70,10 +91,14 @@
 		6AA5D0BD1FEA6F570096966F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0BC1FEA6F560096966F /* LaunchScreen.storyboard */; };
 		6AA645032029D8BB00F12E53 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA645022029D8BB00F12E53 /* NavigationController.swift */; };
 		6ABDD6021F9CD82400E005A0 /* HintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABDD6011F9CD82400E005A0 /* HintViewController.swift */; };
+		6AC6EE08208F55B20033C39D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6EE07208F55B20033C39D /* MenuViewController.swift */; };
+		6AD3EB0D20A7E36600A13A95 /* IntroGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD3EB0C20A7E36600A13A95 /* IntroGroupViewController.swift */; };
+		6AD5CD1E20A1208D003ADD8E /* GroupIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5CD1D20A1208D003ADD8E /* GroupIntroductionViewController.swift */; };
 		B154A8276A0B4F0EBF5E47D7 /* Pods_KanetsuGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2567F2ED18E6380782A858F /* Pods_KanetsuGo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A12269E2091F6E300AEFF86 /* UnderConstruction1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderConstruction1ViewController.swift; sourceTree = "<group>"; };
 		6A12E1301F9B3ACA0008D7C3 /* KanetsuGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanetsuGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A12E1331F9B3ACA0008D7C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A319E002021ED6400F73760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +108,26 @@
 		6A319E082022831500F73760 /* WT4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WT4ViewController.swift; sourceTree = "<group>"; };
 		6A319E0A2022832A00F73760 /* WT5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WT5ViewController.swift; sourceTree = "<group>"; };
 		6A53A4E92022EA6C002AA049 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		6A6C99D4209C977700A9E169 /* Koujou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Koujou.mp3; sourceTree = "<group>"; };
+		6A6C99D5209C977700A9E169 /* Ryouri.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ryouri.mp3; sourceTree = "<group>"; };
+		6A6C99D6209C977700A9E169 /* Inshou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Inshou.mp3; sourceTree = "<group>"; };
+		6A6C99D7209C977800A9E169 /* Kagaku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kagaku.mp3; sourceTree = "<group>"; };
+		6A6C99D9209C977800A9E169 /* Houkoku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Houkoku.mp3; sourceTree = "<group>"; };
+		6A6C99DB209C977800A9E169 /* Bunka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bunka.mp3; sourceTree = "<group>"; };
+		6A6C99DC209C977800A9E169 /* Gozen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gozen.mp3; sourceTree = "<group>"; };
+		6A6C99DD209C977800A9E169 /* Houfu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Houfu.mp3; sourceTree = "<group>"; };
+		6A6C99DE209C977800A9E169 /* Kessoku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kessoku.mp3; sourceTree = "<group>"; };
+		6A6C99E0209C977800A9E169 /* Benkyou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Benkyou.mp3; sourceTree = "<group>"; };
+		6A6C99E2209C977800A9E169 /* Sekai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sekai.mp3; sourceTree = "<group>"; };
+		6A6C99E3209C977800A9E169 /* Meiwaku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Meiwaku.mp3; sourceTree = "<group>"; };
+		6A6C99E4209C977900A9E169 /* Koucha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Koucha.mp3; sourceTree = "<group>"; };
+		6A6C99E5209C977900A9E169 /* Genkan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Genkan.mp3; sourceTree = "<group>"; };
+		6A6C99E6209C977900A9E169 /* Riyou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Riyou.mp3; sourceTree = "<group>"; };
+		6A6C99E7209C977900A9E169 /* Undou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Undou.mp3; sourceTree = "<group>"; };
+		6A6C99E9209C977900A9E169 /* Renraku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Renraku.mp3; sourceTree = "<group>"; };
+		6A6C99EA209C977900A9E169 /* Gohan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gohan.mp3; sourceTree = "<group>"; };
+		6A6C99EB209C977900A9E169 /* Gogo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gogo.mp3; sourceTree = "<group>"; };
+		6A6C99EC209C977900A9E169 /* Houritsu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Houritsu.mp3; sourceTree = "<group>"; };
 		6AA21295207652B700971FE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6AA21298207652E600971FE8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6AA212992076530B00971FE8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -142,6 +187,9 @@
 		6AA5D0BC1FEA6F560096966F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AA645022029D8BB00F12E53 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		6ABDD6011F9CD82400E005A0 /* HintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintViewController.swift; sourceTree = "<group>"; };
+		6AC6EE07208F55B20033C39D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6AD3EB0C20A7E36600A13A95 /* IntroGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroGroupViewController.swift; sourceTree = "<group>"; };
+		6AD5CD1D20A1208D003ADD8E /* GroupIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupIntroductionViewController.swift; sourceTree = "<group>"; };
 		A6F546E6A3AA79DC11926AC9 /* Pods-KanetsuGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanetsuGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanetsuGo/Pods-KanetsuGo.debug.xcconfig"; sourceTree = "<group>"; };
 		D2567F2ED18E6380782A858F /* Pods_KanetsuGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KanetsuGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B8315F86604791F44942C7 /* Pods-KanetsuGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanetsuGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanetsuGo/Pods-KanetsuGo.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +230,10 @@
 			children = (
 				6AA5D0BA1FEA6D970096966F /* View Controllers */,
 				6AA5D0441FEA62400096966F /* Main.storyboard */,
+				6AD3EB0C20A7E36600A13A95 /* IntroGroupViewController.swift */,
+				6AD5CD1D20A1208D003ADD8E /* GroupIntroductionViewController.swift */,
+				6A12269E2091F6E300AEFF86 /* UnderConstruction1ViewController.swift */,
+				6AC6EE07208F55B20033C39D /* MenuViewController.swift */,
 				6AA21296207652B700971FE8 /* Localizable.strings */,
 				6AA645022029D8BB00F12E53 /* NavigationController.swift */,
 				6A53A4E92022EA6C002AA049 /* PageViewController.swift */,
@@ -215,6 +267,26 @@
 		6AA5D0BB1FEA6E180096966F /* Pronunciation */ = {
 			isa = PBXGroup;
 			children = (
+				6A6C99E0209C977800A9E169 /* Benkyou.mp3 */,
+				6A6C99DB209C977800A9E169 /* Bunka.mp3 */,
+				6A6C99E5209C977900A9E169 /* Genkan.mp3 */,
+				6A6C99EB209C977900A9E169 /* Gogo.mp3 */,
+				6A6C99EA209C977900A9E169 /* Gohan.mp3 */,
+				6A6C99DC209C977800A9E169 /* Gozen.mp3 */,
+				6A6C99DD209C977800A9E169 /* Houfu.mp3 */,
+				6A6C99D9209C977800A9E169 /* Houkoku.mp3 */,
+				6A6C99EC209C977900A9E169 /* Houritsu.mp3 */,
+				6A6C99D6209C977700A9E169 /* Inshou.mp3 */,
+				6A6C99D7209C977800A9E169 /* Kagaku.mp3 */,
+				6A6C99DE209C977800A9E169 /* Kessoku.mp3 */,
+				6A6C99E4209C977900A9E169 /* Koucha.mp3 */,
+				6A6C99D4209C977700A9E169 /* Koujou.mp3 */,
+				6A6C99E3209C977800A9E169 /* Meiwaku.mp3 */,
+				6A6C99E9209C977900A9E169 /* Renraku.mp3 */,
+				6A6C99E6209C977900A9E169 /* Riyou.mp3 */,
+				6A6C99D5209C977700A9E169 /* Ryouri.mp3 */,
+				6A6C99E2209C977800A9E169 /* Sekai.mp3 */,
+				6A6C99E7209C977900A9E169 /* Undou.mp3 */,
 				6AA5D0721FEA6C190096966F /* Akui.mp3 */,
 				6AA5D0801FEA6C1B0096966F /* Anshin.mp3 */,
 				6AA5D0681FEA6C170096966F /* Anshinin.mp3 */,
@@ -348,52 +420,72 @@
 				6AA5D0AE1FEA6C1E0096966F /* Kaidan.mp3 in Resources */,
 				6AA5D09B1FEA6C1E0096966F /* Shinrai.mp3 in Resources */,
 				6AA5D0A71FEA6C1E0096966F /* Seizon.mp3 in Resources */,
+				6A6C9A04209C977900A9E169 /* Gogo.mp3 in Resources */,
 				6AA5D0B71FEA6C1E0096966F /* Gakusei.mp3 in Resources */,
+				6A6C99EE209C977900A9E169 /* Ryouri.mp3 in Resources */,
 				6AA5D0981FEA6C1E0096966F /* Choujou.mp3 in Resources */,
 				6AA5D0951FEA6C1E0096966F /* Anshinin.mp3 in Resources */,
 				6AA5D0B01FEA6C1E0096966F /* Tsuukou.mp3 in Resources */,
 				6AA5D0A01FEA6C1E0096966F /* Densha.mp3 in Resources */,
 				6AA5D0B11FEA6C1E0096966F /* Shusshi.mp3 in Resources */,
+				6A6C9A00209C977900A9E169 /* Undou.mp3 in Resources */,
+				6A6C99EF209C977900A9E169 /* Inshou.mp3 in Resources */,
 				6AA5D0B51FEA6C1E0096966F /* Joushou.mp3 in Resources */,
 				6AA21294207652B700971FE8 /* Localizable.strings in Resources */,
 				6AA5D0A81FEA6C1E0096966F /* Shutsugen.mp3 in Resources */,
 				6AA5D0A41FEA6C1E0096966F /* Chuusha.mp3 in Resources */,
+				6A6C99FF209C977900A9E169 /* Riyou.mp3 in Resources */,
 				6AA5D0921FEA6C1E0096966F /* Senmon.mp3 in Resources */,
 				6AA5D09A1FEA6C1E0096966F /* Seigen.mp3 in Resources */,
 				6AA5D09C1FEA6C1E0096966F /* Shusseki.mp3 in Resources */,
 				6AA5D0AB1FEA6C1E0096966F /* Shinpai.mp3 in Resources */,
 				6AA5D0971FEA6C1E0096966F /* Iken.mp3 in Resources */,
 				6AA5D09F1FEA6C1E0096966F /* Akui.mp3 in Resources */,
+				6A6C99F4209C977900A9E169 /* Bunka.mp3 in Resources */,
 				6AA5D0B41FEA6C1E0096966F /* Tsuuchi.mp3 in Resources */,
 				6AA5D09D1FEA6C1E0096966F /* Teishutsu.mp3 in Resources */,
 				6AA5D0941FEA6C1E0096966F /* Chuui.mp3 in Resources */,
+				6A6C9A03209C977900A9E169 /* Gohan.mp3 in Resources */,
 				6AA5D0A21FEA6C1E0096966F /* Seisan.mp3 in Resources */,
 				6AA5D0B61FEA6C1E0096966F /* Joukyuu.mp3 in Resources */,
 				6AA5D0A61FEA6C1E0096966F /* Tsuushin.mp3 in Resources */,
+				6A6C99FE209C977900A9E169 /* Genkan.mp3 in Resources */,
+				6A6C99ED209C977900A9E169 /* Koujou.mp3 in Resources */,
+				6A6C99FD209C977900A9E169 /* Koucha.mp3 in Resources */,
 				6AA5D0931FEA6C1E0096966F /* Jouriku.mp3 in Resources */,
 				6A319E012021ED6500F73760 /* Assets.xcassets in Resources */,
 				6AA5D08E1FEA6C1E0096966F /* Shuppan.mp3 in Resources */,
+				6A6C99F9209C977900A9E169 /* Benkyou.mp3 in Resources */,
 				6AA5D0451FEA62400096966F /* Main.storyboard in Resources */,
 				6AA5D08D1FEA6C1E0096966F /* Shinyou.mp3 in Resources */,
 				6AA5D0AD1FEA6C1E0096966F /* Anshin.mp3 in Resources */,
 				6AA5D0A51FEA6C1E0096966F /* Ondo.mp3 in Resources */,
+				6A6C9A02209C977900A9E169 /* Renraku.mp3 in Resources */,
+				6A6C99F5209C977900A9E169 /* Gozen.mp3 in Resources */,
 				6AA5D08F1FEA6C1E0096966F /* Joujun.mp3 in Resources */,
 				6AA5D0B31FEA6C1E0096966F /* Shoukai.mp3 in Resources */,
+				6A6C99FC209C977900A9E169 /* Meiwaku.mp3 in Resources */,
+				6A6C99F6209C977900A9E169 /* Houfu.mp3 in Resources */,
 				6AA5D0BD1FEA6F570096966F /* LaunchScreen.storyboard in Resources */,
 				6AA5D09E1FEA6C1E0096966F /* Genkai.mp3 in Resources */,
 				6AA5D0A11FEA6C1E0096966F /* Ijou.mp3 in Resources */,
 				6AA5D0AF1FEA6C1E0096966F /* Jouge.mp3 in Resources */,
 				6AA5D0901FEA6C1E0096966F /* Shutsuryoku.mp3 in Resources */,
+				6A6C99F2209C977900A9E169 /* Houkoku.mp3 in Resources */,
 				6AA5D0B21FEA6C1E0096966F /* Tsuuka.mp3 in Resources */,
 				6AA5D0961FEA6C1E0096966F /* Seito.mp3 in Resources */,
+				6A6C99FB209C977900A9E169 /* Sekai.mp3 in Resources */,
 				6AA5D0A91FEA6C1E0096966F /* Shuppatsu.mp3 in Resources */,
 				6AA5D0991FEA6C1E0096966F /* Dasshutsu.mp3 in Resources */,
+				6A6C99F0209C977900A9E169 /* Kagaku.mp3 in Resources */,
 				6AA5D08C1FEA6C1E0096966F /* Shinbun.mp3 in Resources */,
+				6A6C99F7209C977900A9E169 /* Kessoku.mp3 in Resources */,
 				6AA5D0AC1FEA6C1E0096966F /* Shusshin.mp3 in Resources */,
 				6AA5D0AA1FEA6C1E0096966F /* Tsuuyaku.mp3 in Resources */,
 				6AA5D0B81FEA6C1E0096966F /* Seikatsu.mp3 in Resources */,
 				6AA5D0A31FEA6C1E0096966F /* Gensho.mp3 in Resources */,
 				6AA5D0911FEA6C1E0096966F /* Doui.mp3 in Resources */,
+				6A6C9A05209C977900A9E169 /* Houritsu.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +553,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ABDD6021F9CD82400E005A0 /* HintViewController.swift in Sources */,
+				6AC6EE08208F55B20033C39D /* MenuViewController.swift in Sources */,
+				6AD5CD1E20A1208D003ADD8E /* GroupIntroductionViewController.swift in Sources */,
 				6A53A4EA2022EA6C002AA049 /* PageViewController.swift in Sources */,
 				6A319E0B2022832A00F73760 /* WT5ViewController.swift in Sources */,
 				6AA5D04B1FEA63500096966F /* Review.swift in Sources */,
@@ -469,11 +563,13 @@
 				6AA5D0511FEA64020096966F /* ViewController.swift in Sources */,
 				6A12E1341F9B3ACA0008D7C3 /* AppDelegate.swift in Sources */,
 				6A319E07202282F800F73760 /* WT3ViewController.swift in Sources */,
+				6A12269F2091F6E300AEFF86 /* UnderConstruction1ViewController.swift in Sources */,
 				6A319E03202282C700F73760 /* WT1ViewController.swift in Sources */,
 				6AA5D04D1FEA638D0096966F /* PopupViewController.swift in Sources */,
 				6AA5D0491FEA63190096966F /* QSelectionViewController.swift in Sources */,
 				6A319E05202282E200F73760 /* WT2ViewController.swift in Sources */,
 				6A319E092022831500F73760 /* WT4ViewController.swift in Sources */,
+				6AD3EB0D20A7E36600A13A95 /* IntroGroupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

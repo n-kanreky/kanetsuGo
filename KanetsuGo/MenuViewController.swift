@@ -1,23 +1,27 @@
 //
-//  WT2ViewController.swift
+//  MenuViewController.swift
 //  KanetsuGo
 //
-//  Created by n.kanreky on 2018/02/01.
+//  Created by クロス尚美 on 2018/04/24.
 //  Copyright © 2018年 NC. All rights reserved.
 //
 
 import UIKit
 
-class WT2ViewController: UIViewController {
-    @IBOutlet weak var Step1: UILabel!
-    @IBAction func PageDot(_ sender: UIPageControl) {
-    }
-    @IBAction func skip(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+class MenuViewController: UIViewController {
+
+    @IBOutlet weak var LetsSelectCourse: UILabel!
+    @IBOutlet weak var ForN1: UIButton!
+    @IBOutlet weak var ForN2: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    Step1.text = "\(NSLocalizedString("Step1", comment: ""))" //ローカライズ
+        //以下でラベルの数だけローカライズ
+        LetsSelectCourse.text = "\(NSLocalizedString("LetsSelectCourse", comment: ""))"
+        //以下でボタンをローカライズ
+        ForN1.setTitle("\(NSLocalizedString("ForN1", comment: ""))", for:UIControlState.normal)
+        ForN2.setTitle("\(NSLocalizedString("ForN2", comment: ""))", for:UIControlState.normal)
+        
         // Do any additional setup after loading the view.
     }
 

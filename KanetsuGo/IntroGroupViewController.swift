@@ -1,23 +1,18 @@
 //
-//  WT2ViewController.swift
+//  IntroGroupViewController.swift
 //  KanetsuGo
 //
-//  Created by n.kanreky on 2018/02/01.
+//  Created by クロス尚美 on 2018/05/13.
 //  Copyright © 2018年 NC. All rights reserved.
 //
 
 import UIKit
 
-class WT2ViewController: UIViewController {
-    @IBOutlet weak var Step1: UILabel!
-    @IBAction func PageDot(_ sender: UIPageControl) {
-    }
-    @IBAction func skip(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+class IntroGroupViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    Step1.text = "\(NSLocalizedString("Step1", comment: ""))" //ローカライズ
+
         // Do any additional setup after loading the view.
     }
 
