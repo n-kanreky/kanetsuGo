@@ -13,6 +13,8 @@ import RealmSwift
 
 var flag = "QSelection" //通常(QSelection)の問題か、復習(Review)リストの問題かを判別するフラグ
 class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerDelegate {
+    //問題グループごとに内容の説明を入れるため、VC（問題）の上にContainerを載せる
+    @IBOutlet weak var questionIntroContainer: UIView!
     //ローカライズ
     @IBOutlet weak var PronunciationExamples: UILabel!
     @IBOutlet weak var hintWord: UILabel!
@@ -64,18 +66,14 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     let realm = try! Realm()
     
     override func viewDidLoad() {
-        //Groupごとの説明文を入れる　非同期処理***************
-//        if UserDefaults.standard.object(forKey: "lessonFlag") == nil {
-//            //以下で非同期処理をする
-//            DispatchQueue.main.async {
-//                let pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "GroupIntroduction")
-//                self.present(pageViewController!, animated: false, completion: nil)
-//            }
-//        }
-        //**********************************************
-        print(cellNumber)
         super.viewDidLoad()
-    //  問題を設定する
+//Groupごとの説明文を入れる　非同期処理************************************************************************************
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.hiddenView),
+                                               name: Notification.Name("HIDDEN"),
+                                               object: nil)
+//********************************************************************************************************************
+//  問題を設定する
     setQuestions(Int: questionNumber)
         
     // ”ヒントはここをタップ”のhintWordをローカライズ
@@ -92,11 +90,15 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     startButton.isEnabled = false
         
     }
-    
-
+    //以下で各問題グループの先頭の解説文（Container)を消し、問題が始められるようにする**************************************************
+    @objc func hiddenView(notification: NSNotification) {
+        //問題グループ解説のページを非表示にする
+        questionIntroContainer.isHidden = true
+    }
+//********************************************************************************************************************
     override func viewWillLayoutSubviews(){
         super.viewWillLayoutSubviews()
-    //iPhoneサイズによる画面調整
+//iPhoneサイズによる画面調整
         //print(self.view.frame.height) //これで高さをプリントした
         //以下で、PlusとX（サイズ　736.6以上）の場合、Constraintsの選択でXの場合が稼働し、トップから150ポイント下げる設定をした
         if self.view.frame.height >= 736.0 {
@@ -429,10 +431,13 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
             popup.reibunJ = reibunJ[self.questionNumber - 1][0]
             popup.pronunciationJ = pronunciationJ[self.questionNumber - 1]
             // *******************************************************************************
-            
-            
-            
         }
+        
+        if(segue.identifier == "GroupExp"){
+            let IntroGroup:IntroGroupViewController = (segue.destination as! IntroGroupViewController)
+            IntroGroup.cellNumber = self.cellNumber
+        }
+        
         //以下で、モデル音声と用例のポップアップへ移動
         if(segue.identifier == "toExplanation"){
             let popup:HintViewController = (segue.destination as! HintViewController)

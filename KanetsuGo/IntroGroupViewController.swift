@@ -8,28 +8,81 @@
 
 import UIKit
 
-class IntroGroupViewController: UIViewController {
 
+class IntroGroupViewController: UIViewController {
+    var cellNumber = 0
+    
+    
+    @IBOutlet weak var GroupExp: UILabel!
+    
+    @IBOutlet weak var question: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        switch cellNumber {
+        case 0:
+            GroupExp.text = "\(NSLocalizedString("Group1", comment: ""))"
+            question.text = "Group \(cellNumber + 1)   音が似ている漢語"
+        case 1:
+            GroupExp.text = "\(NSLocalizedString("Group2", comment: ""))"
+            question.text = "Group \(cellNumber + 1) 出   を含む漢語"
+        case 2:
+            GroupExp.text = "\(NSLocalizedString("Group3", comment: ""))"
+            question.text = "Group \(cellNumber + 1)   上   を含む漢語"
+        case 3:
+            GroupExp.text = "\(NSLocalizedString("Group4", comment: ""))"
+            question.text = "Group \(cellNumber + 1)   通   を含む漢語"
+        case 4:
+            GroupExp.text = "\(NSLocalizedString("Group5", comment: ""))"
+            question.text = "Group \(cellNumber + 1)  生   を含む漢語"
+        case 5:
+            GroupExp.text = "\(NSLocalizedString("Group6", comment: ""))"
+            question.text = "Group \(cellNumber + 1)  同形同義"
+        case 6:
+            GroupExp.text = "\(NSLocalizedString("Group7", comment: ""))"
+            question.text = "Group \(cellNumber + 1)  同形異議"
+        case 7:
+            GroupExp.text = "\(NSLocalizedString("Group8", comment: ""))"
+            question.text = "Group \(cellNumber + 1)   配列が逆の語"
+        case 8:
+            GroupExp.text = "\(NSLocalizedString("Group9", comment: ""))"
+            question.text = "Group \(cellNumber + 1)  和製漢語"
+        default:
+            break
+            
+        }
+        
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   
+    @IBAction func returnToQuestion(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    override func viewWillAppear(_ animated: Bool){
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func deleteAndReturn(_ sender: Any) {
+        NotificationCenter.default.post(
+            Notification(name:Notification.Name("HIDDEN")))
+        
+        //self.dismiss(animated: true, completion: nil) //これがなくてもVCに戻るので、コメントアウト
+        
+        
+        
+        
     }
-    */
-
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    
 }
+
