@@ -19,6 +19,7 @@ class IntroGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(cellNumber)
         switch cellNumber {
         case 0:
             GroupExp.text = "\(NSLocalizedString("Group1", comment: ""))"

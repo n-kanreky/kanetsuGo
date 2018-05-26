@@ -41,18 +41,18 @@
 "Delete" = "Delete";
 "AddedToReviewList" = "Added to the Review List";
 "AddToReviewList" = "Add to the Review List";
-"LetsReturnToReviewList" = "Lets Return to the Review List";
+"LetsReturnToReviewList" = "Let's Return to the Review List";
 "ReAddedToRevisionList" = "Re-added to the Revision List";
 "YouCanDoIt" = "You can do it!";
 "ReturnToQuestionList" = "Return to the Question List";
 "LetsGoOnToNextLevel" = "Lets go on to the next level";
 "GoToNextQuestion" = "Go to next question";
 //グループごとの説明
-"Group1" = "Group 1 Group 1 lists Kanetsugo and Kango that are similar in pronunciation.";
+"Group1" = "Group 1 lists Kanetsugo and Kango that are similar in pronunciation.";
 "Group2" = "Group 2 is a collection of Kanetsugo that has 出 and corresponds to xuất.";
 "Group3" = "Group 3 is a collection of Kanetsugo that has 上 and corresponds to thượng.";
 "Group4" = "Group 4 is a collection of Kanetsugo that has 通 and corresponds to thông.";
-"Group5" = "Group 4 is a collection of Kanetsugo that has 生 and corresponds to sinh.";
+"Group5" = "Group ５ is a collection of Kanetsugo that has 生 and corresponds to sinh.";
 "Group6" = "Group 6 is a collection of Kanetsugo that has the same shape and meaning with corresponding Japanese Kango";
 "Group7" = "Group 7 is a collection of Kanetsugo that has the same shape(base character order) but different meaning with corresponding Japanese Kango";
 "Group8" = "Group 8 is a collection of Kanetsugo that has the different character order with corresponding Japanese Kango";

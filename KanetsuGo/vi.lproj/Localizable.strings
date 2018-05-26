@@ -48,12 +48,12 @@
 "LetsGoOnToNextLevel" = "Thách thức danh sách các vấn đề tiếp theo";
 "GoToNextQuestion" = "Vấn đề tiếp theo";
 //グループごとの説明
-"Group1" = "Group 1 では、漢越語の発音と、それに対応する日本語の中の漢語の発音がよく似ているものを集めました。意味もよく似ていませんか？";
-"Group2" = "Group 2 では、漢越語の中に「出」という漢字を含むものを集めました。漢越語の中の「出」xuất は、「シュツ」と発音します";
-"Group3" = "Group 3 では、漢越語の中に「上」という漢字を含むものを集めました。漢越語の中の「上」thượng は、「ジョウ」と発音します";
-"Group4" = "Group 4 では、漢越語の中に「通」という漢字を含むものを集めました。漢越語の中の「通」thông は、「ツウ」と発音します";
-"Group5" = "Group 5 では、漢越語の中に「生」という漢字を含むものを集めました。漢越語の中の「生」sinh は、「セイ」と発音します";
-"Group6" = "Group 6 では、漢越語と、それに対応する日本語の中の漢語とが、同じ形（同じ字が元になっている）で、意味も同じものを集めました。";
-"Group7" = "Group 7 では、漢越語と、それに対応する日本語の中の漢語とが、同じ形（同じが元になっている）けれど、意味が違うものを集めました。";
-"Group8" = "Group 8 では、漢越語と、それに対応する日本語の中の漢語の字の順番が、逆になっているものを集めました。";
-"Group9" = "Group 9 では、漢越語と、それに対応する日本語で作られた漢語、「和製漢語」を集めました。";
+"Group1" = "Trong nhóm 1, chúng tôi thu thập một cái gì đó rất giống nhau trong cách phát âm của Hán Trung Quốc để phát âm tiếng Nhật tương ứng của Nhật Bản.";
+"Group2" = "Trong nhóm 2, chúng tôi thu thập một cái gì đó bao gồm Kanji 出 trong tiếng Hán.出 xu vị trí trong phát âm của Hanchinese シュツ";
+"Group3" = "Trong nhóm 3, chúng tôi thu thập một cái gì đó có chứa chữ Hán 上　trong tiếng Hán. 上 thượng trong Hán Trung Quốc được phát âm là ジョウ";
+"Group4" = "Trong nhóm 4, chúng tôi thu thập một cái gì đó chứa chữ Hán 通 trong tiếng Hán. 通　trong chữ Hán Trung Quốc phát âm ツウ";
+"Group5" = "Trong nhóm 5, chúng tôi thu thập một cái gì đó có chứa các ký tự Hán 生 trong tiếng Hán. Sinh 生 trong tiếng Hán được phát âm là セイ";
+"Group6" = "Trong nhóm 6, ngôn ngữ Hán và từ Trung Quốc tương ứng trong tiếng Nhật là cùng một hình thức (cùng một chữ cái được dựa trên) và ý nghĩa là như nhau.";
+"Group7" = "Trong nhóm 7, chữ Hán Trung Quốc và các từ Trung Quốc tương ứng trong tiếng Nhật được thu thập theo cùng một dạng (giống nhau dựa trên cùng một hình thức) nhưng khác nhau.";
+"Group8" = "Trong nhóm 8, chúng tôi tập hợp những ngôn ngữ Hán - Kogo và các từ tiếng Trung tương ứng bằng tiếng Nhật được đảo ngược theo thứ tự.";
+"Group9" = "Trong nhóm 9, chúng tôi thu thập tiếng Hán và tiếng Nhật tương ứng với Từ tiếng Nhật trong tiếng Nhật.";

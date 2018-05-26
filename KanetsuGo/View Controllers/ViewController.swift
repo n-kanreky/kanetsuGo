@@ -21,6 +21,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
    
     
     //DelegateのSFSpeechRecognizerDelegateとAVAudioPlayerDelegateは、SpeechとAVFoundationのフレームワークの中の機能を使うためにプロトコルを宣言
+    var hiddenFlag = false
+    
     var questions = [""]
     var katakana = [""]
     var vietnamese = [""]
@@ -67,7 +69,13 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//復習リストでグループ解説が出ないようにする＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+        if hiddenFlag == false{
+        hiddenView2()
+        }
 //Groupごとの説明文を入れる　非同期処理************************************************************************************
+        //もし"HIDDEN"という連絡がきたらhiddenViewというメソッドを呼ぶようにという設定
+        //そのメソッドは　Line95以下の　@objc func hiddenView(notification: NSNotification)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.hiddenView),
                                                name: Notification.Name("HIDDEN"),
@@ -90,12 +98,20 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     startButton.isEnabled = false
         
     }
-    //以下で各問題グループの先頭の解説文（Container)を消し、問題が始められるようにする**************************************************
+//NotificationCenterで設定したアラートに対応するメソッド：以下で各問題グループの先頭の解説文（Container)を消し、問題が始められるようにする***********
     @objc func hiddenView(notification: NSNotification) {
         //問題グループ解説のページを非表示にする
         questionIntroContainer.isHidden = true
     }
 //********************************************************************************************************************
+    //復習リストでグループ解説が出てこないようにするためのメソッド***********
+  func hiddenView2() {
+        //問題グループ解説のページを非表示にする
+        questionIntroContainer.isHidden = true
+    }
+//********************************************************************************************************************
+
+
     override func viewWillLayoutSubviews(){
         super.viewWillLayoutSubviews()
 //iPhoneサイズによる画面調整

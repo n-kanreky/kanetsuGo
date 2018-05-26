@@ -238,6 +238,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ViewController.pronunciationJ = pronunciationJ[sender as!Int]
             ViewController.reibunJ = reibunJ[sender as!Int]
             ViewController.cellNumber = sender as!Int
+            ViewController.hiddenFlag = true
+            print("ここ")
+            print(sender as!Int)
+            print(questions[sender as!Int])
         }
         
     }

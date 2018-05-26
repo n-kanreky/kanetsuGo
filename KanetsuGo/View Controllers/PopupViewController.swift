@@ -52,7 +52,7 @@ class PopupViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-       
+    
         if  pickQList == "QSelection" {
             if reviewArray.count != 0 {
                 self.review.id = reviewArray.max(ofProperty: "id")! + 1
@@ -65,38 +65,52 @@ class PopupViewController: UIViewController {
                     correctCountLabel.text = "\(questionCount)/\(questionCount-skipCount)"
                     nextLevelButton.setTitle("\(NSLocalizedString("LetsGoOnToNextLevel", comment: ""))", for: UIControlState.normal)
                 }else{
+                
                     popUpLabel.text = "\(NSLocalizedString("YouCanDoIt", comment: ""))"
-                    
+                    correctCountLabel.text = "\(questionCount-skipCount)/\(questionCount)"
+
         //設定言語の先頭にある言語でローカライズ する　["vi-US" 越語, "ja-US", "en-GB", "fr-US", "en", "ja-JP 日本語"]
-                    if (NSLocale.preferredLanguages.first == "ja-JP"){ // "ja-JP"
+            if (NSLocale.preferredLanguages.first == "ja-JP"){ // "ja-JP"
+                print("ja-JP 日本語")
                         correctCountLabel.text = "\(questionCount)問中\(questionCount-skipCount)問正解"
-                    }else if
+                }else if
                        (NSLocale.preferredLanguages.first == "vi-US"){
                        correctCountLabel.text = "\(questionCount-skipCount) trong số \(questionCount)câu hỏi Câu trả lời đúng"
-                    }else if
+                print("ベトナム語")
+                }else if
                        (NSLocale.preferredLanguages.first == "en"){
                         correctCountLabel.text = "Of \(questionCount) question(s)\(questionCount-skipCount) were questios correct"
-                    }else{
+                print("en")
+                }else if
+                        (NSLocale.preferredLanguages.first == "en-GB"){
+                        correctCountLabel.text = "Of \(questionCount) question(s)\(questionCount-skipCount) were questios correct"
+                print("en-GB")
+                }else{
                         correctCountLabel.text = "\(questionCount)問中\(questionCount-skipCount)問正解"
-                        
-                    }
-                    //***************ローカライズ はここから上まで＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+                print("失敗")
+                }
+        //***************ローカライズ はここから上まで＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
                     nextLevelButton.setTitle("\(NSLocalizedString("ReturnToQuestionList", comment: ""))", for: UIControlState.normal)
                     addReviewButton.isHidden = true
                 }
                 
             }
-        }else if pickQList == "ReviewList"{ self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+        }else if pickQList == "ReviewList"{
+            self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
             if questionCount == self.totalQuestions {
+                if skipCount == 0 {
                 //以下でローカライズ
                 popUpLabel.text = "\(NSLocalizedString("CorrectAnswer", comment: ""))"
                 correctCountLabel.text = " "
                 nextLevelButton.setTitle("\(NSLocalizedString("LetsReturnToReviewList", comment: ""))", for: UIControlState.normal)
                 //nextLevelButton.setTitle("\(NSLocalizedString("AddedToReviewList", comment: ""))", for: UIControlState.normal)
                 
+            }else{
+                popUpLabel.text = "\(NSLocalizedString("YouCanDoIt", comment: ""))"
                 addReviewButton.isHidden = true
+                nextLevelButton.setTitle("\(NSLocalizedString("LetsReturnToReviewList", comment: ""))", for: UIControlState.normal)
                 //Reviewリストに戻る　popup VCとVC画面を消してReviewに戻る
-                
+                }
                
             }
         }
