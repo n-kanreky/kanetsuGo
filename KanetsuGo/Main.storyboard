@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5P0-xH-bVl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5P0-xH-bVl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -402,36 +402,35 @@
                                 <rect key="frame" x="0.0" y="487" width="375" height="120"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unfilledCircle" translatesAutoresizingMaskIntoConstraints="NO" id="qyc-39-uRN">
-                                        <rect key="frame" x="144" y="16" width="89" height="89"/>
+                                        <rect key="frame" x="143" y="16" width="89" height="89"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="89" id="KhH-1B-Hhj"/>
-                                            <constraint firstAttribute="height" constant="89" id="hur-DX-7qx"/>
+                                            <constraint firstAttribute="height" constant="89" id="Kfb-NN-GcK"/>
+                                            <constraint firstAttribute="width" constant="89" id="yMN-ka-o2O"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unfilledCircle" translatesAutoresizingMaskIntoConstraints="NO" id="mPQ-HG-K50">
-                                        <rect key="frame" x="241" y="16" width="89" height="89"/>
+                                        <rect key="frame" x="239" y="16" width="89" height="89"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="89" id="kV6-ev-OFV"/>
-                                            <constraint firstAttribute="width" constant="89" id="rbA-oT-7my"/>
+                                            <constraint firstAttribute="height" constant="89" id="gtZ-7l-ewa"/>
+                                            <constraint firstAttribute="width" constant="89" id="lt8-1Q-STY"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unfilledCircle" translatesAutoresizingMaskIntoConstraints="NO" id="fVS-4W-Xgu">
                                         <rect key="frame" x="47" y="16" width="89" height="89"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="89" id="Ote-le-OzG"/>
-                                            <constraint firstAttribute="width" constant="89" id="jJS-3d-DM3"/>
+                                            <constraint firstAttribute="width" constant="89" id="H1r-1L-eMJ"/>
+                                            <constraint firstAttribute="height" constant="89" id="I2A-WI-fLn"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.95715053900000002" blue="0.8214584023" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="fVS-4W-Xgu" firstAttribute="centerY" secondItem="fR4-bo-Lj0" secondAttribute="centerY" id="T5s-GG-HDU"/>
-                                    <constraint firstItem="qyc-39-uRN" firstAttribute="centerY" secondItem="fVS-4W-Xgu" secondAttribute="centerY" id="V00-Yd-IWu"/>
-                                    <constraint firstItem="fVS-4W-Xgu" firstAttribute="leading" secondItem="fR4-bo-Lj0" secondAttribute="leading" constant="47" id="WOO-3u-oRQ"/>
-                                    <constraint firstItem="qyc-39-uRN" firstAttribute="leading" secondItem="fVS-4W-Xgu" secondAttribute="trailing" constant="8" id="aRT-Pv-4Dz"/>
-                                    <constraint firstItem="mPQ-HG-K50" firstAttribute="leading" secondItem="qyc-39-uRN" secondAttribute="trailing" constant="8" id="jdB-7g-7qc"/>
-                                    <constraint firstItem="qyc-39-uRN" firstAttribute="centerY" secondItem="fR4-bo-Lj0" secondAttribute="centerY" id="kUP-sA-nzK"/>
-                                    <constraint firstItem="mPQ-HG-K50" firstAttribute="centerY" secondItem="fVS-4W-Xgu" secondAttribute="centerY" id="ra7-c1-4a4"/>
+                                    <constraint firstItem="mPQ-HG-K50" firstAttribute="centerY" secondItem="fVS-4W-Xgu" secondAttribute="centerY" id="DLs-Bf-PO1"/>
+                                    <constraint firstItem="mPQ-HG-K50" firstAttribute="leading" secondItem="qyc-39-uRN" secondAttribute="trailing" constant="7" id="JJN-ZL-cZ7"/>
+                                    <constraint firstItem="qyc-39-uRN" firstAttribute="leading" secondItem="fVS-4W-Xgu" secondAttribute="trailing" constant="7" id="Wg4-WK-LMJ"/>
+                                    <constraint firstItem="qyc-39-uRN" firstAttribute="centerY" secondItem="fVS-4W-Xgu" secondAttribute="centerY" id="mxq-Dd-55Z"/>
+                                    <constraint firstItem="qyc-39-uRN" firstAttribute="centerY" secondItem="fR4-bo-Lj0" secondAttribute="centerY" id="nfK-Xa-8eK"/>
+                                    <constraint firstItem="qyc-39-uRN" firstAttribute="centerX" secondItem="fR4-bo-Lj0" secondAttribute="centerX" id="xIK-5Q-uwu"/>
                                     <constraint firstAttribute="height" constant="120" id="y3S-zj-RRb"/>
                                 </constraints>
                             </view>
