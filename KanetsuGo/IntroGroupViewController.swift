@@ -19,11 +19,11 @@ class IntroGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(cellNumber)
+        
         switch cellNumber {
         case 0:
             GroupExp.text = "\(NSLocalizedString("Group1", comment: ""))"
-            print("Group1")
+            
             question.text = "Group \(cellNumber + 1)     音が似ている漢語"
         case 1:
             GroupExp.text = "\(NSLocalizedString("Group2", comment: ""))"
