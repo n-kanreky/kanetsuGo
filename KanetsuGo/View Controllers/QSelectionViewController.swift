@@ -253,7 +253,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ViewController.cellNumber = sender as!Int
             ViewController.hiddenFlag = true
            
-            
+            //以下を利用してIntroGroupViewControllerに各グループの漢越語を表示できるか？
+            print(sender as!Int)
+            print(questions[sender as!Int])
         }
         
     }

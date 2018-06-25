@@ -4,26 +4,38 @@
 //
 //  Created by クロス尚美 on 2018/05/13.
 //  Copyright © 2018年 NC. All rights reserved.
-//
+
 
 import UIKit
 
 
 class IntroGroupViewController: UIViewController {
     var cellNumber = 0
-    
+    var questions:[String] = [""]
+    var questionStrings = ""
     
     @IBOutlet weak var GroupExp: UILabel!
-    
+    @IBOutlet weak var Questions: UILabel!
     @IBOutlet weak var question: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        var count = 0
+        for questionString in questions {
+            if count == 0 {
+                questionStrings = questionStrings + questionString
+                
+            }else{
+                questionStrings = questionStrings + ",  " + questionString
+                
+            }
+            count = count + 1
+        }
+        Questions.text = questionStrings
         switch cellNumber {
         case 0:
             GroupExp.text = "\(NSLocalizedString("Group1", comment: ""))"
-            
+            print("Group1")
             question.text = "Group \(cellNumber + 1)     音が似ている漢語"
         case 1:
             GroupExp.text = "\(NSLocalizedString("Group2", comment: ""))"
@@ -56,7 +68,6 @@ class IntroGroupViewController: UIViewController {
             break
             
         }
-
         
         // Do any additional setup after loading the view.
     }

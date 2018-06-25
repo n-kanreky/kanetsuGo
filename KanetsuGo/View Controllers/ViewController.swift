@@ -452,6 +452,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         if(segue.identifier == "GroupExp"){
             let IntroGroup:IntroGroupViewController = (segue.destination as! IntroGroupViewController)
             IntroGroup.cellNumber = self.cellNumber
+            //questionsの配列（問題）をIntroGroupに送りたい
+            IntroGroup.questions = questions
         }
         
         //以下で、モデル音声と用例のポップアップへ移動
