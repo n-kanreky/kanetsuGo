@@ -10,16 +10,16 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    @IBOutlet weak var LetsSelectCourse: UILabel!
-    @IBOutlet weak var ForN1: UIButton!
+//    @IBOutlet weak var LetsSelectCourse: UILabel!
+//    @IBOutlet weak var ForN1: UIButton!
     @IBOutlet weak var ForN2: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //以下でラベルの数だけローカライズ
-        LetsSelectCourse.text = "\(NSLocalizedString("LetsSelectCourse", comment: ""))"
+//        LetsSelectCourse.text = "\(NSLocalizedString("LetsSelectCourse", comment: ""))"
         //以下でボタンをローカライズ
-        ForN1.setTitle("\(NSLocalizedString("ForN1", comment: ""))", for:UIControlState.normal)
+//        ForN1.setTitle("\(NSLocalizedString("ForN1", comment: ""))", for:UIControlState.normal)
         ForN2.setTitle("\(NSLocalizedString("ForN2", comment: ""))", for:UIControlState.normal)
         
         // Do any additional setup after loading the view.

@@ -47,108 +47,39 @@
                                 <color key="textColor" red="0.93335998058319092" green="0.49988073110580444" blue="0.19184765219688416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コースを選びましょう！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayl-Sv-1XO">
-                                <rect key="frame" x="16" y="176" width="343" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="UaP-0g-ZVf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                <color key="textColor" red="0.93335998058319092" green="0.49988073110580444" blue="0.19184765219688416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVX-i2-O6T">
-                                <rect key="frame" x="16" y="300" width="343" height="50"/>
+                                <rect key="frame" x="16" y="367" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NMc-Oh-Hwc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="hqS-Kp-OrX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
-                                <state key="normal" title="N2 対応コース"/>
+                                <state key="normal" title="始める"/>
                                 <connections>
                                     <segue destination="8sa-Tb-hfE" kind="show" id="ez8-rB-Ix2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa0-5d-15U">
-                                <rect key="frame" x="16" y="240" width="343" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="gdn-tn-gMS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
-                                <state key="normal" title="N1 対応コース"/>
-                                <connections>
-                                    <segue destination="KYV-A4-4N0" kind="show" id="fzh-oN-Yd0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99241000413894653" green="0.95800548791885376" blue="0.81957072019577026" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Qa0-5d-15U" firstAttribute="top" secondItem="Ayl-Sv-1XO" secondAttribute="bottom" constant="44" id="10a-eU-301"/>
                             <constraint firstItem="FVX-i2-O6T" firstAttribute="leading" secondItem="nxC-ul-umM" secondAttribute="leadingMargin" id="3SR-8g-Aml"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ayl-Sv-1XO" secondAttribute="trailing" id="7FN-IR-cWh"/>
-                            <constraint firstItem="Qa0-5d-15U" firstAttribute="leading" secondItem="nxC-ul-umM" secondAttribute="leadingMargin" id="AjD-em-sYP"/>
+                            <constraint firstItem="FVX-i2-O6T" firstAttribute="leading" secondItem="nxC-ul-umM" secondAttribute="leadingMargin" id="5Ys-aW-lAR"/>
                             <constraint firstItem="FVX-i2-O6T" firstAttribute="trailing" secondItem="nxC-ul-umM" secondAttribute="trailingMargin" id="DVG-lW-t8D"/>
-                            <constraint firstItem="Ayl-Sv-1XO" firstAttribute="top" secondItem="S2n-Do-4hD" secondAttribute="bottom" constant="20" id="P7a-6i-mJa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="S2n-Do-4hD" secondAttribute="trailing" id="Q5y-IF-kBn"/>
-                            <constraint firstItem="FVX-i2-O6T" firstAttribute="top" secondItem="Qa0-5d-15U" secondAttribute="bottom" constant="10" id="Qyc-Bl-U9B"/>
                             <constraint firstItem="S2n-Do-4hD" firstAttribute="leading" secondItem="nxC-ul-umM" secondAttribute="leadingMargin" id="Yi1-At-09G"/>
-                            <constraint firstItem="Qa0-5d-15U" firstAttribute="trailing" secondItem="nxC-ul-umM" secondAttribute="trailingMargin" id="cNj-9d-dsH"/>
-                            <constraint firstItem="Ayl-Sv-1XO" firstAttribute="leading" secondItem="nxC-ul-umM" secondAttribute="leadingMargin" id="klZ-At-bzx"/>
+                            <constraint firstItem="FVX-i2-O6T" firstAttribute="trailing" secondItem="nxC-ul-umM" secondAttribute="trailingMargin" id="rGX-NB-7P2"/>
                             <constraint firstItem="S2n-Do-4hD" firstAttribute="top" secondItem="y1x-d0-w60" secondAttribute="bottom" constant="18" id="rhG-yp-DvC"/>
+                            <constraint firstItem="FVX-i2-O6T" firstAttribute="top" secondItem="S2n-Do-4hD" secondAttribute="bottom" constant="211" id="y2p-Nv-VWZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="u3x-Vo-OIt"/>
                     <connections>
-                        <outlet property="ForN1" destination="Qa0-5d-15U" id="PYA-yk-6Hm"/>
                         <outlet property="ForN2" destination="FVX-i2-O6T" id="C8a-dM-84W"/>
-                        <outlet property="LetsSelectCourse" destination="Ayl-Sv-1XO" id="XgF-Mt-EaH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srS-jR-sRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1476" y="274.81259370314842"/>
-        </scene>
-        <!--Under Construction1 View Controller-->
-        <scene sceneID="kax-YI-Ic7">
-            <objects>
-                <viewController id="KYV-A4-4N0" customClass="UnderConstruction1ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fdl-pW-D4E"/>
-                        <viewControllerLayoutGuide type="bottom" id="G9q-qL-cHj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Z3H-bw-E7V">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="このページは現在作成中です。 もうしばらくお待ちください。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcd-9N-VP4">
-                                <rect key="frame" x="16" y="542" width="344" height="105"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="105" id="tzr-kF-NzW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sorry" translatesAutoresizingMaskIntoConstraints="NO" id="wEP-Gs-SG3">
-                                <rect key="frame" x="90" y="169" width="194" height="249"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.90872025489807129" green="0.63973325490951538" blue="0.58034712076187134" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="fcd-9N-VP4" firstAttribute="leading" secondItem="Z3H-bw-E7V" secondAttribute="leadingMargin" id="C3b-SM-HK8"/>
-                            <constraint firstItem="wEP-Gs-SG3" firstAttribute="top" secondItem="Fdl-pW-D4E" secondAttribute="bottom" constant="105" id="CMa-LI-8aR"/>
-                            <constraint firstItem="fcd-9N-VP4" firstAttribute="centerX" secondItem="wEP-Gs-SG3" secondAttribute="centerX" constant="1" id="HvQ-Hl-OOT"/>
-                            <constraint firstItem="fcd-9N-VP4" firstAttribute="top" secondItem="wEP-Gs-SG3" secondAttribute="bottom" constant="124" id="SXE-gV-hhT"/>
-                            <constraint firstAttribute="bottom" secondItem="fcd-9N-VP4" secondAttribute="bottom" constant="20" symbolic="YES" id="n0q-X5-dzo"/>
-                            <constraint firstItem="wEP-Gs-SG3" firstAttribute="trailing" secondItem="Z3H-bw-E7V" secondAttribute="trailingMargin" constant="-75" id="vaM-Lx-9bQ"/>
-                            <constraint firstItem="wEP-Gs-SG3" firstAttribute="leading" secondItem="Z3H-bw-E7V" secondAttribute="leadingMargin" constant="74" id="yh2-6E-Iho"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="UnderConstruction" destination="fcd-9N-VP4" id="WGm-mh-40F"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GWv-lK-QaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2316" y="-545.57721139430294"/>
         </scene>
         <!--Selection View Controller-->
         <scene sceneID="Wvb-Z2-wOS">
@@ -982,20 +913,20 @@ STARTを押して３回発音します</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eR-yC-5BF">
-                                <rect key="frame" x="158" y="353" width="106" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eR-yC-5BF">
+                                <rect key="frame" x="158" y="353" width="168" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="IFV-iR-ceJ"/>
-                                    <constraint firstAttribute="width" constant="106" id="KmS-vw-SUr"/>
+                                    <constraint firstAttribute="width" constant="168" id="KmS-vw-SUr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXc-Xj-4g1">
-                                <rect key="frame" x="157.5" y="353" width="60" height="30"/>
+                                <rect key="frame" x="158" y="353" width="178" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="pyb-gX-juP"/>
+                                    <constraint firstAttribute="width" constant="178" id="pyb-gX-juP"/>
                                     <constraint firstAttribute="height" constant="30" id="tXL-uc-FHj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
@@ -1011,13 +942,13 @@ STARTを押して３回発音します</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WsY-CU-vMs" secondAttribute="trailing" id="177-63-jpk"/>
-                            <constraint firstItem="qXc-Xj-4g1" firstAttribute="centerX" secondItem="Hl7-ZU-F81" secondAttribute="centerX" id="2K1-1o-h99"/>
+                            <constraint firstItem="qXc-Xj-4g1" firstAttribute="centerX" secondItem="Hl7-ZU-F81" secondAttribute="centerX" constant="59.5" id="2K1-1o-h99"/>
                             <constraint firstItem="qXc-Xj-4g1" firstAttribute="top" secondItem="EaU-Hd-I5v" secondAttribute="bottom" constant="133" id="7tA-yJ-BUH"/>
                             <constraint firstItem="WsY-CU-vMs" firstAttribute="top" secondItem="Hl7-ZU-F81" secondAttribute="top" id="Awv-VB-dSy"/>
                             <constraint firstAttribute="trailing" secondItem="EaU-Hd-I5v" secondAttribute="trailing" constant="10" id="C8F-Xp-usH"/>
                             <constraint firstItem="EaU-Hd-I5v" firstAttribute="top" secondItem="Liv-Ra-LaR" secondAttribute="bottom" constant="120" id="HnO-Ym-grJ"/>
                             <constraint firstItem="7eR-yC-5BF" firstAttribute="top" secondItem="EaU-Hd-I5v" secondAttribute="bottom" constant="133" id="Lah-Xl-62Z"/>
-                            <constraint firstItem="7eR-yC-5BF" firstAttribute="centerX" secondItem="Hl7-ZU-F81" secondAttribute="centerX" constant="23.5" id="Vgj-VN-KHc"/>
+                            <constraint firstItem="7eR-yC-5BF" firstAttribute="centerX" secondItem="Hl7-ZU-F81" secondAttribute="centerX" constant="54.5" id="Vgj-VN-KHc"/>
                             <constraint firstItem="ap9-gd-rDO" firstAttribute="top" secondItem="nAg-Fc-ljZ" secondAttribute="bottom" id="X4l-tw-ZYW"/>
                             <constraint firstItem="nAg-Fc-ljZ" firstAttribute="centerX" secondItem="Hl7-ZU-F81" secondAttribute="centerX" id="f7P-Mw-Ia2"/>
                             <constraint firstItem="WsY-CU-vMs" firstAttribute="centerX" secondItem="Hl7-ZU-F81" secondAttribute="centerX" id="hCa-Za-6ec"/>
@@ -1268,10 +1199,10 @@ STARTを押して３回発音します</string>
                                     <action selector="returnToQuestion:" destination="ZIa-Zz-NBP" eventType="touchUpInside" id="A29-EM-uQ2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFG-rV-nuB">
-                                <rect key="frame" x="26" y="323" width="323" height="249"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFG-rV-nuB">
+                                <rect key="frame" x="26" y="337" width="323" height="234"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="249" id="nzN-Cd-B1k"/>
+                                    <constraint firstAttribute="height" constant="234" id="szK-PW-qoW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1309,12 +1240,11 @@ STARTを押して３回発音します</string>
                         </subviews>
                         <color key="backgroundColor" red="0.90872025489999997" green="0.63973325489999999" blue="0.58034712079999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="8sU-bt-u9l" firstAttribute="top" secondItem="TFG-rV-nuB" secondAttribute="bottom" constant="29" id="0NH-3q-BHm"/>
                             <constraint firstItem="K6t-Pp-FF8" firstAttribute="top" secondItem="8sU-bt-u9l" secondAttribute="bottom" constant="30" id="3z5-SI-WdB"/>
                             <constraint firstItem="Krj-b5-imO" firstAttribute="top" secondItem="opf-FQ-SEb" secondAttribute="bottom" constant="20" id="4DN-gH-mzb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TFG-rV-nuB" secondAttribute="trailing" constant="10" id="4PO-ej-pX3"/>
                             <constraint firstItem="2II-wu-kcJ" firstAttribute="top" secondItem="opf-FQ-SEb" secondAttribute="bottom" constant="74" id="Cwb-ia-SZv"/>
-                            <constraint firstItem="TFG-rV-nuB" firstAttribute="leading" secondItem="RrN-od-FDo" secondAttribute="leadingMargin" constant="10" id="Nx8-9d-Lex"/>
+                            <constraint firstItem="8sU-bt-u9l" firstAttribute="top" secondItem="TFG-rV-nuB" secondAttribute="bottom" constant="30" id="HPI-GB-aUp"/>
+                            <constraint firstItem="TFG-rV-nuB" firstAttribute="centerX" secondItem="8sU-bt-u9l" secondAttribute="centerX" id="MRD-hE-z5M"/>
                             <constraint firstItem="Krj-b5-imO" firstAttribute="leading" secondItem="RrN-od-FDo" secondAttribute="leadingMargin" constant="10" id="Zb0-iB-yRK"/>
                             <constraint firstItem="2II-wu-kcJ" firstAttribute="leading" secondItem="RrN-od-FDo" secondAttribute="leading" id="c1L-xC-8bV"/>
                             <constraint firstItem="bkx-zf-w7X" firstAttribute="trailing" secondItem="RrN-od-FDo" secondAttribute="trailingMargin" id="ds7-To-PgS"/>
@@ -1322,6 +1252,7 @@ STARTを押して３回発音します</string>
                             <constraint firstAttribute="trailing" secondItem="2II-wu-kcJ" secondAttribute="trailing" id="k76-hX-2aO"/>
                             <constraint firstItem="8sU-bt-u9l" firstAttribute="leading" secondItem="RrN-od-FDo" secondAttribute="leading" id="lqc-vD-uwp"/>
                             <constraint firstAttribute="trailing" secondItem="8sU-bt-u9l" secondAttribute="trailing" id="mim-gV-yaV"/>
+                            <constraint firstItem="TFG-rV-nuB" firstAttribute="leading" secondItem="Krj-b5-imO" secondAttribute="leading" id="ui1-5K-muk"/>
                             <constraint firstItem="bkx-zf-w7X" firstAttribute="leading" secondItem="RrN-od-FDo" secondAttribute="leadingMargin" id="zQA-f9-tcH"/>
                         </constraints>
                     </view>
@@ -1342,7 +1273,6 @@ STARTを押して３回発音します</string>
         <image name="HTU3" width="387" height="693"/>
         <image name="HTU4" width="389" height="693"/>
         <image name="HTU5" width="389" height="693"/>
-        <image name="Sorry" width="194" height="260"/>
         <image name="batten" width="80" height="80"/>
         <image name="speaker" width="93" height="82"/>
         <image name="unfilledCircle" width="115" height="115"/>
