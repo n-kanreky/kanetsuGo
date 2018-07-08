@@ -32,6 +32,7 @@ class IntroGroupViewController: UIViewController {
             count = count + 1
         }
         Questions.text = questionStrings
+        
         switch cellNumber {
         case 0:
             GroupExp.text = "\(NSLocalizedString("Group1", comment: ""))"

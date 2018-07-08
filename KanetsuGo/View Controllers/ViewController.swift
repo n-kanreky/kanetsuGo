@@ -22,7 +22,6 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     
     //DelegateのSFSpeechRecognizerDelegateとAVAudioPlayerDelegateは、SpeechとAVFoundationのフレームワークの中の機能を使うためにプロトコルを宣言
     var hiddenFlag = false
-    
     var questions = [""]
     var katakana = [""]
     var vietnamese = [""]
@@ -123,7 +122,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         }
     }
 
-    
+
     override func viewWillAppear(_ animated: Bool) {
         
         label.text = ""

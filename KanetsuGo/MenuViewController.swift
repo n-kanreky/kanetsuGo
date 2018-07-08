@@ -16,6 +16,8 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
         //以下でラベルの数だけローカライズ
 //        LetsSelectCourse.text = "\(NSLocalizedString("LetsSelectCourse", comment: ""))"
         //以下でボタンをローカライズ
