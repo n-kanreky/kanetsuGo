@@ -10,11 +10,9 @@ import UIKit
 
 class WT4ViewController: UIViewController {
     //ローカライズ設定
-    @IBOutlet weak var IfNotSure: UILabel!
-    @IBOutlet weak var PressHint: UILabel!
-    @IBOutlet weak var Listen: UILabel!
-    @IBOutlet weak var SkipQ: UILabel!
-    @IBOutlet weak var RevisionList: UILabel!
+
+    @IBOutlet weak var Exp4_skip: UILabel!
+    @IBOutlet weak var Exp4: UILabel!
     
     @IBAction func PageDot(_ sender: UIPageControl) {
     }
@@ -23,12 +21,9 @@ class WT4ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-    IfNotSure.text = "\(NSLocalizedString("IfNotSure", comment: ""))"
-    PressHint.text = "\(NSLocalizedString("PressHint", comment: ""))"
-    Listen.text = "\(NSLocalizedString("Listen", comment: ""))"
-    SkipQ.text = "\(NSLocalizedString("SkipQ", comment: ""))"
-    RevisionList.text = "\(NSLocalizedString("RevisionList", comment: ""))"
-        // Do any additional setup after loading the view.
+    Exp4.text = "\(NSLocalizedString("Exp4", comment: ""))"
+    Exp4_skip.text = "\(NSLocalizedString("Exp4_skip", comment: ""))"
+    
     }
 
     override func didReceiveMemoryWarning() {

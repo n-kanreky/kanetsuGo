@@ -11,13 +11,10 @@
 
 //使い方
 "Instruction" = "Instructions";
-"Step1" = "Step 1  Choose questions";
-"Step2" = "Step 2  Press START and pronounce the word 3 times";
-"IfNotSure" = "If you are not sure...";
-"PressHint" = "Press the hint button, or";
-"Listen" = "Listen to the model pronunciation";
-"SkipQ" = "You can skip the question";
-"RevisionList" = "If you skip, the question will be added to your revision list";
+"Step1" = "Step 1  \nChoose questions";
+"Step2" = "Step 2  \nPress START and pronounce the word 3 times";
+"Exp4" = "If you are not sure... \nPress the hint button, or listen to the model pronunciation.  \nYou can also skip the question.";
+"Exp4_skip" = "If you skip, the question will be added to your revision list.";
 "Begin" = "Now, let us begin!";
 "Start" = "Start";
 "ClickHere" = "Click here";

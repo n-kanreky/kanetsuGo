@@ -16,16 +16,12 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                      ["通行","通信","通知","通訳","通過"],
                      ["生存","生産","生徒","学生","生活"],
                      
-                     ["運動","豊富","利用","世界","連絡"], //Group 7
-        ["料理","勉強","結束","迷惑","工場"],
-        ["電車","制限","限界","紹介","階段"],
-        ["文化","法律","印象","報告","科学"]]
+                     ["文学","哲学","医学","数学","薬学","化学"], //Group 7 学がつく漢語
+                     ["国立","国家","国籍","国際","隣国","国連"],//Group8 国を含む
+                     ["反応","反映","反射","反対","反撃","反撃","違反","反省"],//Group9 反を含む
+                     ["文化","法律","印象","報告","科学"]]
     
-    //                    ["脱出","出身","出陣","出席","出家"],
-    //                    ["商業","減少","招待","少数","食卓"],
-    //                    ["心配","親友","信用","信頼","新聞"],
-    //                    ["水道","水滴","水田","水平","水泡"],
-    //                    ["制限","限界","紹介","拳銃","電車"]]
+    
     var katakana = [["チュウシャをする","友達にチュウイする","反対イケンを言う","オンドが高い","センモン店"],
                     ["コンシュウ","センシュウ","ライシュウ","シュウマツ","マイシュウ","イッシュウカン"],
                     ["シュッセキする","シュッパツする","シュッパンする","シュッシン","テイシュツする"],
@@ -33,15 +29,11 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["ツウコウする","ツウシンする","ツウチする","ツウヤクする","ツウカする"],
                     ["セイゾン","セイサン","セイト","ガクセイ","セイカツ"],
                     
-                    ["ウンドウする","野菜がホウフだ","リヨウする","セカイに広がる","レンラクする"],
-                    ["毎日リョウリする","図書館でベンキョウする","ケッソクが固い","メイワクをかける","コウジョウではたらく"],
-                    ["デンシャにのる","セイゲンする","ゲンカイを感じる","ショウカイする","カイダンを上る"],
+                    ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学んでいる","カガクの実験（じっけん）をする"], //Group7
+                    ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","セカイ的に有名","リンコクの人","コクレン"], //Group8
+                    ["ハンノウする","ハンエイする","ハンシャする","ハンタイする","ハンゲキする","イハンする","ハンセイする"], //Group9
                     ["日本ブンカ","ホウリツを守る（まもる）","インショウを聞く","ホウコクする","カガクが発達（ハッタツ）する"]]
-    //                    ["ダッシュツ","シュッシン","シュツジン","シュッセキ","シュッケ"],
-    //                    ["ショウギョウ","ゲンショウ","ショウタイ","ショウスウ","ショクタク"],
-    //                    ["シンパイ","シンユウ","シンヨウ","シンライ","シンブン"],
-    //                    ["スイドウ","スイテキ","スイデン","スイヘイ","スイホウ"],
-    //                    ["セイゲン","ゲンカイ","ショウカイ","ケンジュウ","デンシャ"]]
+
     var vietnamese = [["chú xạ","chú ý","ý kiến","ôn độ","chuyên môn"],
                       ["tuần này","tuần trước","tuần sau","cuối tuần","hàng tuần","Một tuần"],
                       ["xuất tịch","xuất phát","xuất bản","xuất thân","đề xuất"],
@@ -49,15 +41,11 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                       ["thông hành","thông tín","thông tri","thông dịch","thông quá"],
                       ["sinh tồn","sinh sản","sinh đồ","học sinh","sinh hoạt"],
                       
-                      ["vận động","phong Phú","lợi dụng","thế giới","iên lạc"],
-                      ["liệu lí","miễn cường","kết thúc","mê hoặc","công trường"],
-                      ["xa điện","hạn chế","giới hạn","giới thiệu","Đoạn giai"],
+                      ["Văn học","triết học","y học","toán học","dược học","hóa học"], //Group7
+                      ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Quốc gia láng giềng","Liên Hợp Quốc"],//Group8
+                      ["xa điện","hạn chế","giới hạn","giới thiệu","Đoạn giai"],//Group9
                       ["Văn hóa","Pháp luật","ấn tượng","báo cáo","báo cáo"]]
-    //                      ["thoát xuất","xuất thân","xuất trận","xuất tịch","xuất gia"],
-    //                      ["thương nghiệp","giảm thiểu","chiêu đãi","thiếu, số","thực trác"],
-    //                      ["tâm phối","thân hữu","tín dụng","tín lại","tân văn"],
-    //                      ["thủy đạo","thủy đích","thủy điền","thủy bình","thủy bào"],
-    //                      ["hạn chế","hạn chế","giới thiệu","súng lục","xe điện"]]
+
     
     var pronunciationJ = [["Chuusha","Chuui","Iken","Ondo","Senmon"],
                           ["Konshuu","Senshuu","Raishuu","Shuumatsu","Maishuu","Isshuukan"],
@@ -66,17 +54,12 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                           ["Tsuukou","Tsuushin","Tsuuchi","Tsuuyaku","Tsuuka"],
                           ["Seizon","Seisan","Seito","Gakusei","Seikatsu"],
                           
-                          ["Undou","Houfu","Riyou","Sekai","Renraku"],
-                          ["Ryouri","Benkyou","Kessoku","Meiwaku","Koujou"],
-                          ["Densha","Seigen","Genkai","Shoukai","Kaidan"],
+                          ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku"], //Group7
+                          ["Kokuritsu","Kokka","Kokuseki","Kokusai","Rinkoku"], //Group 8
+                          ["Hannou","Hanei","Hansha","Hantai","Hangeki","Ihan","Hansei"], //Group 9
                           ["Bunka","Houritsu","Inshou","Houkoku","Kagaku"]]
     
-    //                         ["Dasshutsu","Shusshin","shutsujin","Shusseki","Shukke"]]
-    //                          ["Shougyou","Genshou","Shoutai","Shousuu","Shokutaku"],
-    //                          ["Shinpai","Shinyuu","Shinyou","Shinrai","Shinbun"],
-    //                          ["Suidou","Suiteki","Suiden","Suihei","Suihou"],
-    //                          ["Seigen","Genkai","Shoukai","Kenjuu","Densha"]]
-    
+
     
     var reibunJ =
         [[
