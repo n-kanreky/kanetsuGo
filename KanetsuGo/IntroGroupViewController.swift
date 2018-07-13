@@ -33,6 +33,8 @@ class IntroGroupViewController: UIViewController {
         }
         Questions.text = questionStrings
         
+    
+        
         switch cellNumber {
         case 0:
             GroupExp.text = "\(NSLocalizedString("Group1", comment: ""))"
@@ -40,31 +42,31 @@ class IntroGroupViewController: UIViewController {
             question.text = "Group \(cellNumber + 1)     音が似ている漢語"
         case 1:
             GroupExp.text = "\(NSLocalizedString("Group2", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   週  を含む漢語"
+            question.text = "Group \(cellNumber + 1)   週 tuần を含む漢語"
         case 2:
             GroupExp.text = "\(NSLocalizedString("Group3", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   出  を含む漢語"
+            question.text = "Group \(cellNumber + 1)   日 Ngày を含む漢語"
         case 3:
             GroupExp.text = "\(NSLocalizedString("Group4", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   上  を含む漢語"
+            question.text = "Group \(cellNumber + 1)   上 trên を含む漢語"
         case 4:
             GroupExp.text = "\(NSLocalizedString("Group5", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   通  を含む漢語"
+            question.text = "Group \(cellNumber + 1)   通 thông を含む漢語"
         case 5:
             GroupExp.text = "\(NSLocalizedString("Group6", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   生  を含む漢語"
+            question.text = "Group \(cellNumber + 1)   生 sinh を含む漢語"
         case 6:
             GroupExp.text = "\(NSLocalizedString("Group7", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   同形同義"
-        case 7:
-            GroupExp.text = "\(NSLocalizedString("Group8", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   同形異議"
-        case 8:
-            GroupExp.text = "\(NSLocalizedString("Group9", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   配列が逆の語"
-        case 9:
-            GroupExp.text = "\(NSLocalizedString("Group10", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   和製漢語"
+            question.text = "Group \(cellNumber + 1)   学 học を含む漢語"
+//        case 7:
+//            GroupExp.text = "\(NSLocalizedString("Group8", comment: ""))"
+//            question.text = "Group \(cellNumber + 1)   同形異議"
+//        case 8:
+//            GroupExp.text = "\(NSLocalizedString("Group9", comment: ""))"
+//            question.text = "Group \(cellNumber + 1)   配列が逆の語"
+//        case 9:
+//            GroupExp.text = "\(NSLocalizedString("Group10", comment: ""))"
+//            question.text = "Group \(cellNumber + 1)   和製漢語"
         default:
             break
             
