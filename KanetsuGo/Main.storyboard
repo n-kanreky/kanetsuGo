@@ -48,22 +48,6 @@
                                 <color key="textColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e7E-Kw-rev">
-                                <rect key="frame" x="0.0" y="106" width="320" height="395"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" red="1" green="0.96214724831940834" blue="0.45566309184648501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="95" id="RI2-Ij-UuB">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="95"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RI2-Ij-UuB" id="1u6-Lu-RlJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.96214724829999998" blue="0.45566309179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igb-bl-cQ1">
                                 <rect key="frame" x="0.0" y="501" width="320" height="67"/>
                                 <constraints>
@@ -98,6 +82,22 @@
                                 <color key="textColor" red="0.23319956659999999" green="0.5312157273" blue="0.71769320960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e7E-Kw-rev">
+                                <rect key="frame" x="0.0" y="98" width="320" height="395"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.96214724831940834" blue="0.45566309184648501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="95" id="RI2-Ij-UuB">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RI2-Ij-UuB" id="1u6-Lu-RlJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96214724829999998" blue="0.45566309179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -109,8 +109,8 @@
                             <constraint firstItem="7fq-Dg-atT" firstAttribute="top" secondItem="kxc-Xn-ads" secondAttribute="bottom" id="X8D-ir-dpF"/>
                             <constraint firstItem="lLs-dY-Cfe" firstAttribute="trailing" secondItem="ahm-v0-FiD" secondAttribute="trailingMargin" id="cgC-Am-kLe"/>
                             <constraint firstItem="7fq-Dg-atT" firstAttribute="trailing" secondItem="lLs-dY-Cfe" secondAttribute="trailing" id="k5N-TQ-vN7"/>
-                            <constraint firstItem="e7E-Kw-rev" firstAttribute="top" secondItem="6Ab-V1-9j3" secondAttribute="bottom" constant="21" id="lho-f3-gld"/>
-                            <constraint firstItem="Igb-bl-cQ1" firstAttribute="top" secondItem="e7E-Kw-rev" secondAttribute="bottom" id="mtd-Z8-PFE"/>
+                            <constraint firstItem="e7E-Kw-rev" firstAttribute="top" secondItem="6Ab-V1-9j3" secondAttribute="bottom" constant="13" id="lho-f3-gld"/>
+                            <constraint firstItem="Igb-bl-cQ1" firstAttribute="top" secondItem="e7E-Kw-rev" secondAttribute="bottom" constant="8" id="mtd-Z8-PFE"/>
                             <constraint firstAttribute="trailing" secondItem="e7E-Kw-rev" secondAttribute="trailing" id="na7-4h-dVB"/>
                             <constraint firstItem="6Ab-V1-9j3" firstAttribute="leading" secondItem="ahm-v0-FiD" secondAttribute="leading" constant="50" id="sEQ-oc-hb2"/>
                             <constraint firstItem="e7E-Kw-rev" firstAttribute="trailing" secondItem="Igb-bl-cQ1" secondAttribute="trailing" id="vIZ-ad-xl3"/>
@@ -420,7 +420,7 @@
                                 <color key="sectionIndexColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.89458956940000001" blue="0.60660827360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="82" id="o7m-rk-3ql">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="82" id="o7m-rk-3ql">
                                         <rect key="frame" x="0.0" y="28" width="315" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o7m-rk-3ql" id="GIS-Bc-YQo">
@@ -798,7 +798,7 @@ STARTを押して３回発音します</string>
                                 <rect key="frame" x="0.0" y="58" width="320" height="229"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghb-cg-fci">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghb-cg-fci">
                                         <rect key="frame" x="23" y="14" width="274" height="200"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
@@ -816,7 +816,7 @@ STARTを押して３回発音します</string>
                                         <rect key="frame" x="0.0" y="0.0" width="192" height="128"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjy-Du-Sku">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjy-Du-Sku">
                                                 <rect key="frame" x="19" y="0.0" width="173" height="120"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
@@ -1248,7 +1248,7 @@ STARTを押して３回発音します</string>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRt-es-VPE">
-                                                <rect key="frame" x="0.0" y="8" width="320" height="62"/>
+                                                <rect key="frame" x="0.0" y="8" width="320" height="63"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                                 <state key="normal" title="始める">
@@ -1272,11 +1272,12 @@ STARTを押して３回発音します</string>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="ForN2" destination="fRt-es-VPE" id="PqO-eh-fO2"/>
+                        <outlet property="LetsStart" destination="PuU-wK-8lF" id="v65-93-tyo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geI-dy-A0e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1370.625" y="223.94366197183098"/>
+            <point key="canvasLocation" x="1503" y="220"/>
         </scene>
         <!--Intro Group View Controller-->
         <scene sceneID="pVf-IS-CgM">
@@ -1295,11 +1296,11 @@ STARTを押して３回発音します</string>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-FI-srp">
-                                                <rect key="frame" x="0.0" y="113" width="320" height="69"/>
+                                                <rect key="frame" x="0.0" y="112" width="320" height="69"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBO-jC-e2L">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="backgroundColor" red="0.90872025489999997" green="0.63973325489999999" blue="0.58034712079999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
@@ -1354,7 +1355,7 @@ STARTを押して３回発音します</string>
                                 <color key="backgroundColor" red="1" green="0.50838789139999996" blue="0.20106788279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yEp-bv-pSp">
-                                <rect key="frame" x="0.0" y="242" width="320" height="326"/>
+                                <rect key="frame" x="0.0" y="241" width="320" height="327"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9uN-3v-eBN">
@@ -1362,7 +1363,7 @@ STARTを押して３回発音します</string>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GroupExp" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4s-Qb-mYX">
-                                                <rect key="frame" x="20" y="0.0" width="280" height="255"/>
+                                                <rect key="frame" x="20" y="0.0" width="280" height="256"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1372,11 +1373,11 @@ STARTを押して３回発音します</string>
                                         <color key="backgroundColor" red="0.90872025489999997" green="0.63973325489999999" blue="0.58034712079999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bIs-T9-1In">
-                                        <rect key="frame" x="0.0" y="254" width="320" height="72"/>
+                                        <rect key="frame" x="0.0" y="254" width="320" height="73"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwD-iq-5Kr">
-                                                <rect key="frame" x="0.0" y="-9" width="320" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                                 <state key="normal" title="始める"/>
@@ -1417,6 +1418,6 @@ STARTを押して３回発音します</string>
         <image name="unfilledCircle" width="115" height="115"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u0w-48-aPl"/>
+        <segue reference="Qln-Kj-2vK"/>
     </inferredMetricsTieBreakers>
 </document>

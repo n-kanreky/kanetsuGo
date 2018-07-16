@@ -38,7 +38,7 @@ class IntroGroupViewController: UIViewController {
         switch cellNumber {
         case 0:
             GroupExp.text = "\(NSLocalizedString("Group1", comment: ""))"
-            print("Group1")
+           //Group 1
             question.text = "Group \(cellNumber + 1)     音が似ている漢語"
         case 1:
             GroupExp.text = "\(NSLocalizedString("Group2", comment: ""))"
@@ -48,7 +48,7 @@ class IntroGroupViewController: UIViewController {
             question.text = "Group \(cellNumber + 1)   日 Ngày を含む漢語"
         case 3:
             GroupExp.text = "\(NSLocalizedString("Group4", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   上 trên を含む漢語"
+            question.text = "Group \(cellNumber + 1)   月 Tháng を含む漢語"
         case 4:
             GroupExp.text = "\(NSLocalizedString("Group5", comment: ""))"
             question.text = "Group \(cellNumber + 1)   通 thông を含む漢語"

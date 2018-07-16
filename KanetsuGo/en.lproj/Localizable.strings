@@ -5,6 +5,8 @@
   Created by クロス尚美 on 2018/04/05.
   Copyright © 2018年 NC. All rights reserved.
 */
+// Front Page
+"LetsStart" = "ベトナム語の中の漢語を使って、日本語の中の漢字熟語とその発音を学びましょう";
 //Q Selection
 "QSelect" = "Select Questions";
 "toInstruction" = "To Instruction";
@@ -47,11 +49,11 @@
 //グループごとの説明
 "Group1" = "Group 1 lists Kanetsugo and Kango that are similar in pronunciation.";
 "Group2" = "Group 2 is a collection of Kanetsugo that has 週 and corresponds to tuần.";
-"Group3" = "Group 3 is a collection of Kanetsugo that has 出 and corresponds to xuất.";
-"Group4" = "Group 4 is a collection of Kanetsugo that has 上 and corresponds to thượng.";
+"Group3" = "Group 3 is a collection of Kanetsugo that has 日 and corresponds to Ngày.";
+"Group4" = "Group 4 is a collection of Kanetsugo that has 月 and corresponds to Tháng.";
 "Group5" = "Group 5 is a collection of Kanetsugo that has 通 and corresponds to thông.";
 "Group6" = "Group 6 is a collection of Kanetsugo that has 生 and corresponds to sinh.";
-"Group7" = "Group 7 is a collection of Kanetsugo that has the same shape and meaning with corresponding Japanese Kango";
+"Group7" = "Group 7 is a collection of Kanetsugo that has 学 and corresponds to học.";
 "Group8" = "Group 8 is a collection of Kanetsugo that has the same shape(base character order) but different meaning with corresponding Japanese Kango";
 "Group9" = "Group 9 is a collection of Kanetsugo that has the different character order with corresponding Japanese Kango";
 "Group10" = "Group 10 is a collection of sino-Japanese words that were originated in Japan, and introduced in Vietnamese as Kanetsugo";

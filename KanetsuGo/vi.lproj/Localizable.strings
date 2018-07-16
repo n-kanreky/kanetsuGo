@@ -6,6 +6,8 @@
   Copyright © 2018年 NC. All rights reserved.
 */
 //Q Selection
+// Front Page
+"LetsStart" = "ベトナム語の中の漢語を使って、日本語の中の漢字熟語とその発音を学びましょう";
 "QSelect" = "Chọn một vấn đề";
 "toInstruction" = "Cách sử dụng";
 
@@ -47,11 +49,11 @@
 //グループごとの説明
 "Group1" = "Trong nhóm 1, chúng tôi thu thập một cái gì đó rất giống nhau trong cách phát âm của Hán Trung Quốc để phát âm tiếng Nhật tương ứng của Nhật Bản.";
 "Group2" = "Trong nhóm 2, chúng tôi thu thập một cái gì đó bao gồm Kanji 週 trong tiếng Hán.出 xu vị trí trong phát âm của Hanchinese シュウ";
-"Group3" = "Trong nhóm 3, sẽ liệt kê các từ bao gồm cả 「ngày」. Ngày có nghĩa là ngày hoặc ngày. Tôi phát âm nó như Nichi hay Hi.";
-"Group4" = "Trong nhóm 4, chúng tôi thu thập một cái gì đó có chứa chữ Hán 上　trong tiếng Hán. 上 thượng trong Hán Trung Quốc được phát âm là ジョウ";
+"Group3" = "Trong nhóm 3, sẽ liệt kê các từ bao gồm cả 「ngày」. Ngày có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 日 hay ヒ、ジツ、ニチ.";
+"Group4" = "Trong nhóm 4, sẽ liệt kê các từ bao gồm cả 「Tháng」. Tháng có nghĩa là ngày hoặc Tháng. Tôi phát âm nó như 月 hay ゲツ、ガツ、ツキ.";
 "Group5" = "Trong nhóm 5, chúng tôi thu thập một cái gì đó chứa chữ Hán 通 trong tiếng Hán. 通　trong chữ Hán Trung Quốc phát âm ツウ";
 "Group6" = "Trong nhóm 6, chúng tôi thu thập một cái gì đó có chứa các ký tự Hán 生 trong tiếng Hán. Sinh 生 trong tiếng Hán được phát âm là セイ";
-"Group7" = "Trong nhóm 7, ngôn ngữ Hán và từ Trung Quốc tương ứng trong tiếng Nhật là cùng một hình thức (cùng một chữ cái được dựa trên) và ý nghĩa là như nhau.";
+"Group7" = "Trong nhóm 7, sẽ liệt kê các từ bao gồm cả 「học」. Học có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 学　hay ガク.";
 "Group8" = "Trong nhóm 8, chữ Hán Trung Quốc và các từ Trung Quốc tương ứng trong tiếng Nhật được thu thập theo cùng một dạng (giống nhau dựa trên cùng một hình thức) nhưng khác nhau.";
 "Group9" = "Trong nhóm 9, chúng tôi tập hợp những ngôn ngữ Hán - Kogo và các từ tiếng Trung tương ứng bằng tiếng Nhật được đảo ngược theo thứ tự.";
 "Group10" = "Trong nhóm 10, chúng tôi thu thập tiếng Hán và tiếng Nhật tương ứng với Từ tiếng Nhật trong tiếng Nhật.";

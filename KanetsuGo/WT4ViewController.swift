@@ -23,7 +23,23 @@ class WT4ViewController: UIViewController {
         super.viewDidLoad()
     Exp4.text = "\(NSLocalizedString("Exp4", comment: ""))"
     Exp4_skip.text = "\(NSLocalizedString("Exp4_skip", comment: ""))"
-    
+        // 行間の変更(正確には行自体の高さを変更している。)
+        let lineHeight:CGFloat = 25.0
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.minimumLineHeight = lineHeight
+        paragraphStyle.maximumLineHeight = lineHeight
+        let attributedText = NSMutableAttributedString(string: Exp4_skip.text!)
+        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        Exp4_skip.attributedText = attributedText
+        // 行間の変更(正確には行自体の高さを変更している。 ２箇所行間を変えるLabelがある場合は、＝２をつけて区別する
+        let lineHeight2:CGFloat = 30.0
+        let paragraphStyle2 = NSMutableParagraphStyle()
+        paragraphStyle2.minimumLineHeight = lineHeight2
+        paragraphStyle2.maximumLineHeight = lineHeight2
+        let attributedText2 = NSMutableAttributedString(string: Exp4.text!)
+        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle2, range: NSMakeRange(0, attributedText.length))
+        Exp4.attributedText = attributedText2
+        
     }
 
     override func didReceiveMemoryWarning() {
