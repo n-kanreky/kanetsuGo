@@ -13,9 +13,9 @@ class WT1ViewController: UIViewController {
     @IBOutlet weak var Instruction: UILabel!
     @IBAction func PageDot(_ sender: UIPageControl) {
     }
-    @IBAction func skip(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+    //@IBAction func skip(_ sender: Any) {
+        //dismiss(animated: true, completion: nil)
+    //}
     override func viewDidLoad() {
         super.viewDidLoad()
         //以下でラベルの数だけローカライズ

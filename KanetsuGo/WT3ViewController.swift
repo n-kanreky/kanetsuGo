@@ -12,9 +12,7 @@ class WT3ViewController: UIViewController {
     @IBOutlet weak var Step2: UILabel!
     @IBAction func PageDot(_ sender: UIPageControl) {
     }
-    @IBAction func skip(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
     Step2.text = "\(NSLocalizedString("Step2", comment: ""))"

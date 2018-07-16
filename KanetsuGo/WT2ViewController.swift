@@ -12,9 +12,7 @@ class WT2ViewController: UIViewController {
     @IBOutlet weak var Step1: UILabel!
     @IBAction func PageDot(_ sender: UIPageControl) {
     }
-    @IBAction func skip(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     Step1.text = "\(NSLocalizedString("Step1", comment: ""))" //ローカライズ
