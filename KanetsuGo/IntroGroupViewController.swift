@@ -58,15 +58,16 @@ class IntroGroupViewController: UIViewController {
         case 6:
             GroupExp.text = "\(NSLocalizedString("Group7", comment: ""))"
             question.text = "Group \(cellNumber + 1)   学 học を含む漢語"
-//        case 7:
-//            GroupExp.text = "\(NSLocalizedString("Group8", comment: ""))"
-//            question.text = "Group \(cellNumber + 1)   同形異議"
-//        case 8:
-//            GroupExp.text = "\(NSLocalizedString("Group9", comment: ""))"
-//            question.text = "Group \(cellNumber + 1)   配列が逆の語"
-//        case 9:
-//            GroupExp.text = "\(NSLocalizedString("Group10", comment: ""))"
-//            question.text = "Group \(cellNumber + 1)   和製漢語"
+        case 7:
+            GroupExp.text = "\(NSLocalizedString("Group8", comment: ""))"
+            question.text = "Group \(cellNumber + 1)   国　Quốc を含む漢語"
+        case 8:
+            GroupExp.text = "\(NSLocalizedString("Group9", comment: ""))"
+            question.text = "Group \(cellNumber + 1)   反　Phản を含む漢語"
+        case 9:
+            GroupExp.text = "\(NSLocalizedString("Group10", comment: ""))"
+            question.text = "Group \(cellNumber + 1)   地 đất を含む漢語"
+     
         default:
             break
             

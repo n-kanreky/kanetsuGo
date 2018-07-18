@@ -16,9 +16,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                      ["通行","通信","通知","通訳","通過"], //Group 5
                      ["生存","生産","生徒","学生","生活"], //Group 6
                      
-                     ["文学","哲学","医学","数学","薬学","化学"]] //Group 7 学がつく漢語
-//                     ["国立","国家","国籍","国際","隣国","国連"],//Group8 国を含む
-//                     ["反応","反映","反射","反対","反撃","違反","反省"],//Group9 反を含む
+                     ["文学","哲学","医学","数学","薬学","化学"], //Group 7 学がつく漢語
+                     ["国立","国家","国籍","国際","国連"], //Group 8 国を含む
+                     ["反応","反映","反射","反対","反撃","違反","反省"], //Group 9 反を含む
+                     ["地面","地球","地上","地下","地下鉄","土地"]] //Group 10 地を含む
 //                     ["文化","法律","印象","報告","科学"]]
     
     
@@ -29,9 +30,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["ツウコウする","ツウシンする","ツウチする","ツウヤクする","ツウカする"], //Group 5
                     ["セイゾン","セイサン","セイト","ガクセイ","セイカツ"], //Group 6
                     
-                    ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）"]] //Group7
-//                    ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","リンコクの人","コクレン"], //Group8
-//                    ["ハンノウする","ハンエイする","ハンシャする","ハンタイする","ハンゲキする","イハンする","ハンセイする"], //Group9
+                    ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）"], //Group 7
+                    ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン"], //Group 8
+                    ["ハンノウする","ハンエイする","ハンシャする","ハンタイする","ハンゲキする","イハンする","ハンセイする"], //Group 9
+                    ["ジメンに落ちた","チキュウを守る","チジョウに出る","チカにおりる","チカテツに乗る","広いトチ"]] //Group 10
 //                    ["日本ブンカ","ホウリツを守る（まもる）","インショウを聞く","ホウコクする","カガクが発達（ハッタツ）する"]]
 
     var vietnamese = [["chú ý","ý kiến","Chuẩn bị"],//Group 1
@@ -41,9 +43,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                       ["thông hành","thông tín","thông tri","thông dịch","thông quá"],// Group 5
                       ["sinh tồn","sinh sản","sinh đồ","học sinh","sinh hoạt"], //Group 6
                       
-                      ["Văn học","triết học","y học","toán học","dược học","hóa học"]] //Group7
-//                      ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Quốc gia láng giềng","Liên Hợp Quốc"],//Group8
-//                      ["xa điện","hạn chế","giới hạn","giới thiệu","Đoạn giai"],//Group9
+                      ["Văn học","triết học","y học","toán học","dược học","hóa học"], //Group7
+                      ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Liên Hợp Quốc"],//Group8
+                      ["Phản ứng","Phản ánh","Sự phản chiếu","Phản đối","Phản công","Vi phạm","Sự phản chiếu"],//Group9
+                      ["Mặt đất","Trái đất","Trên mặt đất","Tầng hầm","Đất đai"]]//Group10
 //                      ["Văn hóa","Pháp luật","ấn tượng","báo cáo","báo cáo"]]
 
     
@@ -54,9 +57,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["Tsuukou","Tsuushin","Tsuuchi","Tsuuyaku","Tsuuka"],  //Group 5
                     ["Seizon","Seisan","Seito","Gakusei","Seikatsu"], //Group 6
     
-                    ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku"]] //Group7
-//                          ["Kokuritsu","Kokka","Kokuseki","Kokusai","Rinkoku"], //Group 8
-//                          ["Hannou","Hanei","Hansha","Hantai","Hangeki","Ihan","Hansei"], //Group 9
+                    ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku"], //Group7
+                    ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
+                    ["Hannou","Hanei","Hansha","Hantai","Hangeki","Ihan","Hansei"], //Group 9
+                    ["Jimen","Chikyuu","Chijou","Chika","Chikatetsu","Tochi"]] //Group 10
 //                          ["Bunka","Houritsu","Inshou","Houkoku","Kagaku"]] 
     
 
@@ -112,19 +116,29 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["医学が進み、人間が長生きできるようになった。\n\nCùng vơi sự tiến bộ của y học, con người cũng có thể sống lâu hơn. \n\nこれは哲学と宗教学の境界を超えた研究だ。\n\nNgười ta cho rằng Y học cùng với Triết học là ngành học có từ xa xưa nhất."],
              ["彼は有名な数学者だ。\n\n Ông là một nhà toán học nổi tiếng. \n\n高校の時から数学が得意だった。\n\n Toán học tốt ở trường trung học."],
              ["大学では薬学を学んでいる。\n\nTôi đang học dược tại trường đại học. \n\n薬学部を卒業して、薬剤師になった。\n\nTôi tốt nghiệp Khoa Khoa học Dược phẩm và trở thành dược sĩ。"],
-             ["化学と科学は日本語で発音が同じだ。\n\n Hóa học và khoa học có cùng cách phát âm bằng tiếng Nhật. \n\n彼はノーベル化学賞を受賞した。\n\nÔng được trao giải Nobel Hóa học."]]] //Group 7
+             ["化学と科学は日本語で発音が同じだ。\n\n Hóa học và khoa học có cùng cách phát âm bằng tiếng Nhật. \n\n彼はノーベル化学賞を受賞した。\n\nÔng được trao giải Nobel Hóa học."]], //Group 7
             //8
-//            [["私は料理するのが得意だ。\n\n Tôi giỏi nấu ăn.\n\n日本料理の中で何が一番好きですか。\n\n Trong các mốn ăn Nhật Bản bạn thích món nào nhất."],
-//             ["毎日、5時間日本語を勉強する。\n\n Học tiếng Nhật 5 tiếng mỗi ngày.\n\n日本語の勉強の中で何が一番難しいですか。 \n\n Môn nào khó nhất trong các môn học tiếng Nhật."],
-//             ["サッカー部は結束が堅い。\n\n Câu lạc bộ bóng đá bị ràng buộc chặt chẽ.\n\nみんなで結束して、課題を解決した。 \n\n Chúng tôi đoàn kết với nhau và giải quyết vấn đề."],
-//             ["人に迷惑をかけるのはやめましょう。\n\n Hãy thôi làm phiền mọi người.\n\n図書館で大声で話をすると迷惑だ。 \n\n Nói chuyện lớn tiếng trong thư viện sẽ làm phiền mọi người xung quanh."],
-//             ["この辺りは工場が多い。\n\n Vùng này có nhiều công trường.\n\n私の父は工場で働いている。 \n\n Bố tôi làm việc trong công trường."]],
-//            //9
-//            [["踏切事故のため電車が遅れた。\n\n Xe điện bị trễ do tai nạn đường sắt.\n\n神戸駅で電車に乗って、大阪駅で降りる。 \n\n Tôi lên xe điện ở ga kobe và xuống ở ga Osaka."],
-//             ["高速道路の制限速度を守る。\n\n Tuân thủ tốc độ qui định ở đường cao tốc.\n\n会場の入場者を制限する。 \n\n Hạn chế người vào hội trường."],
-//             ["我慢の限界を超える。\n\n Vượt quá giới hạn chịu đựng.\n\nこの暑さは体力の限界だ。 \n\n Nhiệt này là giới hạn của sức mạnh."],
-//             ["彼女を両親に紹介する。\n\n Giới thiệu cô ấy với cha mẹ.\n\nパーティーの初めに自己紹介をする。 \n\n Giới thiệu bản thân lúc bắt đầu bữa tiệc."],
-//             ["エレベーターではなく階段を使う。\n\n Sử dụng cầu thang chứ không phải thang máy.\n\n階段から転がり落ちた。\n\n Té lăn xuống từ cầu thang."]],
+            [["これが新しい国立劇場です。\n\n Đây là Nhà hát Quốc gia mới.\n\n日本に国立大学はいくつありますか。\n\n Có bao nhiêu trường đại học quốc gia ở Nhật Bản?"],
+             ["アフリカに新しい国家が生まれた。\n\n Một quốc gia mới được sinh ra ở châu Phi.\n\n試験に合格して、国家公務員になった。 \n\n Sau khi vượt qua kỳ thi, tôi đã trở thành một công chức quốc gia."],
+             ["国籍はどこですか。\n\n Quốc tịch của bạn ở đâu?\n\n国籍はベトナムです。 \n\n Quốc tịch là người Việt Nam."],
+             ["私の専門は国際関係だ。\n\n Chuyên môn của tôi là quan hệ quốc tế.\n\n東京国際空港は千葉県にあります。\n\n Sân bay quốc tế Tokyo nằm ở quận Chiba."],
+             ["国連は国際連合の略だ。\n\n Liên Hợp Quốc là viết tắt của Liên Hiệp Quốc.\n\n国連は1945年に設立された国際機関です。\n\n Liên Hợp Quốc là một tổ chức quốc tế được thành lập vào năm 1945."]],//Group 8
+            //9
+           [["呼びかけても何の反応もない。\n\n Gọi nhưng không có phản ứng gì.\n\n薬が合わなかったらしく拒絶反応を起こした。\n\n Hình như là không hợp thuốc nên đã gây ra phản ứng kháng thuốc."],
+             ["ファッションは常にその時代を反映していると言える。\n\n Thời trang thường phản ảnh thời đại đó.\n\nドライバーの運転パターンを反映した自動操縦装置が開発されました。\n\n Một lái tự động phản ánh mô hình lái xe của người lái xe đã được phát triển."],
+             ["雨のしずくが車のライトに反射して、きれいだった。\n\n Mưa rơi phản chiếu trên ánh sáng của chiếc xe và nó thật đẹp. \n\n このクリスタルは光の反射によって7色で輝きます。 \n\n Tinh thể này tỏa sáng trong bảy màu sắc bởi sự phản chiếu của ánh sáng."],
+             ["私は彼の意見に反対です。\n\n Đảng đối lập đang tìm cơ hội phản kích lại trong kỳ bầu cử tới.\n\n彼の意見に賛成の人は反対の人より少ない。\n\n Số người tán thành ý kiến của anh ấy ít hơn số người phản đối."],
+             ["野党は次の選挙で反撃する機会をうかがっている。\n\n Đảng đối lập đang tìm cơ hội phản kích lại trong kỳ bầu cử tới.\n\nそれはサッカーのルール違反です。 \n\n Đó là một sự vi phạm các quy tắc bóng đá."],
+             ["交通違反を取り締まる。\n\n Kiểm soát vi phạm giao thông.\n\n予想外の反撃にあい、苦戦している。 \n\n Phải chống đỡ rất vất vả với sự phản kích bất ngờ của đối phương."],
+             ["反省点を日記に書く\n\n Viết điểm phản chiếu trong nhật ký.\n\n失敗の原因を明らかにし､反省して次の成功につなげる｡\n\n Làm rõ nguyên nhân thất bại và tự kiểm điểm chính là chìa khóa dẫn đến thành công."]], //Group 9
+    
+           [["地面がぬれていて、すべりやすいので気をつけてください。\n\n Mặt đất rất trơn, dễ trượt ngã nên hãy cẩn thận.\n\n地面を蹴って走った。\n\nDậm lên mặt đất mà chạy."],
+             ["地球の４分の１は陸だ。\n\nMột phần từ trái đất là lục địa.\n\n月は地球のまわりを回っている。\n\nMặt trăng quay quanh trái đất."],
+             ["このビルは地下３階、地上１０階建てだ。\n\nTòa nhà này có 3 tầng hầmvà 10 tầng trên mặt đất. \n\n地上に無事着陸した。\n\nTôi hạ cánh an toàn trên mặt đất."],
+             ["日本のデパートの地下はたいてい食料品売り場だ。\n\n Tầng hầm của các bách hóa ở Nhật thường là nơi bán thực phẩm.n\n 地下の貯蔵庫にワインを入れておく。n\nĐể rượu vang vào kho chứa dưới tầng hầm"],
+             ["地下鉄に乗るために、エスカレーターでおりる。\n\n Để đi tàu điện ngầm phải xuống dưới bằng thang cuốn.n\n この道の真下に地下鉄が通っている。n\nNgay bên dưới con đường này có tàu điện ngầm chạy qua."],
+             ["家を建てるために土地を買った。\n\n Tôi đã mua đất để xây nhà.n\n 工事の前に、土地の測量を実施する。n\n Trước khi xây dựng, tiến hành đo đạc đất đai."]]] //Group 10
+    
 //            //10
 //            [["日本文化を学ぶ。\n\n Học văn hoá Nhật Bản.\n\n11月3日は「文化の日」で祝日だ。 \n\n Ngày 3 tháng 11 là ＊ngày văn hóa＊ và đó là một ngày lễ."],
 //             ["私は日本の法律を勉強している。\n\n Tôi học luật Nhật Bản.\n\n彼は有名な法律学者だ。 \n\n Ông là một học giả luật nổi tiếng."],
@@ -199,13 +213,14 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             cell.textLabel!.text = "Group \(indexPath.row + 1)   生 sinh を含む漢語"
         case 6:
             cell.textLabel!.text = "Group \(indexPath.row + 1)   学 học を含む漢語"
-//        case 7:
-//            cell.textLabel!.text = "Group \(indexPath.row + 1)   国　　を含む漢語"
-//        case 8:
-//            cell.textLabel!.text = "Group \(indexPath.row + 1)   反　　を含む漢語"
-//        case 9:
-//            cell.textLabel!.text = "Group \(indexPath.row + 1)   日本で作られた漢語"
+        case 7:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   国　quốc を含む漢語"
+        case 8:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   反 phản を含む漢語"
+        case 9:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   地 đất を含む漢語"
             
+        
             
         default:
             break // do nothing
