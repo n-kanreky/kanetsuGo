@@ -47,13 +47,13 @@
 "LetsGoOnToNextLevel" = "Thách thức danh sách các vấn đề tiếp theo";
 "GoToNextQuestion" = "Vấn đề tiếp theo";
 //グループごとの説明
-"Group1" = "Nhóm 1 tương tự như cách phát âm tiếng Việt và cách phát âm tiếng Nhật.Trong tiếng Việt có một từ Trung Quốc cũ.Điều này được gọi là 「漢越語」.Hãy xem xét chỉ ba ví dụ ở đây.";
-"Group2" = "Nhóm ２ lấy một từ bao gồm các chữ cái của 「週」（Tuần）. 週 sẽ phát âm シュウ.";
-"Group3" = "Trong nhóm 3, sẽ liệt kê các từ bao gồm cả 「ngày」. Ngày có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 日 hay ジツ、ニチ.";
-"Group4" = "Trong nhóm 4, sẽ liệt kê các từ bao gồm cả 「Tháng」. Tháng có nghĩa là ngày hoặc Tháng. Tôi phát âm nó như 月 hay ゲツ、ガツ.";
-"Group5" = "Trong nhóm 5, chúng tôi thu thập một cái gì đó chứa chữ Hán 通 trong tiếng Hán. 通　trong chữ Hán Trung Quốc phát âm ツウ";
-"Group6" = "Trong nhóm 6, chúng tôi thu thập một cái gì đó có chứa các ký tự Hán 生 trong tiếng Hán. Sinh 生 trong tiếng Hán được phát âm là セイ";
+"Group1" = "Trong nhóm 1, tương tự như cách phát âm tiếng Việt và cách phát âm tiếng Nhật.Trong tiếng Việt có một từ Trung Quốc cũ.Điều này được gọi là 「漢越語」.Hãy xem xét chỉ ba ví dụ ở đây.";
+"Group2" = "Trong nhóm 2, Các từ bao gồm 週　(Tuần) sẽ được liệt kê. Sinh có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 週　hay シュウ.";
+"Group3" = "Trong nhóm 3, Các từ bao gồm 日　(Ngày) sẽ được liệt kê. Ngày có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 日　hay ジツ、ニチ.";
+"Group4" = "Trong nhóm 4, Các từ bao gồm 月　(Tháng) sẽ được liệt kê. Tháng có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 月　hay ゲツ、ガツ.";
+"Group5" = "Trong nhóm 5, Các từ bao gồm 通　(Thông) sẽ được liệt kê. Thông có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 通　hay ツウ.";
+"Group6" = "Trong nhóm 6, Các từ bao gồm 生　(Sinh) sẽ được liệt kê. Sinh có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 生　hay セイ.";
 "Group7" = "Trong nhóm 7, Các từ bao gồm 学　(Học) sẽ được liệt kê. Học có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 学　hay ガク.";
-"Group8" = "Trong nhóm 8, Các từ bao gồm 国　(Quốc) sẽ được liệt kê. Học có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 国　hay コク.";
-"Group9" = "Trong nhóm 9, Các từ bao gồm 反　(Chống) sẽ được liệt kê. Học có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 反　hay ハン.";
-"Group10" = "Trong nhóm 10, Các từ bao gồm 地　(đất) sẽ được liệt kê. Học có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 地　hay チ、ジ.";
+"Group8" = "Trong nhóm 8, Các từ bao gồm 国　(Quốc) sẽ được liệt kê. Quốc có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 国　hay コク.";
+"Group9" = "Trong nhóm 9, Các từ bao gồm 反　(Phản) sẽ được liệt kê.  Phản có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 反　hay ハン.";
+"Group10" = "Trong nhóm 10, Các từ bao gồm 地　(đất) sẽ được liệt kê. đất có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 地　hay チ、ジ.";

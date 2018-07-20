@@ -18,7 +18,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                      
                      ["文学","哲学","医学","数学","薬学","化学"], //Group 7 学がつく漢語
                      ["国立","国家","国籍","国際","国連"], //Group 8 国を含む
-                     ["反応","反映","反射","反対","反撃","違反","反省"], //Group 9 反を含む
+                     ["反応","反映","反射","反対","反撃","反省"], //Group 9 反を含む
                      ["地面","地球","地上","地下","地下鉄","土地"]] //Group 10 地を含む
 //                     ["文化","法律","印象","報告","科学"]]
     
@@ -32,7 +32,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     
                     ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）"], //Group 7
                     ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン"], //Group 8
-                    ["ハンノウする","ハンエイする","ハンシャする","ハンタイする","ハンゲキする","イハンする","ハンセイする"], //Group 9
+                    ["ハンノウする","ハンエイする","ハンシャする","ハンタイする","ハンゲキする","ハンセイする"], //Group 9
                     ["ジメンに落ちた","チキュウを守る","チジョウに出る","チカにおりる","チカテツに乗る","広いトチ"]] //Group 10
 //                    ["日本ブンカ","ホウリツを守る（まもる）","インショウを聞く","ホウコクする","カガクが発達（ハッタツ）する"]]
 
@@ -45,7 +45,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                       
                       ["Văn học","triết học","y học","toán học","dược học","hóa học"], //Group7
                       ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Liên Hợp Quốc"],//Group8
-                      ["Phản ứng","Phản ánh","Sự phản chiếu","Phản đối","Phản công","Vi phạm","Sự phản chiếu"],//Group9
+                      ["Phản ứng","Phản ánh","Sự phản chiếu","Phản đối","Phản công","Sự phản chiếu"],//Group9
                       ["Mặt đất","Trái đất","Trên mặt đất","Tầng hầm","Đất đai"]]//Group10
 //                      ["Văn hóa","Pháp luật","ấn tượng","báo cáo","báo cáo"]]
 
@@ -59,7 +59,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
                     ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku"], //Group7
                     ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
-                    ["Hannou","Hanei","Hansha","Hantai","Hangeki","Ihan","Hansei"], //Group 9
+                    ["Hannou","Hanei","Hansha","Hantai","Hangeki","Hansei"], //Group 9
                     ["Jimen","Chikyuu","Chijou","Chika","Chikatetsu","Tochi"]] //Group 10
 //                          ["Bunka","Houritsu","Inshou","Houkoku","Kagaku"]] 
     
@@ -127,7 +127,6 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["条件反射は学習による生物学的応答である。\n\n Phản xạ có điều kiện là phản ứng sinh học bằng cách học. \n\n このクリスタルは光の反射により七色に輝く。 \n\n Pha lê này phát sáng bảy mầu do phản xạ ánh sáng."],
              ["法案に反対します。\n\n Bỏ phiếu phản đối dự luật.\n\n彼の意見に賛成の人は反対の人より少ない。\n\n Số người tán thành ý kiến của anh ấy ít hơn số người phản đối."],
              ["敵の反撃にあった。\n\n Giám sát vi phạm giao thông.\n\n野党は次の選挙で反撃する機会をうかがっている。 \n\n Đó là một sự vi phạm các quy tắc bóng đá."],
-             ["交通違反を取り締まる。\n\n Giám sát vi phạm giao thông.\n\n予想外の反撃にあい、苦戦している。 \n\n Phải chống đỡ rất vất vả với sự phản kích bất ngờ của đối phương."],
              ["反省点を日記に書く\n\n Viết điểm phản chiếu trong nhật ký.\n\n「反省」とは、自分の言動を振り返ることです。\n\n Phản chiếu là hành vi của riêng bạn."]], //Group 9
     
            [["地面がぬれていて、すべりやすいので気をつけてください。\n\n Mặt đất rất trơn, dễ trượt ngã nên hãy cẩn thận.\n\n地面に落書きをする。\n\nLàm scribbles trên mặt đất。"],
