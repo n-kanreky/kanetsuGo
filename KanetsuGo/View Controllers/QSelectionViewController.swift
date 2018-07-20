@@ -67,12 +67,13 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     var reibunJ =
         [[
-            ["毎年予防注射をする。\n\n Tiêm phòng hàng năm. \n\n子供は注射が嫌いだ。\n\n Trẻ em không thích chích ngừa."],
+            //["毎年予防注射をする。\n\n Tiêm phòng hàng năm. \n\n子供は注射が嫌いだ。\n\n Trẻ em không thích chích ngừa."],
             ["先生が学生に注意する。\n\n Giáo viên chú ý đến sinh viên. \n\n親の注意に耳をかさない。\n\nKhông lắng nghe lời của cha mẹ."],
-            ["皆が彼の意見に同意した。 \n\nMọi người đồng ý với ý kiến của anh ấy.\n\n皆の同意がなければやめます。\n\n Tôi sẽ từ bỏ nếu không có sự đồng ý của mọi người."],
-            ["北と南の温度の差が激しい。\n\n Sự chênh lệch về nhiệt độ giữa miền Bắc và miền Nam rất dữ dội. \n\n部屋の温度を測ると30度もあった。\n\n Nhiệt độ của phòng được đo và nó là 30 độ."],
-            ["私の専門は日本語だ。\n\n Chuyên môn của tôi là tiếng Nhật.\n\n専門的な話はわからない。\n\n Tôi không hiểu những câu chuyện mang tính chuyên môn."]], //Group 1
-         
+            ["皆が彼の意見に同意した。 \n\nMọi người đồng ý với ý kiến của anh ấy.\n\n何か意見はありますか。\n\n Bạn có ý kiến ​​gì không?"],
+            //["北と南の温度の差が激しい。\n\n Sự chênh lệch về nhiệt độ giữa miền Bắc và miền Nam rất dữ dội. \n\n部屋の温度を測ると30度もあった。\n\n Nhiệt độ của phòng được đo và nó là 30 độ."],
+            //["私の専門は日本語だ。\n\n Chuyên môn của tôi là tiếng Nhật.\n\n専門的な話はわからない。\n\n Tôi không hiểu những câu chuyện mang tính chuyên môn."]], //Group 1
+            ["明日のために準備する。\n\n Chuẩn bị cho ngày mai.\n\n準備に時間がかかる。\n\nPhải mất thời gian để chuẩn bị."]],
+            
          [["私は今週の火曜日に太郎さんとテニスをします。\n\n Tôi chơi tennis với Taro vào thứ ba tuần này. \n\n天気予報によると、今週は週末にかけて雨が降るようだ。　\n\n Theo dự báo thời tiết, có vẻ như trời sẽ mưa vào cuối tuần này."],
           ["母は、先週国に帰りました。\n\n Mẹ tôi quay trở lại đất nước tuần trước. \n\n先週の金曜日は、大雨のため休校になった。\n\nNgôi trường đã bị đóng cửa do mưa lớn hôm thứ Sáu tuần trước."],
           ["私は来週、東京へ行きます。 \n\nTuần tới, tôi sẽ đi đến Tokyo.\n\n私は来週の月曜日、午前9時に病院へ行きます。\n\n Tôi sẽ đến bệnh viện vào sáng thứ Hai lúc 9 giờ sáng."],
@@ -121,23 +122,23 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             [["これが新しい国立劇場です。\n\n Đây là Nhà hát Quốc gia mới.\n\n日本に国立大学はいくつありますか。\n\n Có bao nhiêu trường đại học quốc gia ở Nhật Bản?"],
              ["アフリカに新しい国家が生まれた。\n\n Một quốc gia mới được sinh ra ở châu Phi.\n\n試験に合格して、国家公務員になった。 \n\n Sau khi vượt qua kỳ thi, tôi đã trở thành một công chức quốc gia."],
              ["国籍はどこですか。\n\n Quốc tịch của bạn ở đâu?\n\n国籍はベトナムです。 \n\n Quốc tịch là người Việt Nam."],
-             ["私の専門は国際関係だ。\n\n Chuyên môn của tôi là quan hệ quốc tế.\n\n東京国際空港は千葉県にあります。\n\n Sân bay quốc tế Tokyo nằm ở quận Chiba."],
-             ["国連は国際連合の略だ。\n\n Liên Hợp Quốc là viết tắt của Liên Hiệp Quốc.\n\n国連は1945年に設立された国際機関です。\n\n Liên Hợp Quốc là một tổ chức quốc tế được thành lập vào năm 1945."]],//Group 8
+             ["私の専門は国際関係だ。\n\n Chuyên môn của tôi là quan hệ quốc tế.\n\n新東京国際空港は千葉県にあります。\n\n Sân bay quốc tế Tokyo mới nằm ở quận Chiba."],
+             ["国連は国際連合の略だ。\n\n Liên Hợp Quốc là viết tắt của Liên Hiệp Quốc.\n\n国連は1945年に設立された国際機構だ。\n\n Liên Hợp Quốc là một tổ chức quốc tế được thành lập vào năm 1945."]],//Group 8
             //9
            [["呼びかけても何の反応もない。\n\n Gọi nhưng không có phản ứng gì.\n\n薬が合わなかったらしく拒絶反応を起こした。\n\n Hình như là không hợp thuốc nên đã gây ra phản ứng kháng thuốc."],
-             ["ファッションは常にその時代を反映していると言える。\n\n Thời trang thường phản ảnh thời đại đó.\n\nドライバーの運転パターンを反映した自動操縦装置が開発されました。\n\n Một lái tự động phản ánh mô hình lái xe của người lái xe đã được phát triển."],
-             ["雨のしずくが車のライトに反射して、きれいだった。\n\n Mưa rơi phản chiếu trên ánh sáng của chiếc xe và nó thật đẹp. \n\n このクリスタルは光の反射によって7色で輝きます。 \n\n Tinh thể này tỏa sáng trong bảy màu sắc bởi sự phản chiếu của ánh sáng."],
-             ["私は彼の意見に反対です。\n\n Đảng đối lập đang tìm cơ hội phản kích lại trong kỳ bầu cử tới.\n\n彼の意見に賛成の人は反対の人より少ない。\n\n Số người tán thành ý kiến của anh ấy ít hơn số người phản đối."],
-             ["野党は次の選挙で反撃する機会をうかがっている。\n\n Đảng đối lập đang tìm cơ hội phản kích lại trong kỳ bầu cử tới.\n\nそれはサッカーのルール違反です。 \n\n Đó là một sự vi phạm các quy tắc bóng đá."],
-             ["交通違反を取り締まる。\n\n Kiểm soát vi phạm giao thông.\n\n予想外の反撃にあい、苦戦している。 \n\n Phải chống đỡ rất vất vả với sự phản kích bất ngờ của đối phương."],
-             ["反省点を日記に書く\n\n Viết điểm phản chiếu trong nhật ký.\n\n失敗の原因を明らかにし､反省して次の成功につなげる｡\n\n Làm rõ nguyên nhân thất bại và tự kiểm điểm chính là chìa khóa dẫn đến thành công."]], //Group 9
+             ["ファッションは常にその時代を反映していると言える。\n\n Thời trang thường phản ảnh thời đại đó.\n\n消費者の意見を反映した商品を開発する。\n\n Phát triển những sản phẩm phản ánh mong muốn của người tiêu dùng."],
+             ["条件反射は学習による生物学的応答である。\n\n Phản xạ có điều kiện là phản ứng sinh học bằng cách học. \n\n このクリスタルは光の反射により七色に輝く。 \n\n Pha lê này phát sáng bảy mầu do phản xạ ánh sáng."],
+             ["法案に反対します。\n\n Bỏ phiếu phản đối dự luật.\n\n彼の意見に賛成の人は反対の人より少ない。\n\n Số người tán thành ý kiến của anh ấy ít hơn số người phản đối."],
+             ["敵の反撃にあった。\n\n Giám sát vi phạm giao thông.\n\n野党は次の選挙で反撃する機会をうかがっている。 \n\n Đó là một sự vi phạm các quy tắc bóng đá."],
+             ["交通違反を取り締まる。\n\n Giám sát vi phạm giao thông.\n\n予想外の反撃にあい、苦戦している。 \n\n Phải chống đỡ rất vất vả với sự phản kích bất ngờ của đối phương."],
+             ["反省点を日記に書く\n\n Viết điểm phản chiếu trong nhật ký.\n\n「反省」とは、自分の言動を振り返ることです。\n\n Phản chiếu là hành vi của riêng bạn."]], //Group 9
     
-           [["地面がぬれていて、すべりやすいので気をつけてください。\n\n Mặt đất rất trơn, dễ trượt ngã nên hãy cẩn thận.\n\n地面を蹴って走った。\n\nDậm lên mặt đất mà chạy."],
+           [["地面がぬれていて、すべりやすいので気をつけてください。\n\n Mặt đất rất trơn, dễ trượt ngã nên hãy cẩn thận.\n\n地面に落書きをする。\n\nLàm scribbles trên mặt đất。"],
              ["地球の４分の１は陸だ。\n\nMột phần từ trái đất là lục địa.\n\n月は地球のまわりを回っている。\n\nMặt trăng quay quanh trái đất."],
-             ["このビルは地下３階、地上１０階建てだ。\n\nTòa nhà này có 3 tầng hầmvà 10 tầng trên mặt đất. \n\n地上に無事着陸した。\n\nTôi hạ cánh an toàn trên mặt đất."],
+             ["このビルは地下３階、地上１０階建てだ。\n\nTòa nhà này có 3 tầng hầmvà 10 tầng trên mặt đất. \n\n地上から宇宙に向かって信号を送る。\n\nGửi tín hiệu từ mặt đất về phía vũ trụ."],
              ["日本のデパートの地下はたいてい食料品売り場だ。\n\n Tầng hầm của các bách hóa ở Nhật thường là nơi bán thực phẩm.n\n 地下の貯蔵庫にワインを入れておく。n\nĐể rượu vang vào kho chứa dưới tầng hầm"],
              ["地下鉄に乗るために、エスカレーターでおりる。\n\n Để đi tàu điện ngầm phải xuống dưới bằng thang cuốn.n\n この道の真下に地下鉄が通っている。n\nNgay bên dưới con đường này có tàu điện ngầm chạy qua."],
-             ["家を建てるために土地を買った。\n\n Tôi đã mua đất để xây nhà.n\n 工事の前に、土地の測量を実施する。n\n Trước khi xây dựng, tiến hành đo đạc đất đai."]]] //Group 10
+             ["家を建てるために土地を買った。\n\n Tôi đã mua đất để xây nhà.n\n 工事の前に、土地の測量をする。n\n Trước khi xây dựng, tiến hành đo đạc đất đai."]]] //Group 10
     
 //            //10
 //            [["日本文化を学ぶ。\n\n Học văn hoá Nhật Bản.\n\n11月3日は「文化の日」で祝日だ。 \n\n Ngày 3 tháng 11 là ＊ngày văn hóa＊ và đó là một ngày lễ."],

@@ -6,7 +6,7 @@
   Copyright © 2018年 NC. All rights reserved.
 */
 // Front Page
-"LetsStart" = "ベトナム語の中の漢語を使って、日本語の中の漢字熟語とその発音を学びましょう";
+"LetsStart" = "Let's learn Kanji words and their pronunciation using 漢越Go！";
 //Q Selection
 "QSelect" = "Select Questions";
 "toInstruction" = "To Instruction";
@@ -54,7 +54,7 @@
 "Group5" = "Group 5 is a collection of Kanetsugo that has 通 and corresponds to thông.";
 "Group6" = "Group 6 is a collection of Kanetsugo that has 生 and corresponds to sinh.";
 "Group7" = "Group 7 is a collection of Kanetsugo that has 学 and corresponds to học.";
-"Group8" = "Group 8 is a collection of Kanetsugo that has 国 and corresponds to học.";
-"Group9" = "Group 9 is a collection of Kanetsugo that has 反 and corresponds to học.";
-"Group10" = "Group 10 is a collection of Kanetsugo that has 地 and corresponds to học.";
+"Group8" = "Group 8 is a collection of Kanetsugo that has 国 and corresponds to Quốc.";
+"Group9" = "Group 9 is a collection of Kanetsugo that has 反 and corresponds to Chống.";
+"Group10" = "Group 10 is a collection of Kanetsugo that has 地 and corresponds to đất.";
 
