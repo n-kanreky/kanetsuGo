@@ -10,9 +10,9 @@ import UIKit
 
 class QSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var questions = [["注意","意見","準備"], //Group 1
-                     ["今週","先週","来週","毎週","週末","週日","一週間","隔週"], //Group 2
-                     ["今日","毎日","日時","日常","日用品","日付"], //Group 3
-                     ["今月","毎月","月給","月額","来月","先月"], //Group 4
+                     ["今週","先週","来週","毎週","週末","一週間","隔週"], //Group 2
+                     ["今日","毎日","日時","日常","日用品"], //Group 3
+                     ["今月","月給","月額","来月","先月"], //Group 4
                      ["通行","通信","通知","通訳","通過"], //Group 5
                      ["生存","生産","生徒","学生","生活"], //Group 6
                      
@@ -24,9 +24,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     
     var katakana = [["友達にチュウイする","反対イケンを言う","ジュンビする"], // Group 1
-                    ["コンシュウ","センシュウ","ライシュウ","シュウマツ","マイシュウ","イッシュウカン","シュウジツ","カクシュウ"], //Group 2
-                    ["キョウ","マイニチ","ニチジ","ニチジョウ","ニチヨウヒン","ヒヅケ"], //Group 3
-                    ["コンゲツ","マイツキ","ゲッキュウ","ゲツガク","ライゲツ","センゲツ"], //Group 4
+                    ["コンシュウの土曜日","センシュウの月曜日","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける","イッシュウカンの休みが取れた","カクシュウで試合がある"], //Group 2
+                    ["キョウ","マイニチ","ニチジ","ニチジョウ","ニチヨウヒン"], //Group 3
+                    ["コンゲツ","ゲッキュウ","ゲツガク","ライゲツ","センゲツ"], //Group 4
                     ["ツウコウする","ツウシンする","ツウチする","ツウヤクする","ツウカする"], //Group 5
                     ["セイゾン","セイサン","セイト","ガクセイ","セイカツ"], //Group 6
                     
@@ -37,9 +37,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
 //                    ["日本ブンカ","ホウリツを守る（まもる）","インショウを聞く","ホウコクする","カガクが発達（ハッタツ）する"]]
 
     var vietnamese = [["chú ý","ý kiến","Chuẩn bị"],//Group 1
-                      ["tuần này","tuần trước","tuần sau","cuối tuần","hàng tuần","Một tuần","＊Thứ Hai đến Thứ Sáu","2 tuần một lần"], //Group 2
-                      ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày","Ngày tháng"], //Group 3
-                      ["Tháng này","Hàng tháng","Tiền lương hàng tháng","Số tiền hàng tháng","Tháng tiếp theo","Tháng trước"], //Group 4
+                      ["tuần này","tuần trước","tuần sau","cuối tuần","hàng tuần","Một tuần","2 tuần một lần"], //Group 2
+                      ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày"], //Group 3
+                      ["Tháng này","Tiền lương hàng tháng","Số tiền hàng tháng","Tháng tiếp theo","Tháng trước"], //Group 4
                       ["thông hành","thông tín","thông tri","thông dịch","thông quá"],// Group 5
                       ["sinh tồn","sinh sản","sinh đồ","học sinh","sinh hoạt"], //Group 6
                       
@@ -51,9 +51,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
 
     
     var pronunciationJ = [["Chuui","Iken","Junbi"], //Groupo 1
-                    ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Shuujitsu","Isshuukan","Kakushuu"], //Group 2
-                    ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin","Hiduke"], //Group 3
-                    ["Kongetsu","Maitsuki","Gekkyuu","Getsugaku","Raigetsu","Sengetsu"], //Group 4
+                    ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Isshuukan","Kakushuu"], //Group 2
+                    ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin"], //Group 3
+                    ["Kongetsu","Gekkyuu","Getsugaku","Raigetsu","Sengetsu"], //Group 4
                     ["Tsuukou","Tsuushin","Tsuuchi","Tsuuyaku","Tsuuka"],  //Group 5
                     ["Seizon","Seisan","Seito","Gakusei","Seikatsu"], //Group 6
     
@@ -79,7 +79,6 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
           ["私は来週、東京へ行きます。 \n\nTuần tới, tôi sẽ đi đến Tokyo.\n\n私は来週の月曜日、午前9時に病院へ行きます。\n\n Tôi sẽ đến bệnh viện vào sáng thứ Hai lúc 9 giờ sáng."],
           ["毎週金曜日に花を買います。\n\n Tôi mua hoa vào mỗi thứ Sáu. \n\n私は毎週友達と映画をみます。\n\n Tôi xem phim với bạn bè mỗi tuần."],
           ["あなたは週末、どこかに行きますか。\n\n Bạn sẽ đi đâu đó vào cuối tuần?\n\n私は週末によくサッカーをします。\n\n Tôi thường chơi bóng đá vào cuối tuần."],
-          ["週日とは月曜から金曜日までのことだ。\n\n 週日là thứ Hai đến thứ Sáu. \n\n週日は帰りが遅くなることが多いです。\n\n Từ thứ Hai đến thứ Sáu, trở lại thường đến trễ."],
           ["この絵を描くのに１週間かかりました。\n\n Tôi mất một tuần để vẽ bức tranh này. \n\n１週間待ってください。\n\n Vui lòng chờ một tuần."],
           ["隔週（２週間おきに）東京に来ます。\n\n Tôi sẽ đến Tokyo hai tuần một lần. \n\n私は隔週（２週間に１度）母に電話をします。\n\n Tôi sẽ gọi cho mẹ tôi hai tuần một lần."]], //Group 2
          
@@ -87,11 +86,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
           ["私は毎日日本語を勉強します。\n\n Tôi học tiếng Nhật mỗi ngày. \n\n昨日のパーティーに出席しましたか。\n\n Trời mưa hàng ngày."],
           ["パーティの日時を決定する。\n\n Xác định ngày và giờ của bên. \n\n次の会議の日時を教えてください。\n\n Vui lòng cho tôi biết ngày và giờ của cuộc họp tiếp theo."],
           ["私たちは日常生活を大切にしています。\n\n Chúng tôi coi trọng cuộc sống hàng ngày của mình. \n\n散歩は日常的に行っている。\n\n Tôi đi bộ hàng ngày."],
-          ["近くのスーパーで日用品を買います。\n\n Mua nhu yếu phẩm hàng ngày tại siêu thị gần đó.デパートでも日用品を買うことができます。\n\n Ngay cả ở các cửa hàng bách hóa, bạn có thể mua các vật dụng hàng ngày."],
-          ["書類には必ず日付を入れてください。\n\n Hãy chắc chắn bao gồm ngày trong tài liệu. \n\nExcelで日付から自動的に曜日を入力できる。\n\n Bạn có thể nhập ngày trong tuần tự động từ ngày Excel."]],  //Group 3
+          ["近くのスーパーで日用品を買います。\n\n Mua nhu yếu phẩm hàng ngày tại siêu thị gần đó.デパートでも日用品を買うことができます。\n\n Ngay cả ở các cửa hàng bách hóa, bạn có thể mua các vật dụng hàng ngày."]],  //Group 3
          
          [["今月から新しいバイトを始めます。\n\n Bắt đầu một byte mới từ tháng này. \n\n今月中にこの仕事を仕上げなくてはならない。\n\n Tôi phải hoàn thành công việc này trong tháng."],
-          ["私は毎月両親に仕送りをしています。\n\n Tôi gửi tiền cho cha mẹ mỗi tháng. \n\n私は毎月一回読書会に参加しています。\n\n Tôi tham gia một cuộc họp đọc mỗi tháng một lần."],
           ["私の月給は10万円です。\n\n Tiền lương hàng tháng của tôi là 100.000 yên. \n\n月給日は毎月25日です。\n\n Ngày thanh toán hàng tháng là ngày 25 hàng tháng."],
           ["バイト料の月額は5万円くらいです。\n\n Phí hàng tháng cho phí byte là khoảng 50.000 yên. \n\nこのアプリの使用料は、月額300円です。\n\n Lệ phí hàng tháng cho việc sử dụng ứng dụng này là 300 yên."],
           ["母は、来月ハノイに来る予定です。\n\n Mẹ tôi sẽ đến Hà Nội vào tháng tới. \n\n私は来月結婚します。\n\n Tôi sẽ kết hôn vào tháng tới."],

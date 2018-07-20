@@ -49,8 +49,8 @@
 //グループごとの説明
 "Group1" = "Nhóm 1 tương tự như cách phát âm tiếng Việt và cách phát âm tiếng Nhật.Trong tiếng Việt có một từ Trung Quốc cũ.Điều này được gọi là 「漢越語」.Hãy xem xét chỉ ba ví dụ ở đây.";
 "Group2" = "Nhóm ２ lấy một từ bao gồm các chữ cái của 「週」（Tuần）. 週 sẽ phát âm シュウ.";
-"Group3" = "Trong nhóm 3, sẽ liệt kê các từ bao gồm cả 「ngày」. Ngày có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 日 hay ヒ、ジツ、ニチ.";
-"Group4" = "Trong nhóm 4, sẽ liệt kê các từ bao gồm cả 「Tháng」. Tháng có nghĩa là ngày hoặc Tháng. Tôi phát âm nó như 月 hay ゲツ、ガツ、ツキ.";
+"Group3" = "Trong nhóm 3, sẽ liệt kê các từ bao gồm cả 「ngày」. Ngày có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 日 hay ジツ、ニチ.";
+"Group4" = "Trong nhóm 4, sẽ liệt kê các từ bao gồm cả 「Tháng」. Tháng có nghĩa là ngày hoặc Tháng. Tôi phát âm nó như 月 hay ゲツ、ガツ.";
 "Group5" = "Trong nhóm 5, chúng tôi thu thập một cái gì đó chứa chữ Hán 通 trong tiếng Hán. 通　trong chữ Hán Trung Quốc phát âm ツウ";
 "Group6" = "Trong nhóm 6, chúng tôi thu thập một cái gì đó có chứa các ký tự Hán 生 trong tiếng Hán. Sinh 生 trong tiếng Hán được phát âm là セイ";
 "Group7" = "Trong nhóm 7, Các từ bao gồm 学　(Học) sẽ được liệt kê. Học có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 学　hay ガク.";
