@@ -19,7 +19,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                      ["文学","哲学","医学","数学","薬学","化学"], //Group 7 学がつく漢語
                      ["国立","国家","国籍","国際","国連"], //Group 8 国を含む
                      ["反応","反映","反射","反対","反撃","反省"], //Group 9 反を含む
-                     ["地面","地球","地上","地下","地下鉄","土地"]] //Group 10 地を含む
+                     ["地面","地球","地上","地下鉄","土地"]] //Group 10 地を含む
 //                     ["文化","法律","印象","報告","科学"]]
     
     
@@ -33,7 +33,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）"], //Group 7
                     ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン"], //Group 8
                     ["ハンノウする","ハンエイする","ハンシャする","ハンタイする","ハンゲキする","ハンセイする"], //Group 9
-                    ["ジメンに落ちた","チキュウを守る","チジョウに出る","チカにおりる","チカテツに乗る","広いトチ"]] //Group 10
+                    ["ジメンに落ちた","チキュウを守る","チジョウに出る","チカテツに乗る","広いトチ"]] //Group 10
 //                    ["日本ブンカ","ホウリツを守る（まもる）","インショウを聞く","ホウコクする","カガクが発達（ハッタツ）する"]]
 
     var vietnamese = [["chú ý","ý kiến","Chuẩn bị"],//Group 1
@@ -46,7 +46,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                       ["Văn học","triết học","y học","toán học","dược học","hóa học"], //Group7
                       ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Liên Hợp Quốc"],//Group8
                       ["Phản ứng","Phản ánh","Sự phản chiếu","Phản đối","Phản công","Sự phản chiếu"],//Group9
-                      ["Mặt đất","Trái đất","Trên mặt đất","Tầng hầm","Đất đai"]]//Group10
+                      ["Mặt đất","Trái đất","Trên mặt đất","Dưới đất","Đất đai"]]//Group10
 //                      ["Văn hóa","Pháp luật","ấn tượng","báo cáo","báo cáo"]]
 
     
@@ -60,7 +60,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku"], //Group7
                     ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
                     ["Hannou","Hanei","Hansha","Hantai","Hangeki","Hansei"], //Group 9
-                    ["Jimen","Chikyuu","Chijou","Chika","Chikatetsu","Tochi"]] //Group 10
+                    ["Jimen","Chikyuu","Chijou","Chikatetsu","Tochi"]] //Group 10
 //                          ["Bunka","Houritsu","Inshou","Houkoku","Kagaku"]] 
     
 
@@ -132,7 +132,6 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
            [["地面がぬれていて、すべりやすいので気をつけてください。\n\n Mặt đất rất trơn, dễ trượt ngã nên hãy cẩn thận.\n\n地面に落書きをする。\n\nLàm scribbles trên mặt đất。"],
              ["地球の４分の１は陸だ。\n\nMột phần từ trái đất là lục địa.\n\n月は地球のまわりを回っている。\n\nMặt trăng quay quanh trái đất."],
              ["このビルは地下３階、地上１０階建てだ。\n\nTòa nhà này có 3 tầng hầmvà 10 tầng trên mặt đất. \n\n地上から宇宙に向かって信号を送る。\n\nGửi tín hiệu từ mặt đất về phía vũ trụ."],
-             ["日本のデパートの地下はたいてい食料品売り場だ。\n\n Tầng hầm của các bách hóa ở Nhật thường là nơi bán thực phẩm.n\n 地下の貯蔵庫にワインを入れておく。n\nĐể rượu vang vào kho chứa dưới tầng hầm"],
              ["地下鉄に乗るために、エスカレーターでおりる。\n\n Để đi tàu điện ngầm phải xuống dưới bằng thang cuốn.n\n この道の真下に地下鉄が通っている。n\nNgay bên dưới con đường này có tàu điện ngầm chạy qua."],
              ["家を建てるために土地を買った。\n\n Tôi đã mua đất để xây nhà.n\n 工事の前に、土地の測量をする。n\n Trước khi xây dựng, tiến hành đo đạc đất đai."]]] //Group 10
     
@@ -197,23 +196,23 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         // 値を設定する.
         switch indexPath.row {
         case 0:
-            cell.textLabel!.text = "Group \(indexPath.row + 1)   音が似ている漢語"
+            cell.textLabel!.text = "Group \(indexPath.row + 1)    音が似ている漢語"
         case 1:
-            cell.textLabel!.text = "Group \(indexPath.row + 1)   週 tuần を含む漢語"
+            cell.textLabel!.text = "Group \(indexPath.row + 1)    週 tuần を含む漢語"
         case 2:
-            cell.textLabel!.text = "Group \(indexPath.row + 1)   日 Ngày を含む漢語"
+            cell.textLabel!.text = "Group \(indexPath.row + 1)    日 Ngày を含む漢語"
         case 3:
-            cell.textLabel!.text = "Group \(indexPath.row + 1)   月 Tháng を含む漢語"
+            cell.textLabel!.text = "Group \(indexPath.row + 1)    月 Tháng を含む漢語"
         case 4:
-            cell.textLabel!.text = "Group \(indexPath.row + 1)   通 thông を含む漢語"
+            cell.textLabel!.text = "Group \(indexPath.row + 1)    通 thông を含む漢語"
         case 5:
-            cell.textLabel!.text = "Group \(indexPath.row + 1)   生 sinh を含む漢語"
+            cell.textLabel!.text = "Group \(indexPath.row + 1)    生 sinh を含む漢語"
         case 6:
-            cell.textLabel!.text = "Group \(indexPath.row + 1)   学 học を含む漢語"
+            cell.textLabel!.text = "Group \(indexPath.row + 1)    学 học を含む漢語"
         case 7:
-            cell.textLabel!.text = "Group \(indexPath.row + 1)   国　quốc を含む漢語"
+            cell.textLabel!.text = "Group \(indexPath.row + 1)    国 quốc を含む漢語"
         case 8:
-            cell.textLabel!.text = "Group \(indexPath.row + 1)   反 phản を含む漢語"
+            cell.textLabel!.text = "Group \(indexPath.row + 1)    反 phản を含む漢語"
         case 9:
             cell.textLabel!.text = "Group \(indexPath.row + 1)   地 đất を含む漢語"
             
