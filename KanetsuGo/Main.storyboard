@@ -1022,7 +1022,7 @@ STARTを押して３回発音します</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9h-3b-VKL">
-                                                        <rect key="frame" x="-14" y="-42" width="77" height="123"/>
+                                                        <rect key="frame" x="-14" y="-42" width="77" height="126"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <state key="normal" image="batten"/>
