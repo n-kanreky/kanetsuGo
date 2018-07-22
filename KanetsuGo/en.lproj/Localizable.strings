@@ -8,7 +8,7 @@
 // Front Page
 "LetsStart" = "Let's learn Kanji words and their pronunciation using 漢越Go！";
 //Q Selection
-"QSelect" = "Select a Question Group\nGroup 1-10";
+"QSelect" = "Select a Question Group\n1-10";
 "toInstruction" = "To Instruction";
 
 //使い方
