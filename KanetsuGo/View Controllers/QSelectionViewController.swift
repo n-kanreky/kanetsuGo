@@ -19,7 +19,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                      ["文学","哲学","医学","数学","薬学","化学"], //Group 7 学がつく漢語
                      ["国立","国家","国籍","国際","国連"], //Group 8 国を含む
                      ["反応","反映","反射","反対","反撃","反省"], //Group 9 反を含む
-                     ["地面","地球","地上","地下鉄","土地"]] //Group 10 地を含む
+                     ["地面","地球","地上","土地"]] //Group 10 地を含む
 //                     ["文化","法律","印象","報告","科学"]]
     
     
@@ -33,7 +33,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）"], //Group 7
                     ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン"], //Group 8
                     ["ハンノウする","ハンエイする","ハンシャする","ハンタイする","ハンゲキする","ハンセイする"], //Group 9
-                    ["ジメンに落ちた","チキュウを守る","チジョウに出る","チカテツに乗る","広いトチ"]] //Group 10
+                    ["ジメンに落ちた","チキュウを守る","チジョウに出る","広いトチ"]] //Group 10
 //                    ["日本ブンカ","ホウリツを守る（まもる）","インショウを聞く","ホウコクする","カガクが発達（ハッタツ）する"]]
 
     var vietnamese = [["chú ý","ý kiến","Chuẩn bị"],//Group 1
@@ -46,7 +46,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                       ["Văn học","triết học","y học","toán học","dược học","hóa học"], //Group7
                       ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Liên Hợp Quốc"],//Group8
                       ["Phản ứng","Phản ánh","Sự phản chiếu","Phản đối","Phản công","Sự phản chiếu"],//Group9
-                      ["Mặt đất","Trái đất","Trên mặt đất","Dưới đất","Đất đai"]]//Group10
+                      ["Mặt đất","Trái đất","Trên mặt đất","Đất đai"]]//Group10
 //                      ["Văn hóa","Pháp luật","ấn tượng","báo cáo","báo cáo"]]
 
     
@@ -60,7 +60,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku"], //Group7
                     ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
                     ["Hannou","Hanei","Hansha","Hantai","Hangeki","Hansei"], //Group 9
-                    ["Jimen","Chikyuu","Chijou","Chikatetsu","Tochi"]] //Group 10
+                    ["Jimen","Chikyuu","Chijou","Tochi"]] //Group 10
 //                          ["Bunka","Houritsu","Inshou","Houkoku","Kagaku"]] 
     
 
@@ -131,7 +131,6 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
            [["地面がぬれていて、すべりやすいので気をつけてください。\n\nMặt đất rất trơn, dễ trượt ngã nên hãy cẩn thận.\n\n地面に落書き(らくがき）をする。\n\nLàm scribbles trên mặt đất。"],
              ["地球の４分の１は陸だ。\n\nMột phần từ trái đất là lục địa.\n\n月は地球のまわりを回っている。\n\nMặt trăng quay quanh trái đất."],
              ["このビルは地下３階、地上１０階建てだ。\n\nTòa nhà này có 3 tầng hầmvà 10 tầng trên mặt đất. \n\n地上から宇宙（うちゅう）に向かって信号（しんごう）を送る。\n\nGửi tín hiệu từ mặt đất về phía vũ trụ."],
-             ["地下鉄に乗るために、エスカレーターでおりる。\n\nĐể đi tàu điện ngầm phải xuống dưới bằng thang cuốn.\n\nこの道の真下に地下鉄が通っている。\n\nNgay bên dưới con đường này có tàu điện ngầm chạy qua."],
              ["家を建てるために土地を買った。\n\nTôi đã mua đất để xây nhà.\n\n工事の前に、土地の測量（そくりょう）をする。\n\nTrước khi xây dựng, tiến hành đo đạc đất đai."]]] //Group 10
     
 //            //10
