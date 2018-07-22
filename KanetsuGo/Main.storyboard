@@ -40,11 +40,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習問題の選択" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ab-V1-9j3">
-                                <rect key="frame" x="50" y="62" width="220" height="23"/>
+                                <rect key="frame" x="0.0" y="62" width="320" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="odS-tp-Uuq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="21"/>
                                 <color key="textColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -103,7 +103,7 @@
                         <constraints>
                             <constraint firstItem="6Ab-V1-9j3" firstAttribute="top" secondItem="7fq-Dg-atT" secondAttribute="bottom" constant="13" id="0De-yQ-V6W"/>
                             <constraint firstItem="e7E-Kw-rev" firstAttribute="leading" secondItem="Igb-bl-cQ1" secondAttribute="leading" id="2ak-PH-Eho"/>
-                            <constraint firstAttribute="trailing" secondItem="6Ab-V1-9j3" secondAttribute="trailing" constant="50" id="5Uz-nr-2f1"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ab-V1-9j3" secondAttribute="trailing" id="5Uz-nr-2f1"/>
                             <constraint firstItem="lLs-dY-Cfe" firstAttribute="top" secondItem="kxc-Xn-ads" secondAttribute="bottom" constant="2" id="EHL-TX-x0B"/>
                             <constraint firstItem="Igb-bl-cQ1" firstAttribute="bottom" secondItem="SWi-g5-rTE" secondAttribute="top" id="SC7-jY-dWn"/>
                             <constraint firstItem="7fq-Dg-atT" firstAttribute="top" secondItem="kxc-Xn-ads" secondAttribute="bottom" id="X8D-ir-dpF"/>
@@ -112,7 +112,7 @@
                             <constraint firstItem="e7E-Kw-rev" firstAttribute="top" secondItem="6Ab-V1-9j3" secondAttribute="bottom" constant="13" id="lho-f3-gld"/>
                             <constraint firstItem="Igb-bl-cQ1" firstAttribute="top" secondItem="e7E-Kw-rev" secondAttribute="bottom" constant="8" id="mtd-Z8-PFE"/>
                             <constraint firstAttribute="trailing" secondItem="e7E-Kw-rev" secondAttribute="trailing" id="na7-4h-dVB"/>
-                            <constraint firstItem="6Ab-V1-9j3" firstAttribute="leading" secondItem="ahm-v0-FiD" secondAttribute="leading" constant="50" id="sEQ-oc-hb2"/>
+                            <constraint firstItem="6Ab-V1-9j3" firstAttribute="leading" secondItem="ahm-v0-FiD" secondAttribute="leading" id="sEQ-oc-hb2"/>
                             <constraint firstItem="e7E-Kw-rev" firstAttribute="trailing" secondItem="Igb-bl-cQ1" secondAttribute="trailing" id="vIZ-ad-xl3"/>
                             <constraint firstItem="e7E-Kw-rev" firstAttribute="leading" secondItem="ahm-v0-FiD" secondAttribute="leading" id="xPm-nt-juY"/>
                         </constraints>
@@ -288,7 +288,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fR4-bo-Lj0">
                                 <rect key="frame" x="0.0" y="388" width="320" height="120"/>
@@ -904,12 +904,12 @@ STARTを押して３回発音します</string>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wME-cR-1zl">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="116"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="121"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jnV-Mw-6lK">
-                                                <rect key="frame" x="0.0" y="30" width="250" height="55"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="0.0" y="30" width="250" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -918,13 +918,13 @@ STARTを押して３回発音します</string>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ojf-Xy-dNL">
-                                        <rect key="frame" x="-6" y="124" width="256" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="0.0" y="124" width="250" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qur-UD-EuV">
-                                                <rect key="frame" x="3" y="-15" width="250" height="111"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Qur-UD-EuV">
+                                                <rect key="frame" x="16" y="-8" width="218" height="102"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
                                                 <state key="normal" title="  GO!  ">
                                                     <color key="titleColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
@@ -937,11 +937,11 @@ STARTを押して３回発音します</string>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TNP-M5-wCs">
                                         <rect key="frame" x="0.0" y="212" width="250" height="101"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="次の問題に進む" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6g-yt-N5T">
                                                 <rect key="frame" x="8" y="18" width="234" height="65"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -950,12 +950,12 @@ STARTを押して３回発音します</string>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CrW-px-3kj">
-                                        <rect key="frame" x="0.0" y="352" width="250" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="0.0" y="315" width="250" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oW4-TX-eY6">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oW4-TX-eY6">
                                                 <rect key="frame" x="0.0" y="13" width="250" height="101"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
                                                 <state key="normal" title="復習リストに追加する">
                                                     <color key="titleColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1002,85 +1002,95 @@ STARTを押して３回発音します</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBL-iL-CPJ">
-                                <rect key="frame" x="36" y="90" width="250" height="440"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apH-sn-cPt">
+                                <rect key="frame" x="0.0" y="-1" width="319" height="570"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEE-5Z-SPH">
-                                        <rect key="frame" x="103" y="104" width="45" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="4u1-zt-YqP"/>
-                                            <constraint firstAttribute="width" constant="45" id="DTR-GL-S5U"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                        <state key="normal" backgroundImage="speaker"/>
+                                    <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBL-iL-CPJ">
+                                        <rect key="frame" x="15" y="33" width="288" height="503"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wh3-qc-sty">
+                                                <rect key="frame" x="0.0" y="170" width="288" height="333"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IK-W9-chz">
+                                                        <rect key="frame" x="18" y="6" width="253" height="320"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5Z-PO-qBM">
+                                                <rect key="frame" x="0.0" y="135" width="288" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="タップして音声を聞く" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWH-F0-D41">
+                                                        <rect key="frame" x="27" y="6" width="233" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pqx-ky-ZCh">
+                                                <rect key="frame" x="0.0" y="99" width="288" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEE-5Z-SPH">
+                                                        <rect key="frame" x="126" y="2" width="36" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                        <state key="normal" backgroundImage="speaker"/>
+                                                        <connections>
+                                                            <action selector="wordSound:" destination="EnO-oy-Jj5" eventType="touchUpInside" id="1FN-0c-mmU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Le-9x-Nlm">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="97"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIm-tn-30k">
+                                                        <rect key="frame" x="71" y="31" width="147" height="46"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="46"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93482834100000001" green="0.49669474359999999" blue="0.42353779079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9h-3b-VKL">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="batten"/>
                                         <connections>
-                                            <action selector="wordSound:" destination="EnO-oy-Jj5" eventType="touchUpInside" id="1FN-0c-mmU"/>
+                                            <action selector="returnToQuestion:" destination="EnO-oy-Jj5" eventType="touchUpInside" id="tfN-hy-CgN"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIm-tn-30k">
-                                        <rect key="frame" x="67" y="36" width="116" height="46"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="1nY-FI-Vt9"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="46"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タップして音声を聞く" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWH-F0-D41">
-                                        <rect key="frame" x="8" y="157" width="234" height="15"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="15" id="3sx-HM-Z6H"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IK-W9-chz">
-                                        <rect key="frame" x="19" y="188" width="211" height="232"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.93482834100000001" green="0.49669474359999999" blue="0.42353779079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="5IK-W9-chz" secondAttribute="bottom" constant="20" id="2nL-c0-ucQ"/>
-                                    <constraint firstItem="5IK-W9-chz" firstAttribute="leading" secondItem="xBL-iL-CPJ" secondAttribute="leading" constant="19" id="KqI-0p-Hn8"/>
-                                    <constraint firstItem="hWH-F0-D41" firstAttribute="centerX" secondItem="5IK-W9-chz" secondAttribute="centerX" id="QW9-i4-IeW"/>
-                                    <constraint firstItem="BEE-5Z-SPH" firstAttribute="centerX" secondItem="xBL-iL-CPJ" secondAttribute="centerX" id="QxK-7d-Gqi"/>
-                                    <constraint firstItem="BEE-5Z-SPH" firstAttribute="top" secondItem="hIm-tn-30k" secondAttribute="bottom" constant="22" id="RHB-GK-Riy"/>
-                                    <constraint firstItem="hWH-F0-D41" firstAttribute="centerX" secondItem="BEE-5Z-SPH" secondAttribute="centerX" id="ajd-u3-o3l"/>
-                                    <constraint firstItem="hIm-tn-30k" firstAttribute="centerX" secondItem="BEE-5Z-SPH" secondAttribute="centerX" id="c2m-5R-RoQ"/>
-                                    <constraint firstItem="hWH-F0-D41" firstAttribute="top" secondItem="BEE-5Z-SPH" secondAttribute="bottom" constant="8" symbolic="YES" id="e1Q-s2-qDV"/>
-                                    <constraint firstItem="hWH-F0-D41" firstAttribute="leading" secondItem="xBL-iL-CPJ" secondAttribute="leadingMargin" id="nlb-FH-CUW"/>
-                                    <constraint firstItem="hIm-tn-30k" firstAttribute="top" secondItem="xBL-iL-CPJ" secondAttribute="top" constant="36" id="uWJ-AS-roc"/>
-                                    <constraint firstItem="5IK-W9-chz" firstAttribute="top" secondItem="hWH-F0-D41" secondAttribute="bottom" constant="16" id="zaO-WJ-r9a"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9h-3b-VKL">
-                                <rect key="frame" x="10" y="65" width="80" height="80"/>
-                                <state key="normal" image="batten"/>
-                                <connections>
-                                    <action selector="returnToQuestion:" destination="EnO-oy-Jj5" eventType="touchUpInside" id="tfN-hy-CgN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="h9h-3b-VKL" firstAttribute="leading" secondItem="ifT-0Y-vKR" secondAttribute="leading" constant="10" id="8Cy-iU-Rpl"/>
-                            <constraint firstItem="xBL-iL-CPJ" firstAttribute="top" secondItem="SMI-UQ-lkE" secondAttribute="bottom" constant="70" id="E5D-eJ-TUG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xBL-iL-CPJ" secondAttribute="trailing" constant="18" id="JRe-O9-TjX"/>
-                            <constraint firstItem="xBL-iL-CPJ" firstAttribute="leading" secondItem="ifT-0Y-vKR" secondAttribute="leadingMargin" constant="20" id="UYG-rv-chI"/>
-                            <constraint firstItem="n1O-wd-Ok9" firstAttribute="top" secondItem="xBL-iL-CPJ" secondAttribute="bottom" constant="38" id="YGS-gv-JRx"/>
-                            <constraint firstItem="h9h-3b-VKL" firstAttribute="top" secondItem="SMI-UQ-lkE" secondAttribute="bottom" constant="45" id="gn6-w4-GCB"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="TapListen" destination="hWH-F0-D41" id="kG6-hn-PGX"/>
@@ -1091,7 +1101,7 @@ STARTを押して３回発音します</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dka-bk-AsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4058" y="580"/>
+            <point key="canvasLocation" x="4057.5" y="579.92957746478874"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="LJj-3f-Qwy">
