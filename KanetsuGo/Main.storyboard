@@ -1171,12 +1171,12 @@ STARTを押して３回発音します</string>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2z-yw-eb3">
-                                                        <rect key="frame" x="1" y="81" width="108" height="90"/>
+                                                        <rect key="frame" x="0.0" y="181" width="108" height="71"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <string key="text">By 
 ©️Team Kanreky
 2018</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                         <color key="textColor" red="1" green="0.50838789139999996" blue="0.20106788279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1220,7 +1220,7 @@ STARTを押して３回発音します</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geI-dy-A0e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1503" y="220"/>
+            <point key="canvasLocation" x="1501.875" y="219.71830985915494"/>
         </scene>
         <!--Intro Group View Controller-->
         <scene sceneID="pVf-IS-CgM">
