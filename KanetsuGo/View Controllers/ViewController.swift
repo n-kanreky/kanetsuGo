@@ -116,10 +116,10 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
 //iPhoneサイズによる画面調整
         //print(self.view.frame.height) //これで高さをプリントした
         //以下で、PlusとX（サイズ　736.6以上）の場合、Constraintsの選択でXの場合が稼働し、トップから150ポイント下げる設定をした
-        if self.view.frame.height >= 736.0 {
-        NSLayoutConstraint.deactivate([defaulConst]) //サイズのデフォルト値を選択
-        NSLayoutConstraint.activate([XConst]) //サイズのX値を選択
-        }
+//        if self.view.frame.height >= 736.0 {
+//        NSLayoutConstraint.deactivate([defaulConst]) //サイズのデフォルト値を選択
+//        NSLayoutConstraint.activate([XConst]) //サイズのX値を選択
+//        }
     }
 
 
