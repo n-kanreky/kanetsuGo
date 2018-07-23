@@ -104,7 +104,11 @@ class PopupViewController: UIViewController {
                 correctCountLabel.text = " "
                 nextLevelButton.setTitle("\(NSLocalizedString("LetsReturnToReviewList", comment: ""))", for: UIControlState.normal)
                 //nextLevelButton.setTitle("\(NSLocalizedString("AddedToReviewList", comment: ""))", for: UIControlState.normal)
-                
+                    
+//ここにReviewListから削除のコードを持って来て、正解した問題は復習リストから外す　indexPath.rawを出力して、VCに移し、またPopUpVCに持ってくる
+                    
+                    
+                    
             }else{
                 popUpLabel.text = "\(NSLocalizedString("YouCanDoIt", comment: ""))"
                 addReviewButton.isHidden = true

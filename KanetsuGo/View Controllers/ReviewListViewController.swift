@@ -73,7 +73,7 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
 
         let deleteButton: UITableViewRowAction = UITableViewRowAction(style: .normal, title: "\(NSLocalizedString("Delete", comment: ""))") { (action, index) -> Void in
-           self.reviewArray.remove(at: indexPath.row)
+           self.reviewArray.remove(at: indexPath.row) //ここで消している
           tableView.deleteRows(at: [indexPath as IndexPath], with: UITableViewRowAnimation.fade)
         }
         deleteButton.backgroundColor = UIColor.red
