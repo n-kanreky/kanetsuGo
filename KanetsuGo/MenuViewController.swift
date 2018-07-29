@@ -25,15 +25,16 @@ class MenuViewController: UIViewController {
 //        ForN1.setTitle("\(NSLocalizedString("ForN1", comment: ""))", for:UIControlState.normal)
         ForN2.setTitle("\(NSLocalizedString("ForN2", comment: ""))", for:UIControlState.normal)
         LetsStart.text = "\(NSLocalizedString("LetsStart", comment: ""))"
+        
         // 行間の変更(正確には行自体の高さを変更している。)
-        let lineHeight:CGFloat = 25.0
+        let lineHeight:CGFloat = 35.0
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight
         let attributedText = NSMutableAttributedString(string: LetsStart.text!)
         attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
         LetsStart.attributedText = attributedText
-        // Do any additional setup after loading the view.
+        LetsStart.textAlignment = NSTextAlignment.center //ここで、ローカライズしたあともcenterになるように設定
     }
 
     override func didReceiveMemoryWarning() {
