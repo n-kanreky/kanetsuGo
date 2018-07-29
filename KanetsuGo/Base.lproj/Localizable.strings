@@ -65,7 +65,8 @@
 // Q Selection VCのグループ説明
 "QSG1" = "発音が似ている漢語";
 "QSG2" = "週（tuần）を含む漢語";
-"QSG3" = "日（Ngày này、Hôm nay）を含む漢語";
+//"QSG3" = "日（Ngày này、Hôm nay）を含む漢語";
+"QSG3" = "日（Ngày này）を含む漢語";
 "QSG4" = "月（Tháng）を含む漢語";
 "QSG5" = "通（thông）を含む漢語";
 "QSG6" = "生（sinh）を含む漢語";

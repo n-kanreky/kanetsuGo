@@ -79,7 +79,7 @@ class IntroGroupViewController: UIViewController {
         case 2:
             GroupExp.text = "\(NSLocalizedString("Group3", comment: ""))"
             
-            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG3", comment: ""))"
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG3L", comment: ""))"
             
         case 3:
             GroupExp.text = "\(NSLocalizedString("Group4", comment: ""))"
