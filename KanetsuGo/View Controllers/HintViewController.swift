@@ -25,7 +25,8 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     //   @IBOutlet weak var reibun2J: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad() // overrideで上書きしたが、もともとあるものも使いたい場合
+        super.viewDidLoad()
+        // overrideで上書きしたが、もともとあるものも使いたい場合
     TapListen.text = "\(NSLocalizedString("TapListen", comment: ""))"
         // Do any additional setup after loading the view.
     }

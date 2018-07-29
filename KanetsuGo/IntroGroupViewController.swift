@@ -17,9 +17,38 @@ class IntroGroupViewController: UIViewController {
     @IBOutlet weak var GroupExp: UILabel!
     @IBOutlet weak var Questions: UILabel!
     @IBOutlet weak var question: UILabel!
+    @IBOutlet weak var deleteAndReturn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // startのローカリゼーション
+        
+        deleteAndReturn.setTitle("\(NSLocalizedString("deleteAndReturn", comment: ""))", for:UIControlState.normal)
+       
+        // 行間の変更(正確には行自体の高さを変更している。)
+        let lineHeight1:CGFloat = 25.0
+        let paragraphStyle1 = NSMutableParagraphStyle()
+        paragraphStyle1.minimumLineHeight = lineHeight1
+        paragraphStyle1.maximumLineHeight = lineHeight1
+        let attributedText1 = NSMutableAttributedString(string: question.text!)
+        attributedText1.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle1, range: NSMakeRange(0, attributedText1.length))
+        question.attributedText = attributedText1
+        question.textAlignment = NSTextAlignment.center //ここで、ローカライズしたあともcenterになるように設定
+        
+        
+        // 行間の変更(正確には行自体の高さを変更している。)
+        let lineHeight:CGFloat = 25.0
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.minimumLineHeight = lineHeight
+        paragraphStyle.maximumLineHeight = lineHeight
+        let attributedText = NSMutableAttributedString(string: Questions.text!)
+        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        Questions.attributedText = attributedText
+        Questions.textAlignment = NSTextAlignment.center //ここで、ローカライズしたあともcenterになるように設定
+        
+       
+        
+        
         var count = 0
         for questionString in questions {
             if count == 0 {
@@ -33,45 +62,66 @@ class IntroGroupViewController: UIViewController {
         }
         Questions.text = questionStrings
         
+        
     
         
         switch cellNumber {
         case 0:
             GroupExp.text = "\(NSLocalizedString("Group1", comment: ""))"
-           //Group 1
-            question.text = "Group \(cellNumber + 1)     音が似ている漢語"
+
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG1", comment: ""))"
+            
         case 1:
             GroupExp.text = "\(NSLocalizedString("Group2", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   週 tuần を含む漢語"
+
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG2", comment: ""))"
+            
         case 2:
             GroupExp.text = "\(NSLocalizedString("Group3", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   日 Ngày を含む漢語"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG3", comment: ""))"
+            
         case 3:
             GroupExp.text = "\(NSLocalizedString("Group4", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   月 Tháng を含む漢語"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG4", comment: ""))"
         case 4:
             GroupExp.text = "\(NSLocalizedString("Group5", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   通 thông を含む漢語"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG5", comment: ""))"
         case 5:
             GroupExp.text = "\(NSLocalizedString("Group6", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   生 sinh を含む漢語"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG6", comment: ""))"
         case 6:
             GroupExp.text = "\(NSLocalizedString("Group7", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   学 học を含む漢語"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG7", comment: ""))"
         case 7:
             GroupExp.text = "\(NSLocalizedString("Group8", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   国　Quốc を含む漢語"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG8", comment: ""))"
         case 8:
             GroupExp.text = "\(NSLocalizedString("Group9", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   反　Phản を含む漢語"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG9", comment: ""))"
         case 9:
             GroupExp.text = "\(NSLocalizedString("Group10", comment: ""))"
-            question.text = "Group \(cellNumber + 1)   地 đất を含む漢語"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG10", comment: ""))"
      
         default:
             break
             
         }
+        //二つ目の行間設定
+        let lineHeight2:CGFloat = 25.0
+        let paragraphStyle2 = NSMutableParagraphStyle()
+        paragraphStyle2.minimumLineHeight = lineHeight2
+        paragraphStyle2.maximumLineHeight = lineHeight2
+        let attributedText2 = NSMutableAttributedString(string: GroupExp.text!)
+        attributedText2.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle2, range: NSMakeRange(0, attributedText2.length))
+        GroupExp.attributedText = attributedText2
         
         // Do any additional setup after loading the view.
     }
@@ -87,23 +137,14 @@ class IntroGroupViewController: UIViewController {
     @IBAction func deleteAndReturn(_ sender: Any) {
         NotificationCenter.default.post(
             Notification(name:Notification.Name("HIDDEN")))
-        
+     
+    
         //self.dismiss(animated: true, completion: nil) //これがなくてもVCに戻るので、コメントアウト
         
-        
+   
         
         
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
     
 }
 

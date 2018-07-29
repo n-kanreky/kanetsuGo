@@ -57,3 +57,18 @@
 "Group8" = "Trong nhóm 8, Các từ bao gồm 国　(Quốc) sẽ được liệt kê. Quốc có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 国　hay コク.";
 "Group9" = "Trong nhóm 9, Các từ bao gồm 反　(Phản) sẽ được liệt kê.  Phản có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 反　hay ハン.";
 "Group10" = "Trong nhóm 10, Các từ bao gồm 地　(đất) sẽ được liệt kê. đất có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 地　hay チ、ジ.";
+
+//始める
+"deleteAndReturn" = "Start";
+
+// Q Selection VCのグループ説明
+"QSG1" = "Cách phát âm tương tự";
+"QSG2" = "Bao gồm 週（tuần）";
+"QSG3" = "Bao gồm 日（Ngày này (Hôm nay)）";
+"QSG4" = "Bao gồm 月（Tháng）";
+"QSG5" = "Bao gồm 通（thông）";
+"QSG6" = "Bao gồm 生（sinh）";
+"QSG7" = "Bao gồm 学（học）";
+"QSG8" = "Bao gồm 国（Quốc）";
+"QSG9" = "Bao gồm 反（Chống）";
+"QSG10" = "Bao gồm 地（đất）";
