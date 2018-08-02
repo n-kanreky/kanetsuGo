@@ -16,7 +16,14 @@ class WT3ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     Step2.text = "\(NSLocalizedString("Step2", comment: ""))"
-        // Do any additional setup after loading the view.
+        //行間を調整
+        let lineHeight:CGFloat = 25.0
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.minimumLineHeight = lineHeight
+        paragraphStyle.maximumLineHeight = lineHeight
+        let attributedText = NSMutableAttributedString(string:Step2.text!)
+        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value:paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        Step2.attributedText = attributedText
     }
 
     override func didReceiveMemoryWarning() {

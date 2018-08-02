@@ -17,6 +17,15 @@ class WT2ViewController: UIViewController {
         super.viewDidLoad()
     Step1.text = "\(NSLocalizedString("Step1", comment: ""))" //ローカライズ
         // Do any additional setup after loading the view.
+        
+        //行間を調整
+        let lineHeight:CGFloat = 25.0
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.minimumLineHeight = lineHeight
+        paragraphStyle.maximumLineHeight = lineHeight
+        let attributedText = NSMutableAttributedString(string:Step1.text!)
+        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value:paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        Step1.attributedText = attributedText
     }
 
     override func didReceiveMemoryWarning() {
