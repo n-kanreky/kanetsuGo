@@ -15,10 +15,6 @@
         <scene sceneID="git-Yw-w8h">
             <objects>
                 <viewController id="0Rc-3z-DCt" customClass="ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ifY-eq-FJ1"/>
-                        <viewControllerLayoutGuide type="bottom" id="gIR-0L-Z26"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="H8G-a0-zmB">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,13 +241,13 @@
                         <color key="backgroundColor" red="1" green="0.95715053900000002" blue="0.8214584023" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="PRP-J7-wbf" firstAttribute="trailing" secondItem="Qhd-OI-tHp" secondAttribute="trailing" id="BwE-LW-miz"/>
-                            <constraint firstAttribute="trailing" secondItem="Qhd-OI-tHp" secondAttribute="trailing" id="MII-bU-MGP"/>
+                            <constraint firstItem="sml-It-Geh" firstAttribute="trailing" secondItem="Qhd-OI-tHp" secondAttribute="trailing" id="MII-bU-MGP"/>
                             <constraint firstItem="PRP-J7-wbf" firstAttribute="leading" secondItem="Qhd-OI-tHp" secondAttribute="leading" id="RDh-o5-LyC"/>
-                            <constraint firstItem="Qhd-OI-tHp" firstAttribute="leading" secondItem="H8G-a0-zmB" secondAttribute="leading" id="W1H-zd-RZF"/>
+                            <constraint firstItem="Qhd-OI-tHp" firstAttribute="leading" secondItem="sml-It-Geh" secondAttribute="leading" id="W1H-zd-RZF"/>
                             <constraint firstItem="Qhd-OI-tHp" firstAttribute="top" secondItem="PRP-J7-wbf" secondAttribute="bottom" id="Z1s-iC-7OU"/>
-                            <constraint firstItem="gIR-0L-Z26" firstAttribute="top" secondItem="Qhd-OI-tHp" secondAttribute="bottom" id="fPa-hY-6qR"/>
+                            <constraint firstItem="sml-It-Geh" firstAttribute="bottom" secondItem="Qhd-OI-tHp" secondAttribute="bottom" id="fPa-hY-6qR"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="QGB-uX-YEZ"/>
+                        <viewLayoutGuide key="safeArea" id="sml-It-Geh"/>
                     </view>
                     <connections>
                         <outlet property="PronunciationExamples" destination="ni8-gN-x7f" id="OQJ-BJ-aYg"/>
@@ -394,7 +390,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="a7I-4z-ZJd"/>
+                        <viewLayoutGuide key="safeArea" id="hZW-v0-jhz"/>
                     </view>
                     <navigationItem key="navigationItem" id="IpC-Yv-Ima"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -411,10 +407,6 @@
         <scene sceneID="G77-kV-qSQ">
             <objects>
                 <viewController id="Swh-pa-gcG" customClass="QSelectionViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="G55-Zw-dXi"/>
-                        <viewControllerLayoutGuide type="bottom" id="RIj-U7-dW3"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KUa-PR-e9T">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -486,19 +478,19 @@
                         <constraints>
                             <constraint firstItem="KmR-ff-qfZ" firstAttribute="leading" secondItem="BPX-sj-qzR" secondAttribute="leading" id="0wj-QS-5V2"/>
                             <constraint firstItem="BPX-sj-qzR" firstAttribute="top" secondItem="KmR-ff-qfZ" secondAttribute="bottom" constant="40" id="ARX-Mi-Jzr"/>
-                            <constraint firstItem="IEi-8T-fU7" firstAttribute="leading" secondItem="HhT-L4-NyR" secondAttribute="leading" id="JGf-1l-jeL"/>
+                            <constraint firstItem="IEi-8T-fU7" firstAttribute="leading" secondItem="dwi-EA-Xoo" secondAttribute="leading" id="JGf-1l-jeL"/>
                             <constraint firstItem="MaR-av-QcP" firstAttribute="trailing" secondItem="KUa-PR-e9T" secondAttribute="trailingMargin" id="Ow0-h5-5nM"/>
-                            <constraint firstItem="BPX-sj-qzR" firstAttribute="leading" secondItem="KUa-PR-e9T" secondAttribute="leading" id="Phi-ru-lqq"/>
-                            <constraint firstItem="3uv-ie-bDg" firstAttribute="top" secondItem="G55-Zw-dXi" secondAttribute="bottom" id="Qej-y2-pw5"/>
+                            <constraint firstItem="BPX-sj-qzR" firstAttribute="leading" secondItem="dwi-EA-Xoo" secondAttribute="leading" id="Phi-ru-lqq"/>
+                            <constraint firstItem="3uv-ie-bDg" firstAttribute="top" secondItem="dwi-EA-Xoo" secondAttribute="top" id="Qej-y2-pw5"/>
                             <constraint firstItem="3uv-ie-bDg" firstAttribute="trailing" secondItem="MaR-av-QcP" secondAttribute="trailing" id="ZIF-8e-Sjb"/>
-                            <constraint firstAttribute="trailing" secondItem="BPX-sj-qzR" secondAttribute="trailing" id="bdp-sa-SDu"/>
-                            <constraint firstItem="RIj-U7-dW3" firstAttribute="top" secondItem="BPX-sj-qzR" secondAttribute="bottom" constant="20" id="dRb-4d-A9q"/>
+                            <constraint firstItem="dwi-EA-Xoo" firstAttribute="trailing" secondItem="BPX-sj-qzR" secondAttribute="trailing" id="bdp-sa-SDu"/>
+                            <constraint firstItem="dwi-EA-Xoo" firstAttribute="bottom" secondItem="BPX-sj-qzR" secondAttribute="bottom" constant="20" id="dRb-4d-A9q"/>
                             <constraint firstItem="KmR-ff-qfZ" firstAttribute="trailing" secondItem="BPX-sj-qzR" secondAttribute="trailing" id="pLR-dx-od9"/>
-                            <constraint firstItem="IEi-8T-fU7" firstAttribute="trailing" secondItem="HhT-L4-NyR" secondAttribute="trailing" id="px2-62-O4w"/>
+                            <constraint firstItem="IEi-8T-fU7" firstAttribute="trailing" secondItem="dwi-EA-Xoo" secondAttribute="trailing" id="px2-62-O4w"/>
                             <constraint firstItem="IEi-8T-fU7" firstAttribute="top" secondItem="3uv-ie-bDg" secondAttribute="bottom" constant="41" id="v6I-rg-49I"/>
-                            <constraint firstItem="MaR-av-QcP" firstAttribute="top" secondItem="G55-Zw-dXi" secondAttribute="bottom" constant="2" id="x0S-5a-E9a"/>
+                            <constraint firstItem="MaR-av-QcP" firstAttribute="top" secondItem="dwi-EA-Xoo" secondAttribute="top" constant="2" id="x0S-5a-E9a"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="HhT-L4-NyR"/>
+                        <viewLayoutGuide key="safeArea" id="dwi-EA-Xoo"/>
                     </view>
                     <navigationItem key="navigationItem" id="YNP-iS-mc2"/>
                     <connections>
@@ -518,10 +510,6 @@
         <scene sceneID="K4u-7e-NAL">
             <objects>
                 <viewController id="02m-xh-NTx" customClass="HintViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3De-Sq-txf"/>
-                        <viewControllerLayoutGuide type="bottom" id="fkl-A1-SRj"/>
-                    </layoutGuides>
                     <view key="view" alpha="0.75" contentMode="scaleToFill" id="B76-cz-IvV">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -633,7 +621,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="814-ZB-aT9"/>
+                        <viewLayoutGuide key="safeArea" id="IxV-Gi-9lt"/>
                     </view>
                     <connections>
                         <outlet property="TapListen" destination="j2N-Wh-C8D" id="8gO-5r-Fi6"/>
@@ -768,7 +756,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.90440723708438386" green="0.58269648729964851" blue="0.43614610118937136" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="rE0-t9-5iS"/>
+                        <viewLayoutGuide key="safeArea" id="yLF-3Y-oeH"/>
                     </view>
                     <connections>
                         <outlet property="GroupExp" destination="lio-ti-o7U" id="vuL-Wi-fHE"/>
@@ -779,16 +767,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Lk-9M-hzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4208" y="732"/>
+            <point key="canvasLocation" x="4227" y="1054"/>
         </scene>
         <!--Popup View Controller-->
         <scene sceneID="MNq-gk-lGq">
             <objects>
                 <viewController id="xnL-FT-wdV" customClass="PopupViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pR9-YT-XsR"/>
-                        <viewControllerLayoutGuide type="bottom" id="lmm-mK-moN"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ab5-Yf-FJ1">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -872,7 +856,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <viewLayoutGuide key="safeArea" id="PJQ-sB-pS2"/>
+                        <viewLayoutGuide key="safeArea" id="JSv-R8-a3t"/>
                     </view>
                     <connections>
                         <outlet property="addReviewButton" destination="r3Y-6s-w9v" id="gS2-GA-0i2"/>
@@ -889,10 +873,6 @@
         <scene sceneID="MVT-f3-Ga5">
             <objects>
                 <viewController id="spI-8K-e2Y" customClass="ReviewListViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fgz-nu-Whm"/>
-                        <viewControllerLayoutGuide type="bottom" id="PNI-hM-2Pj"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZcG-fl-SvY">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -942,15 +922,15 @@
                         <constraints>
                             <constraint firstItem="3Aj-Q6-K2a" firstAttribute="leading" secondItem="ZcG-fl-SvY" secondAttribute="leadingMargin" constant="-11" id="Cia-fI-Dwd"/>
                             <constraint firstItem="u9A-Ye-OhW" firstAttribute="leading" secondItem="xHQ-Rd-eWI" secondAttribute="leading" id="DW8-ZZ-LFK"/>
-                            <constraint firstItem="3Aj-Q6-K2a" firstAttribute="top" secondItem="Fgz-nu-Whm" secondAttribute="bottom" constant="14" id="KpM-QM-shH"/>
+                            <constraint firstItem="3Aj-Q6-K2a" firstAttribute="top" secondItem="f2i-yi-Ubu" secondAttribute="top" constant="14" id="KpM-QM-shH"/>
                             <constraint firstItem="xHQ-Rd-eWI" firstAttribute="top" secondItem="3Aj-Q6-K2a" secondAttribute="bottom" constant="20" id="RtH-sO-4DL"/>
-                            <constraint firstAttribute="trailing" secondItem="u9A-Ye-OhW" secondAttribute="trailing" id="ZPK-Xq-gYs"/>
-                            <constraint firstItem="u9A-Ye-OhW" firstAttribute="bottom" secondItem="PNI-hM-2Pj" secondAttribute="top" id="fOT-iQ-A6D"/>
+                            <constraint firstItem="f2i-yi-Ubu" firstAttribute="trailing" secondItem="u9A-Ye-OhW" secondAttribute="trailing" id="ZPK-Xq-gYs"/>
+                            <constraint firstItem="u9A-Ye-OhW" firstAttribute="bottom" secondItem="f2i-yi-Ubu" secondAttribute="bottom" id="fOT-iQ-A6D"/>
                             <constraint firstItem="3Aj-Q6-K2a" firstAttribute="leading" secondItem="xHQ-Rd-eWI" secondAttribute="leading" id="hFw-JM-36r"/>
                             <constraint firstItem="u9A-Ye-OhW" firstAttribute="top" secondItem="xHQ-Rd-eWI" secondAttribute="bottom" constant="29" id="iFO-Df-tee"/>
                             <constraint firstItem="u9A-Ye-OhW" firstAttribute="trailing" secondItem="xHQ-Rd-eWI" secondAttribute="trailing" id="skX-FP-mg5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cWI-wZ-nrh"/>
+                        <viewLayoutGuide key="safeArea" id="f2i-yi-Ubu"/>
                     </view>
                     <connections>
                         <outlet property="ReviewList" destination="xHQ-Rd-eWI" id="fUJ-5f-SIV"/>
@@ -967,10 +947,6 @@
         <scene sceneID="pHU-Vd-zea">
             <objects>
                 <viewController storyboardIdentifier="WT1" id="nLb-Jb-HKY" customClass="WT1ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5Oq-JQ-f3U"/>
-                        <viewControllerLayoutGuide type="bottom" id="1V8-Nz-oFk"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zb6-Qc-6Sp">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1020,15 +996,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1V8-Nz-oFk" firstAttribute="top" secondItem="2gK-Dg-JPt" secondAttribute="bottom" id="7TV-h0-5Mq"/>
-                            <constraint firstItem="9fx-0m-l5u" firstAttribute="trailing" secondItem="SX1-3n-0Gl" secondAttribute="trailing" id="EaC-TM-FVM"/>
-                            <constraint firstItem="1V8-Nz-oFk" firstAttribute="top" secondItem="9fx-0m-l5u" secondAttribute="bottom" id="F4R-qF-TTe"/>
-                            <constraint firstItem="2gK-Dg-JPt" firstAttribute="leading" secondItem="Zb6-Qc-6Sp" secondAttribute="leading" id="h2H-rg-Rrf"/>
-                            <constraint firstAttribute="trailing" secondItem="2gK-Dg-JPt" secondAttribute="trailing" id="rZR-xX-T8s"/>
-                            <constraint firstItem="9fx-0m-l5u" firstAttribute="leading" secondItem="SX1-3n-0Gl" secondAttribute="leading" id="vr9-8Q-iyZ"/>
+                            <constraint firstItem="ixa-2T-CMr" firstAttribute="bottom" secondItem="2gK-Dg-JPt" secondAttribute="bottom" id="7TV-h0-5Mq"/>
+                            <constraint firstItem="9fx-0m-l5u" firstAttribute="trailing" secondItem="ixa-2T-CMr" secondAttribute="trailing" id="EaC-TM-FVM"/>
+                            <constraint firstItem="ixa-2T-CMr" firstAttribute="bottom" secondItem="9fx-0m-l5u" secondAttribute="bottom" id="F4R-qF-TTe"/>
+                            <constraint firstItem="2gK-Dg-JPt" firstAttribute="leading" secondItem="ixa-2T-CMr" secondAttribute="leading" id="h2H-rg-Rrf"/>
+                            <constraint firstItem="ixa-2T-CMr" firstAttribute="trailing" secondItem="2gK-Dg-JPt" secondAttribute="trailing" id="rZR-xX-T8s"/>
+                            <constraint firstItem="9fx-0m-l5u" firstAttribute="leading" secondItem="ixa-2T-CMr" secondAttribute="leading" id="vr9-8Q-iyZ"/>
                             <constraint firstItem="9fx-0m-l5u" firstAttribute="top" secondItem="Zb6-Qc-6Sp" secondAttribute="top" id="xhZ-6s-Q7r"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="SX1-3n-0Gl"/>
+                        <viewLayoutGuide key="safeArea" id="ixa-2T-CMr"/>
                     </view>
                     <connections>
                         <outlet property="Instruction" destination="Ujg-Nb-QQz" id="G5E-O0-Cte"/>
@@ -1042,10 +1018,6 @@
         <scene sceneID="Tho-eB-dKZ">
             <objects>
                 <viewController storyboardIdentifier="WT2" id="i2G-IE-HvZ" customClass="WT2ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ned-Ao-E8l"/>
-                        <viewControllerLayoutGuide type="bottom" id="mmo-G5-VyU"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ryo-Eh-7Jm">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1089,11 +1061,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ccc-5l-M4g" secondAttribute="trailing" id="9Hb-GO-Kh1"/>
-                            <constraint firstItem="mmo-G5-VyU" firstAttribute="top" secondItem="ccc-5l-M4g" secondAttribute="bottom" id="CLj-J9-J3R"/>
-                            <constraint firstItem="ccc-5l-M4g" firstAttribute="leading" secondItem="Ryo-Eh-7Jm" secondAttribute="leading" id="v6w-AA-bcR"/>
+                            <constraint firstItem="URq-2s-x8F" firstAttribute="trailing" secondItem="ccc-5l-M4g" secondAttribute="trailing" id="9Hb-GO-Kh1"/>
+                            <constraint firstItem="URq-2s-x8F" firstAttribute="bottom" secondItem="ccc-5l-M4g" secondAttribute="bottom" id="CLj-J9-J3R"/>
+                            <constraint firstItem="ccc-5l-M4g" firstAttribute="leading" secondItem="URq-2s-x8F" secondAttribute="leading" id="v6w-AA-bcR"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="FaR-gn-EYz"/>
+                        <viewLayoutGuide key="safeArea" id="URq-2s-x8F"/>
                     </view>
                     <connections>
                         <outlet property="Step1" destination="2b3-t7-0Uj" id="clJ-v6-5RU"/>
@@ -1107,10 +1079,6 @@
         <scene sceneID="iYd-3G-C6c">
             <objects>
                 <viewController storyboardIdentifier="WT3" id="bzW-OG-yeo" customClass="WT3ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="A0l-Bq-Jbx"/>
-                        <viewControllerLayoutGuide type="bottom" id="fcL-0d-kEJ"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GbU-Yp-4m7">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1177,10 +1145,10 @@ STARTを押して３回発音します</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="S4A-BU-9N8" firstAttribute="trailing" secondItem="GbU-Yp-4m7" secondAttribute="trailingMargin" id="Cx9-kd-bxs"/>
-                            <constraint firstItem="fcL-0d-kEJ" firstAttribute="top" secondItem="S4A-BU-9N8" secondAttribute="bottom" id="HJ2-xQ-Ure"/>
+                            <constraint firstItem="45X-6u-5Sh" firstAttribute="bottom" secondItem="S4A-BU-9N8" secondAttribute="bottom" id="HJ2-xQ-Ure"/>
                             <constraint firstItem="S4A-BU-9N8" firstAttribute="leading" secondItem="GbU-Yp-4m7" secondAttribute="leadingMargin" id="zN8-Ec-9bX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5ML-X6-ZAw"/>
+                        <viewLayoutGuide key="safeArea" id="45X-6u-5Sh"/>
                     </view>
                     <connections>
                         <outlet property="Step2" destination="K4E-yO-mPw" id="D47-ij-hC0"/>
@@ -1194,10 +1162,6 @@ STARTを押して３回発音します</string>
         <scene sceneID="ux9-ow-RYS">
             <objects>
                 <viewController storyboardIdentifier="WT4" id="kpw-4q-C1j" customClass="WT4ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Kx2-MB-dnZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="TH4-Qc-Mb3"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jab-FL-zEd">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1267,11 +1231,11 @@ STARTを押して３回発音します</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Zgu-fq-fyT" secondAttribute="trailing" id="3RW-X2-3Qt"/>
-                            <constraint firstItem="TH4-Qc-Mb3" firstAttribute="top" secondItem="Zgu-fq-fyT" secondAttribute="bottom" id="44h-IB-5Vk"/>
-                            <constraint firstItem="Zgu-fq-fyT" firstAttribute="leading" secondItem="jab-FL-zEd" secondAttribute="leading" id="lV4-zN-EJv"/>
+                            <constraint firstItem="i8Z-VG-oOE" firstAttribute="trailing" secondItem="Zgu-fq-fyT" secondAttribute="trailing" id="3RW-X2-3Qt"/>
+                            <constraint firstItem="i8Z-VG-oOE" firstAttribute="bottom" secondItem="Zgu-fq-fyT" secondAttribute="bottom" id="44h-IB-5Vk"/>
+                            <constraint firstItem="Zgu-fq-fyT" firstAttribute="leading" secondItem="i8Z-VG-oOE" secondAttribute="leading" id="lV4-zN-EJv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Wmv-ML-M2U"/>
+                        <viewLayoutGuide key="safeArea" id="i8Z-VG-oOE"/>
                     </view>
                     <connections>
                         <outlet property="Exp4" destination="L19-sQ-ylj" id="Mdr-ES-sS2"/>
@@ -1286,10 +1250,6 @@ STARTを押して３回発音します</string>
         <scene sceneID="htR-4S-FkH">
             <objects>
                 <viewController storyboardIdentifier="WT5" id="hWf-ZP-nwE" customClass="WT5ViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jFa-Dj-QdR"/>
-                        <viewControllerLayoutGuide type="bottom" id="v33-Uq-XcX"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="alW-1M-h3h">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1366,11 +1326,11 @@ STARTを押して３回発音します</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="v33-Uq-XcX" firstAttribute="top" secondItem="1eA-3O-Mrm" secondAttribute="bottom" id="Cbi-v7-cU2"/>
+                            <constraint firstItem="Dt9-ON-rbg" firstAttribute="bottom" secondItem="1eA-3O-Mrm" secondAttribute="bottom" id="Cbi-v7-cU2"/>
                             <constraint firstItem="1eA-3O-Mrm" firstAttribute="trailing" secondItem="alW-1M-h3h" secondAttribute="trailingMargin" id="Qxg-BB-hJr"/>
                             <constraint firstItem="1eA-3O-Mrm" firstAttribute="leading" secondItem="alW-1M-h3h" secondAttribute="leadingMargin" id="c5H-d5-Zy4"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="fXy-I3-7xw"/>
+                        <viewLayoutGuide key="safeArea" id="Dt9-ON-rbg"/>
                     </view>
                     <connections>
                         <outlet property="Begin" destination="h7J-l5-i6s" id="z6Q-Tj-dfz"/>
