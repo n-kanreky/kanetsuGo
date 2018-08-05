@@ -87,7 +87,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.96214724831940834" blue="0.45566309184648501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="95" id="RI2-Ij-UuB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="95" id="RI2-Ij-UuB">
                                         <rect key="frame" x="0.0" y="28" width="320" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RI2-Ij-UuB" id="1u6-Lu-RlJ">
@@ -203,7 +203,7 @@
                                                     <color key="titleColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="EnO-oy-Jj5" kind="show" identifier="toExplanation" id="C2Z-6K-ZDI"/>
+                                                    <segue destination="EnO-oy-Jj5" kind="presentation" identifier="toExplanation" modalTransitionStyle="crossDissolve" id="C2Z-6K-ZDI"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Examples" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n33-i0-euQ">
@@ -410,7 +410,7 @@
                                 <color key="sectionIndexColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.89458956940000001" blue="0.60660827360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="82" id="o7m-rk-3ql">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="82" id="o7m-rk-3ql">
                                         <rect key="frame" x="0.0" y="28" width="315" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o7m-rk-3ql" id="GIS-Bc-YQo">
@@ -1372,7 +1372,7 @@ STARTを押して３回発音します</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1L-8K-24s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3562.5" y="-450"/>
+            <point key="canvasLocation" x="4344" y="281"/>
         </scene>
     </scenes>
     <resources>
