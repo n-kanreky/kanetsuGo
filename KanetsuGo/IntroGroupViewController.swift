@@ -26,7 +26,7 @@ class IntroGroupViewController: UIViewController {
         deleteAndReturn.setTitle("\(NSLocalizedString("deleteAndReturn", comment: ""))", for:UIControlState.normal)
        
         // 一番上のquestionの行間の変更(正確には行自体の高さを変更している。)
-        let lineHeight1:CGFloat = 25.0
+        let lineHeight1:CGFloat = 30.0
         let paragraphStyle1 = NSMutableParagraphStyle()
         paragraphStyle1.minimumLineHeight = lineHeight1
         paragraphStyle1.maximumLineHeight = lineHeight1
@@ -37,7 +37,7 @@ class IntroGroupViewController: UIViewController {
         
         
         // 行間の変更(正確には行自体の高さを変更している。)
-        let lineHeight:CGFloat = 25.0
+        let lineHeight:CGFloat = 30.0
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight

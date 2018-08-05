@@ -27,7 +27,7 @@
 		6A88F6A2210417FD00FDA0ED /* Tochi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A88F6A1210417FD00FDA0ED /* Tochi.mp3 */; };
 		6A88F6A82104225800FDA0ED /* Jimen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A88F6A72104225700FDA0ED /* Jimen.mp3 */; };
 		6AA21294207652B700971FE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AA21296207652B700971FE8 /* Localizable.strings */; };
-		6AA5D0451FEA62400096966F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0441FEA62400096966F /* Main.storyboard */; };
+		6AA5D0451FEA62400096966F /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0441FEA62400096966F /* iPhone.storyboard */; };
 		6AA5D0491FEA63190096966F /* QSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D0481FEA63180096966F /* QSelectionViewController.swift */; };
 		6AA5D04B1FEA63500096966F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D04A1FEA634F0096966F /* Review.swift */; };
 		6AA5D04D1FEA638D0096966F /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D04C1FEA638D0096966F /* PopupViewController.swift */; };
@@ -75,6 +75,7 @@
 		6AD3CDC820FC7E0E00AB25A3 /* Suugaku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AD3CDA420FC7E0E00AB25A3 /* Suugaku.mp3 */; };
 		6AD3CDD220FCD56F00AB25A3 /* Bungaku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AD3CDD120FCD56F00AB25A3 /* Bungaku.mp3 */; };
 		6AD3EB0D20A7E36600A13A95 /* IntroGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD3EB0C20A7E36600A13A95 /* IntroGroupViewController.swift */; };
+		6AD4ACCF21172EC200ECAD4F /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD4ACCE21172EC200ECAD4F /* iPad.storyboard */; };
 		6AE2B62E20FF751B00E1454E /* Chikyuu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2B61C20FF751A00E1454E /* Chikyuu.mp3 */; };
 		6AE2B63020FF751B00E1454E /* Kokuren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2B61E20FF751A00E1454E /* Kokuren.mp3 */; };
 		6AE2B63120FF751B00E1454E /* Kokka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2B61F20FF751A00E1454E /* Kokka.mp3 */; };
@@ -122,7 +123,7 @@
 		6AA21298207652E600971FE8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6AA212992076530B00971FE8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6AA2129A20772A1300971FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6AA5D0441FEA62400096966F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6AA5D0441FEA62400096966F /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		6AA5D0481FEA63180096966F /* QSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSelectionViewController.swift; sourceTree = "<group>"; };
 		6AA5D04A1FEA634F0096966F /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		6AA5D04C1FEA638D0096966F /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +172,7 @@
 		6AD3CDA420FC7E0E00AB25A3 /* Suugaku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Suugaku.mp3; sourceTree = "<group>"; };
 		6AD3CDD120FCD56F00AB25A3 /* Bungaku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bungaku.mp3; sourceTree = "<group>"; };
 		6AD3EB0C20A7E36600A13A95 /* IntroGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroGroupViewController.swift; sourceTree = "<group>"; };
+		6AD4ACCE21172EC200ECAD4F /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		6AE2B61C20FF751A00E1454E /* Chikyuu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chikyuu.mp3; sourceTree = "<group>"; };
 		6AE2B61E20FF751A00E1454E /* Kokuren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kokuren.mp3; sourceTree = "<group>"; };
 		6AE2B61F20FF751A00E1454E /* Kokka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kokka.mp3; sourceTree = "<group>"; };
@@ -227,7 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				6AA5D0BA1FEA6D970096966F /* View Controllers */,
-				6AA5D0441FEA62400096966F /* Main.storyboard */,
+				6AA5D0441FEA62400096966F /* iPhone.storyboard */,
+				6AD4ACCE21172EC200ECAD4F /* iPad.storyboard */,
 				6A21E02220B5B6B5009979D1 /* BackToViewController.swift */,
 				6AD3EB0C20A7E36600A13A95 /* IntroGroupViewController.swift */,
 				6A12269E2091F6E300AEFF86 /* UnderConstruction1ViewController.swift */,
@@ -429,6 +432,7 @@
 				6AE2B63820FF751B00E1454E /* Kokuseki.mp3 in Resources */,
 				6AD3CDB020FC7E0E00AB25A3 /* Seizon.mp3 in Resources */,
 				6AD3CDBE20FC7E0E00AB25A3 /* Konshuu.mp3 in Resources */,
+				6AD4ACCF21172EC200ECAD4F /* iPad.storyboard in Resources */,
 				6AE2B62E20FF751B00E1454E /* Chikyuu.mp3 in Resources */,
 				6AD3CDA720FC7E0E00AB25A3 /* Kagaku.mp3 in Resources */,
 				6AE2B63220FF751B00E1454E /* Ihan.mp3 in Resources */,
@@ -454,7 +458,7 @@
 				6AE2B63020FF751B00E1454E /* Kokuren.mp3 in Resources */,
 				6AE2B63720FF751B00E1454E /* Hannou.mp3 in Resources */,
 				6AD3CDC120FC7E0E00AB25A3 /* Houritsu.mp3 in Resources */,
-				6AA5D0451FEA62400096966F /* Main.storyboard in Resources */,
+				6AA5D0451FEA62400096966F /* iPhone.storyboard in Resources */,
 				6AE2B63320FF751B00E1454E /* Hangeki.mp3 in Resources */,
 				6AE2B63620FF751B00E1454E /* Chijou.mp3 in Resources */,
 				6AD3CDC020FC7E0E00AB25A3 /* Raishuu.mp3 in Resources */,
@@ -714,6 +718,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9UVAFWC82;
 				INFOPLIST_FILE = KanetsuGo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kanetsugo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -731,6 +736,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9UVAFWC82;
 				INFOPLIST_FILE = KanetsuGo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kanetsugo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -26,6 +26,14 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 行間の変更(正確には行自体の高さを変更している。)
+        let lineHeight:CGFloat = 30.0
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.minimumLineHeight = lineHeight
+        paragraphStyle.maximumLineHeight = lineHeight
+        let attributedText = NSMutableAttributedString(string: reibunJ.text!)
+        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        reibunJ.attributedText = attributedText
         // overrideで上書きしたが、もともとあるものも使いたい場合
     TapListen.text = "\(NSLocalizedString("TapListen", comment: ""))"
         // Do any additional setup after loading the view.
