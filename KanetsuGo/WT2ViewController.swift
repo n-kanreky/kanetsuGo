@@ -19,7 +19,7 @@ class WT2ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //行間を調整
-        let lineHeight:CGFloat = 25.0
+        let lineHeight:CGFloat = 40.0
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight
