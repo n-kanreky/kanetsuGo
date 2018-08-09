@@ -203,13 +203,13 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         //文字の大きさを変える
         let height = UIScreen.main.bounds.size.height
         
-        cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 18)
-        //iPhone の行間設定
+        cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 20)
+        //iPhone の文字の大きさ設定
         if height <= 812 {
-            cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 18)
-            //iPad の行間設定
+            cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 20)
+            //iPad の文字の大きさ設定
         }else{
-            cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 28)
+            cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 30)
             
         }
         
