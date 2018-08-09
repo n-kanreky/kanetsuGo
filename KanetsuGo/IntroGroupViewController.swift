@@ -27,6 +27,21 @@ class IntroGroupViewController: UIViewController {
        
         // 一番上のquestionの行間の変更(正確には行自体の高さを変更している。)
         let lineHeight1:CGFloat = 40.0
+        let height = UIScreen.main.bounds.size.height
+        var lineHeight:CGFloat = 25.0
+        var lineHeight2:CGFloat = 25.0
+        
+        //iPhone の行間設定
+        if height <= 812 {
+            lineHeight = 25.0
+            lineHeight2 = 25.0
+            //iPad の行間設定
+        }else{
+            lineHeight = 40.0
+            lineHeight2 = 40.0
+            
+        }
+        
         let paragraphStyle1 = NSMutableParagraphStyle()
         paragraphStyle1.minimumLineHeight = lineHeight1
         paragraphStyle1.maximumLineHeight = lineHeight1
@@ -37,7 +52,7 @@ class IntroGroupViewController: UIViewController {
         
         
         // 行間の変更(正確には行自体の高さを変更している。)
-        let lineHeight:CGFloat = 40.0
+        
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight
@@ -115,7 +130,7 @@ class IntroGroupViewController: UIViewController {
             
         }
         //三つ目の行間設定　（２で設定）
-        let lineHeight2:CGFloat = 40.0
+        
         let paragraphStyle2 = NSMutableParagraphStyle()
         paragraphStyle2.minimumLineHeight = lineHeight2
         paragraphStyle2.maximumLineHeight = lineHeight2

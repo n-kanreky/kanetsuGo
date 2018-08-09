@@ -128,7 +128,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["敵（てき）の反撃にあった。\n\nGiám sát vi phạm giao thông.\n\n野党は次の選挙（せんきょ）で反撃する機会（きかい）をうかがっている。 \n\nĐó là một sự vi phạm các quy tắc bóng đá."],
              ["反省点を日記に書く。\n\nViết điểm phản chiếu trong nhật ký.\n\n「反省」とは、自分の言動（げんどう）を振り返ることです。\n\nPhản chiếu là hành vi của riêng bạn."]], //Group 9
     
-           [["地面がぬれていて、すべりやすいので気をつけてください。\n\nMặt đất rất trơn, dễ trượt ngã nên hãy cẩn thận.\n\n地面に落書き(らくがき）をする。\n\nLàm scribbles trên mặt đất。"],
+           [["地面がぬれていて、すべりやすいので気をつけてください。\n\nMặt đất rất trơn, dễ trượt ngã nên hãy cẩn thận. \n\n地面に落書き(らくがき）をする。\n\nLàm scribbles trên mặt đất."],
              ["地球の４分の１は陸だ。\n\nMột phần từ trái đất là lục địa.\n\n月は地球のまわりを回っている。\n\nMặt trăng quay quanh trái đất."],
              ["このビルは地下３階、地上１０階建てだ。\n\nTòa nhà này có 3 tầng hầmvà 10 tầng trên mặt đất. \n\n地上から宇宙（うちゅう）に向かって信号（しんごう）を送る。\n\nGửi tín hiệu từ mặt đất về phía vũ trụ."],
              ["家を建てるために土地を買った。\n\nTôi đã mua đất để xây nhà.\n\n工事の前に、土地の測量（そくりょう）をする。\n\nTrước khi xây dựng, tiến hành đo đạc đất đai."],
@@ -202,12 +202,13 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         cell.textLabel?.textColor = UIColor.init(red: 64/255, green: 131/255, blue: 174/255, alpha: 1)
         //文字の大きさを変える
         let height = UIScreen.main.bounds.size.height
-        
+        //general設定
         cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 20)
         //iPhone の文字の大きさ設定
+        
         if height <= 812 {
-            cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 20)
-            //iPad の文字の大きさ設定
+            cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 18)
+        //iPad の文字の大きさ設定
         }else{
             cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 30)
             
@@ -274,9 +275,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ViewController.cellNumber = sender as!Int
             ViewController.hiddenFlag = true
            
-            //以下を利用してIntroGroupViewControllerに各グループの漢越語を表示できるか？
-            print(sender as!Int)
-            print(questions[sender as!Int])
+            
         }
         
     }

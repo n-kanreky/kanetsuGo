@@ -58,8 +58,20 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
         // 文字色変更
         cell.textLabel?.textColor = UIColor.init(red: 64/255, green: 131/255, blue: 174/255, alpha: 1)
+        
         //文字の大きさを変える
+        let height = UIScreen.main.bounds.size.height
+        
         cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 20)
+        //iPhone の文字の大きさ設定
+        if height <= 812 {
+            cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 20)
+            //iPad の文字の大きさ設定
+        }else{
+            cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 30)
+            
+        }
+        
         // 値を設定する.
         cell.textLabel!.text = reviewArray[indexPath.row].questions
         return cell

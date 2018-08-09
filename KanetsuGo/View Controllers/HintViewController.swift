@@ -26,8 +26,18 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // 行間の変更(正確には行自体の高さを変更している。)
-        let lineHeight:CGFloat = 40.0
+        let height = UIScreen.main.bounds.size.height
+        var lineHeight:CGFloat = 18.0
+        //iPhone の行間設定
+        if height <= 812 {
+            lineHeight = 18.0
+        //iPad の行間設定
+        }else{
+            lineHeight = 40.0
+        }
+        
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight
