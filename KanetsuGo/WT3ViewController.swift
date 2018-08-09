@@ -16,8 +16,23 @@ class WT3ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     Step2.text = "\(NSLocalizedString("Step2", comment: ""))"
-        //行間を調整
-        let lineHeight:CGFloat = 40.0
+        
+        let height = UIScreen.main.bounds.size.height
+        var lineHeight:CGFloat = 25.0
+        
+        
+        //iPhone の行間設定
+        if height <= 812 {
+            lineHeight = 25.0
+            
+            //iPad の行間設定
+        }else{
+            lineHeight = 40.0
+            
+            
+        }
+        
+        
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight

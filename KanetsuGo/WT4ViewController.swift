@@ -23,16 +23,34 @@ class WT4ViewController: UIViewController {
         super.viewDidLoad()
     Exp4.text = "\(NSLocalizedString("Exp4", comment: ""))"
     Exp4_skip.text = "\(NSLocalizedString("Exp4_skip", comment: ""))"
+        
+        let height = UIScreen.main.bounds.size.height
+        var lineHeight:CGFloat = 25.0
+        var lineHeight2:CGFloat = 25.0
+        
+        //iPhone の行間設定
+        if height <= 812 {
+            lineHeight = 25.0
+            lineHeight2 = 25.0
+        //iPad の行間設定
+        }else{
+            lineHeight = 40.0
+            lineHeight2 = 40.0
+            
+        }
+        
+    
         // 行間の変更(正確には行自体の高さを変更している。)
-        let lineHeight:CGFloat = 40.0
+        
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight
         let attributedText = NSMutableAttributedString(string: Exp4_skip.text!)
         attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
         Exp4_skip.attributedText = attributedText
+        
         // 行間の変更(正確には行自体の高さを変更している。 ２箇所行間を変えるLabelがある場合は、＝２をつけて区別する
-        let lineHeight2:CGFloat = 40.0
+        
         let paragraphStyle2 = NSMutableParagraphStyle()
         paragraphStyle2.minimumLineHeight = lineHeight2
         paragraphStyle2.maximumLineHeight = lineHeight2
