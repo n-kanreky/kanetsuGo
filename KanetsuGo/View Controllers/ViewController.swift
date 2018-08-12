@@ -41,6 +41,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     //review class のインスタンス
     var review: Review! = Review()
     var reviewArray = try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true)
+    var reviewQuestionNumber = 0
     // "ja-JP"を指定して日本語に設定
     //このクラス内でしか使えない変数・定数をprivateとして設定
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))!
@@ -446,6 +447,9 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
             popup.reibunJ = reibunJ[self.questionNumber - 1][0]
             popup.pronunciationJ = pronunciationJ[self.questionNumber - 1]
             // *******************************************************************************
+            
+            popup.reviewQuestionNumber = reviewQuestionNumber
+            
         }
         
         if(segue.identifier == "GroupExp"){

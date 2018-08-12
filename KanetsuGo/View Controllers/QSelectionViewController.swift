@@ -9,7 +9,7 @@
 import UIKit
 
 class QSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    var questions = [["注意","意見","準備"], //Group 1
+    var questions = [["注意","意見","準備","管理","記念","楽観","結果","首都","天然","同意","過去","結論","孤独","古代"], //Group 1
                      ["今週","先週","来週","毎週","週末","隔週"], //Group 2
                      ["今日","毎日","日時","日常","日用品"], //Group 3
                      ["今月","月給","月額","来月","先月"], //Group 4
@@ -23,7 +23,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
 //                     ["文化","法律","印象","報告","科学"]]
     
     
-    var katakana = [["友達にチュウイする","反対イケンを言う","ジュンビする"], // Group 1
+    var katakana = [["友達にチュウイする","反対イケンを言う","ジュンビする","カンリする","キネン日（び）","ラッカン的（てき）","試験のケッカ","日本のシュト","テンネンの温泉（おんせん）","意見（いけん）にドウイする","カコのデータ","ケツロンを先に言う","コドクなくらし","コダイの文明（ぶんめい）"], // Group 1
                     ["コンシュウの土曜日","センシュウの月曜日","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける","カクシュウで試合がある"], //Group 2
                     ["キョウは晴れだ","マイニチ学校に行く","会議のニチジ","ニチジョウの生活","ニチヨウヒンを買う"], //Group 3
                     ["コンゲツ","ゲッキュウ","ゲツガク","ライゲツ","センゲツ"], //Group 4
@@ -36,7 +36,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["ジメンに落ちた","チキュウを守る","チジョウに出る","広いトチ","シッチ帯（たい）が広がる","住（ジュウ）タクチ"]] //Group 10
 //                    ["日本ブンカ","ホウリツを守る（まもる）","インショウを聞く","ホウコクする","カガクが発達（ハッタツ）する"]]
 
-    var vietnamese = [["chú ý","ý kiến","Chuẩn bị"],//Group 1
+    var vietnamese = [["chú ý","ý kiến","Chuẩn bị","Quản lý","kỷ niệm","Lạc quan","Kết quả","thủ đô","thiên nhiên","đồng ý","quá khứ","Kết luận","Kết luận","cô đơn","cổ đại"],//Group 1
                       ["tuần này","tuần trước","tuần sau","cuối tuần","hàng tuần","2 tuần một lần"], //Group 2
                       ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày"], //Group 3
                       ["Tháng này","Tiền lương hàng tháng","Số tiền hàng tháng","Tháng tiếp theo","Tháng trước"], //Group 4
@@ -50,7 +50,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
 //                      ["Văn hóa","Pháp luật","ấn tượng","báo cáo","báo cáo"]]
 
     
-    var pronunciationJ = [["Chuui","Iken","Junbi"], //Groupo 1
+    var pronunciationJ = [["Chuui","Iken","Junbi","Kanri","Kinen","Rakkan","Kekka","Shuto"], //Groupo 1
                     ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Kakushuu"], //Group 2
                     ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin"], //Group 3
                     ["Kongetsu","Gekkyuu","Getsugaku","Raigetsu","Sengetsu"], //Group 4
@@ -67,13 +67,18 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     var reibunJ =
         [[
-            //["毎年予防注射をする。\n\n Tiêm phòng hàng năm. \n\n子供は注射が嫌いだ。\n\n Trẻ em không thích chích ngừa."],
+   //Group1         //["毎年予防注射をする。\n\n Tiêm phòng hàng năm. \n\n子供は注射が嫌いだ。\n\n Trẻ em không thích chích ngừa."],
             ["この道は交通量が多いので、渡るときには注意が必要だ。\n\nCon đường này có rất nhiều phương tiện giao thông, vì vậy hãy cẩn thận khi đi qua. \n\n熱中症に注意してください。\n\nHãy chú ý đến đột quỵ nhiệt."],
             ["皆が彼の意見に同意した。 \n\nMọi người đồng ý với ý kiến của anh ấy.\n\n何か意見はありますか。\n\nBạn có ý kiến ​​gì không?"],
             //["北と南の温度の差が激しい。\n\n Sự chênh lệch về nhiệt độ giữa miền Bắc và miền Nam rất dữ dội. \n\n部屋の温度を測ると30度もあった。\n\n Nhiệt độ của phòng được đo và nó là 30 độ."],
             //["私の専門は日本語だ。\n\n Chuyên môn của tôi là tiếng Nhật.\n\n専門的な話はわからない。\n\n Tôi không hiểu những câu chuyện mang tính chuyên môn."]], //Group 1
+            ["明日のために準備する。\n\nChuẩn bị cho ngày mai.\n\n準備に時間がかかる。\n\nPhải mất thời gian để chuẩn bị."],
+            ["彼はこのアパートを管理している。\n\nAnh ta đang quản lý căn hộ này.\n\n彼は自己管理が必要だ。\n\nAnh ấy cần tự quản lý."],
+            ["記念に写真を撮る。\n\nChụp ảnh trong lễ kỷ niệm.\n\n結婚25年を記念する。\n\nKỷ niệm 25 năm kết hôn."],
+            ["明日のために準備する。\n\nChuẩn bị cho ngày mai.\n\n準備に時間がかかる。\n\nPhải mất thời gian để chuẩn bị."],
+            ["明日のために準備する。\n\nChuẩn bị cho ngày mai.\n\n準備に時間がかかる。\n\nPhải mất thời gian để chuẩn bị."],
             ["明日のために準備する。\n\nChuẩn bị cho ngày mai.\n\n準備に時間がかかる。\n\nPhải mất thời gian để chuẩn bị."]],
-            
+    //Group2
          [["私は今週の火曜日に太郎さんとテニスをします。\n\nTôi chơi tennis với Taro vào thứ ba tuần này. \n\n天気予報によると、今週は週末にかけて雨が降るようだ。　\n\nTheo dự báo thời tiết, có vẻ như trời sẽ mưa vào cuối tuần này."],
           ["母は、先週国に帰りました。\n\nMẹ tôi quay trở lại đất nước tuần trước. \n\n先週の金曜日は、大雨のため休校になった。\n\nNgôi trường đã bị đóng cửa do mưa lớn hôm thứ Sáu tuần trước."],
           ["私は来週、東京へ行きます。 \n\nTuần tới, tôi sẽ đi đến Tokyo.\n\n来週から夏休みが始まります。\n\nTKỳ nghỉ hè bắt đầu vào tuần tới."],

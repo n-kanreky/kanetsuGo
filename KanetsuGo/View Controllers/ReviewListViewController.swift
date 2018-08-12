@@ -111,7 +111,9 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
             if(segue.identifier == "reviewSegue"){
                 let viewController:ViewController = (segue.destination as! ViewController)
                 let review = reviewArray[sender as!Int]
-    
+//               以下で正解したReview Questionを削除する準備をする
+                viewController.reviewQuestionNumber = sender as!Int
+//
                 viewController.questions = [review.questions]
                 viewController.katakana = [review.katakana]
                 viewController.vietnamese = [review.vietnamese]

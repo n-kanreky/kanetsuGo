@@ -33,8 +33,9 @@ class PopupViewController: UIViewController {
     var reviewCorrectFlag = false
     let realm = try! Realm()
     var reviewArray = try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true)
+    //復習リストの問題をVCで正解した時のため
+    var reviewQuestionNumber = 0
     
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         //復習リストのボタンを以下に置き換えて、ローカライズ
