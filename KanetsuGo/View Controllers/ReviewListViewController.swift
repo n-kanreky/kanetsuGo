@@ -85,18 +85,19 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
 
         let deleteButton: UITableViewRowAction = UITableViewRowAction(style: .normal, title: "\(NSLocalizedString("Delete", comment: ""))") { (action, index) -> Void in
-           
-            
-          tableView.deleteRows(at: [indexPath as IndexPath], with: UITableViewRowAnimation.fade)
+            // 削除されたタスクを取得する
+            let review = self.reviewArray[indexPath.row]
+
+            // データベースから削除する
+            try! self.realm.write { //transaction＝　DBとの通信　を行うメソッドを走らせる
+                self.realm.delete(review)
+                self.reviewArray = Array(try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true))
+                self.reviewView.deleteRows(at: [indexPath], with: .fade)
+            }
+          
         }
         deleteButton.backgroundColor = UIColor.red
-        // 削除されたタスクを取得する
-        let review = self.reviewArray[indexPath.row]
-       
-        // データベースから削除する
-        try! realm.write { //transaction＝　DBとの通信　を行うメソッドを走らせる
-        self.realm.delete(review)
-        }
+        
       
         return [deleteButton] //return ＝　返り値　line69のfunctionに対して、値を返す
         

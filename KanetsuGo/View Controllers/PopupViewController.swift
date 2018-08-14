@@ -100,6 +100,16 @@ class PopupViewController: UIViewController {
             self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
             if questionCount == self.totalQuestions {
                 if skipCount == 0 {
+                
+                //正解の場合、以下でReviewリストから削除
+                let reviewArray = Array(try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true))
+                    // 削除されたタスクを取得する
+                    let review = reviewArray[self.reviewQuestionNumber]
+                    
+                    // データベースから削除する
+                    try! realm.write { //transaction＝　DBとの通信　を行うメソッドを走らせる
+                        self.realm.delete(review)
+                    }
                 //以下でローカライズ
                 popUpLabel.text = "\(NSLocalizedString("CorrectAnswer", comment: ""))"
                 correctCountLabel.text = " "
