@@ -9,65 +9,212 @@
 import UIKit
 
 class QSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    var questions = [["注意","意見","準備","管理","記念","楽観","結果","首都","天然","同意","過去","結論","孤独","古代"], //Group 1
-                     ["今週","先週","来週","毎週","週末","隔週"], //Group 2
+    var questions =
+                    [["注意","同意","意見","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都"], //Group 1
+                     ["今週","先週","来週","毎週","週末"], //Group 2
                      ["今日","毎日","日時","日常","日用品"], //Group 3
-                     ["今月","月給","月額","来月","先月"], //Group 4
+                     ["今月","来月","先月","月給","月額"], //Group 4
                      ["通行","通信","通知","通訳","通過"], //Group 5
                      ["生存","生産","生徒","学生","生活"], //Group 6
-                     
                      ["文学","哲学","医学","数学","薬学","化学"], //Group 7 学がつく漢語
                      ["国立","国家","国籍","国際","国連"], //Group 8 国を含む
                      ["反応","反映","反射","反対","反撃","反省"], //Group 9 反を含む
                      ["地面","地球","地上","土地","湿地","宅地"]]//Group 10 地を含む
-//                     ["文化","法律","印象","報告","科学"]]
+
     
-    
+
     var katakana = [["友達にチュウイする","反対イケンを言う","ジュンビする","カンリする","キネン日（び）","ラッカン的（てき）","試験のケッカ","日本のシュト","テンネンの温泉（おんせん）","意見（いけん）にドウイする","カコのデータ","ケツロンを先に言う","コドクなくらし","コダイの文明（ぶんめい）"], // Group 1
-                    ["コンシュウの土曜日","センシュウの月曜日","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける","カクシュウで試合がある"], //Group 2
+                    ["コンシュウの土曜日","センシュウの月曜日","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける"], //Group 2
                     ["キョウは晴れだ","マイニチ学校に行く","会議のニチジ","ニチジョウの生活","ニチヨウヒンを買う"], //Group 3
-                    ["コンゲツ","ゲッキュウ","ゲツガク","ライゲツ","センゲツ"], //Group 4
+                    ["コンゲツ","ライゲツ","センゲツ","ゲッキュウ","ゲツガク"], //Group 4
                     ["ツウコウする","ツウシンする","ツウチする","ツウヤクする","ツウカする"], //Group 5
                     ["セイゾンしている","セイサンする","学校のセイト","大学のガクセイ","セイカツする"], //Group 6
-                    
                     ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）"], //Group 7
                     ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレンに加盟（かめい）する"], //Group 8
                     ["ハンノウする","ハンエイする","ハンシャする","ハンタイする","ハンゲキする","ハンセイする"], //Group 9
                     ["ジメンに落ちた","チキュウを守る","チジョウに出る","広いトチ","シッチ帯（たい）が広がる","住（ジュウ）タクチ"]] //Group 10
-//                    ["日本ブンカ","ホウリツを守る（まもる）","インショウを聞く","ホウコクする","カガクが発達（ハッタツ）する"]]
 
-    var vietnamese = [["chú ý","ý kiến","Chuẩn bị","Quản lý","kỷ niệm","Lạc quan","Kết quả","thủ đô","thiên nhiên","đồng ý","quá khứ","Kết luận","Kết luận","cô đơn","cổ đại"],//Group 1
-                      ["tuần này","tuần trước","tuần sau","cuối tuần","hàng tuần","2 tuần một lần"], //Group 2
+
+    var vietnamese =
+                     [["chú ý","đồng ý","ý kiến","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô"], //Group 1
+                      ["tuần này","tuần trước","tuần sau","cuối tuần","hàng tuần"], //Group 2
                       ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày"], //Group 3
-                      ["Tháng này","Tiền lương hàng tháng","Số tiền hàng tháng","Tháng tiếp theo","Tháng trước"], //Group 4
+                      ["Tháng này","Tháng tiếp theo","Tháng trước","Tiền lương hàng tháng","Số tiền hàng tháng"], //Group 4
                       ["thông hành","thông tín","thông tri","thông dịch","thông quá"],// Group 5
                       ["sinh tồn","sinh sản","sinh đồ","học sinh","sinh hoạt"], //Group 6
-                      
                       ["Văn học","triết học","y học","toán học","dược học","hóa học"], //Group7
                       ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Liên Hợp Quốc"],//Group8
                       ["Phản ứng","Phản ánh","Sự phản chiếu","Phản đối","Phản công","Sự phản chiếu"],//Group9
                       ["Mặt đất","Trái đất","Trên mặt đất","Đất đai","Đất ngập nước","Đất ở."]]//Group10
-//                      ["Văn hóa","Pháp luật","ấn tượng","báo cáo","báo cáo"]]
+
 
     
-    var pronunciationJ = [["Chuui","Iken","Junbi","Kanri","Kinen","Rakkan","Kekka","Shuto"], //Groupo 1
-                    ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Kakushuu"], //Group 2
-                    ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin"], //Group 3
-                    ["Kongetsu","Gekkyuu","Getsugaku","Raigetsu","Sengetsu"], //Group 4
-                    ["Tsuukou","Tsuushin","Tsuuchi","Tsuuyaku","Tsuuka"],  //Group 5
-                    ["Seizon","Seisan","Seito","Gakusei","Seikatsu"], //Group 6
-    
-                    ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku"], //Group7
-                    ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
-                    ["Hannou","Hanei","Hansha","Hantai","Hangeki","Hansei"], //Group 9
-                    ["Jimen","Chikyuu","Chijou","Tochi","Shicchi","Takuchi"]] //Group 10
-//                          ["Bunka","Houritsu","Inshou","Houkoku","Kagaku"]] 
-    
+    var pronunciationJ =
+                [["Chuui","Doui","Iken","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto"], //Groupo 1
+                     ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu"], //Group 2
+                     ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin"], //Group 3
+                     ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku"], //Group 4
+                     ["Tsuukou","Tsuushin","Tsuuchi","Tsuuyaku","Tsuuka"],  //Group 5
+                     ["Seizon","Seisan","Seito","Gakusei","Seikatsu"], //Group 6
+                     ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku"], //Group7
+                     ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
+                     ["Hannou","Hanei","Hansha","Hantai","Hangeki","Hansei"], //Group 9
+                     ["Jimen","Chikyuu","Chijou","Tochi","Shicchi","Takuchi"]] //Group 10
 
+
+    var reibunJ1 =
+        [["この道は交通量が多いので、渡るときには注意が必要だ。",  //Group 1
+            "私は彼の意見に同意する。",
+            "皆が彼の意見に同意した。",
+            "試験の結果はどうでしたか？",
+            "プレゼンテーションの結論は何ですか。",
+            "この国は天然資源に恵まれている。",
+            "石油とガスは燃料になる。",
+            "記念に写真を撮る。",
+            "私は動詞の過去形を学んだ。",
+            "彼は孤独を好む。",
+            "古代文明はここで繁栄した。",
+            "彼はこのアパートを管理している。",
+            "彼は楽観的な人だ。",
+            "財布を落としたので、警察に連絡した。",
+            "明日のために準備する。",
+            "日本の首都は東京だ。" ],
+         
+         ["私は今週の火曜日に太郎さんとテニスをします。",  //Group 2
+            "母は、先週国に帰りました。",
+            "私は来週、東京へ行きます。",
+            "毎週妻に花を買います。",
+            "あなたは週末、どこかに行きますか。"],
+         
+         ["今日は8時までに帰ります。",            //Group 3
+            "私は毎日日本語を勉強します。",
+            "パーティの日時を決定する。",
+            "私たちは日常生活を大切にしています。",
+            "近くのスーパーで日用品を買います。"],
+         
+         ["今月から新しいバイトを始めます。",         //Group 4
+            "母は、来月ハノイに来る予定です。",
+            "この店は、先月オープンしました。",
+            "私の月給は10万円です。",
+            "バイト料の月額は5万円くらいです。"],
+         
+         ["ここはたくさんのトラックが通行する。",       //Group 5
+            "通信販売を利用する。",
+            "学校からの成績通知を受け取る。",
+            "会議で通訳する。",
+            "台風（たいふう）が九州を通過した。"],
+         
+         ["子供の生存を確認する。",              //Group 6
+            "この国は石油を生産する。",
+            "彼はまじめな生徒だ。",
+            "外国語学部は男子学生より女子学生の方が多い。",
+            "留学生として日本で4年間生活した。"],
+         
+         ["私の専攻は日本文学だ。",              //Group 7
+            "彼はギリシャ哲学の研究者だ。",
+            "医学が進み、人間が長生きできるようになった。",
+            "彼は有名な数学者だ。",
+            "大学では薬学を学んでいる。",
+            "化学と科学は日本語で発音が同じだ。"],
+         
+         ["これが新しい国立劇場（げきじょう）です。",     //Group 8
+            "アフリカに新しい国家が生まれた。",
+            "国籍はどこですか。",
+            "私の専門は国際関係だ。",
+            "国連は国際連合（こくさいれんごう）の略（りゃく）だ。"],
+         
+         ["呼びかけても何の反応もない。",            //Group 9
+            "ファッションは常にその時代を反映していると言える。",
+            "条件反射（じょうけんはんしゃ）は学習による生物学的（せいぶつがくてき）応答（おうとう）である。",
+            "法案（ほうあん）に反対します。",
+            "敵（てき）の反撃にあった。",
+            "反省点を日記に書く。"],
+         
+         ["地面がぬれていて、すべりやすいので気をつけてください。", //Group 10
+            "地球の４分の１は陸だ。",
+            "このビルは地下３階、地上１０階建てだ。",
+            "家を建てるために土地を買った。",
+            "この国には多くの湿地がある。",
+            "宅地を造成(ぞうせい）する。"]]
     
+    var reibunJ2 =
+        [["熱中症に注意してください。",                  //Group 1
+            "多くの同意が得られた。",
+            "何か意見はありますか。",
+            "結果的に成功だった。",
+            "私はこの結論に満足していない。",
+            "このバスの燃料は天然ガスだ。",
+            "日本は燃料を輸入している。",
+            "結婚25年を記念する。",
+            "このテストの問題は過去にも出た。",
+            "私の母は孤独な人生を送った。",
+            "私は古代の歴史を研究している。",
+            "彼は自己管理が必要だ。",
+            "彼は将来を楽観している。",
+            "災害の場合、人々は連絡を取り合う。",
+            "準備に時間がかかる。",
+            "ベトナムの首都はハノイだ。"],
+         
+         ["天気予報によると、今週は週末にかけて雨が降るようだ。",     //Group 2
+            "先週の金曜日は、大雨のため休校になった。",
+            "来週から夏休みが始まります。",
+            "私は毎週友達と映画をみます。",
+            "私は週末によくサッカーをします。"],
+        
+         ["私は今日から大学生だ。",                    //Group 3
+            "昨日のパーティーに出席しましたか。",
+            "次の会議の日時を教えてください。",
+            "散歩は日常的に行っている。",
+            "デパートでも日用品を買うことができます。"],
+         
+         ["今月中にこの仕事を仕上げなくてはならない。",          //Group 4
+            "私は来月結婚します。",
+            "彼は先月帰国しました。",
+            "月給日は毎月25日です。",
+            "このアプリの使用料は、月額300円です。"],
+         
+         ["この道は一方通行だ。",                     //Group 5
+            "海外の友達と通信する。",
+            "通知表を親に見せる。",
+            "通訳の仕事は疲れる。",
+            "特急はこの駅を通過する。"],
+         
+         ["宇宙には生命体が生存している可能性がある。",          //Group 6
+            "ここは米の生産が有名だ。",
+            "中学校の生徒に英語を教える。",
+            "学生時代にはいろいろなスポーツをした。",
+            "海外でぜいたくな生活を送りたい。"],
+    
+         ["『源氏物語』は日本の古典文学の最高傑作だ。",          //Group 7
+            "この研究は哲学と宗教学の境界を超えている。",
+            "医学は哲学とともに最も古い学問分野だと言われている。",
+            "高校の時から数学が得意だった。",
+            "薬学部を卒業して、薬剤師（やくざいし）になった。",
+            "彼はノーベル化学賞を受賞した。"],
+         
+         ["日本に国立大学はいくつありますか。",              //Group 8
+            "試験に合格して、国家公務員（こっかこうむいん）になった。",
+            "国籍はベトナムです。",
+            "新東京国際空港は千葉県にあります。",
+            "国連は1945年に設立された国際機構（こくさいきこう）だ。"],
+         
+         ["呼びかけても何の反応もない。",                 //Group 9
+            "ファッションは常にその時代を反映していると言える。",
+            "条件反射（じょうけんはんしゃ）は学習による生物学的（せいぶつがくてき）応答（おうとう）である。",
+            "法案（ほうあん）に反対します。",
+            "敵（てき）の反撃にあった。",
+            "反省点を日記に書く。"],
+    
+         ["地面に落書き(らくがき）をする。",                //Group 10
+            "月は地球のまわりを回っている。",
+            "地上から宇宙（うちゅう）に向かって信号（しんごう）を送る。",
+            "工事の前に、土地の測量（そくりょう）をする。",
+            "湿地は野菜栽培には適していない。",
+            "宅地の価格（かかく）が上がっている。"]]
+         
     var reibunJ =
         [[
-   //Group1         //["毎年予防注射をする。\n\n Tiêm phòng hàng năm. \n\n子供は注射が嫌いだ。\n\n Trẻ em không thích chích ngừa."],
+   //Group1
             ["この道は交通量が多いので、渡るときには注意が必要だ。\n\nCon đường này có rất nhiều phương tiện giao thông, vì vậy hãy cẩn thận khi đi qua. \n\n熱中症に注意してください。\n\nHãy chú ý đến đột quỵ nhiệt."],
             ["皆が彼の意見に同意した。 \n\nMọi người đồng ý với ý kiến của anh ấy.\n\n何か意見はありますか。\n\nBạn có ý kiến ​​gì không?"],
             //["北と南の温度の差が激しい。\n\n Sự chênh lệch về nhiệt độ giữa miền Bắc và miền Nam rất dữ dội. \n\n部屋の温度を測ると30度もあった。\n\n Nhiệt độ của phòng được đo và nó là 30 độ."],
@@ -83,8 +230,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
           ["母は、先週国に帰りました。\n\nMẹ tôi quay trở lại đất nước tuần trước. \n\n先週の金曜日は、大雨のため休校になった。\n\nNgôi trường đã bị đóng cửa do mưa lớn hôm thứ Sáu tuần trước."],
           ["私は来週、東京へ行きます。 \n\nTuần tới, tôi sẽ đi đến Tokyo.\n\n来週から夏休みが始まります。\n\nTKỳ nghỉ hè bắt đầu vào tuần tới."],
           ["毎週妻に花を買います。\n\nMỗi tuần tôi sẽ mua hoa cho vợ tôi. \n\n私は毎週友達と映画をみます。\n\nTôi xem phim với bạn bè mỗi tuần."],
-          ["あなたは週末、どこかに行きますか。\n\nBạn sẽ đi đâu đó vào cuối tuần?\n\n私は週末によくサッカーをします。\n\nTôi thường chơi bóng đá vào cuối tuần."],
-          ["隔週（２週間おきに）東京に来ます。\n\nTôi sẽ đến Tokyo hai tuần một lần. \n\n私は隔週（２週間に１度）母に電話をします。\n\nTôi sẽ gọi cho mẹ tôi hai tuần một lần."]], //Group 2
+          ["あなたは週末、どこかに行きますか。\n\nBạn sẽ đi đâu đó vào cuối tuần?\n\n私は週末によくサッカーをします。\n\nTôi thường chơi bóng đá vào cuối tuần."]],
+            //,
+          //["隔週（２週間おきに）東京に来ます。\n\nTôi sẽ đến Tokyo hai tuần một lần. \n\n私は隔週（２週間に１度）母に電話をします。\n\nTôi sẽ gọi cho mẹ tôi hai tuần một lần."]], //Group 2
          
          [["今日は8時までに帰ります。\n\nHôm nay tôi sẽ trở lại lúc 8 giờ. \n\n私は今日から大学生だ。\n\nTôi là sinh viên đại học từ hôm nay."],
           ["私は毎日日本語を勉強します。\n\nTôi học tiếng Nhật mỗi ngày. \n\n昨日のパーティーに出席しましたか。\n\nTrời mưa hàng ngày."],
@@ -141,12 +289,6 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              
              ["宅地を造成(ぞうせい）する。\n\nTạo đất ở.\n\n宅地の価格（かかく）が上がっている。\n\nGiá đất ở đang tăng lên."]]] //Group 10
     
-//            //10
-//            [["日本文化を学ぶ。\n\n Học văn hoá Nhật Bản.\n\n11月3日は「文化の日」で祝日だ。 \n\n Ngày 3 tháng 11 là ＊ngày văn hóa＊ và đó là một ngày lễ."],
-//             ["私は日本の法律を勉強している。\n\n Tôi học luật Nhật Bản.\n\n彼は有名な法律学者だ。 \n\n Ông là một học giả luật nổi tiếng."],
-//             ["彼の第一印象はどうでしたか。\n\n Ấn tượng đầu tiên của anh ấy như thế nào?\n\n印象的な芸術作品だ。 \n\n Đây là một tác phẩm nghệ thuật ấn tượng."],
-//             ["会議で決まったことを報告する。\n\n Báo cáo việc đã quyết định trong hội nghị.\n\n両親に旅行の報告がたくさんある。 \n\n Có nhiều điều cần báo cáo cho bố mẹ về việc du lịch."],
-//             ["私は自然科学を専攻している。\n\n Tôi chuyên ngành khoa học tự nhiên.\n\n将来私は科学者になりたい。 \n\n Tương lai, tôi muốn trở thành nhà khoa học."]]] //Group 10
 
 //ローカライズ
     @IBOutlet weak var toInstruction: UILabel!
