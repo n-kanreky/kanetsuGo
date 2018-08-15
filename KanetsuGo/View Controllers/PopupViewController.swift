@@ -26,7 +26,10 @@ class PopupViewController: UIViewController {
     var question = ""
     var katakana = ""
     var vietnamese = ""
-    var reibunJ = ""
+    var reibunJ1 = ""
+    var reibunJ2 = ""
+    var reibunV1 = ""
+    var reibunV2 = ""
     var pronunciationJ = ""
     var pickQList = "" //ここにQリスト（通常、復習）を入れる
     var totalQuestions = 0
@@ -160,8 +163,10 @@ class PopupViewController: UIViewController {
             self.review.vietnamese = self.vietnamese
             
             /// 日越の例文
-            self.review.reibunJ = self.reibunJ
-            
+            self.review.reibunJ1 = self.reibunJ1
+            self.review.reibunJ2 = self.reibunJ2
+            self.review.reibunV1 = self.reibunV1
+            self.review.reibunV2 = self.reibunV2
             // 音声ファイル
             self.review.pronunciationJ = self.pronunciationJ
             

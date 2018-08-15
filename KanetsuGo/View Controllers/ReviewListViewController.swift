@@ -21,7 +21,10 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
     var question = ""
     var katakana = ""
     var vietnamese = ""
-    var reibunJ = ""
+    var reibunJ1 = ""
+    var reibunJ2 = ""
+    var reibunV1 = ""
+    var reibunV2 = ""
     var pronunciationJ = ""
     
     var reviewArray = Array(try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true))
@@ -119,7 +122,11 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
                 viewController.katakana = [review.katakana]
                 viewController.vietnamese = [review.vietnamese]
                 viewController.pronunciationJ = [review.pronunciationJ]
-                viewController.reibunJ = [[review.reibunJ]]
+                viewController.reibunJ1 = [[review.reibunJ1]]
+                viewController.reibunJ2 = [[review.reibunJ2]]
+                viewController.reibunV1 = [[review.reibunV1]]
+                viewController.reibunV2 = [[review.reibunV2]]
+                
                flag = "ReviewList"
                 
          }

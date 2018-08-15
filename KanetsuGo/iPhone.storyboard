@@ -61,6 +61,20 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ws-ep-oCc">
+                                <rect key="frame" x="0.0" y="37" width="320" height="65"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="練習問題の選択" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ab-V1-9j3">
+                                        <rect key="frame" x="0.0" y="1" width="320" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                        <color key="textColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e7E-Kw-rev">
                                 <rect key="frame" x="0.0" y="110" width="320" height="391"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -96,20 +110,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ws-ep-oCc">
-                                <rect key="frame" x="0.0" y="37" width="320" height="65"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="練習問題の選択" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ab-V1-9j3">
-                                        <rect key="frame" x="0.0" y="1" width="320" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
-                                        <color key="textColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -125,7 +125,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83f-QE-urK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="B1o-m1-8D5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2216.25" y="275.7042253521127"/>
+            <point key="canvasLocation" x="2004" y="276"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GTS-kf-HaV">
@@ -386,7 +386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnC-UE-8I9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3101.25" y="280.98591549295776"/>
+            <point key="canvasLocation" x="2814" y="276"/>
         </scene>
         <!--Review List View Controller-->
         <scene sceneID="qY6-Da-jmd">
@@ -400,59 +400,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UHu-tl-IEz">
-                                <rect key="frame" x="5" y="140" width="315" height="428"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBX-ou-Qtw">
+                                <rect key="frame" x="0.0" y="4" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqu-Sf-Wsk">
+                                        <rect key="frame" x="8" y="15" width="304" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
+                                        <state key="normal" title="＜　練習問題の選択">
+                                            <color key="titleColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="returnToQSelection:" destination="cMk-YC-AGt" eventType="touchUpInside" id="5o9-hD-2ZA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-Rl-pBj">
+                                <rect key="frame" x="0.0" y="72" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="復習リスト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28x-Jn-IZa">
+                                        <rect key="frame" x="0.0" y="13" width="320" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                                        <color key="textColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UHu-tl-IEz">
+                                <rect key="frame" x="0.0" y="140" width="320" height="428"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.89458956940000001" blue="0.60660827360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="82" id="o7m-rk-3ql">
-                                        <rect key="frame" x="0.0" y="28" width="315" height="82"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o7m-rk-3ql" id="GIS-Bc-YQo">
-                                            <rect key="frame" x="0.0" y="0.0" width="315" height="81.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.8926070291" green="1" blue="0.66286678990000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="復習リスト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28x-Jn-IZa">
-                                <rect key="frame" x="5" y="84" width="315" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="fHu-dI-eVb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
-                                <color key="textColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqu-Sf-Wsk">
-                                <rect key="frame" x="5" y="34" width="253" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="7yr-aO-vz3"/>
-                                    <constraint firstAttribute="width" constant="253" id="9Gn-fj-84R"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
-                                <state key="normal" title="＜　練習問題の選択">
-                                    <color key="titleColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="returnToQSelection:" destination="cMk-YC-AGt" eventType="touchUpInside" id="5o9-hD-2ZA"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="UHu-tl-IEz" firstAttribute="top" secondItem="28x-Jn-IZa" secondAttribute="bottom" constant="22" id="4Rc-GG-aqg"/>
-                            <constraint firstItem="UHu-tl-IEz" firstAttribute="trailing" secondItem="28x-Jn-IZa" secondAttribute="trailing" id="6uX-1J-VUp"/>
-                            <constraint firstItem="Oqu-Sf-Wsk" firstAttribute="top" secondItem="0Xp-YW-f3q" secondAttribute="bottom" constant="14" id="J7s-k0-Mqk"/>
-                            <constraint firstItem="UHu-tl-IEz" firstAttribute="bottom" secondItem="ztb-nO-zwv" secondAttribute="top" id="MPU-y5-Qi2"/>
-                            <constraint firstItem="UHu-tl-IEz" firstAttribute="leading" secondItem="28x-Jn-IZa" secondAttribute="leading" id="Q1M-tC-0fX"/>
-                            <constraint firstItem="28x-Jn-IZa" firstAttribute="top" secondItem="Oqu-Sf-Wsk" secondAttribute="bottom" constant="20" id="inX-Vl-wpR"/>
-                            <constraint firstItem="Oqu-Sf-Wsk" firstAttribute="leading" secondItem="05i-5I-SIs" secondAttribute="leadingMargin" constant="-11" id="on4-YZ-e3E"/>
-                            <constraint firstItem="Oqu-Sf-Wsk" firstAttribute="leading" secondItem="28x-Jn-IZa" secondAttribute="leading" id="xKL-ku-Uve"/>
-                            <constraint firstAttribute="trailing" secondItem="UHu-tl-IEz" secondAttribute="trailing" id="xwr-st-aUS"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ReviewList" destination="28x-Jn-IZa" id="23D-es-MOC"/>
@@ -463,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ei8-wG-4WZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1371" y="1064"/>
+            <point key="canvasLocation" x="2002.5" y="1037.323943661972"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vja-jg-Jh3">
@@ -984,7 +983,7 @@ STARTを押して３回発音します</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxL-mm-dom" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3101.25" y="1145.0704225352113"/>
+            <point key="canvasLocation" x="2813" y="1072"/>
         </scene>
         <!--Hint View Controller-->
         <scene sceneID="82O-Wr-fNA">
@@ -1071,13 +1070,48 @@ STARTを押して３回発音します</string>
                                                 <rect key="frame" x="0.0" y="165" width="290" height="323"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="characterWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IK-W9-chz">
-                                                        <rect key="frame" x="18" y="8" width="255" height="310"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Il-eD-r4S">
+                                                        <rect key="frame" x="0.0" y="8" width="290" height="159"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reibunJ1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8S-bX-5pq">
+                                                                <rect key="frame" x="15" y="8" width="267" height="73"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reibunV1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoR-Pd-IVb">
+                                                                <rect key="frame" x="15" y="78" width="267" height="73"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="1" green="0.50838789139999996" blue="0.20106788279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2k-6s-ewf">
+                                                        <rect key="frame" x="0.0" y="167" width="290" height="156"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reibunJ2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyS-YB-3jA">
+                                                                <rect key="frame" x="19" y="0.0" width="263" height="73"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reibunV2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpd-Ir-I7T">
+                                                                <rect key="frame" x="19" y="73" width="263" height="73"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="1" green="0.50838789139999996" blue="0.20106788279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
@@ -1110,12 +1144,15 @@ STARTを押して３回発音します</string>
                         <outlet property="TapListen" destination="hWH-F0-D41" id="kG6-hn-PGX"/>
                         <outlet property="pronunciationJ" destination="hWH-F0-D41" id="1Fl-bU-mWt"/>
                         <outlet property="question" destination="hIm-tn-30k" id="1nE-wu-stc"/>
-                        <outlet property="reibunJ" destination="5IK-W9-chz" id="NuM-Yl-Ek6"/>
+                        <outlet property="reibunJ1" destination="b8S-bX-5pq" id="CIP-jy-EOy"/>
+                        <outlet property="reibunJ2" destination="XyS-YB-3jA" id="sIc-1H-GfP"/>
+                        <outlet property="reibunV1" destination="IoR-Pd-IVb" id="A2C-1E-jbg"/>
+                        <outlet property="reibunV2" destination="dpd-Ir-I7T" id="YMe-SG-XwU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dka-bk-AsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4346" y="-450"/>
+            <point key="canvasLocation" x="3611" y="522"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="LJj-3f-Qwy">
@@ -1233,7 +1270,7 @@ STARTを押して３回発音します</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geI-dy-A0e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1501.875" y="219.71830985915494"/>
+            <point key="canvasLocation" x="1258" y="276"/>
         </scene>
         <!--Intro Group View Controller-->
         <scene sceneID="pVf-IS-CgM">
@@ -1368,7 +1405,7 @@ STARTを押して３回発音します</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1L-8K-24s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4342.5" y="280.98591549295776"/>
+            <point key="canvasLocation" x="3611" y="-150"/>
         </scene>
     </scenes>
     <resources>
