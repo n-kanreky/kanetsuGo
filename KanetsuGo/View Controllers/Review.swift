@@ -23,8 +23,8 @@ class Review: Object {
     
     /// 日越の例文
     @objc dynamic var reibunJ1 = ""
-    @objc dynamic var reibunJ2 = ""
     @objc dynamic var reibunV1 = ""
+    @objc dynamic var reibunJ2 = ""
     @objc dynamic var reibunV2 = ""
     
     // 音声ファイル

@@ -16,10 +16,10 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     var player:AVAudioPlayer!
     var questionWord = ""
     var pronunciation = ""
-    var reibun1 = [""]
-    var reibun2 = [""]
-    var reibun3 = [""]
-    var reibun4 = [""]
+    var reibun_J1 = [""]
+    var reibun_J2 = [""]
+    var reibun_V1 = [""]
+    var reibun_V2 = [""]
     
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var pronunciationJ: UILabel!
@@ -28,7 +28,6 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     @IBOutlet weak var reibunJ2: UILabel!
     @IBOutlet weak var reibunV2: UILabel!
     
-    //   @IBOutlet weak var reibun2J: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,10 +70,10 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         
-        reibunJ1.text = reibun1[0]
-        reibunJ2.text = reibun2[0]
-        reibunV1.text = reibun3[0]
-        reibunV2.text = reibun4[0]
+        reibunJ1.text = reibun_J1[0]
+        reibunJ2.text = reibun_J2[0]
+        reibunV1.text = reibun_V1[0]
+        reibunV2.text = reibun_V2[0]
         question.text = questionWord
         //端末の中の音声ファイルを指定して取り出す
         let soundFilePath : String = Bundle.main.path(forResource: "\(pronunciation)", ofType: "mp3")!

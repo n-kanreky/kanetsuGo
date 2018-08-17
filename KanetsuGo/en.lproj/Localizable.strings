@@ -49,8 +49,8 @@
 //グループごとの説明
 "Group1" = "Group 1 lists Kanetsugo and Kango that are similar in pronunciation.";
 "Group2" = "Group 2 is a collection of Kanetsugo that has 週 （シュウ）and corresponds to tuần.";
-"Group3L" = "Group 3 is a collection of Kanetsugo that has 日 （ニチ、ジツ）and corresponds to Ngày này (Hôm nay).";
-"Group3" = "Group 3 is a collection of Kanetsugo that has 日 （ニチ、ジツ）and corresponds to Ngày này.";
+"Group3" = "Group 3 is a collection of Kanetsugo that has 日 （ニチ、ジツ）and corresponds to Ngày này (Hôm nay).";
+
 "Group4" = "Group 4 is a collection of Kanetsugo that has 月 （ゲツ、ガツ） and corresponds to Tháng.";
 "Group5" = "Group 5 is a collection of Kanetsugo that has 通 （ツウ）and corresponds to thông.";
 "Group6" = "Group 6 is a collection of Kanetsugo that has 生 （セイ）and corresponds to sinh.";
@@ -62,11 +62,11 @@
 //始める
 "deleteAndReturn" = "Start";
 
-// Q Selection VCのグループ説明
+// Q Selection VCのグループ説明 (短いG3)
 "QSG1" = "Similar pronunciation";
 "QSG2" = "With 週（tuần）";
-"QSG3L" = "With 日（Ngày này (Hôm nay)）";
-"QSG3" = "With 日（Ngày này）";
+"QSG3" = "With 日（Ngày này (Hôm nay)）";
+
 "QSG4" = "With 月（Tháng）";
 "QSG5" = "With 通（thông）";
 "QSG6" = "With 生（sinh）";

@@ -123,8 +123,8 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
                 viewController.vietnamese = [review.vietnamese]
                 viewController.pronunciationJ = [review.pronunciationJ]
                 viewController.reibunJ1 = [[review.reibunJ1]]
-                viewController.reibunJ2 = [[review.reibunJ2]]
                 viewController.reibunV1 = [[review.reibunV1]]
+                viewController.reibunJ2 = [[review.reibunV1]]
                 viewController.reibunV2 = [[review.reibunV2]]
                 
                flag = "ReviewList"

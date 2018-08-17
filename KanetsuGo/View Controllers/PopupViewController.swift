@@ -164,8 +164,8 @@ class PopupViewController: UIViewController {
             
             /// 日越の例文
             self.review.reibunJ1 = self.reibunJ1
+            self.review.reibunV2 = self.reibunV1
             self.review.reibunJ2 = self.reibunJ2
-            self.review.reibunV1 = self.reibunV1
             self.review.reibunV2 = self.reibunV2
             // 音声ファイル
             self.review.pronunciationJ = self.pronunciationJ

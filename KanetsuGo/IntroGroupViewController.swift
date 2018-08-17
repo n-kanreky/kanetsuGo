@@ -35,7 +35,7 @@ class IntroGroupViewController: UIViewController {
         if height <= 812 {
             lineHeight = 25.0
             lineHeight2 = 25.0
-            //iPad の行間設定
+        //iPad の行間設定
         }else{
             lineHeight = 40.0
             lineHeight2 = 40.0
@@ -94,7 +94,7 @@ class IntroGroupViewController: UIViewController {
         case 2:
             GroupExp.text = "\(NSLocalizedString("Group3", comment: ""))"
             
-            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG3L", comment: ""))"
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG3", comment: ""))"
             
         case 3:
             GroupExp.text = "\(NSLocalizedString("Group4", comment: ""))"

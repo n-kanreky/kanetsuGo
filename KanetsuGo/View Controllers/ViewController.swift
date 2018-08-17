@@ -30,6 +30,13 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     var reibunJ2 = [[""]]
     var reibunV1 = [[""]]
     var reibunV2 = [[""]]
+//    var reibunJ1 = [""] //これは２次元配列
+//    var reibunJ2 = [""]
+//    var reibunV1 = [""]
+//    var reibunV2 = [""]
+    
+    
+    
     var questionNumber = 0
     var player:AVAudioPlayer!
     var count = 0
@@ -404,8 +411,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
 
                 /// 日越の例文 配列が　[[""]]なので、以下のようになる
                 self.review.reibunJ1 = self.reibunJ1[skippedQuestionNumber][0]
-                self.review.reibunJ2 = self.reibunJ2[skippedQuestionNumber][0]
                 self.review.reibunV1 = self.reibunV1[skippedQuestionNumber][0]
+                self.review.reibunJ2 = self.reibunJ2[skippedQuestionNumber][0]
                 self.review.reibunV2 = self.reibunV2[skippedQuestionNumber][0]
                 // 音声ファイル
                 self.review.pronunciationJ = self.pronunciationJ[skippedQuestionNumber]
@@ -449,8 +456,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
             popup.katakana = katakana[self.questionNumber - 1]
             popup.vietnamese = vietnamese[self.questionNumber - 1]
             popup.reibunJ1 = reibunJ1[self.questionNumber - 1][0]
-            popup.reibunJ2 = reibunJ2[self.questionNumber - 1][0]
             popup.reibunV1 = reibunV1[self.questionNumber - 1][0]
+            popup.reibunJ2 = reibunJ2[self.questionNumber - 1][0]
             popup.reibunV2 = reibunV2[self.questionNumber - 1][0]
             popup.pronunciationJ = pronunciationJ[self.questionNumber - 1]
             // *******************************************************************************
@@ -471,10 +478,10 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
             let popup:HintViewController = (segue.destination as! HintViewController)
             popup.questionWord = self.question.text!
             popup.pronunciation = self.pronunciationJ[questionNumber]
-            popup.reibun1 = self.reibunJ1[questionNumber]
-            popup.reibun2 = self.reibunJ2[questionNumber]
-            popup.reibun3 = self.reibunV1[questionNumber]
-            popup.reibun4 = self.reibunV2[questionNumber]
+            popup.reibun_J1 = self.reibunJ1[questionNumber]
+            popup.reibun_V1 = self.reibunV1[questionNumber]
+            popup.reibun_J2 = self.reibunJ2[questionNumber]
+            popup.reibun_V2 = self.reibunV2[questionNumber]
             self.stopAudio()
         }
         
