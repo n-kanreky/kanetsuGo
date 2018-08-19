@@ -266,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGJ-Z5-8oy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3284.375" y="393.75"/>
+            <point key="canvasLocation" x="3857" y="-540"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bpi-oJ-KtY">
@@ -282,7 +282,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pjZ-mJ-4Cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1105" y="394"/>
+            <point key="canvasLocation" x="762" y="401"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="dIq-Xd-EXx">
@@ -400,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4PM-RE-Csc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1838.28125" y="393.75"/>
+            <point key="canvasLocation" x="1632" y="401"/>
         </scene>
         <!--Selection View Controller-->
         <scene sceneID="G77-kV-qSQ">
@@ -496,7 +496,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRQ-Rz-wlM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2510.7421875" y="401.90336749633963"/>
+            <point key="canvasLocation" x="2530" y="-27"/>
         </scene>
         <!--Hint View Controller-->
         <scene sceneID="K4u-7e-NAL">
@@ -523,7 +523,7 @@
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDx-ht-Xu3">
-                                                                <rect key="frame" x="70" y="25" width="536" height="111"/>
+                                                                <rect key="frame" x="70" y="26" width="536" height="111"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="60"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -532,33 +532,32 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
-                                                    <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1g-vX-iID">
-                                                        <rect key="frame" x="8" y="184" width="679" height="64"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mh-nX-pPk">
-                                                                <rect key="frame" x="301" y="8" width="76" height="56"/>
-                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                                                <state key="normal" backgroundImage="speaker"/>
-                                                                <connections>
-                                                                    <action selector="wordSound:" destination="02m-xh-NTx" eventType="touchUpInside" id="Q5q-Gk-bHS"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KiQ-Gd-bMH">
                                                         <rect key="frame" x="43" y="272" width="608" height="54"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="タップして音声を聞く" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2N-Wh-C8D">
-                                                                <rect key="frame" x="-6" y="-19" width="619" height="96"/>
+                                                                <rect key="frame" x="-5" y="-21" width="619" height="96"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="25"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1g-vX-iID">
+                                                        <rect key="frame" x="-1" y="182" width="679" height="64"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mh-nX-pPk">
+                                                                <rect key="frame" x="305" y="0.0" width="69" height="64"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                <state key="normal" image="speaker"/>
+                                                                <connections>
+                                                                    <action selector="wordSound:" destination="02m-xh-NTx" eventType="touchUpInside" id="Q5q-Gk-bHS"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
@@ -573,28 +572,28 @@
                                                         <rect key="frame" x="89" y="36" width="500" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="35"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="32"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reibunJ2" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nt1-Ey-wSY">
                                                         <rect key="frame" x="89" y="233" width="500" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="35"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="32"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reibunV2" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzN-GO-uwQ">
                                                         <rect key="frame" x="89" y="321" width="500" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="35"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="32"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reibunV1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGo-Zp-7uM">
                                                         <rect key="frame" x="89" y="124" width="500" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="35"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="32"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -639,7 +638,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igt-6e-bt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4044.53125" y="800.390625"/>
+            <point key="canvasLocation" x="4414.84375" y="1379.8828125"/>
         </scene>
         <!--Intro Group View Controller-->
         <scene sceneID="OCU-nM-U1s">
@@ -725,6 +724,21 @@
                                 <rect key="frame" x="0.0" y="579" width="768" height="445"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GUL-cx-YtL">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="341"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GroupExp" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lio-ti-o7U">
+                                                <rect key="frame" x="90" y="-1" width="588" height="343"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgo-HO-ak7">
                                         <rect key="frame" x="0.0" y="334" width="768" height="111"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
@@ -740,21 +754,6 @@
                                                     <action selector="deleteAndReturn:" destination="HAS-Ee-Dp7" eventType="touchUpInside" id="3fk-Va-mvr"/>
                                                 </connections>
                                             </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GUL-cx-YtL">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="341"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GroupExp" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lio-ti-o7U">
-                                                <rect key="frame" x="90" y="-1" width="588" height="343"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -774,7 +773,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Lk-9M-hzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4045" y="72"/>
+            <point key="canvasLocation" x="5093" y="-421"/>
         </scene>
         <!--Popup View Controller-->
         <scene sceneID="MNq-gk-lGq">
@@ -874,7 +873,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FC5-ca-Zqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3284" y="1116"/>
+            <point key="canvasLocation" x="3570" y="1380"/>
         </scene>
         <!--Review List View Controller-->
         <scene sceneID="MVT-f3-Ga5">
@@ -884,27 +883,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u9A-Ye-OhW">
-                                <rect key="frame" x="9" y="192" width="759" height="832"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="sectionIndexBackgroundColor" red="1" green="0.89458956940000001" blue="0.60660827360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="125" id="uXn-Iq-KHN">
-                                        <rect key="frame" x="0.0" y="28" width="759" height="125"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uXn-Iq-KHN" id="9Pp-nF-sN2">
-                                            <rect key="frame" x="0.0" y="0.0" width="759" height="124.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.8926070291" green="1" blue="0.66286678990000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="復習リスト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHQ-Rd-eWI">
                                 <rect key="frame" x="9" y="84" width="759" height="79"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="Pna-Lf-pvi"/>
+                                    <constraint firstAttribute="height" constant="79" id="Pyz-MY-ZHy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="32"/>
                                 <color key="textColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -924,18 +906,35 @@
                                     <action selector="returnToQSelection:" destination="spI-8K-e2Y" eventType="touchUpInside" id="o6E-34-ROF"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u9A-Ye-OhW">
+                                <rect key="frame" x="1" y="192" width="767" height="832"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" red="0.19675654649999999" green="0.44917685940000002" blue="0.60981594279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.89458956940000001" blue="0.60660827360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="125" id="uXn-Iq-KHN">
+                                        <rect key="frame" x="0.0" y="28" width="767" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uXn-Iq-KHN" id="9Pp-nF-sN2">
+                                            <rect key="frame" x="0.0" y="0.0" width="767" height="124.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.8926070291" green="1" blue="0.66286678990000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xHQ-Rd-eWI" firstAttribute="leading" secondItem="3Aj-Q6-K2a" secondAttribute="leading" id="Cav-Nk-e6h"/>
                             <constraint firstItem="3Aj-Q6-K2a" firstAttribute="leading" secondItem="ZcG-fl-SvY" secondAttribute="leadingMargin" constant="-11" id="Cia-fI-Dwd"/>
-                            <constraint firstItem="u9A-Ye-OhW" firstAttribute="leading" secondItem="xHQ-Rd-eWI" secondAttribute="leading" id="DW8-ZZ-LFK"/>
+                            <constraint firstAttribute="trailing" secondItem="xHQ-Rd-eWI" secondAttribute="trailing" id="HyP-vb-2cI"/>
                             <constraint firstItem="3Aj-Q6-K2a" firstAttribute="top" secondItem="f2i-yi-Ubu" secondAttribute="top" constant="14" id="KpM-QM-shH"/>
-                            <constraint firstItem="xHQ-Rd-eWI" firstAttribute="top" secondItem="3Aj-Q6-K2a" secondAttribute="bottom" constant="20" id="RtH-sO-4DL"/>
                             <constraint firstItem="f2i-yi-Ubu" firstAttribute="trailing" secondItem="u9A-Ye-OhW" secondAttribute="trailing" id="ZPK-Xq-gYs"/>
+                            <constraint firstItem="xHQ-Rd-eWI" firstAttribute="top" secondItem="3Aj-Q6-K2a" secondAttribute="bottom" constant="20" id="aMc-d1-XPh"/>
                             <constraint firstItem="u9A-Ye-OhW" firstAttribute="bottom" secondItem="f2i-yi-Ubu" secondAttribute="bottom" id="fOT-iQ-A6D"/>
-                            <constraint firstItem="3Aj-Q6-K2a" firstAttribute="leading" secondItem="xHQ-Rd-eWI" secondAttribute="leading" id="hFw-JM-36r"/>
-                            <constraint firstItem="u9A-Ye-OhW" firstAttribute="top" secondItem="xHQ-Rd-eWI" secondAttribute="bottom" constant="29" id="iFO-Df-tee"/>
-                            <constraint firstItem="u9A-Ye-OhW" firstAttribute="trailing" secondItem="xHQ-Rd-eWI" secondAttribute="trailing" id="skX-FP-mg5"/>
+                            <constraint firstItem="u9A-Ye-OhW" firstAttribute="top" secondItem="xHQ-Rd-eWI" secondAttribute="bottom" constant="29" id="k46-jx-shh"/>
+                            <constraint firstItem="u9A-Ye-OhW" firstAttribute="centerX" secondItem="ZcG-fl-SvY" secondAttribute="centerX" id="ldb-Yc-KuF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f2i-yi-Ubu"/>
                     </view>
@@ -948,7 +947,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSW-el-4eP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2510.9375" y="1115.625"/>
+            <point key="canvasLocation" x="2530" y="745"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pHU-Vd-zea">
@@ -1019,7 +1018,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcY-Vh-cZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186.71875" y="1983.3984374999998"/>
+            <point key="canvasLocation" x="1310" y="2501"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Tho-eB-dKZ">
@@ -1080,7 +1079,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="le6-oK-spf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1848.75" y="1981.6901408450703"/>
+            <point key="canvasLocation" x="2171" y="2501"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iYd-3G-C6c">
@@ -1163,7 +1162,7 @@ STARTを押して３回発音します</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DOF-gf-lel" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2520" y="1981.6901408450703"/>
+            <point key="canvasLocation" x="3045" y="2501"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ux9-ow-RYS">
@@ -1251,7 +1250,7 @@ STARTを押して３回発音します</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKX-kE-dMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3208.0078125" y="1982.7232796486089"/>
+            <point key="canvasLocation" x="3959" y="2501"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="htR-4S-FkH">
@@ -1346,7 +1345,7 @@ STARTを押して３回発音します</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auv-cq-Teh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3834.375" y="1982.2265624999998"/>
+            <point key="canvasLocation" x="4836" y="2501"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="jBJ-zY-Xpb">
@@ -1354,7 +1353,7 @@ STARTを押して３回発音します</string>
                 <pageViewController storyboardIdentifier="pageView" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="aLt-LZ-tHA" customClass="PageViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akx-Ne-raJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="1984"/>
+            <point key="canvasLocation" x="453" y="2501"/>
         </scene>
     </scenes>
     <resources>
@@ -1369,6 +1368,6 @@ STARTを押して３回発音します</string>
         <image name="unfilledCircle" width="115" height="115"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Y2u-PS-HOu"/>
+        <segue reference="9y9-9p-3PF"/>
     </inferredMetricsTieBreakers>
 </document>

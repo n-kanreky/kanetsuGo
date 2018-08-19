@@ -37,10 +37,10 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
         var lineHeight:CGFloat = 18.0
         //iPhone の行間設定
         if height <= 812 {
-            lineHeight = 18.0
+            lineHeight = 20.0
         //iPad の行間設定
         }else{
-            lineHeight = 40.0
+            lineHeight = 50.0
         }
         
         let paragraphStyle = NSMutableParagraphStyle()
