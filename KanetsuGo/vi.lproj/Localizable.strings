@@ -16,7 +16,7 @@
 "Step1" = "Bước 1  \nChọn câu";
 "Step2" = "Bước 2  \nẤn START và phát âm 3 lần";
 "Exp4" = "Nếu vẫn chưa hiểu... \nĐể xem một ScreenTip Hoặc Nghe cách phát âm.  \nCó thể SKI.";
-"Exp4_skip" = "Nếu nhấn SKIP, câu đó sẽ được thêm vào phần ôn tập";
+"Exp4_skip" = "Nếu nhấn SKIP, câu đó sẽ được thêm vào phần ôn tập.";
 "Begin" = "Nào, bắt đầu thôi!";
 "Start" = "Bắt đầu!";
 "ClickHere" = "Nhấn vào đây";
