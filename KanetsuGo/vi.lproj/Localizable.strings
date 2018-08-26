@@ -64,12 +64,12 @@
 // Q Selection VCのグループ説明
 "QSG1" = "Cách phát âm tương tự";
 "QSG2" = "Bao gồm 週（tuần）";
-"QSG3" = "Bao gồm 日（Ngày này (Hôm nay)）";
+"QSG3" = "Bao gồm 日（Ngày）";
 
 "QSG4" = "Bao gồm 月（Tháng）";
 "QSG5" = "Bao gồm 通（thông）";
 "QSG6" = "Bao gồm 生（sinh）";
 "QSG7" = "Bao gồm 学（học）";
 "QSG8" = "Bao gồm 国（Quốc）";
-"QSG9" = "Bao gồm 反（Chống）";
+"QSG9" = "Bao gồm 反（Phản）";
 "QSG10" = "Bao gồm 地（đất）";

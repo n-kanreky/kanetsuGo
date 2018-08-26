@@ -13,8 +13,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     [["注意","同意","意見","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都"], //Group 1
                      ["今週","先週","来週","毎週","週末","週刊誌"], //Group 2
                      ["今日","毎日","日時","日常","日用品"], //Group 3
-                     ["今月","来月","先月","月給","月額"], //Group 4
-                     ["通行","通信","通知","通訳","通過"], //Group 5
+                     ["今月","来月","先月","月給","月額","月末"], //Group 4
+                     ["通行","通信","通知","通訳","通過","交通"], //Group 5
                      ["生存","生産","生徒","学生","生活"], //Group 6
                      ["文学","哲学","医学","数学","薬学","化学"], //Group 7 学がつく漢語
                      ["国立","国家","国籍","国際","国連"], //Group 8 国を含む
@@ -27,8 +27,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                    [["友達にチュウイする","意見（いけん）にドウイする","反対イケンを言う","試験のケッカ","ケツロンを先に言う","テンネンの温泉（おんせん）","ネンリョウ費（ひ）","キネン日（び）","カコのデータ","コドクなくらし","コダイの文明（ぶんめい）","カンリする","ラッカン的（てき）","レンラクする","ジュンビする","日本のシュト"], // Group 1
                     ["コンシュウの土曜日","センシュウの月曜日","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける","シュウカンシを読む"], //Group 2
                     ["キョウは晴れだ","マイニチ学校に行く","会議のニチジ","ニチジョウの生活","ニチヨウヒンを買う"], //Group 3
-                    ["コンゲツ","ライゲツ","センゲツ","ゲッキュウ","ゲツガク"], //Group 4
-                    ["ツウコウする","ツウシンする","ツウチする","ツウヤクする","ツウカする"], //Group 5
+                    ["コンゲツ","ライゲツ","センゲツ","ゲッキュウ","ゲツガク","ゲツマツ"], //Group 4
+                    ["ツウコウする","ツウシンする","ツウチする","ツウヤクする","ツウカする","コウツウルールを守る"], //Group 5
                     ["セイゾンしている","セイサンする","中学校のセイト","大学のガクセイ","セイカツする"], //Group 6
                     ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）"], //Group 7
                     ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン加盟国（かめいこく）"], //Group 8
@@ -40,8 +40,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                    [["chú ý","đồng ý","ý kiến","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô"], //Group 1
                     ["tuần này","tuần trước","Tuần tới","Hàng tuần","Cuối tuần","Tạp chí hàng tuần"], //Group 2
                     ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày"], //Group 3
-                    ["Tháng này","Tháng tiếp theo","Tháng trước","Tiền lương hàng tháng","Số tiền hàng tháng"], //Group 4
-                    ["thông hành","thông tín","thông tri","thông dịch","thông quá"],// Group 5
+                    ["Tháng này","Tháng tiếp theo","Tháng trước","Tiền lương hàng tháng","Số tiền hàng tháng","Cuối tháng"], //Group 4
+                    ["thông hành","thông tín","thông tri","thông dịch","thông quá","Giao thông"],// Group 5
                     ["sinh tồn","sinh sản","sinh đồ","học sinh","sinh hoạt"], //Group 6
                     ["Văn học","triết học","y học","toán học","dược học","hóa học"], //Group7
                     ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Liên Hợp Quốc"],//Group8
@@ -55,9 +55,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                [["Chuui","Doui","Iken","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto"],//Groupo 1
                 ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Shuukanshi"], //Group 2
                 ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin"], //Group 3
-                ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku"], //Group 4
+                ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku","getsumatsu"], //Group 4
                 ["Tsuukou","Tsuushin","Tsuuchi","Tsuuyaku","Tsuuka"],  //Group 5
-                ["Seizon","Seisan","Seito","Gakusei","Seikatsu"], //Group 6
+                ["Seizon","Seisan","Seito","Gakusei","Seikatsu","Koutsuu"], //Group 6
                 ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku"], //Group7
                 ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
                 ["Hannou","Hanei","Hansha","Hantai","Ihan","Hansei"], //Group 9
@@ -87,7 +87,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["母は、先週国に帰りました。"],
             ["私は来週、東京へ行きます。"],
             ["毎週妻に花を買います。"],
-            ["あなたは週末、どこかに行きますか。"]],
+            ["あなたは週末、どこかに行きますか。"],
+            ["私は週刊誌を買った。"]],
          //Group 3
             [["今日は8時までに帰ります。"],
             ["私は毎日日本語を勉強します。"],
@@ -99,7 +100,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["母は、来月ハノイに来る予定です。"],
             ["この店は、先月オープンしました。"],
             ["私の月給は10万円です。"],
-            ["バイト料の月額は5万円くらいです。"]],
+            ["バイト料の月額は5万円くらいです。"],
+            ["私は月末に給料を受け取った。"]],
           //Group 5
            [["ここはたくさんのトラックが通行する。"],
             ["通信販売を利用する。"],
@@ -111,7 +113,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["この国は石油を生産する。"],
             ["彼はまじめな生徒だ。"],
             ["外国語学部は男子学生より女子学生の方が多い。"],
-            ["留学生として日本で4年間生活した。"]],
+            ["留学生として日本で4年間生活した。"],
+            ["交通安全週間が始まる。"]],
          //Group 7
            [["私の専攻は日本文学だ。"],
             ["彼はギリシャ哲学の研究者だ。"],
@@ -163,7 +166,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["先週の金曜日は、大雨のため休校になった。"],
             ["来週から夏休みが始まります。"],
             ["私は毎週友達と映画をみます。"],
-            ["私は週末によくサッカーをします。"]],
+            ["私は週末によくサッカーをします。"],
+            ["この出版社の週刊誌は有名だ。"]],
         //Group 3
            [["私は今日から大学生だ。"],
             ["私は毎日バスで駅に行く。"],
@@ -175,7 +179,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["私は来月結婚します。"],
             ["彼は先月帰国しました。"],
             ["月給日は毎月25日です。"],
-            ["このアプリの使用料は、月額300円です。"]],
+            ["このアプリの使用料は、月額300円です。"],
+            ["私は今月末から一週間出張する。"]],
          //Group 5
            [["この道は一方通行だ。"],
             ["海外の友達と通信する。"],
@@ -187,7 +192,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["ここは米の生産が有名だ。"],
             ["中学校の生徒に英語を教える。"],
             ["学生時代にはいろいろなスポーツをした。"],
-            ["海外でぜいたくな生活を送りたい。"]],
+            ["海外でぜいたくな生活を送りたい。"],
+            ["私は交通事故のために遅れた。"]],
          //Group 7
            [["『源氏物語』は日本の古典文学の最高傑作だ。"],
             ["この研究は哲学と宗教学の境界を超えている。"],
@@ -240,6 +246,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Tôi sẽ đến Tokyo vào tuần tới."],
             ["Mỗi tuần tôi sẽ mua hoa cho vợ tôi."],
             ["Bạn sẽ đi đâu đó vào cuối tuần?"],
+            ["Tôi đã mua một tạp chí hàng tuần."],
             ["Tôi đã mua một tạp chí hàng tuần."]],
          //Group 3
            [["Hôm nay tôi sẽ trở lại lúc 8 giờ."],
@@ -252,7 +259,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Mẹ tôi sẽ đến Hà Nội vào tháng tới."],
             ["Cửa hàng này vừa mới mở vào tháng trước."],
             ["Tiền lương hàng tháng của tôi là 100.000 yên."],
-            ["Phí hàng tháng cho phí byte là khoảng 50.000 yên."]],
+            ["Phí hàng tháng cho phí byte là khoảng 50.000 yên."],
+            ["Tôi đã nhận được một mức lương vào cuối tháng."]],
          //Group 5
            [["Nhiều xe tải đi qua đây."],
             ["Sử dụng đơn đặt hàng qua mạng thông tín."],
@@ -317,6 +325,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Kỳ nghỉ hè bắt đầu vào tuần tới."],
             ["Tôi xem phim với bạn bè mỗi tuần."],
             ["Tôi thường chơi bóng đá vào cuối tuần."],
+            ["Tạp chí hàng tuần của nhà xuất bản này nổi tiếng."],
             ["Tạp chí hàng tuần của nhà xuất bản này nổi tiếng."]],
         //Group 3
            [["Tôi là sinh viên đại học từ hôm nay."],
@@ -329,7 +338,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Tôi sẽ kết hôn vào tháng tới."],
             ["Anh ấy quay trở lại đất nước hồi tháng trước."],
             ["Ngày thanh toán hàng tháng là ngày 25 hàng tháng."],
-            ["Lệ phí hàng tháng cho việc sử dụng ứng dụng này là 300 yên."]],
+            ["Lệ phí hàng tháng cho việc sử dụng ứng dụng này là 300 yên."],
+            ["Tôi đang đi công tác từ cuối tháng trong một tuần."]],
         //Group 5
            [["Con đường này là đường một chiều."],
             ["Giao tiếp với bạn bè nước ngoài."],
