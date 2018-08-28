@@ -10,60 +10,83 @@ import UIKit
 
 class QSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var questions =
-                    [["注意","同意","意見","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都"], //Group 1
+                    [["注意","同意","意見","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都","観察"], //Group 1
                      ["今週","先週","来週","毎週","週末","週刊誌"], //Group 2
                      ["今日","毎日","日時","日常","日用品"], //Group 3
                      ["今月","来月","先月","月給","月額","月末"], //Group 4
-                     ["通行","通信","通知","通訳","通過","交通"], //Group 5
-                     ["生存","生産","生徒","学生","生活"], //Group 6
-                     ["文学","哲学","医学","数学","薬学","化学"], //Group 7 学がつく漢語
+                     ["通信","通知","通訳","交通"], //Group 5
+                     ["生存","生活","生命","生還","生計"], //Group 6
+                     ["文学","哲学","医学","数学","薬学","化学","社会学","政治学","学者","学校","大学"], //Group 7 学がつく漢語
                      ["国立","国家","国籍","国際","国連"], //Group 8 国を含む
                      ["反応","反映","反射","反対","違反","反省"], //Group 9 反を含む　６語
-                     ["地面","地球","地上","地震","湿地","宅地"]]//Group 10 地を含む
-
+                     ["地面","地球","地上","地震","湿地","宅地"],//Group 10 地を含む
+                     ["費用","人件費","食費","旅費","学費","光熱費"],  //Group 11 費を含む
+                     ["活動","動詞","動物","動機","動脈"],  //Group 12 費を含む
+                     ["鉄道","鉄橋","私鉄"],  //Group 13 費を含む
+                     ["友人","友情","親友","悪友"],  //Group 14 費を含む
+                     ["信号","信頼","信者","信仰"],  //Group 15 費を含む
+                     ["人間","人数"," 外国人","日本人","新人","人権"],  //Group 16 費を含む
+                     ["政治家","小説家","家族","家電"]]  //Group 17 費を含む
     
 
     var katakana =
-                   [["友達にチュウイする","意見（いけん）にドウイする","反対イケンを言う","試験のケッカ","ケツロンを先に言う","テンネンの温泉（おんせん）","ネンリョウ費（ひ）","キネン日（び）","カコのデータ","コドクなくらし","コダイの文明（ぶんめい）","カンリする","ラッカン的（てき）","レンラクする","ジュンビする","日本のシュト"], // Group 1
+                   [["友達にチュウイする","意見（いけん）にドウイする","反対イケンを言う","試験のケッカ","ケツロンを先に言う","テンネンの温泉（おんせん）","ネンリョウ費（ひ）","キネン日（び）","カコのデータ","コドクなくらし","コダイの文明（ぶんめい）","カンリする","ラッカン的（てき）","レンラクする","ジュンビする","日本のシュト","カンサツする "], // Group 1
                     ["コンシュウの土曜日","センシュウの月曜日","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける","シュウカンシを読む"], //Group 2
                     ["キョウは晴れだ","マイニチ学校に行く","会議のニチジ","ニチジョウの生活","ニチヨウヒンを買う"], //Group 3
                     ["コンゲツ","ライゲツ","センゲツ","ゲッキュウ","ゲツガク","ゲツマツ"], //Group 4
-                    ["ツウコウする","ツウシンする","ツウチする","ツウヤクする","ツウカする","コウツウルールを守る"], //Group 5
-                    ["セイゾンしている","セイサンする","中学校のセイト","大学のガクセイ","セイカツする"], //Group 6
-                    ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）"], //Group 7
+                    ["ツウシンする","ツウチする","ツウヤクする","コウツウルールを守る"], //Group 5
+                    ["セイゾンしている","セイカツする","セイメイ保険（ほけん）","宇宙からセイカンする","セイケイを立てる"], //Group 6
+                    ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）","シャカイガク","セイジガク",
+                     "政治ガクシャ ","ガッコウ","ダイガク"], //Group 7
                     ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン加盟国（かめいこく）"], //Group 8
                     ["体がハンノウする","ハンエイする","光がハンシャする","ハンタイ意見","ルールにイハンする","ハンセイする"], //Group 9
-                    ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる","住（ジュウ）タクチ"]] //Group 10
-
-
+                    ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる","住（ジュウ）タクチ"], //Group 10
+                    ["ヒヨウがかかる","ジンケンヒが高い","ショクヒを増やす","リョヒを払う","ガクヒを払う","コウネツヒが高い"], //Group 11
+                    ["カツドウする","日本語のドウシ","ドウブツ園","学習のドウキ","ドウミャク"], //Group 12
+                    ["鉄道がトオル","テッキョウを渡る","シテツに乗る"], //Group 13
+                    ["ユウジンが多い","固いユウジョウ","シンユウ","アクユウ"], //Group 14
+                    ["交通シンゴウ","シンライする","シンジャが多い","シンコウしん"], //Group 15
+                    ["ニンゲン","ニンズウ","ガイコクジン","ニホンジン","シンジン","ジンケン"], //Group 16
+                    ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる","住（ジュウ）タクチ"]] //Group 17
     var vietnamese =
-                   [["chú ý","đồng ý","ý kiến","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô"], //Group 1
-                    ["tuần này","tuần trước","Tuần tới","Hàng tuần","Cuối tuần","Tạp chí hàng tuần"], //Group 2
+                   [["chú ý","đồng ý","ý kiến","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô","Quan sát"], //Group 1
+                    ["tuần này","tuần trước","Tuần tới","Mỗi tuần","Cuối tuần","Tạp chí hàng tuần"], //Group 2
                     ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày"], //Group 3
                     ["Tháng này","Tháng tiếp theo","Tháng trước","Tiền lương hàng tháng","Số tiền hàng tháng","Cuối tháng"], //Group 4
-                    ["thông hành","thông tín","thông tri","thông dịch","thông quá","Giao thông"],// Group 5
-                    ["sinh tồn","sinh sản","sinh đồ","học sinh","sinh hoạt"], //Group 6
-                    ["Văn học","triết học","y học","toán học","dược học","hóa học"], //Group7
+                    ["thông tín","thông tri","thông dịch","Giao thông"],// Group 5
+                    ["Sự sống còn","sống","Cuộc sống","Sống"], //Group 6
+                    ["Văn học","triết học","y học","toán học","dược học","hóa học","Xã hội học","Khoa học chính trị","Một học giả","Trường học","Đại học"], //Group7
                     ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Liên Hợp Quốc"],//Group8
                     ["Phản ứng","Phản ánh","Phản xạ","Phản đối","Vi phạm","Sự phản chiếu"],//Group9
-                    ["Mặt đất","Trái đất","Trên mặt đất","Đất đai","Đất ngập nước","Đất ở."]]//Group10
-
-
+                    ["Mặt đất","Trái đất","Trên mặt đất","Đất đai","Đất ngập nước","Đất ở"],//Group10
+                    ["Chi phí","Chi phí nhân sự","Chi phí ăn uống","Chi phí đi lại","Học phí","Phí tiện ích"],//Group11
+                    ["Hoạt động","động từ","Động vật","Động lực","Động mạch"],//Group12
+                    ["Đường sắt","Cầu sắt","Đường sắt tư nhân"],//Group13
+                    ["Một người bạn","Tình bạn","Bạn thân nhất","Bạn xấu"],//Group14
+                    ["Tín hiệu","Tin tưởng","Người tin Chúa","Đức tin "],//Group15
+                    ["Một con người","Số người","Một người nước ngoài","Người Nhật","Người mới đến","Quyền con người"],//Group16
+                    ["Chính trị gia","Một tiểu thuyết gia","Một gia đình","Điện tử gia dụng"]]//Group17
+    
     
     var pronunciationJ =
         
-               [["Chuui","Doui","Iken","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto"],//Groupo 1
+           [["Chuui","Doui","Iken","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto","Kansatsu"],//Groupo 1
                 ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Shuukanshi"], //Group 2
                 ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin"], //Group 3
-                ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku","getsumatsu"], //Group 4
-                ["Tsuukou","Tsuushin","Tsuuchi","Tsuuyaku","Tsuuka"],  //Group 5
-                ["Seizon","Seisan","Seito","Gakusei","Seikatsu","Koutsuu"], //Group 6
-                ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku"], //Group7
+                ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku","Getsumatsu"], //Group 4
+                ["Tsuushin","Tsuuchi","Tsuuyaku","Koutsuu"],  //Group 5
+                ["Seizon","Seikatsu","Seimei","Seikan","Seikei"], //Group 6
+                ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku","Shakaigaku ","Seijigaku","Gakusha","Gakkou","Daigaku"], //Group7
                 ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
                 ["Hannou","Hanei","Hansha","Hantai","Ihan","Hansei"], //Group 9
-                ["Jimen","Chikyuu","Chijou","Jishin","Shicchi","Takuchi"]] //Group 10
-
-
+                ["Jimen","Chikyuu","Chijou","Jishin","Shicchi","Takuchi"], //Group 10
+                ["Hiyou","Jinkenhi","Shokuhi","Shokuhi","Ryohi","Gakuhi","Kounetsuhi"], //Group 11
+                ["Katsudou","Doushi","Doubutsu","Douki","Doumyaku"], //Group 12
+                ["Tetsudou","Tekkyou","Shitetsu"], //Group 13
+                ["Yuujin","Yuujou","Shinyuu","Akuyuu"], //Group 14
+                ["Shingou","Shinrai","Shinja","Shinkou"], //Group 15
+                ["Ningen","Ninzuu","Gaikokujin","Nihonjin","Shinjin","Jinken"], //Group 16
+                ["Seijika","Shousetsuka","Kazoku","Kaden"]] //Group 17
     var reibunJ1 =
         //Group 1
          [[["この道は交通量が多いので、渡るときには注意が必要だ。"],
@@ -81,7 +104,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["彼は楽観的な人だ。"],
             ["財布を落としたので、警察に連絡した。"],
             ["明日のために準備する。"],
-            ["日本の首都は東京だ。"]],
+            ["日本の首都は東京だ。"],
+            ["星の動きを観察する。"]],
          //Group 2
            [["私は今週の火曜日に太郎さんとテニスをします。"],
             ["母は、先週国に帰りました。"],
@@ -103,18 +127,16 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["バイト料の月額は5万円くらいです。"],
             ["私は月末に給料を受け取った。"]],
           //Group 5
-           [["ここはたくさんのトラックが通行する。"],
-            ["通信販売を利用する。"],
+           [["通信販売を利用する。"],
             ["学校からの成績通知を受け取る。"],
             ["会議で通訳する。"],
-            ["台風（たいふう）が九州を通過した。"]],
+            ["今日から交通安全週間が始まる。"]],
          //Group 6
            [["子供の生存を確認する。"],
-            ["この国は石油を生産する。"],
-            ["彼はまじめな生徒だ。"],
-            ["外国語学部は男子学生より女子学生の方が多い。"],
-            ["留学生として日本で4年間生活した。"],
-            ["交通安全週間が始まる。"]],
+            ["私は留学生として日本で生活している。"],
+            ["大地震で多くの生命が奪われた。"],
+            ["宇宙飛行士は無事生還した。"],
+            ["村人は農業だけで生計を立てた。"]],
          //Group 7
            [["私の専攻は日本文学だ。"],
             ["彼はギリシャ哲学の研究者だ。"],
@@ -141,7 +163,56 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["このビルは地下３階、地上１０階建てだ。"],
             ["日本は地震が多い。"],
             ["この国には多くの湿地がある。"],
-            ["宅地を造成(ぞうせい）する。"]]]
+            ["宅地を造成(ぞうせい）する。"]],
+        
+         //Group 11
+           [["国が留学費用を負担する。"],
+            ["人件費を削減する。"],
+            ["食費を節約する。"],
+            ["東京までの旅費を計算する。"],
+            ["日本の私立大学は学費が高い。"],
+            ["光熱費を節約する。"]],
+        
+        //Group 12
+           [["救援活動は海外で行われている。"],
+            ["動詞の使い方を学ぶ。"],
+            ["この島には多くの動物がいる。"],
+            ["学習には動機付けが必要だ。"],
+            ["血管には動脈と静脈（じょうみゃく）がある。"]],
+    
+        //Group 13
+           [[" "],
+            [" "],
+            [" "]],
+            
+        //Group 14
+           [[" "],
+            [" "],
+            [" "],
+            [" "]],
+    
+        //Group 15
+           [[" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 16
+           [[" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "]],
+    
+        //Group 17
+           [[" "],
+            [" "],
+            [" "],
+            [" "]]]
+    
+    
     
     var reibunJ2 =
         //Group 1
@@ -160,7 +231,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["彼は将来を楽観している。"],
             ["災害の場合、人々は連絡を取り合う。"],
             ["準備に時間がかかる。"],
-            ["ベトナムの首都はハノイだ。"]],
+            ["ベトナムの首都はハノイだ。"],
+            ["子供の観察能力をチェックする。"]],
          //Group 2
            [["天気予報によると、今週は週末にかけて雨が降るようだ。"],
             ["先週の金曜日は、大雨のため休校になった。"],
@@ -182,18 +254,16 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["このアプリの使用料は、月額300円です。"],
             ["私は今月末から一週間出張する。"]],
          //Group 5
-           [["この道は一方通行だ。"],
-            ["海外の友達と通信する。"],
+           [["この会社では、通信システムを開発している。"],
             ["通知表を親に見せる。"],
             ["通訳の仕事は疲れる。"],
-            ["特急はこの駅を通過する。"]],
+            ["私は交通事故のために学校に遅れた。"]],
          //Group 6
            [["宇宙には生命体が生存している可能性がある。"],
-            ["ここは米の生産が有名だ。"],
-            ["中学校の生徒に英語を教える。"],
-            ["学生時代にはいろいろなスポーツをした。"],
-            ["海外でぜいたくな生活を送りたい。"],
-            ["私は交通事故のために遅れた。"]],
+            ["海外でぜいたくな生活をしたい。"],
+            ["私は生命科学を研究している。"],
+            ["登山の遭難者（そうなんしゃ）の生還を祈る。"],
+            ["祖父母と同居して生計を共にする。"]],
          //Group 7
            [["『源氏物語』は日本の古典文学の最高傑作だ。"],
             ["この研究は哲学と宗教学の境界を超えている。"],
@@ -220,7 +290,56 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["地上から宇宙（うちゅう）に向かって信号（しんごう）を送る。"],
             ["これは地震の被害（ひがい）を防ぐための訓練（くんれん）だ。"],
             ["湿地は野菜栽培には適していない。"],
-            ["宅地の価格（かかく）が上がっている。"]]]
+            ["宅地の価格（かかく）が上がっている。"]],
+           
+        //Group 11
+           [[" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 12
+           [[" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 13
+           [[" "],
+            [" "],
+            [" "]],
+            
+        //Group 14
+           [[" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 15
+           [[" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 16
+           [[" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 17
+           [[" "],
+            [" "],
+            [" "],
+            [" "]]]
+
     
     var reibunV1 =
         //Group 1
@@ -239,7 +358,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Anh ấy lạc quan."],
             ["Tôi bỏ ví và liên lạc với cảnh sát."],
             ["Chuẩn bị cho ngày mai."],
-            ["Thành phố thủ đô của Nhật Bản là Tokyo."]],
+            ["Thành phố thủ đô của Nhật Bản là Tokyo."],
+            ["Quan sát chuyển động của các ngôi sao."]],
          //Group 2
            [["Tôi chơi tennis với Taro vào thứ ba tuần này."],
             ["Mẹ tôi quay trở lại đất nước tuần trước."],
@@ -262,11 +382,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Phí hàng tháng cho phí byte là khoảng 50.000 yên."],
             ["Tôi đã nhận được một mức lương vào cuối tháng."]],
          //Group 5
-           [["Nhiều xe tải đi qua đây."],
-            ["Sử dụng đơn đặt hàng qua mạng thông tín."],
+           [["Sử dụng đơn đặt hàng qua mạng thông tín."],
             ["Nhận thông báo về kết quả từ trường."],
             ["Thông dịch tại cuộc họp."],
-            ["Một cơn bão đi qua Kyushu."]],
+            ["Tuần an toàn giao thông bắt đầu từ hôm nay."]],
          //Group 6
            [["Xác nhận sự sống còn của đứa trẻ."],
             ["Nước này sản xuất dầu."],
@@ -299,7 +418,55 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Tòa nhà này có 3 tầng hầmvà 10 tầng trên mặt đất."],
             ["Có rất nhiều trận động đất ở Nhật Bản."],
             ["Có nhiều vùng đất ngập nước ở đất nước này."],
-            ["Tạo đất ở. "]]]
+            ["Tạo đất ở. "]],
+        //Group 11
+           [[" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 12
+           [[" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 13
+           [[" "],
+            [" "],
+            [" "]],
+            
+        //Group 14
+           [[" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 15
+           [[" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 16
+           [[" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 17
+           [[" "],
+            [" "],
+            [" "],
+            [" "]]]
+
     
     var reibunV2 =
         //Group 1
@@ -318,7 +485,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Anh ta lạc quan về tương lai."],
             ["Trong trường hợp thiên tai, mọi người giữ liên lạc."],
             ["Phải mất thời gian để chuẩn bị."],
-            ["Thủ đô của Việt Nam là Hà Nội."]],
+            ["Thủ đô của Việt Nam là Hà Nội."],
+            ["Kiểm tra khả năng quan sát của trẻ."]],
         //Group 2
            [["Theo dự báo thời tiết, có vẻ như trời sẽ mưa vào cuối tuần này."],
             ["Ngôi trường đã bị đóng cửa do mưa lớn hôm thứ Sáu tuần trước."],
@@ -341,11 +509,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Lệ phí hàng tháng cho việc sử dụng ứng dụng này là 300 yên."],
             ["Tôi đang đi công tác từ cuối tháng trong một tuần."]],
         //Group 5
-           [["Con đường này là đường một chiều."],
-            ["Giao tiếp với bạn bè nước ngoài."],
+           [["Công ty này phát triển một hệ thống thông tin liên lạc."],
             ["Cho cha mẹ xem bảng thông báo từ trường."],
             ["Mệt mỏi với công việc thông dịch."],
-            ["Tàu (tokkyu) đi qua ga này."]],
+            ["Tôi đã đến trường muộn vì tai nạn giao thông."]],
         //Group 6
            [["Có khả năng các dạng sống tồn tại trong vũ trụ."],
             ["Sản xuất lúa gạo nổi tiếng ở đây."],
@@ -378,7 +545,55 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Gửi tín hiệu từ mặt đất về phía vũ trụ."],
             ["Đây là một đào tạo để ngăn chặn thiệt hại của trận động đất."],
             ["Đất ngập nước không thích hợp cho trồng rau."],
-            ["Giá đất ở đang tăng lên."]]]
+            ["Giá đất ở đang tăng lên."]],
+        //Group 11
+           [[" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 12
+           [[" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 13
+           [[" "],
+            [" "],
+            [" "]],
+            
+        //Group 14
+           [[" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 15
+           [[" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 16
+           [[" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "],
+            [" "]],
+            
+        //Group 17
+           [[" "],
+            [" "],
+            [" "],
+            [" "]]]
+
         
 
 //ローカライズ
