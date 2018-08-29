@@ -180,37 +180,36 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["学習には動機付けが必要だ。"],
             ["血管には動脈と静脈（じょうみゃく）がある。"]],
     
-        //Group 13
-           [[" "],
-            [" "],
-            [" "]],
+        //J1 Group 13
+           [["1872年、日本初の鉄道が新橋と横浜の間に開通した。"],
+            ["鉄橋は鉄で出来ている。"],
+            ["私鉄は民間企業が運営する鉄道だ。"]],
             
         //Group 14
-           [[" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["私は昨日友達とゲームをしました。"],
+            ["私たちは友情でつながっている。"],
+            ["田中さんは子供時代から私の親友だ。"],
+            ["学生の時、悪友と私はよく先生に叱られた。"]],
     
         //Group 15
-           [[" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["信号を無視するのは危険だ。"],
+            ["彼は皆に信頼されている"],
+            ["司祭は信者の罪の告白を聞いた。"],
+            ["「信仰」とは仏を信じて敬うことだ。"]],
             
         //Group 16
-           [[" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["職場の人間関係は非常に困難だ。"],
+            ["パーティーにはかなりの人数が集まった。"],
+            ["日本を訪れる外国人の数が増えた。"],
+            ["日本人はあなたの国に何人ぐらい住んでいますか？"],
+            ["新しい映画の主役に新人が選ばれた。"],
+            ["人権は誰もが幸せに生きる権利のことだ。"]],
     
         //Group 17
-           [[" "],
-            [" "],
-            [" "],
-            [" "]]]
+           [["私の弟は政治家を目指している。"],
+            ["私の妹は小説家になった。"],
+            ["私は新年に家族写真を撮った。"],
+            ["私は家電メーカーに勤めている。"]]]
     
     
     
@@ -293,52 +292,50 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["宅地の価格（かかく）が上がっている。"]],
            
         //Group 11
-           [[" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["このシステムは費用効果が高い。"],
+            ["来年度予算計画では人件費を見直すことになった。"],
+            ["寄付金は難民の食費に使われる。"],
+            ["私は旅行会社に旅費を支払った。"],
+            ["私は学費を支払うことができなかったので退学した。"],
+            ["光熱費とは電気、ガスの燃料費のことだ。"]],
             
         //Group 12
-           [[" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["ボランティア活動に参加する。"],
+            ["動詞や名詞などの品詞を学習する。"],
+            ["動物の写真を撮る。"],
+            ["外国語学習の動機に関する多くの研究がある。"],
+            ["父は動脈硬化で亡くなった。"]],
             
         //Group 13
-           [[" "],
-            [" "],
-            [" "]],
+           [["北米大陸横断鉄道は19世紀半ばに完成した。"],
+            ["列車が鉄橋を渡る。"],
+            ["東京には私鉄がたくさんある。"]],
             
         //Group 14
-           [[" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["彼は私の友人の一人だ。"],
+            ["私は彼との友情を裏切った。"],
+            ["私は交通事故で親友を失った悲しさを忘れることはできない。"],
+            ["悪友は一緒に悪いことをする仲間で、その反対は良友という。"]],
             
         //Group 15
-           [[" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["交通信号の色は赤、青、緑だ。"],
+            ["私は彼を信頼して、お金を貸した。"],
+            ["信者はある宗教を信仰している人のことだ。"],
+            ["この山は昔から神聖な山として信仰の対象となっている。"]],
             
         //Group 16
-           [[" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["人間は社会的な動物だ。"],
+            ["このカウンターは店に来た人の人数を自動的に数えてくれる。"],
+            ["外国人を差別することは許されない。"],
+            ["日本人は旅行するたびにお土産を買う。"],
+            ["今年私の会社には三人の新人が入った。"],
+            ["基本的人権は憲法（けんぽう）に記載（きさい）されている。"]],
             
         //Group 17
-           [[" "],
-            [" "],
-            [" "],
-            [" "]]]
+           [["彼は日本の政治家だ。"],
+            ["小説家になるのは難しい。"],
+            ["私の家族は五人です。"],
+            ["家電製品とは家庭で使用されるテレビ、冷蔵庫、洗濯機などを指す。"]]]
 
     
     var reibunV1 =
@@ -420,52 +417,50 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Có nhiều vùng đất ngập nước ở đất nước này."],
             ["Tạo đất ở. "]],
         //Group 11
-           [[" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["Đất nước sẽ chịu chi phí du học."],
+            ["Giảm chi phí nhân sự."],
+            ["Tiết kiệm chi phí ăn uống."],
+            ["Tính chi phí đi lại đến Tokyo."],
+            ["Các trường đại học tư nhân của Nhật Bản có học phí cao."],
+            ["Tiết kiệm chi phí tiện ích."]],
             
         //Group 12
-           [[" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["Các hoạt động cứu trợ được tiến hành ở nước ngoài."],
+            ["Học cách sử dụng động từ."],
+            ["Có rất nhiều loài động vật trên hòn đảo này."],
+            ["Động lực là cần thiết cho việc học."],
+            ["Mạch máu có động mạch và tĩnh mạch."]],
             
         //Group 13
-           [[" "],
-            [" "],
-            [" "]],
+           [["Năm 1872, đường sắt đầu tiên của Nhật Bản mở cửa giữa Shinbashi và Yokohama."],
+            ["Cầu sắt được làm bằng sắt."],
+            ["Đường sắt tư nhân là một tuyến đường sắt do một công ty tư nhân điều hành."]],
             
         //Group 14
-           [[" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["Tôi đã chơi một trò chơi với bạn bè của tôi hôm qua."],
+            ["Chúng tôi được kết nối bởi tình bạn."],
+            ["Ông Tanaka là bạn thân nhất của tôi từ khi còn nhỏ."],
+            ["Người bạn xấu của tôi và tôi thường bị thầy giáo mắng khi tôi còn là sinh viên."]],
             
         //Group 15
-           [[" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["Bỏ qua tín hiệu là nguy hiểm."],
+            ["Ông được mọi người tin tưởng."],
+            ["Vị linh mục lắng nghe lời tỏ tình của lời thú nhận của người tin Chúa."],
+            ["’Đức tin’ là tin và tôn kính Đức Phật."]],
             
         //Group 16
-           [[" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["Quan hệ con người ở nơi làm việc là rất khó khăn."],
+            ["Một số lượng đáng kể mọi người tụ tập tại bữa tiệc."],
+            ["Số lượng người nước ngoài đến thăm Nhật Bản đã tăng lên."],
+            ["Có bao nhiêu người Nhật sống ở đất nước của bạn?"],
+            ["Một người mới được chọn làm nhân vật chính trong một bộ phim mới."],
+            ["Nhân quyền là quyền cho mọi người sống hạnh phúc."]],
             
         //Group 17
-           [[" "],
-            [" "],
-            [" "],
-            [" "]]]
+           [["Em trai tôi đang nhắm vào các chính trị gia."],
+            ["Em gái tôi trở thành một tiểu thuyết gia."],
+            ["Tôi chụp ảnh gia đình trong năm mới."],
+            ["Tôi làm việc cho các nhà sản xuất điện tử gia đình."]]]
 
     
     var reibunV2 =
@@ -547,52 +542,50 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Đất ngập nước không thích hợp cho trồng rau."],
             ["Giá đất ở đang tăng lên."]],
         //Group 11
-           [[" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["Hệ thống này hiệu quả về chi phí."],
+            ["Trong kế hoạch ngân sách năm tài chính tiếp theo, chi phí nhân sự sẽ được xem xét."],
+            ["Tiền quyên góp được sử dụng cho chi phí thức ăn của người tỵ nạn."],
+            ["Tôi đã trả chi phí đi lại của đại lý du lịch."],
+            ["Tôi bỏ học vì tôi không thể trả học phí."],
+            ["Chi phí tiện ích là chi phí nhiên liệu điện và gas."]],
             
         //Group 12
-           [[" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["Tham gia vào các hoạt động tình nguyện."],
+            ["Tìm hiểu các phần của lời nói như động từ và danh từ."],
+            ["Chụp ảnh động vật."],
+            ["Có rất nhiều nghiên cứu về động lực cho việc học ngoại ngữ."],
+            ["Cha tôi chết vì xơ cứng động mạch."]],
             
         //Group 13
-           [[" "],
-            [" "],
-            [" "]],
+           [["Tuyến đường sắt Bắc Mỹ được hoàn thành vào giữa thế kỷ 19."],
+            ["Con tàu đi qua cây cầu sắt."],
+            ["Có rất nhiều tuyến đường sắt tư nhân ở Tokyo."]],
             
         //Group 14
-           [[" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["Anh ấy là một trong những người bạn của tôi."],
+            ["Tôi đã phản bội tình bạn của anh ấy với anh ấy."],
+            ["Tôi không thể quên nỗi buồn mất người bạn tốt nhất của tôi trong một tai nạn giao thông."],
+            ["Một người bạn xấu là một người bạn làm những việc xấu với nhau, ngược lại là một người bạn tốt."]],
             
         //Group 15
-           [[" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["Màu tín hiệu giao thông có màu đỏ, xanh dương và xanh lục."],
+            ["Tôi tin tưởng anh ta và cho vay tiền."],
+            ["Người tin Chúa nói đến người tin vào tôn giáo."],
+            ["Ngọn núi này từ lâu đã là mục tiêu của đức tin như một ngọn núi thiêng liêng."]],
             
         //Group 16
-           [[" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "],
-            [" "]],
+           [["Con người là động vật xã hội."],
+            ["Cái máy đếm này đếm tự động số người tới cửa hàng."],
+            ["Nó không bao giờ được phép phân biệt đối xử với người nước ngoài."],
+            ["Người Nhật mua quà lưu niệm mỗi khi họ đi du lịch."],
+            ["Năm nay công ty của tôi có ba người mới đến."],
+            ["Các quyền cơ bản của con người được mô tả trong Hiến pháp."]],
             
         //Group 17
-           [[" "],
-            [" "],
-            [" "],
-            [" "]]]
+           [["Anh ấy là Anh ấy là một chính trị gia Nhật Bản.một chính khách tốt."],
+            ["Thật khó để trở thành một tiểu thuyết gia."],
+            ["Gia đình tôi là năm người."],
+            ["Điện tử gia dụng dùng để chỉ tivi, tủ lạnh, máy giặt, vv được sử dụng ở nhà."]]]
 
         
 

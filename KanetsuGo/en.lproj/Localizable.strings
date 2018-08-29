@@ -8,7 +8,7 @@
 // Front Page
 "LetsStart" = "Let's learn Kanji words and their pronunciation using 漢越Go！";
 //Q Selection
-"QSelect" = "Select a Question Group\n1-10";
+"QSelect" = "Select a Question Group";
 "toInstruction" = "To Instruction";
 
 //使い方
@@ -53,7 +53,7 @@
 "Group4" = "Group 4 is a collection of Kanetsugo that has 月 （ゲツ、ゲッ） and corresponds to Tháng.";
 "Group5" = "Group 5 is a collection of Kanetsugo that has 通 （ツウ）and corresponds to thông.";
 "Group6" = "Group 6 is a collection of Kanetsugo that has 生 （セイ）and corresponds to sinh.";
-"Group7" = "Group 7 is a collection of Kanetsugo that has 学 （ガク）and corresponds to học.";
+"Group7" = "Group 7 is a collection of Kanetsugo that has 学 （ガク、ガッ）and corresponds to học.";
 "Group8" = "Group 8 is a collection of Kanetsugo that has 国 （コク、コッ）and corresponds to Quốc.";
 "Group9" = "Group 9 is a collection of Kanetsugo that has 反 （ハン）and corresponds to Phản.";
 "Group10" = "Group 10 is a collection of Kanetsugo that has 地 （チ、ジ）and corresponds to đất.";
