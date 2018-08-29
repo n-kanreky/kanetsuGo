@@ -51,7 +51,6 @@
 		6A71964221349891001DA41B /* Tekkyou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A71961821349890001DA41B /* Tekkyou.mp3 */; };
 		6A71964321349891001DA41B /* Yuujou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A71961921349890001DA41B /* Yuujou.mp3 */; };
 		6A71964421349891001DA41B /* Akuyuu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A71961A21349890001DA41B /* Akuyuu.mp3 */; };
-		6A71964521349891001DA41B /* Ningen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A71961B21349890001DA41B /* Ningen.mp3 */; };
 		6A71964621349891001DA41B /* Seijigaku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A71961C21349890001DA41B /* Seijigaku.mp3 */; };
 		6A71964721349891001DA41B /* Gakkou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A71961D21349891001DA41B /* Gakkou.mp3 */; };
 		6A71964821349891001DA41B /* Shinyuu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A71961E21349891001DA41B /* Shinyuu.mp3 */; };
@@ -73,6 +72,7 @@
 		6AA5D0511FEA64020096966F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5D0501FEA64020096966F /* ViewController.swift */; };
 		6AA5D0BD1FEA6F570096966F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D0BC1FEA6F560096966F /* LaunchScreen.storyboard */; };
 		6AA645032029D8BB00F12E53 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA645022029D8BB00F12E53 /* NavigationController.swift */; };
+		6AA6CF0E213749FD00EDB5FA /* Ningen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6CF0D213749FD00EDB5FA /* Ningen.mp3 */; };
 		6AAE5EEB21060A5F003CFB6C /* Shicchi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE5EEA21060A5F003CFB6C /* Shicchi.mp3 */; };
 		6AAE5EED21060A6A003CFB6C /* Takuchi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE5EEC21060A6A003CFB6C /* Takuchi.mp3 */; };
 		6AAE5EEF21060A72003CFB6C /* Tenchi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE5EEE21060A71003CFB6C /* Tenchi.mp3 */; };
@@ -199,7 +199,6 @@
 		6A71961821349890001DA41B /* Tekkyou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tekkyou.mp3; sourceTree = "<group>"; };
 		6A71961921349890001DA41B /* Yuujou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yuujou.mp3; sourceTree = "<group>"; };
 		6A71961A21349890001DA41B /* Akuyuu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Akuyuu.mp3; sourceTree = "<group>"; };
-		6A71961B21349890001DA41B /* Ningen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ningen.mp3; sourceTree = "<group>"; };
 		6A71961C21349890001DA41B /* Seijigaku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Seijigaku.mp3; sourceTree = "<group>"; };
 		6A71961D21349891001DA41B /* Gakkou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gakkou.mp3; sourceTree = "<group>"; };
 		6A71961E21349891001DA41B /* Shinyuu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shinyuu.mp3; sourceTree = "<group>"; };
@@ -226,6 +225,7 @@
 		6AA5D0521FEA646D0096966F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AA5D0BC1FEA6F560096966F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AA645022029D8BB00F12E53 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		6AA6CF0D213749FD00EDB5FA /* Ningen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ningen.mp3; sourceTree = "<group>"; };
 		6AAE5EEA21060A5F003CFB6C /* Shicchi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shicchi.mp3; sourceTree = "<group>"; };
 		6AAE5EEC21060A6A003CFB6C /* Takuchi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Takuchi.mp3; sourceTree = "<group>"; };
 		6AAE5EEE21060A71003CFB6C /* Tenchi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tenchi.mp3; sourceTree = "<group>"; };
@@ -454,9 +454,9 @@
 				6AD3CD8520FC7E0C00AB25A3 /* Nichijou.mp3 */,
 				6A88F69721040FA000FDA0ED /* Nichiyouhin.mp3 */,
 				6A7196072134988E001DA41B /* Nihonjin.mp3 */,
-				6A71961B21349890001DA41B /* Ningen.mp3 */,
 				6A7196102134988F001DA41B /* Ninzuu.mp3 */,
 				6AD3CD9320FC7E0D00AB25A3 /* Raigetsu.mp3 */,
+				6AA6CF0D213749FD00EDB5FA /* Ningen.mp3 */,
 				6AD3CD9C20FC7E0E00AB25A3 /* Raishuu.mp3 */,
 				6AB2F5C021247EB000B2763A /* Rakkan.mp3 */,
 				6AB2F5BE21247EAF00B2763A /* Renraku.mp3 */,
@@ -604,7 +604,6 @@
 				6AE2B63120FF751B00E1454E /* Kokka.mp3 in Resources */,
 				6A71963921349891001DA41B /* Doumyaku.mp3 in Resources */,
 				6A71964721349891001DA41B /* Gakkou.mp3 in Resources */,
-				6A71964521349891001DA41B /* Ningen.mp3 in Resources */,
 				6A71963721349891001DA41B /* Kounetsuhi.mp3 in Resources */,
 				6AB2F5C421247EB000B2763A /* Nenryou.mp3 in Resources */,
 				6AB2F5C721247EB000B2763A /* Shuukanshi.mp3 in Resources */,
@@ -662,6 +661,7 @@
 				6AD3CDB520FC7E0E00AB25A3 /* Mainichi.mp3 in Resources */,
 				6AE2B63920FF751B00E1454E /* Chikatetsu.mp3 in Resources */,
 				6AE2B63020FF751B00E1454E /* Kokuren.mp3 in Resources */,
+				6AA6CF0E213749FD00EDB5FA /* Ningen.mp3 in Resources */,
 				6AE2B63720FF751B00E1454E /* Hannou.mp3 in Resources */,
 				6AD3CDC120FC7E0E00AB25A3 /* Houritsu.mp3 in Resources */,
 				6AA5D0451FEA62400096966F /* iPhone.storyboard in Resources */,
