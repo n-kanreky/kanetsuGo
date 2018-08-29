@@ -694,8 +694,24 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             cell.textLabel!.text = "Group \(indexPath.row + 1)    \(NSLocalizedString("QSG9", comment: ""))"
         case 9:
             cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG10", comment: ""))"
+        case 10:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG11", comment: ""))"
+        case 11:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG12", comment: ""))"
+        case 12:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG13", comment: ""))"
+        case 13:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG14", comment: ""))"
+        case 14:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG15", comment: ""))"
+        case 15:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG16", comment: ""))"
+        case 16:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG17", comment: ""))"
+        case 17:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG18", comment: ""))"
             
-        
+            
             
         default:
             break // do nothing

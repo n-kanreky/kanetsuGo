@@ -124,6 +124,36 @@ class IntroGroupViewController: UIViewController {
             GroupExp.text = "\(NSLocalizedString("Group10", comment: ""))"
             
             question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG10", comment: ""))"
+        case 10:
+            GroupExp.text = "\(NSLocalizedString("Group11", comment: ""))"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG11", comment: ""))"
+        case 11:
+            GroupExp.text = "\(NSLocalizedString("Group12", comment: ""))"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG12", comment: ""))"
+        case 12:
+            GroupExp.text = "\(NSLocalizedString("Group13", comment: ""))"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG13", comment: ""))"
+        case 13:
+            GroupExp.text = "\(NSLocalizedString("Group14", comment: ""))"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG14", comment: ""))"
+        case 14:
+            GroupExp.text = "\(NSLocalizedString("Group15", comment: ""))"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG15", comment: ""))"
+        case 15:
+            GroupExp.text = "\(NSLocalizedString("Group16", comment: ""))"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG16", comment: ""))"
+        case 16:
+            GroupExp.text = "\(NSLocalizedString("Group17", comment: ""))"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG17", comment: ""))"
+            
+            
      
         default:
             break
