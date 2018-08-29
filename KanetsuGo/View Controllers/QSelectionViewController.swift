@@ -195,7 +195,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
            [["信号を無視するのは危険だ。"],
             ["彼は皆に信頼されている"],
             ["司祭は信者の罪の告白を聞いた。"],
-            ["「信仰」とは仏を信じて敬うことだ。"]],
+            ["仏教徒にとって信仰とは、仏を信じ敬うことだ。"]],
             
         //Group 16
            [["職場の人間関係は非常に困難だ。"],
@@ -446,7 +446,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
            [["Bỏ qua tín hiệu là nguy hiểm."],
             ["Ông được mọi người tin tưởng."],
             ["Vị linh mục lắng nghe lời tỏ tình của lời thú nhận của người tin Chúa."],
-            ["’Đức tin’ là tin và tôn kính Đức Phật."]],
+            ["Đức tin cho Phật tử là tin và kính trọng Đức Phật."]],
             
         //Group 16
            [["Quan hệ con người ở nơi làm việc là rất khó khăn."],
