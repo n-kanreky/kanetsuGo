@@ -10,7 +10,8 @@ import UIKit
 
 class QSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var questions =
-                    [["注意","同意","意見","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都","観察"], //Group 1
+                    [["注意","意見","同意","意見","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都","観察","観察","宇宙","歴史","破産"], //Group 1
+                        
                      ["今週","先週","来週","毎週","週末","週刊誌"], //Group 2
                      ["今日","毎日","日時","日常","日用品"], //Group 3
                      ["今月","来月","先月","月給","月額","月末"], //Group 4
@@ -30,15 +31,15 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
 
     var katakana =
-                   [["友達にチュウイする","意見（いけん）にドウイする","反対イケンを言う","試験のケッカ","ケツロンを先に言う","テンネンの温泉（おんせん）","ネンリョウ費（ひ）","キネン日（び）","カコのデータ","コドクなくらし","コダイの文明（ぶんめい）","カンリする","ラッカン的（てき）","レンラクする","ジュンビする","日本のシュト","カンサツする "], // Group 1
-                    ["コンシュウの土曜日","センシュウの月曜日","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける","シュウカンシを読む"], //Group 2
+                   [["友達にチュウイする","反対イケンを言う","意見にドウイする","反対イケンを言う","試験のケッカ","ケツロンを先に言う","テンネンの温泉（おんせん）","ネンリョウ費（ひ）","キネン日（び）","カコのデータ","コドクなくらし","コダイの文明（ぶんめい）","カンリする","ラッカン的（てき）","レンラクする","ジュンビする","日本のシュト","花をカンサツする ","ウチュウ飛行士","日本のレキシ","会社がハサンする"], // Group 1
+                    ["コンシュウの土曜日","センシュウから今週まで","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける","シュウカンシを読む"], //Group 2
                     ["キョウは晴れだ","マイニチ学校に行く","会議のニチジ","ニチジョウの生活","ニチヨウヒンを買う"], //Group 3
                     ["コンゲツ","ライゲツ","センゲツ","ゲッキュウ","ゲツガク","ゲツマツ"], //Group 4
                     ["ツウシンする","ツウチする","ツウヤクする","コウツウルールを守る"], //Group 5
                     ["セイゾンしている","セイカツする","セイメイ保険（ほけん）","宇宙からセイカンする","セイケイを立てる"], //Group 6
                     ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）","シャカイガク","セイジガク",
                      "政治ガクシャ ","ガッコウ","ダイガク"], //Group 7
-                    ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン加盟国（かめいこく）"], //Group 8
+                    ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキ不明","コクサイ的に有名","コクレン加盟国（かめいこく）"], //Group 8
                     ["体がハンノウする","ハンエイする","光がハンシャする","ハンタイ意見","ルールにイハンする","ハンセイする"], //Group 9
                     ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる","住（ジュウ）タクチ"], //Group 10
                     ["ヒヨウがかかる","ジンケンヒが高い","ショクヒを増やす","リョヒを払う","ガクヒを払う","コウネツヒが高い"], //Group 11
@@ -49,7 +50,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["ニンゲン","ニンズウ","ガイコクジン","ニホンジン","シンジン","ジンケン"], //Group 16
                     ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる","住（ジュウ）タクチ"]] //Group 17
     var vietnamese =
-                   [["chú ý","đồng ý","ý kiến","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô","Quan sát"], //Group 1
+                   [["chú ý","ý kiến","đồng ý","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô","Quan sát","Vũ trụ","Lịch sử","phá sản"], //Group 1
                     ["tuần này","tuần trước","Tuần tới","Mỗi tuần","Cuối tuần","Tạp chí hàng tuần"], //Group 2
                     ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày"], //Group 3
                     ["Tháng này","Tháng tiếp theo","Tháng trước","Tiền lương hàng tháng","Số tiền hàng tháng","Cuối tháng"], //Group 4
@@ -70,7 +71,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     var pronunciationJ =
         
-           [["Chuui","Doui","Iken","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto","Kansatsu"],//Groupo 1
+           [["Chuui","Iken","Doui","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto","Kansatsu"],//Groupo 1
                 ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Shuukanshi"], //Group 2
                 ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin"], //Group 3
                 ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku","Getsumatsu"], //Group 4
