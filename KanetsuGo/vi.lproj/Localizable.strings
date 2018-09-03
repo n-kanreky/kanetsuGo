@@ -52,7 +52,7 @@
 "Group3" = "Trong nhóm 3, Các từ bao gồm 日　(Ngày) sẽ được liệt kê. Ngày có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 日　hay ニチ.";
 "Group4" = "Trong nhóm 4, Các từ bao gồm 月　(Tháng) sẽ được liệt kê. Tháng có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 月　hay ゲツ、ゲッ.";
 "Group5" = "Trong nhóm 5, Các từ bao gồm 通　(Thông) sẽ được liệt kê. Thông có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 通　hay ツウ.";
-"Group6" = "Trong nhóm 6, Các từ bao gồm 生　(Sinh) sẽ được liệt kê. Sinh có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 生　hay セイ.";
+"Group6" = "Trong nhóm 6, Các từ bao gồm 生　(Sống) sẽ được liệt kê. Sống có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 生　hay セイ.";
 "Group7" = "Trong nhóm 7, Các từ bao gồm 学　(Học) sẽ được liệt kê. Học có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 学　hay ガク、ガッ.";
 "Group8" = "Trong nhóm 8, Các từ bao gồm 国　(Quốc) sẽ được liệt kê. Quốc có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 国　hay コク、コッ.";
 "Group9" = "Trong nhóm 9, Các từ bao gồm 反　(Phản) sẽ được liệt kê.  Phản có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 反　hay ハン.";
@@ -73,7 +73,7 @@
 "QSG3" = "Bao gồm 日（Ngày）";
 "QSG4" = "Bao gồm 月（Tháng）";
 "QSG5" = "Bao gồm 通（thông）";
-"QSG6" = "Bao gồm 生（sinh）";
+"QSG6" = "Bao gồm 生（Sống）";
 "QSG7" = "Bao gồm 学（học）";
 "QSG8" = "Bao gồm 国（Quốc）";
 "QSG9" = "Bao gồm 反（Phản）";

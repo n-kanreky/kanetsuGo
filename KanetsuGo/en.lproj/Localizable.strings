@@ -52,7 +52,7 @@
 "Group3" = "Group 3 is a collection of Kanetsugo that has 日 （ニチ）and corresponds to Ngày.";
 "Group4" = "Group 4 is a collection of Kanetsugo that has 月 （ゲツ、ゲッ） and corresponds to Tháng.";
 "Group5" = "Group 5 is a collection of Kanetsugo that has 通 （ツウ）and corresponds to thông.";
-"Group6" = "Group 6 is a collection of Kanetsugo that has 生 （セイ）and corresponds to sinh.";
+"Group6" = "Group 6 is a collection of Kanetsugo that has 生 （セイ）and corresponds to Sống.";
 "Group7" = "Group 7 is a collection of Kanetsugo that has 学 （ガク、ガッ）and corresponds to học.";
 "Group8" = "Group 8 is a collection of Kanetsugo that has 国 （コク、コッ）and corresponds to Quốc.";
 "Group9" = "Group 9 is a collection of Kanetsugo that has 反 （ハン）and corresponds to Phản.";
@@ -73,7 +73,7 @@
 "QSG3" = "With 日（Ngày）";
 "QSG4" = "With 月（Tháng）";
 "QSG5" = "With 通（thông）";
-"QSG6" = "With 生（sinh）";
+"QSG6" = "With 生（Sống）";
 "QSG7" = "With 学（học）";
 "QSG8" = "With 国（Quốc）";
 "QSG9" = "With 反（Phản）";
