@@ -90,7 +90,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                 ["Seijika","Shousetsuka","Kazoku","Kaden"]] //Group 17
     var reibunJ1 =
         //Group 1
-         [[["この道は交通量が多いので、渡るときには注意が必要だ。"],
+         [[["この機械を使う時は注意が必要だ。"],
             ["私は彼の意見に同意する。"],
             ["皆が彼の意見に同意した。"],
             ["試験の結果はどうでしたか？"],
@@ -106,7 +106,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["財布を落としたので、警察に連絡した。"],
             ["明日のために準備する。"],
             ["日本の首都は東京だ。"],
-            ["星の動きを観察する。"]],
+            ["星の動きを観察する。"],
+            ["宇宙では重力がかからない。"],
+            ["日本の歴史を学ぶ。"],
+            ["破産とはすべての財産をなくすことだ。"]],
          //Group 2
            [["私は今週の火曜日に太郎さんとテニスをします。"],
             ["母は、先週国に帰りました。"],
@@ -217,8 +220,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     var reibunJ2 =
         //Group 1
          [[["熱中症に注意してください。"],
-            ["多くの同意が得られた。"],
             ["何か意見はありますか。"],
+            ["多くの同意が得られた。"],
             ["結果的に成功だった。"],
             ["私はこの結論に満足していない。"],
             ["このバスの燃料は天然ガスだ。"],
@@ -232,7 +235,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["災害の場合、人々は連絡を取り合う。"],
             ["準備に時間がかかる。"],
             ["ベトナムの首都はハノイだ。"],
-            ["子供の観察能力をチェックする。"]],
+            ["子供の観察能力をチェックする。"],
+            ["宇宙にどんな生物がいるのだろう？"],
+            ["すべての国には、長い歴史の中で作られた文化がある。"],
+            ["彼は新しい会社を設立して半年後に破産した。"]],
          //Group 2
            [["天気予報によると、今週は週末にかけて雨が降るようだ。"],
             ["先週の金曜日は、大雨のため休校になった。"],
@@ -342,8 +348,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     var reibunV1 =
         //Group 1
          [[["Con đường này có rất nhiều phương tiện giao thông, vì vậy hãy cẩn thận khi đi qua."],
-            ["Tôi đồng ý với ý kiến của anh ấy."],
             ["Mọi người đồng ý với ý kiến của anh ấy."],
+            ["Tôi đồng ý với ý kiến của anh ấy."],
             ["Kết quả của kỳ thi như thế nào?"],
             ["Kết luận của bài trình bày là gì?"],
             ["Đất nước này được ban phước với nguồn tài nguyên thiên nhiên."],
@@ -357,7 +363,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Tôi bỏ ví và liên lạc với cảnh sát."],
             ["Chuẩn bị cho ngày mai."],
             ["Thành phố thủ đô của Nhật Bản là Tokyo."],
-            ["Quan sát chuyển động của các ngôi sao."]],
+            ["Quan sát chuyển động của các ngôi sao."],
+            ["Lực hấp dẫn không diễn ra trong vũ trụ."],
+            ["Tìm hiểu về lịch sử Nhật Bản."],
+            ["Phá sản là để loại bỏ tất cả sự giàu có."]],
          //Group 2
            [["Tôi chơi tennis với Taro vào thứ ba tuần này."],
             ["Mẹ tôi quay trở lại đất nước tuần trước."],
@@ -467,8 +476,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     var reibunV2 =
         //Group 1
          [[["Hãy chú ý đến đột quỵ nhiệt."],
-            ["Đã có nhiều sự đồng ý."],
             ["Bạn có ý kiến ​​gì không?"],
+            ["Đã có nhiều sự đồng ý."],
             ["Kết quả là nó thành công."],
             ["Tôi không hài lòng với kết luận này."],
             ["Nhiên liệu cho xe buýt này là khí thiên nhiên."],
@@ -482,7 +491,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Trong trường hợp thiên tai, mọi người giữ liên lạc."],
             ["Phải mất thời gian để chuẩn bị."],
             ["Thủ đô của Việt Nam là Hà Nội."],
-            ["Kiểm tra khả năng quan sát của trẻ."]],
+            ["Kiểm tra khả năng quan sát của trẻ."],
+            ["Những sinh vật nào trong vũ trụ?"],
+            ["Mỗi quốc gia có một nền văn hóa được thực hiện trong một lịch sử lâu dài."],
+            ["Ông bị phá sản trong sáu tháng sau khi ông thành lập một công ty mới."]],
         //Group 2
            [["Theo dự báo thời tiết, có vẻ như trời sẽ mưa vào cuối tuần này."],
             ["Ngôi trường đã bị đóng cửa do mưa lớn hôm thứ Sáu tuần trước."],
