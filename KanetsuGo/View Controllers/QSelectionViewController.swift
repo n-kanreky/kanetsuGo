@@ -10,7 +10,7 @@ import UIKit
 
 class QSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var questions =
-                    [["注意","意見","同意","意見","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都","観察","観察","宇宙","歴史","破産"], //Group 1
+                    [["注意","意見","同意","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都","観察","宇宙","歴史","破産"], //Group 1
                         
                      ["今週","先週","来週","毎週","週末","週刊誌"], //Group 2
                      ["今日","毎日","日時","日常","日用品"], //Group 3
@@ -31,7 +31,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
 
     var katakana =
-                   [["友達にチュウイする","反対イケンを言う","意見にドウイする","反対イケンを言う","試験のケッカ","ケツロンを先に言う","テンネンの温泉（おんせん）","ネンリョウ費（ひ）","キネン日（び）","カコのデータ","コドクなくらし","コダイの文明（ぶんめい）","カンリする","ラッカン的（てき）","レンラクする","ジュンビする","日本のシュト","花をカンサツする ","ウチュウ飛行士","日本のレキシ","会社がハサンする"], // Group 1
+                   [["友達にチュウイする","反対イケンを言う","意見にドウイする","試験のケッカ","ケツロンを先に言う","テンネンの温泉（おんせん）","ネンリョウ費（ひ）","キネン日（び）","カコのデータ","コドクなくらし","コダイの文明（ぶんめい）","カンリする","ラッカン的（てき）","レンラクする","ジュンビする","日本のシュト","花をカンサツする ","ウチュウ飛行士","日本のレキシ","会社がハサンする"], // Group 1
                     ["コンシュウの土曜日","センシュウから今週まで","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける","シュウカンシを読む"], //Group 2
                     ["キョウは晴れだ","マイニチ学校に行く","会議のニチジ","ニチジョウの生活","ニチヨウヒンを買う"], //Group 3
                     ["コンゲツ","ライゲツ","センゲツ","ゲッキュウ","ゲツガク","ゲツマツ"], //Group 4
@@ -71,26 +71,28 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     var pronunciationJ =
         
-           [["Chuui","Iken","Doui","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto","Kansatsu"],//Groupo 1
-                ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Shuukanshi"], //Group 2
-                ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin"], //Group 3
-                ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku","Getsumatsu"], //Group 4
-                ["Tsuushin","Tsuuchi","Tsuuyaku","Koutsuu"],  //Group 5
-                ["Seizon","Seikatsu","Seimei","Seikan","Seikei"], //Group 6
-                ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku","Shakaigaku ","Seijigaku","Gakusha","Gakkou","Daigaku"], //Group7
-                ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
-                ["Hannou","Hanei","Hansha","Hantai","Ihan","Hansei"], //Group 9
-                ["Jimen","Chikyuu","Chijou","Jishin","Shicchi","Takuchi"], //Group 10
-                ["Hiyou","Jinkenhi","Shokuhi","Shokuhi","Ryohi","Gakuhi","Kounetsuhi"], //Group 11
-                ["Katsudou","Doushi","Doubutsu","Douki","Doumyaku"], //Group 12
-                ["Tetsudou","Tekkyou","Shitetsu"], //Group 13
-                ["Yuujin","Yuujou","Shinyuu","Akuyuu"], //Group 14
-                ["Shingou","Shinrai","Shinja","Shinkou"], //Group 15
-                ["Ningen","Ninzuu","Gaikokujin","Nihonjin","Shinjin","Jinken"], //Group 16
-                ["Seijika","Shousetsuka","Kazoku","Kaden"]] //Group 17
+    [["Chuui","Iken","Doui","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto","Kansatsu","Uchuu","Rekishi","Hasan"],//Groupo 1
+        ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Shuukanshi"], //Group 2
+            ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin"], //Group 3
+        ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku","Getsumatsu"], //Group 4
+            ["Tsuushin","Tsuuchi","Tsuuyaku","Koutsuu"],  //Group 5
+            ["Seizon","Seikatsu","Seimei","Seikan","Seikei"], //Group 6
+        ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku","Shakaigaku ","Seijigaku","Gakusha","Gakkou","Daigaku"], //Group7
+            ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
+            ["Hannou","Hanei","Hansha","Hantai","Ihan","Hansei"], //Group 9
+        
+           ["Jimen","Chikyuu","Chijou","Jishin","Shicchi","Takuchi"], //Group 10
+        ["Hiyou","Jinkenhi","Shokuhi","Shokuhi","Ryohi","Gakuhi","Kounetsuhi"], //Group 11
+            ["Katsudou","Doushi","Doubutsu","Douki","Doumyaku"], //Group 12
+            ["Tetsudou","Tekkyou","Shitetsu"], //Group 13
+            ["Yuujin","Yuujou","Shinyuu","Akuyuu"], //Group 14
+            ["Shingou","Shinrai","Shinja","Shinkou"], //Group 15
+        ["Ningen","Ninzuu","Gaikokujin","Nihonjin","Shinjin","Jinken"], //Group 16
+            ["Seijika","Shousetsuka","Kazoku","Kaden"]] //Group 17
+    
     var reibunJ1 =
         //Group 1
-         [[["この機械を使う時は注意が必要だ。"],
+          [[["この機械を使う時は注意が必要だ。"],
             ["私は彼の意見に同意する。"],
             ["皆が彼の意見に同意した。"],
             ["試験の結果はどうでしたか？"],
@@ -118,7 +120,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["あなたは週末、どこかに行きますか。"],
             ["私は週刊誌を買った。"]],
          //Group 3
-            [["今日は8時までに帰ります。"],
+           [["今日は8時までに帰ります。"],
             ["私は毎日日本語を勉強します。"],
             ["パーティの日時を決定する。"],
             ["私たちは日常生活を大切にしています。"],
@@ -219,7 +221,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     var reibunJ2 =
         //Group 1
-         [[["熱中症に注意してください。"],
+          [[["熱中症に注意してください。"],
             ["何か意見はありますか。"],
             ["多くの同意が得られた。"],
             ["結果的に成功だった。"],
@@ -347,7 +349,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     var reibunV1 =
         //Group 1
-         [[["Con đường này có rất nhiều phương tiện giao thông, vì vậy hãy cẩn thận khi đi qua."],
+          [[["Con đường này có rất nhiều phương tiện giao thông, vì vậy hãy cẩn thận khi đi qua."],
             ["Mọi người đồng ý với ý kiến của anh ấy."],
             ["Tôi đồng ý với ý kiến của anh ấy."],
             ["Kết quả của kỳ thi như thế nào?"],
@@ -475,7 +477,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     var reibunV2 =
         //Group 1
-         [[["Hãy chú ý đến đột quỵ nhiệt."],
+          [[["Hãy chú ý đến đột quỵ nhiệt."],
             ["Bạn có ý kiến ​​gì không?"],
             ["Đã có nhiều sự đồng ý."],
             ["Kết quả là nó thành công."],

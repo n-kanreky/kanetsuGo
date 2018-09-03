@@ -60,6 +60,7 @@
 		6A79307D213D9184003E20E2 /* Hasan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A79307A213D9183003E20E2 /* Hasan.mp3 */; };
 		6A79307E213D9184003E20E2 /* Uchuu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A79307B213D9184003E20E2 /* Uchuu.mp3 */; };
 		6A79307F213D9184003E20E2 /* Rekishi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A79307C213D9184003E20E2 /* Rekishi.mp3 */; };
+		6A793081213DA209003E20E2 /* Kodai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A793080213DA209003E20E2 /* Kodai.mp3 */; };
 		6A88F68C2103FE4800FDA0ED /* Tsuukou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A88F68B2103FE4800FDA0ED /* Tsuukou.mp3 */; };
 		6A88F68E210404DE00FDA0ED /* Tsuuka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A88F68D210404DE00FDA0ED /* Tsuuka.mp3 */; };
 		6A88F692210404EF00FDA0ED /* Tsuushin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A88F691210404EF00FDA0ED /* Tsuushin.mp3 */; };
@@ -211,6 +212,7 @@
 		6A79307A213D9183003E20E2 /* Hasan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hasan.mp3; sourceTree = "<group>"; };
 		6A79307B213D9184003E20E2 /* Uchuu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Uchuu.mp3; sourceTree = "<group>"; };
 		6A79307C213D9184003E20E2 /* Rekishi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rekishi.mp3; sourceTree = "<group>"; };
+		6A793080213DA209003E20E2 /* Kodai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kodai.mp3; sourceTree = "<group>"; };
 		6A88F68B2103FE4800FDA0ED /* Tsuukou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tsuukou.mp3; sourceTree = "<group>"; };
 		6A88F68D210404DE00FDA0ED /* Tsuuka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tsuuka.mp3; sourceTree = "<group>"; };
 		6A88F691210404EF00FDA0ED /* Tsuushin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tsuushin.mp3; sourceTree = "<group>"; };
@@ -386,14 +388,6 @@
 		6AD3CD1220FC71DD00AB25A3 /* Pronunciation */ = {
 			isa = PBXGroup;
 			children = (
-				6A79307A213D9183003E20E2 /* Hasan.mp3 */,
-				6A79307C213D9184003E20E2 /* Rekishi.mp3 */,
-				6A79307B213D9184003E20E2 /* Uchuu.mp3 */,
-				6AF4770921361C4E00A03278 /* Kansatsu.mp3 */,
-				6AF4770A21361C4E00A03278 /* Seikan.mp3 */,
-				6AF4770C21361C4F00A03278 /* Seikei.mp3 */,
-				6AF4770B21361C4F00A03278 /* Seimei.mp3 */,
-				6AF4770D21361C4F00A03278 /* Shinkou.mp3 */,
 				6A71961A21349890001DA41B /* Akuyuu.mp3 */,
 				6AD3CDD120FCD56F00AB25A3 /* Bungaku.mp3 */,
 				6AD3CD8820FC7E0C00AB25A3 /* Bunka.mp3 */,
@@ -422,6 +416,7 @@
 				6AE2B62C20FF751B00E1454E /* Hansei.mp3 */,
 				6AE2B62820FF751B00E1454E /* Hansha.mp3 */,
 				6AE2B62A20FF751B00E1454E /* Hantai.mp3 */,
+				6A79307A213D9183003E20E2 /* Hasan.mp3 */,
 				6AD3CD8E20FC7E0D00AB25A3 /* Hiduke.mp3 */,
 				6A7195FA2134988C001DA41B /* Hiyou.mp3 */,
 				6AD3CD9D20FC7E0E00AB25A3 /* Houritsu.mp3 */,
@@ -439,6 +434,8 @@
 				6AB2F5B421247EAD00B2763A /* Kako.mp3 */,
 				6AD3CD9F20FC7E0E00AB25A3 /* Kakushuu.mp3 */,
 				6AB2F5BB21247EAF00B2763A /* Kanri.mp3 */,
+				6AF4770921361C4E00A03278 /* Kansatsu.mp3 */,
+				6A793080213DA209003E20E2 /* Kodai.mp3 */,
 				6A7196012134988D001DA41B /* Katsudou.mp3 */,
 				6A7195FB2134988C001DA41B /* Kazoku.mp3 */,
 				6AB2F5B921247EAE00B2763A /* Kekka.mp3 */,
@@ -463,16 +460,20 @@
 				6AD3CD8520FC7E0C00AB25A3 /* Nichijou.mp3 */,
 				6A88F69721040FA000FDA0ED /* Nichiyouhin.mp3 */,
 				6A7196072134988E001DA41B /* Nihonjin.mp3 */,
+				6AA6CF0D213749FD00EDB5FA /* Ningen.mp3 */,
 				6A7196102134988F001DA41B /* Ninzuu.mp3 */,
 				6AD3CD9320FC7E0D00AB25A3 /* Raigetsu.mp3 */,
-				6AA6CF0D213749FD00EDB5FA /* Ningen.mp3 */,
 				6AD3CD9C20FC7E0E00AB25A3 /* Raishuu.mp3 */,
 				6AB2F5C021247EB000B2763A /* Rakkan.mp3 */,
+				6A79307C213D9184003E20E2 /* Rekishi.mp3 */,
 				6AB2F5BE21247EAF00B2763A /* Renraku.mp3 */,
 				6A7196132134988F001DA41B /* Ryohi.mp3 */,
 				6A71961C21349890001DA41B /* Seijigaku.mp3 */,
 				6A71961621349890001DA41B /* Seijika.mp3 */,
+				6AF4770A21361C4E00A03278 /* Seikan.mp3 */,
 				6AD3CD9720FC7E0D00AB25A3 /* Seikatsu.mp3 */,
+				6AF4770C21361C4F00A03278 /* Seikei.mp3 */,
+				6AF4770B21361C4F00A03278 /* Seimei.mp3 */,
 				6AD3CD9420FC7E0D00AB25A3 /* Seisan.mp3 */,
 				6A71962021349891001DA41B /* Seito.mp3 */,
 				6AD3CD8C20FC7E0D00AB25A3 /* Seizon.mp3 */,
@@ -483,6 +484,7 @@
 				6A7195FE2134988D001DA41B /* Shingou.mp3 */,
 				6A71960C2134988F001DA41B /* Shinja.mp3 */,
 				6A71962121349891001DA41B /* Shinjin.mp3 */,
+				6AF4770D21361C4F00A03278 /* Shinkou.mp3 */,
 				6A7196112134988F001DA41B /* Shinrai.mp3 */,
 				6A71961E21349891001DA41B /* Shinyuu.mp3 */,
 				6A71961721349890001DA41B /* Shitetsu.mp3 */,
@@ -504,6 +506,7 @@
 				6A88F68B2103FE4800FDA0ED /* Tsuukou.mp3 */,
 				6A88F691210404EF00FDA0ED /* Tsuushin.mp3 */,
 				6A88F693210404F900FDA0ED /* Tsuuyaku.mp3 */,
+				6A79307B213D9184003E20E2 /* Uchuu.mp3 */,
 				6AD3CD9820FC7E0E00AB25A3 /* Yakugaku.mp3 */,
 				6A7195FC2134988D001DA41B /* Yuujin.mp3 */,
 				6A71961921349890001DA41B /* Yuujou.mp3 */,
@@ -728,6 +731,7 @@
 				6AE2B63D20FF751B00E1454E /* Chika.mp3 in Resources */,
 				6AD3CDD220FCD56F00AB25A3 /* Bungaku.mp3 in Resources */,
 				6A88F692210404EF00FDA0ED /* Tsuushin.mp3 in Resources */,
+				6A793081213DA209003E20E2 /* Kodai.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
