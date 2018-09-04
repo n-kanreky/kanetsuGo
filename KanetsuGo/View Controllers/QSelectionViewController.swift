@@ -10,9 +10,9 @@ import UIKit
 
 class QSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var questions =
-                    [["注意","意見","同意","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都","観察","宇宙","歴史","破産"], //Group 1
+            [["注意","意見","同意","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都","観察","宇宙","歴史","破産"], //Group 1
                         
-                     ["今週","先週","来週","毎週","週末","週刊誌"], //Group 2
+                ["今週","先週","来週","毎週","週末","週刊誌"], //Group 2
                      ["今日","毎日","日時","日常","日用品"], //Group 3
                      ["今月","来月","先月","月給","月額","月末"], //Group 4
                      ["通信","通知","通訳","交通"], //Group 5
@@ -47,7 +47,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["鉄道がトオル","テッキョウを渡る","シテツに乗る"], //Group 13
                     ["ユウジンが多い","固いユウジョウ","シンユウ","アクユウ"], //Group 14
                     ["交通シンゴウ","シンライする","シンジャが多い","シンコウしん"], //Group 15
-                    ["ニンゲン","ニンズウ","ガイコクジン","ニホンジン","シンジン","ジンケン"], //Group 16
+                    ["ニンゲン","ニンズウ","ガイコクジン","ニホンジン","シンジン教育","ジンケン週間"], //Group 16
                     ["セイジカになる","ショウセツカ","5人カゾク","カデン製品を買う"]] //Group 17”
     var vietnamese =
                    [["chú ý","ý kiến","đồng ý","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô","Quan sát","Vũ trụ","Lịch sử","phá sản"], //Group 1
@@ -213,7 +213,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
         //Group 17
            [["私の弟は政治家を目指している。"],
-            ["私の妹は小説家になった。"],
+            ["有名な日本の小説家は誰ですか？"],
             ["私は新年に家族写真を撮った。"],
             ["私は家電メーカーに勤めている。"]]]
     
@@ -334,10 +334,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             
         //Group 16
            [["人間は社会的な動物だ。"],
-            ["このカウンターは店に来た人の人数を自動的に数えてくれる。"],
+            ["このカウンターは、店に来た人の人数を自動的に数えてくれる。"],
             ["外国人を差別することは許されない。"],
-            ["日本人は旅行するたびにお土産を買う。"],
-            ["今年私の会社には三人の新人が入った。"],
+            ["日本人は旅行するたびにお土産（みやげ）を買う。"],
+            ["今年、私の会社には三人の新人が入った。"],
             ["基本的人権は憲法（けんぽう）に記載（きさい）されている。"]],
             
         //Group 17 ReivunJ２
@@ -470,7 +470,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             
         //Group 17
            [["Em trai tôi đang nhắm vào các chính trị gia."],
-            ["Em gái tôi trở thành một tiểu thuyết gia."],
+            ["Ai là một tiểu thuyết gia nổi tiếng người Nhật?"],
             ["Tôi chụp ảnh gia đình trong năm mới."],
             ["Tôi làm việc cho các nhà sản xuất điện tử gia đình."]]]
 
