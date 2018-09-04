@@ -39,7 +39,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["セイゾンしている","セイカツする","セイメイ保険（ほけん）","宇宙からセイカンする","セイケイを立てる"], //Group 6
                     ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）","シャカイガク","セイジガク",
                      "政治ガクシャ ","ガッコウ","ダイガク"], //Group 7
-                    ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキ不明","コクサイ的に有名","コクレン加盟国（かめいこく）"], //Group 8
+                    ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン加盟国（かめいこく）"], //Group 8
                     ["体がハンノウする","ハンエイする","光がハンシャする","ハンタイ意見","ルールにイハンする","ハンセイする"], //Group 9
                     ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる","住（ジュウ）タクチ"], //Group 10
                     ["ヒヨウがかかる","ジンケンヒが高い","ショクヒを増やす","リョヒを払う","ガクヒを払う","コウネツヒが高い"], //Group 11
@@ -48,7 +48,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
                     ["ユウジンが多い","固いユウジョウ","シンユウ","アクユウ"], //Group 14
                     ["交通シンゴウ","シンライする","シンジャが多い","シンコウしん"], //Group 15
                     ["ニンゲン","ニンズウ","ガイコクジン","ニホンジン","シンジン","ジンケン"], //Group 16
-                    ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる","住（ジュウ）タクチ"]] //Group 17
+                    ["セイジカになる","ショウセツカ","5人カゾク","カデン製品を買う"]] //Group 17”
     var vietnamese =
                    [["chú ý","ý kiến","đồng ý","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô","Quan sát","Vũ trụ","Lịch sử","phá sản"], //Group 1
                     ["tuần này","tuần trước","Tuần tới","Mỗi tuần","Cuối tuần","Tạp chí hàng tuần"], //Group 2
@@ -93,7 +93,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     var reibunJ1 =
         //Group 1
           [[["この機械を使う時は注意が必要だ。"],
-            ["私は彼の意見に同意する。"],
+            ["誰もが彼の意見に反対した。"],
             ["皆が彼の意見に同意した。"],
             ["試験の結果はどうでしたか？"],
             ["プレゼンテーションの結論は何ですか。"],
@@ -153,7 +153,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
          //Group 8
            [["これが新しい国立劇場（げきじょう）です。"],
             ["アフリカに新しい国家が生まれた。"],
-            ["国籍はどこですか。"],
+            ["あなたの国籍はどこですか。"],
             ["私の専門は国際関係だ。"],
             ["国連は国際連合（こくさいれんごう）の略（りゃく）だ。"]],
          //Group 9
@@ -239,7 +239,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["ベトナムの首都はハノイだ。"],
             ["子供の観察能力をチェックする。"],
             ["宇宙にどんな生物がいるのだろう？"],
-            ["すべての国には、長い歴史の中で作られた文化がある。"],
+            ["各国には歴史の中で作られた文化がある。"],
             ["彼は新しい会社を設立して半年後に破産した。"]],
          //Group 2
            [["天気予報によると、今週は週末にかけて雨が降るようだ。"],
@@ -282,7 +282,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
          //Group 8
            [["日本に国立大学はいくつありますか。"],
             ["試験に合格して、国家公務員（こっかこうむいん）になった。"],
-            ["国籍はベトナムです。"],
+            ["私の国籍はベトナムです。"],
             ["新東京国際空港は千葉県にあります。"],
             ["国連は1945年に設立された国際機構（こくさいきこう）だ。"]],
          //Group ９
@@ -340,7 +340,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["今年私の会社には三人の新人が入った。"],
             ["基本的人権は憲法（けんぽう）に記載（きさい）されている。"]],
             
-        //Group 17
+        //Group 17 ReivunJ２
            [["彼は日本の政治家だ。"],
             ["小説家になるのは難しい。"],
             ["私の家族は五人です。"],
@@ -349,8 +349,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     var reibunV1 =
         //Group 1
-          [[["Con đường này có rất nhiều phương tiện giao thông, vì vậy hãy cẩn thận khi đi qua."],
-            ["Mọi người đồng ý với ý kiến của anh ấy."],
+          [[["Chú ý là cần thiết khi sử dụng máy này."],
+            ["Mọi người đều phản đối ý kiến của mình."],
             ["Tôi đồng ý với ý kiến của anh ấy."],
             ["Kết quả của kỳ thi như thế nào?"],
             ["Kết luận của bài trình bày là gì?"],
@@ -495,7 +495,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Thủ đô của Việt Nam là Hà Nội."],
             ["Kiểm tra khả năng quan sát của trẻ."],
             ["Những sinh vật nào trong vũ trụ?"],
-            ["Mỗi quốc gia có một nền văn hóa được thực hiện trong một lịch sử lâu dài."],
+            ["Mỗi quốc gia có một nền văn hóa được thực hiện trong lịch sử."],
             ["Ông bị phá sản trong sáu tháng sau khi ông thành lập một công ty mới."]],
         //Group 2
            [["Theo dự báo thời tiết, có vẻ như trời sẽ mưa vào cuối tuần này."],
