@@ -10,84 +10,82 @@ import UIKit
 
 class QSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var questions =
-            [["注意","意見","同意","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都","観察","宇宙","歴史","破産"], //Group 1
+           [["注意","意見","同意","結果","結論","天然","燃料","記念","過去","孤独","古代","管理","楽観","連絡","準備","首都","観察","宇宙","歴史","破産"], //Group 1
                         
-                ["今週","先週","来週","毎週","週末","週刊誌"], //Group 2
-                     ["今日","毎日","日時","日常","日用品"], //Group 3
-                     ["今月","来月","先月","月給","月額","月末"], //Group 4
-                     ["通信","通知","通訳","交通"], //Group 5
-                     ["生存","生活","生命","生還","生計"], //Group 6
-                     ["文学","哲学","医学","数学","薬学","化学","社会学","政治学","学者","学校","大学"], //Group 7 学がつく漢語
-                     ["国立","国家","国籍","国際","国連"], //Group 8 国を含む
-                     ["反応","反映","反射","反対","違反","反省"], //Group 9 反を含む　６語
-                     ["地面","地球","地上","地震","湿地","宅地"],//Group 10 地を含む
-                     ["費用","人件費","食費","旅費","学費","光熱費"],  //Group 11 費を含む
-                     ["活動","動詞","動物","動機","動脈"],  //Group 12 費を含む
-                     ["鉄道","鉄橋","私鉄"],  //Group 13 費を含む
-                     ["友人","友情","親友","悪友"],  //Group 14 費を含む
-                     ["信号","信頼","信者","信仰"],  //Group 15 費を含む
-                     ["人間","人数"," 外国人","日本人","新人","人権"],  //Group 16 費を含む
-                     ["政治家","小説家","家族","家電"]]  //Group 17 費を含む
+            ["今週","先週","来週","毎週","週末","週刊誌"], //Group 2
+            ["今日","毎日","日時","日常","日用品"], //Group 3
+            ["今月","来月","先月","月給","月額","月末"], //Group 4
+            ["通信","通知","通訳","交通"], //Group 5
+            ["生存","生活","生命","生還","生計"], //Group 6
+            ["文学","哲学","医学","数学","薬学","化学","社会学","政治学","学者","学校","大学"], //Group 7 学がつく漢語
+            ["国立","国家","国籍","国際","国連"], //Group 8 国を含む
+            ["反応","反映","反射","反対","違反","反省"], //Group 9 反を含む　６語
+            ["地面","地球","地上","地震","湿地","宅地"],//Group 10 地を含む
+            ["費用","人件費","食費","旅費","学費","光熱費"],  //Group 11 費を含む
+            ["活動","動詞","動物","動機","動脈"],  //Group 12 費を含む
+            ["鉄道","鉄橋","私鉄"],  //Group 13 費を含む
+            ["友人","友情","親友","悪友"],  //Group 14 費を含む
+            ["信号","信頼","信者","信仰"],  //Group 15 費を含む
+            ["人間","人数"," 外国人","日本人","新人","人権"],  //Group 16 費を含む
+            ["政治家","小説家","家族","家電"]]  //Group 17 費を含む
     
 
     var katakana =
-                   [["友達にチュウイする","反対イケンを言う","意見にドウイする","試験のケッカ","ケツロンを先に言う","テンネンの温泉（おんせん）","ネンリョウ費（ひ）","キネン日（び）","カコのデータ","コドクなくらし","コダイの文明（ぶんめい）","カンリする","ラッカン的（てき）","レンラクする","ジュンビする","日本のシュト","花をカンサツする ","ウチュウ飛行士","日本のレキシ","会社がハサンする"], // Group 1
-                    ["コンシュウの土曜日","センシュウから今週まで","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける","シュウカンシを読む"], //Group 2
-                    ["キョウは晴れだ","マイニチ学校に行く","会議のニチジ","ニチジョウの生活","ニチヨウヒンを買う"], //Group 3
-                    ["コンゲツ","ライゲツ","センゲツ","ゲッキュウ","ゲツガク","ゲツマツ"], //Group 4
-                    ["ツウシンする","ツウチする","ツウヤクする","コウツウルールを守る"], //Group 5
-                    ["セイゾンしている","セイカツする","セイメイ保険（ほけん）","宇宙からセイカンする","セイケイを立てる"], //Group 6
-                    ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）","シャカイガク","セイジガク",
+           [["友達にチュウイする","反対イケンを言う","意見にドウイする","試験のケッカ","ケツロンを先に言う","テンネンの温泉（おんせん）","ネンリョウ費（ひ）","キネン日（び）","カコのデータ","コドクなくらし","コダイの文明（ぶんめい）","カンリする","ラッカン的（てき）","レンラクする","ジュンビする","日本のシュト","花をカンサツする ","ウチュウ飛行士","日本のレキシ","会社がハサンする"], // Group 1
+            ["コンシュウの土曜日","センシュウから今週まで","ライシュウの火曜日","マイシュウ水曜日","シュウマツに出かける","シュウカンシを読む"], //Group 2
+            ["キョウは晴れだ","マイニチ学校に行く","会議のニチジ","ニチジョウの生活","ニチヨウヒンを買う"], //Group 3
+            ["コンゲツ","ライゲツ","センゲツ","ゲッキュウ","ゲツガク","ゲツマツ"], //Group 4
+            ["ツウシンする","ツウチする","ツウヤクする","コウツウルールを守る"], //Group 5
+            ["セイゾンしている","セイカツする","セイメイ保険（ほけん）","宇宙からセイカンする","セイケイを立てる"], //Group 6
+            ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）","シャカイガク","セイジガク",
                      "政治ガクシャ ","ガッコウ","ダイガク"], //Group 7
-                    ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン加盟国（かめいこく）"], //Group 8
-                    ["体がハンノウする","ハンエイする","光がハンシャする","ハンタイ意見","ルールにイハンする","ハンセイする"], //Group 9
-                    ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる","住（ジュウ）タクチ"], //Group 10
-                    ["ヒヨウがかかる","ジンケンヒが高い","ショクヒを増やす","リョヒを払う","ガクヒを払う","コウネツヒが高い"], //Group 11
-                    ["カツドウする","日本語のドウシ","ドウブツ園","学習のドウキ","ドウミャク"], //Group 12
-                    ["鉄道がトオル","テッキョウを渡る","シテツに乗る"], //Group 13
-                    ["ユウジンが多い","固いユウジョウ","シンユウ","アクユウ"], //Group 14
-                    ["交通シンゴウ","シンライする","シンジャが多い","シンコウしん"], //Group 15
-                    ["ニンゲン","ニンズウ","ガイコクジン","ニホンジン","シンジン教育","ジンケン週間"], //Group 16
-                    ["セイジカになる","ショウセツカ","5人カゾク","カデン製品を買う"]] //Group 17”
-    var vietnamese =
-                   [["chú ý","ý kiến","đồng ý","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô","Quan sát","Vũ trụ","Lịch sử","phá sản"], //Group 1
-                    ["tuần này","tuần trước","Tuần tới","Mỗi tuần","Cuối tuần","Tạp chí hàng tuần"], //Group 2
-                    ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày"], //Group 3
-                    ["Tháng này","Tháng tiếp theo","Tháng trước","Tiền lương hàng tháng","Số tiền hàng tháng","Cuối tháng"], //Group 4
-                    ["thông tín","thông tri","thông dịch","Giao thông"],// Group 5
-                    ["Sự sống còn","sống","Cuộc sống","Sống"], //Group 6
-                    ["Văn học","triết học","y học","toán học","dược học","hóa học","Xã hội học","Khoa học chính trị","Một học giả","Trường học","Đại học"], //Group7
-                    ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Liên Hợp Quốc"],//Group8
-                    ["Phản ứng","Phản ánh","Phản xạ","Phản đối","Vi phạm","Sự phản chiếu"],//Group9
-                    ["Mặt đất","Trái đất","Trên mặt đất","Đất đai","Đất ngập nước","Đất ở"],//Group10
-                    ["Chi phí","Chi phí nhân sự","Chi phí ăn uống","Chi phí đi lại","Học phí","Phí tiện ích"],//Group11
-                    ["Hoạt động","động từ","Động vật","Động lực","Động mạch"],//Group12
-                    ["Đường sắt","Cầu sắt","Đường sắt tư nhân"],//Group13
-                    ["Một người bạn","Tình bạn","Bạn thân nhất","Bạn xấu"],//Group14
-                    ["Tín hiệu","Tin tưởng","Người tin Chúa","Đức tin "],//Group15
-                    ["Một con người","Số người","Một người nước ngoài","Người Nhật","Người mới đến","Quyền con người"],//Group16
-                    ["Chính trị gia","Một tiểu thuyết gia","Một gia đình","Điện tử gia dụng"]]//Group17
+            ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン加盟国（かめいこく）"], //Group 8
+            ["体がハンノウする","ハンエイする","光がハンシャする","ハンタイ意見","ルールにイハンする","ハンセイする"], //Group 9
+            ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる","住（ジュウ）タクチ"], //Group 10
+            ["ヒヨウがかかる","ジンケンヒが高い","ショクヒを増やす","リョヒを払う","ガクヒを払う","コウネツヒが高い"], //Group 11
+            ["カツドウする","日本語のドウシ","ドウブツ園","学習のドウキ","ドウミャク"], //Group 12
+            ["鉄道がトオル","テッキョウを渡る","シテツに乗る"], //Group 13
+            ["ユウジンが多い","固いユウジョウ","シンユウ","アクユウ"], //Group 14
+            ["交通シンゴウ","シンライする","シンジャが多い","シンコウしん"], //Group 15
+            ["ニンゲン","ニンズウ","ガイコクジン","ニホンジン","シンジン教育","ジンケン週間"], //Group 16
+            ["セイジカになる","ショウセツカ","5人カゾク","カデン製品を買う"]] //Group 17”
     
+    var vietnamese =
+           [["chú ý","ý kiến","đồng ý","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô","Quan sát","Vũ trụ","Lịch sử","phá sản"], //Group 1
+            ["tuần này","tuần trước","Tuần tới","Mỗi tuần","Cuối tuần","Tạp chí hàng tuần"], //Group 2
+            ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày"], //Group 3
+            ["Tháng này","Tháng tiếp theo","Tháng trước","Tiền lương hàng tháng","Số tiền hàng tháng","Cuối tháng"], //Group 4
+            ["thông tín","thông tri","thông dịch","Giao thông"],// Group 5
+            ["Sự sống còn","sống","Cuộc sống","Sống"], //Group 6
+            ["Văn học","triết học","y học","toán học","dược học","hóa học","Xã hội học","Khoa học chính trị","Một học giả","Trường học","Đại học"], //Group7
+            ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Liên Hợp Quốc"],//Group8
+            ["Phản ứng","Phản ánh","Phản xạ","Phản đối","Vi phạm","Sự phản chiếu"],//Group9
+            ["Mặt đất","Trái đất","Trên mặt đất","Đất đai","Đất ngập nước","Đất ở"],//Group10
+            ["Chi phí","Chi phí nhân sự","Chi phí ăn uống","Chi phí đi lại","Học phí","Phí tiện ích"],//Group11
+            ["Hoạt động","động từ","Động vật","Động lực","Động mạch"],//Group12
+            ["Đường sắt","Cầu sắt","Đường sắt tư nhân"],//Group13
+            ["Một người bạn","Tình bạn","Bạn thân nhất","Bạn xấu"],//Group14
+            ["Tín hiệu","Tin tưởng","Người tin Chúa","Đức tin "],//Group15
+            ["Một con người","Số người","Một người nước ngoài","Người Nhật","Người mới đến","Quyền con người"],//Group16
+            ["Chính trị gia","Một tiểu thuyết gia","Một gia đình","Điện tử gia dụng"]]//Group17
     
     var pronunciationJ =
-        
-    [["Chuui","Iken","Doui","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto","Kansatsu","Uchuu","Rekishi","Hasan"],//Groupo 1
-        ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Shuukanshi"], //Group 2
+        [["Chuui","Iken","Doui","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto","Kansatsu","Uchuu","Rekishi","Hasan"],//Groupo 1
+            ["Konshuu","Senshuu","Raishuu","Maishuu","Shuumatsu","Shuukanshi"], //Group 2
             ["Kyou","Mainichi","Nichiji","Nichijou","Nichiyouhin"], //Group 3
-        ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku","Getsumatsu"], //Group 4
+            ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku","Getsumatsu"], //Group 4
             ["Tsuushin","Tsuuchi","Tsuuyaku","Koutsuu"],  //Group 5
             ["Seizon","Seikatsu","Seimei","Seikan","Seikei"], //Group 6
-        ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku","Shakaigaku ","Seijigaku","Gakusha","Gakkou","Daigaku"], //Group7
+            ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku","Shakaigaku ","Seijigaku","Gakusha","Gakkou","Daigaku"], //Group7
             ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
             ["Hannou","Hanei","Hansha","Hantai","Ihan","Hansei"], //Group 9
-        
-           ["Jimen","Chikyuu","Chijou","Jishin","Shicchi","Takuchi"], //Group 10
-        ["Hiyou","Jinkenhi","Shokuhi","Shokuhi","Ryohi","Gakuhi","Kounetsuhi"], //Group 11
+            ["Jimen","Chikyuu","Chijou","Jishin","Shicchi","Takuchi"], //Group 10
+            ["Hiyou","Jinkenhi","Shokuhi","Shokuhi","Ryohi","Gakuhi","Kounetsuhi"], //Group 11
             ["Katsudou","Doushi","Doubutsu","Douki","Doumyaku"], //Group 12
             ["Tetsudou","Tekkyou","Shitetsu"], //Group 13
             ["Yuujin","Yuujou","Shinyuu","Akuyuu"], //Group 14
             ["Shingou","Shinrai","Shinja","Shinkou"], //Group 15
-        ["Ningen","Ninzuu","Gaikokujin","Nihonjin","Shinjin","Jinken"], //Group 16
+            ["Ningen","Ninzuu","Gaikokujin","Nihonjin","Shinjin","Jinken"], //Group 16
             ["Seijika","Shousetsuka","Kazoku","Kaden"]] //Group 17
     
     var reibunJ1 =
