@@ -17,7 +17,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["今月","来月","先月","月給","月額","月末"], //Group 4
             ["通信","通知","通訳","交通"], //Group 5
             ["生存","生活","生命","生還","生計"], //Group 6
-            ["文学","哲学","医学","数学","薬学","化学","社会学","政治学","学者","学校","大学"], //Group 7 学がつく漢語
+            ["文学","哲学","医学","数学","薬学","化学","社会学","政治学","学者","学校","大学"], //Group 7 学がつく漢語 x 11
             ["国立","国家","国籍","国際","国連"], //Group 8 国を含む
             ["反応","反映","反射","反対","違反","反省"], //Group 9 反を含む　６語
             ["地面","地球","地上","地震","湿地","宅地"],//Group 10 地を含む
@@ -37,9 +37,22 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["コンゲツ","ライゲツ","センゲツ","ゲッキュウ","ゲツガク","ゲツマツ"], //Group 4
             ["ツウシンする","ツウチする","ツウヤクする","コウツウルールを守る"], //Group 5
             ["セイゾンしている","セイカツする","セイメイ保険（ほけん）","宇宙からセイカンする","セイケイを立てる"], //Group 6
-            ["ブンガクを勉強する","テツガクはむずかしい","イガクが進歩する","スウガクが得意（とくい）だ","ヤクガクを学ぶ","カガクの実験（じっけん）","シャカイガク","セイジガク",
-                     "政治ガクシャ ","ガッコウ","ダイガク"], //Group 7
-            ["コクリツ大学","民主主義（みんしゅしゅぎ）コッカ","コクセキはベトナムだ","コクサイ的に有名","コクレン加盟国（かめいこく）"], //Group 8
+            ["ブンガクを勉強する",
+             "テツガクはむずかしい",
+             "イガクが進歩する",
+             "スウガクが得意（とくい）だ",
+             "ヤクガクを学ぶ",
+             "カガクの実験（じっけん）",
+             "シャカイガク",
+             "セイジガク",
+             "政治ガクシャ ",
+             "ガッコウ",
+             "ダイガク"], //Group 7 x 11
+            ["コクリツ大学",
+             "民主主義（みんしゅしゅぎ）コッカ",
+             "コクセキはベトナムだ",
+             "コクサイ的に有名",
+             "コクレン加盟国（かめいこく）"], //Group 8
             ["体がハンノウする","ハンエイする","光がハンシャする","ハンタイ意見","ルールにイハンする","ハンセイする"], //Group 9
             ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる","住（ジュウ）タクチ"], //Group 10
             ["ヒヨウがかかる","ジンケンヒが高い","ショクヒを増やす","リョヒを払う","ガクヒを払う","コウネツヒが高い"], //Group 11
@@ -56,8 +69,18 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày"], //Group 3
             ["Tháng này","Tháng tiếp theo","Tháng trước","Tiền lương hàng tháng","Số tiền hàng tháng","Cuối tháng"], //Group 4
             ["thông tín","thông tri","thông dịch","Giao thông"],// Group 5
-            ["Sự sống còn","sống","Cuộc sống","Sống"], //Group 6
-            ["Văn học","triết học","y học","toán học","dược học","hóa học","Xã hội học","Khoa học chính trị","Một học giả","Trường học","Đại học"], //Group7
+            ["Sự sống còn","sống","Cuộc sống","Sống sót","Sống"], //Group 6
+            ["Văn học",
+             "triết học",
+             "y học",
+             "toán học",
+             "dược học",
+             "hóa học",
+             "Xã hội học",
+             "Khoa học chính trị",
+             "Một học giả",
+             "Trường học",
+             "Đại học"], //Group7 x 11
             ["Quốc gia","Một quốc gia","Quốc tịch","Quốc tế","Liên Hợp Quốc"],//Group8
             ["Phản ứng","Phản ánh","Phản xạ","Phản đối","Vi phạm","Sự phản chiếu"],//Group9
             ["Mặt đất","Trái đất","Trên mặt đất","Đất đai","Đất ngập nước","Đất ở"],//Group10
@@ -76,7 +99,17 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Kongetsu","Raigetsu","Sengetsu","Gekkyuu","Getsugaku","Getsumatsu"], //Group 4
             ["Tsuushin","Tsuuchi","Tsuuyaku","Koutsuu"],  //Group 5
             ["Seizon","Seikatsu","Seimei","Seikan","Seikei"], //Group 6
-            ["Bungaku","Tetsugaku","Igaku","Suugaku","Yakugaku","Kagaku","Shakaigaku ","Seijigaku","Gakusha","Gakkou","Daigaku"], //Group7
+            ["Bungaku",
+             "Tetsugaku",
+             "Igaku",
+             "Suugaku",
+             "Yakugaku",
+             "Kagaku",
+             "Shakaigaku",
+             "Seijigaku",
+             "Gakusha",
+             "Gakkou",
+             "Daigaku"], //Group7
             ["Kokuritsu","Kokka","Kokuseki","Kokusai","Kokuren"], //Group 8
             ["Hannou","Hanei","Hansha","Hantai","Ihan","Hansei"], //Group 9
             ["Jimen","Chikyuu","Chijou","Jishin","Shicchi","Takuchi"], //Group 10
@@ -147,7 +180,12 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["医学が進み、人間が長生きできるようになった。"],
             ["彼は有名な数学者だ。"],
             ["大学では薬学を学んでいる。"],
-            ["化学と科学は日本語で発音が同じだ。"]],
+            ["化学と科学は日本語で発音が同じだ。"],
+            ["私は大学で社会学を学んだ。"],
+            ["政治学は経済学、社会学、法学などと同じ社会科学分野に入る。"],
+            ["学者に専門的な意見を求める。"],
+            ["私は海外の学校を卒業した。"],
+            ["日本の大学には国公立大学と私立大学がある。"]],
          //Group 8
            [["これが新しい国立劇場（げきじょう）です。"],
             ["アフリカに新しい国家が生まれた。"],
@@ -276,7 +314,12 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["医学は哲学とともに最も古い学問分野だと言われている。"],
             ["高校の時から数学が得意だった。"],
             ["薬学部を卒業して、薬剤師（やくざいし）になった。"],
-            ["彼はノーベル化学賞を受賞した。"]],
+            ["彼はノーベル化学賞を受賞した。"],
+            ["あの教授は社会学の研究で有名だ。"],
+            ["彼は大学で政治学を学び、国際政治学者になった。"],
+            ["有名な海外の学者が講演に招待された。"],
+            ["日本には小学校、中学校、高等学校がある。"],
+            ["大学を卒業後、私は大学院修士課程に進んだ。"]],
          //Group 8
            [["日本に国立大学はいくつありますか。"],
             ["試験に合格して、国家公務員（こっかこうむいん）になった。"],
@@ -405,7 +448,12 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Cùng vơi sự tiến bộ của y học, con người cũng có thể sống lâu hơn."],
             ["Ông là một nhà toán học nổi tiếng."],
             ["Tôi đang học dược tại trường đại học."],
-            ["Hóa học và khoa học có cùng cách phát âm bằng tiếng Nhật. "]],
+            ["Hóa học và khoa học có cùng cách phát âm bằng tiếng Nhật. "],
+            ["Tôi học xã hội học ở trường đại học."],
+            ["Khoa học chính trị đi vào cùng lĩnh vực khoa học xã hội như kinh tế học, xã hội học, luật."],
+            ["Yêu cầu một học giả cho ý kiến chuyên gia."],
+            ["Tôi tốt nghiệp trường nước ngoài."],
+            ["Các trường đại học Nhật Bản có các trường đại học công lập quốc gia và các trường đại học tư."]],
          //Group 8
            [["Đây là Nhà hát Quốc gia mới."],
             ["Một quốc gia mới được sinh ra ở châu Phi."],
@@ -533,7 +581,12 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Y học được coi là lĩnh vực học thuật lâu đời nhất với triết học."],
             ["Toán học tốt ở trường trung học."],
             ["Tôi tốt nghiệp Khoa Khoa học Dược phẩm và trở thành dược sĩ."],
-            ["Ông được trao giải Nobel Hóa học."]],
+            ["Ông được trao giải Nobel Hóa học."],
+            ["Giáo sư đó nổi tiếng với các nghiên cứu xã hội học."],
+            ["Ông học ngành khoa học chính trị tại trường đại học và trở thành một nhà khoa học chính trị quốc tế."],
+            ["Một học giả nước ngoài nổi tiếng được mời đến để thuyết trình."],
+            ["Có trường tiểu học, trung học cơ sở, trường trung học ở Nhật Bản."],
+            ["Sau khi tốt nghiệp đại học, tôi đã theo học khóa thạc sĩ sau đại học."]],
         //Group 8
            [["Có bao nhiêu trường đại học quốc gia ở Nhật Bản?"],
             ["Sau khi vượt qua kỳ thi, tôi đã trở thành một công chức quốc gia."],

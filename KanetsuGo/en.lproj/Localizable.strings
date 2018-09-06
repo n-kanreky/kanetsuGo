@@ -52,18 +52,18 @@
 "Group3" = "Group 3 is a collection of Kanetsugo that has 日 （ニチ）and corresponds to Ngày.";
 "Group4" = "Group 4 is a collection of Kanetsugo that has 月 （ゲツ、ゲッ） and corresponds to Tháng.";
 "Group5" = "Group 5 is a collection of Kanetsugo that has 通 （ツウ）and corresponds to thông.";
-"Group6" = "Group 6 is a collection of Kanetsugo that has 生 （セイ）and corresponds to Sống.";
+"Group6" = "Group 6 is a collection of Kanetsugo that has 生 （セイ）and corresponds to sống.";
 "Group7" = "Group 7 is a collection of Kanetsugo that has 学 （ガク、ガッ）and corresponds to học.";
 "Group8" = "Group 8 is a collection of Kanetsugo that has 国 （コク、コッ）and corresponds to Quốc.";
 "Group9" = "Group 9 is a collection of Kanetsugo that has 反 （ハン）and corresponds to Phản.";
 "Group10" = "Group 10 is a collection of Kanetsugo that has 地 （チ、ジ）and corresponds to đất.";
-"Group11" = "Group 11 is a collection of Kanetsugo that has 費（ヒ）and corresponds to đất.";
-"Group12" = "Group 12 is a collection of Kanetsugo that has 動 （ドウ）and corresponds to đất.";
-"Group13" = "Group 13 is a collection of Kanetsugo that has 鉄 （テツ、テッ）and corresponds to đất.";
-"Group14" = "Group 14 is a collection of Kanetsugo that has 友 （ユウ）and corresponds to đất.";
-"Group15" = "Group 15 is a collection of Kanetsugo that has 信 （シン）and corresponds to đất.";
-"Group16" = "Group 16 is a collection of Kanetsugo that has 人 （ニン、ジン）and corresponds to đất.";
-"Group17" = "Group 17 is a collection of Kanetsugo that has 家（カ）and corresponds to đất.";
+"Group11" = "Group 11 is a collection of Kanetsugo that has 費（ヒ）and corresponds to phí.";
+"Group12" = "Group 12 is a collection of Kanetsugo that has 動 （ドウ）and corresponds to động.";
+"Group13" = "Group 13 is a collection of Kanetsugo that has 鉄 （テツ、テッ）and corresponds to sắt.";
+"Group14" = "Group 14 is a collection of Kanetsugo that has 友 （ユウ）and corresponds to bạn.";
+"Group15" = "Group 15 is a collection of Kanetsugo that has 信 （シン）and corresponds to Tin.";
+"Group16" = "Group 16 is a collection of Kanetsugo that has 人 （ニン、ジン）and corresponds to người.";
+"Group17" = "Group 17 is a collection of Kanetsugo that has 家（カ）and corresponds to gia.";
 //始める
 "deleteAndReturn" = "Start";
 
