@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6HL-iv-ESc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6HL-iv-ESc">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -169,21 +169,21 @@
                                 <rect key="frame" x="0.0" y="844" width="768" height="120"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unfilledCircle" translatesAutoresizingMaskIntoConstraints="NO" id="t5w-8Y-jpt">
-                                        <rect key="frame" x="340" y="16" width="89" height="89"/>
+                                        <rect key="frame" x="339.5" y="15.5" width="89" height="89"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="89" id="4GQ-Wv-3KF"/>
                                             <constraint firstAttribute="height" constant="89" id="MLE-SU-okg"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unfilledCircle" translatesAutoresizingMaskIntoConstraints="NO" id="eCX-IA-n22">
-                                        <rect key="frame" x="436" y="16" width="89" height="89"/>
+                                        <rect key="frame" x="435.5" y="15.5" width="89" height="89"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="89" id="xbq-lX-TgY"/>
                                             <constraint firstAttribute="height" constant="89" id="xof-I5-6F5"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unfilledCircle" translatesAutoresizingMaskIntoConstraints="NO" id="Z1b-7X-BUN">
-                                        <rect key="frame" x="244" y="16" width="89" height="89"/>
+                                        <rect key="frame" x="243.5" y="15.5" width="89" height="89"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="89" id="OTY-5Q-hbK"/>
                                             <constraint firstAttribute="height" constant="89" id="sJp-Rb-u2K"/>
@@ -273,7 +273,7 @@
             <objects>
                 <navigationController id="6HL-iv-ESc" customClass="NavigationController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="raf-TH-bhX">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -340,7 +340,7 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="teacher1_02_480" translatesAutoresizingMaskIntoConstraints="NO" id="drN-HG-fVn">
-                                                        <rect key="frame" x="36" y="26" width="442" height="397"/>
+                                                        <rect key="frame" x="36" y="26" width="400" height="397"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </imageView>
                                                 </subviews>
@@ -400,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4PM-RE-Csc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632" y="401"/>
+            <point key="canvasLocation" x="1631.25" y="400.78125"/>
         </scene>
         <!--Selection View Controller-->
         <scene sceneID="G77-kV-qSQ">
@@ -446,7 +446,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KmR-ff-qfZ">
-                                <rect key="frame" x="0.0" y="193" width="768" height="720"/>
+                                <rect key="frame" x="0.0" y="193" width="768" height="630"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.96214724829999998" blue="0.45566309179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -462,8 +462,26 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XS3-am-Puh">
+                                <rect key="frame" x="0.0" y="945" width="768" height="79"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vj5-IR-FXr">
+                                        <rect key="frame" x="-1" y="28" width="768" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="25"/>
+                                        <state key="normal" title="To Support site">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toSupportSite:" destination="Swh-pa-gcG" eventType="touchUpInside" id="X3d-Cw-ZtX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.50838789139999996" blue="0.20106788279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3uB-Ym-Hw8">
-                                <rect key="frame" x="0.0" y="919" width="768" height="106"/>
+                                <rect key="frame" x="0.0" y="831" width="768" height="106"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPX-sj-qzR">

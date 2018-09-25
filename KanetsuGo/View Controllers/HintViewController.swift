@@ -53,10 +53,10 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
 
         
         
-        attributedText1.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText1.length))
-        attributedText2.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText2.length))
-        attributedText3.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText3.length))
-        attributedText4.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText4.length))
+        attributedText1.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText1.length))
+        attributedText2.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText2.length))
+        attributedText3.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText3.length))
+        attributedText4.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText4.length))
         
         reibunJ1.attributedText = attributedText1
         reibunJ2.attributedText = attributedText2
@@ -85,7 +85,7 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
             //発音モデルをバッファに読み込んでおく
             player.prepareToPlay()
             let audioSession:AVAudioSession = AVAudioSession.sharedInstance()
-            try! audioSession.setCategory(AVAudioSessionCategoryPlayback) //try! 例外（エラー）を強制的に無視する
+            try! audioSession.setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.playback)), mode: <#AVAudioSession.Mode#>) //try! 例外（エラー）を強制的に無視する
             
         } catch {
             //例外（エラー）が起きた時にコンソールに表示
@@ -108,3 +108,8 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
+}

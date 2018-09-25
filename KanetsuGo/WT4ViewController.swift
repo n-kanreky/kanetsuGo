@@ -46,7 +46,7 @@ class WT4ViewController: UIViewController {
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight
         let attributedText = NSMutableAttributedString(string: Exp4_skip.text!)
-        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
         Exp4_skip.attributedText = attributedText
         
         // 行間の変更(正確には行自体の高さを変更している。 ２箇所行間を変えるLabelがある場合は、＝２をつけて区別する
@@ -55,7 +55,7 @@ class WT4ViewController: UIViewController {
         paragraphStyle2.minimumLineHeight = lineHeight2
         paragraphStyle2.maximumLineHeight = lineHeight2
         let attributedText2 = NSMutableAttributedString(string: Exp4.text!)
-        attributedText2.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle2, range: NSMakeRange(0, attributedText2.length))
+        attributedText2.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle2, range: NSMakeRange(0, attributedText2.length))
         Exp4.attributedText = attributedText2
         
     }

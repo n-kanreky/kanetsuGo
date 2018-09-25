@@ -43,7 +43,7 @@ class PopupViewController: UIViewController {
         super.viewDidLoad()
         //復習リストのボタンを以下に置き換えて、ローカライズ
         popUpLabel.text = "\(NSLocalizedString("GoToNextQuestion", comment: ""))"
-        addReviewButton.setTitle("\(NSLocalizedString("AddToReviewList", comment: ""))", for: UIControlState.normal)
+        addReviewButton.setTitle("\(NSLocalizedString("AddToReviewList", comment: ""))", for: UIControl.State.normal)
         
         //以下でボタンの文字列を複数行にして表示可能とした
         nextLevelButton.titleLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
@@ -67,7 +67,7 @@ class PopupViewController: UIViewController {
                     popUpLabel.text = "\(NSLocalizedString("AllCorrect", comment: ""))"
                     addReviewButton.isHidden = true
                     correctCountLabel.text = "\(questionCount)/\(questionCount-skipCount)"
-                    nextLevelButton.setTitle("\(NSLocalizedString("LetsGoOnToNextLevel", comment: ""))", for: UIControlState.normal)
+                    nextLevelButton.setTitle("\(NSLocalizedString("LetsGoOnToNextLevel", comment: ""))", for: UIControl.State.normal)
                 }else{
                 
                     popUpLabel.text = "\(NSLocalizedString("YouCanDoIt", comment: ""))"
@@ -94,7 +94,7 @@ class PopupViewController: UIViewController {
                 print("失敗")
                 }
         //***************ローカライズ はここから上まで＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
-                    nextLevelButton.setTitle("\(NSLocalizedString("ReturnToQuestionList", comment: ""))", for: UIControlState.normal)
+                    nextLevelButton.setTitle("\(NSLocalizedString("ReturnToQuestionList", comment: ""))", for: UIControl.State.normal)
                     addReviewButton.isHidden = true
                 }
                 
@@ -116,7 +116,7 @@ class PopupViewController: UIViewController {
                 //以下でローカライズ
                 popUpLabel.text = "\(NSLocalizedString("CorrectAnswer", comment: ""))"
                 correctCountLabel.text = " "
-                nextLevelButton.setTitle("\(NSLocalizedString("LetsReturnToReviewList", comment: ""))", for: UIControlState.normal)
+                nextLevelButton.setTitle("\(NSLocalizedString("LetsReturnToReviewList", comment: ""))", for: UIControl.State.normal)
                 //nextLevelButton.setTitle("\(NSLocalizedString("AddedToReviewList", comment: ""))", for: UIControlState.normal)
                     
 //ここにReviewListから削除のコードを持って来て、正解した問題は復習リストから外す　indexPath.rawを出力して、VCに移し、またPopUpVCに持ってくる
@@ -126,7 +126,7 @@ class PopupViewController: UIViewController {
             }else{
                 popUpLabel.text = "\(NSLocalizedString("YouCanDoIt", comment: ""))"
                 addReviewButton.isHidden = true
-                nextLevelButton.setTitle("\(NSLocalizedString("LetsReturnToReviewList", comment: ""))", for: UIControlState.normal)
+                nextLevelButton.setTitle("\(NSLocalizedString("LetsReturnToReviewList", comment: ""))", for: UIControl.State.normal)
                 //Reviewリストに戻る　popup VCとVC画面を消してReviewに戻る
                 }
                

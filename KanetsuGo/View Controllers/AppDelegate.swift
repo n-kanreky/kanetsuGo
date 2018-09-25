@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // ここでiPhoneサイズ、iPadサイズに分ける
         let storyboard: UIStoryboard = self.grabStoryboard()
         if let window = window {
@@ -27,9 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func grabStoryboard() -> UIStoryboard {
         var storyboard = UIStoryboard()
         let height = UIScreen.main.bounds.size.height
-        
+        print(height)
         //iPhone
-        if height <= 812 {
+        if height <= 900 {
             storyboard = UIStoryboard(name: "iPhone", bundle: nil)
             
             //iPad

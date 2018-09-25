@@ -24,7 +24,7 @@ class WT2ViewController: UIViewController {
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight
         let attributedText = NSMutableAttributedString(string:Step1.text!)
-        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value:paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range: NSMakeRange(0, attributedText.length))
         Step1.attributedText = attributedText
     }
 

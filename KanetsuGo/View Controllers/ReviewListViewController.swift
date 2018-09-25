@@ -35,7 +35,7 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         ReviewList.text = "\(NSLocalizedString("ReviewList", comment: ""))" //ローカライズ
-        ToSelectQuestions.setTitle("\(NSLocalizedString("ToSelectQuestions", comment: ""))", for:UIControlState.normal) //ボタンのローカライズ
+        ToSelectQuestions.setTitle("\(NSLocalizedString("ToSelectQuestions", comment: ""))", for:UIControl.State.normal) //ボタンのローカライズ
         reviewView.dataSource = self //TableViewのセルにデータを反映させるメソッドを利用可能にする
         reviewView.delegate = self //delegateメソッド　TableViewの動的処理（タップなど）のメソッドを利用可能にする
     }
@@ -67,7 +67,7 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
         
         cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 20)
         //iPhone の文字の大きさ設定
-        if height <= 812 {
+        if height <= 900 {
             cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 20)
             //iPad の文字の大きさ設定
         }else{

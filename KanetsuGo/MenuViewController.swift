@@ -23,7 +23,7 @@ class MenuViewController: UIViewController {
 //        LetsSelectCourse.text = "\(NSLocalizedString("LetsSelectCourse", comment: ""))"
         //以下でボタンをローカライズ
 //        ForN1.setTitle("\(NSLocalizedString("ForN1", comment: ""))", for:UIControlState.normal)
-        ForN2.setTitle("\(NSLocalizedString("ForN2", comment: ""))", for:UIControlState.normal)
+        ForN2.setTitle("\(NSLocalizedString("ForN2", comment: ""))", for:UIControl.State.normal)
         LetsStart.text = "\(NSLocalizedString("LetsStart", comment: ""))"
         
         // 行間の変更(正確には行自体の高さを変更している。)
@@ -32,7 +32,7 @@ class MenuViewController: UIViewController {
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight
         let attributedText = NSMutableAttributedString(string: LetsStart.text!)
-        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
         LetsStart.attributedText = attributedText
         LetsStart.textAlignment = NSTextAlignment.center //ここで、ローカライズしたあともcenterになるように設定
     }

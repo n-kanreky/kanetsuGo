@@ -23,7 +23,7 @@ class IntroGroupViewController: UIViewController {
         super.viewDidLoad()
         // startのローカリゼーション
         
-        deleteAndReturn.setTitle("\(NSLocalizedString("deleteAndReturn", comment: ""))", for:UIControlState.normal)
+        deleteAndReturn.setTitle("\(NSLocalizedString("deleteAndReturn", comment: ""))", for:UIControl.State.normal)
        
         // 一番上のquestionの行間の変更(正確には行自体の高さを変更している。)
         let lineHeight1:CGFloat = 40.0
@@ -46,7 +46,7 @@ class IntroGroupViewController: UIViewController {
         paragraphStyle1.minimumLineHeight = lineHeight1
         paragraphStyle1.maximumLineHeight = lineHeight1
         let attributedText1 = NSMutableAttributedString(string: question.text!)
-        attributedText1.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle1, range: NSMakeRange(0, attributedText1.length))
+        attributedText1.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle1, range: NSMakeRange(0, attributedText1.length))
         question.attributedText = attributedText1
         question.textAlignment = NSTextAlignment.center //ここで、ローカライズしたあともcenterになるように設定
         
@@ -57,7 +57,7 @@ class IntroGroupViewController: UIViewController {
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight
         let attributedText = NSMutableAttributedString(string: Questions.text!)
-        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
         Questions.attributedText = attributedText
         Questions.textAlignment = NSTextAlignment.center //ここで、ローカライズしたあともcenterになるように設定
         
@@ -165,7 +165,7 @@ class IntroGroupViewController: UIViewController {
         paragraphStyle2.minimumLineHeight = lineHeight2
         paragraphStyle2.maximumLineHeight = lineHeight2
         let attributedText2 = NSMutableAttributedString(string: GroupExp.text!)
-        attributedText2.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle2, range: NSMakeRange(0, attributedText2.length))
+        attributedText2.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle2, range: NSMakeRange(0, attributedText2.length))
         GroupExp.attributedText = attributedText2
         
         // Do any additional setup after loading the view.

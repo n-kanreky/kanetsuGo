@@ -59,7 +59,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["カツドウする","日本語のドウシ","ドウブツ園","学習のドウキ","ドウミャク"], //Group 12
             ["鉄道がトオル","テッキョウを渡る","シテツに乗る"], //Group 13
             ["ユウジンが多い","固いユウジョウ","シンユウ","アクユウ"], //Group 14
-            ["交通シンゴウ","シンライする","シンジャが多い","シンコウしん"], //Group 15
+            ["交通シンゴウ","シンライする","シンジャが多い","シンコウ心（しん）"], //Group 15）
             ["ニンゲン","ニンズウ","ガイコクジン","ニホンジン","シンジン教育","ジンケン週間"], //Group 16
             ["セイジカになる","ショウセツカ","5人カゾク","カデン製品を買う"]] //Group 17”
     
@@ -186,20 +186,20 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["学者に専門的な意見を求める。"],
             ["私は海外の学校を卒業した。"],
             ["日本の大学には国公立大学と私立大学がある。"]],
-         //Group 8
+         //Group 8 国
            [["これが新しい国立劇場（げきじょう）です。"],
             ["アフリカに新しい国家が生まれた。"],
             ["あなたの国籍はどこですか。"],
             ["私の専門は国際関係だ。"],
             ["国連は国際連合（こくさいれんごう）の略（りゃく）だ。"]],
-         //Group 9
+         //Group 9 反
            [["呼びかけても何の反応もない。"],
             ["ファッションは常にその時代を反映していると言える。"],
             ["条件反射（じょうけんはんしゃ）は、学習による生物学的（せいぶつがくてき）応答（おうとう）である。"],
             ["私はその対策（たいさく）に反対します。"],
             ["彼は交通違反で警察に逮捕された。"],
             ["反省点を日記に書く。"]],
-         //Group 10
+         //Group 10 地
            [["地面がぬれていて、すべりやすいので気をつけてください。"],
             ["地球の４分の１は陸だ。"],
             ["このビルは地下３階、地上１０階建てだ。"],
@@ -207,7 +207,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["この国には多くの湿地がある。"],
             ["宅地を造成(ぞうせい）する。"]],
         
-         //Group 11
+         //Group 11 費
            [["国が留学費用を負担する。"],
             ["人件費を削減する。"],
             ["食費を節約する。"],
@@ -215,19 +215,19 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["日本の私立大学は学費が高い。"],
             ["光熱費を節約する。"]],
         
-        //Group 12
+        //Group 12 動
            [["救援活動は海外で行われている。"],
             ["動詞の使い方を学ぶ。"],
             ["この島には多くの動物がいる。"],
             ["学習には動機付けが必要だ。"],
             ["血管には動脈と静脈（じょうみゃく）がある。"]],
     
-        //J1 Group 13
+        //J1 Group 13 鉄
            [["1872年、日本初の鉄道が新橋と横浜の間に開通した。"],
             ["鉄橋は鉄で出来ている。"],
             ["私鉄は民間企業が運営する鉄道だ。"]],
             
-        //Group 14
+        //Group 14 友
            [["私は昨日友達とゲームをしました。"],
             ["私たちは友情でつながっている。"],
             ["田中さんは子供時代から私の親友だ。"],
@@ -272,8 +272,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["彼は将来を楽観している。"],
             ["災害の場合、人々は連絡を取り合う。"],
             ["準備に時間がかかる。"],
-            ["ベトナムの首都はハノイだ。"],
-            ["子供の観察能力をチェックする。"],
+            ["首都は国の中心であり、中央政府がある。"],
+            ["子供たちの観察能力をチェックする。"],
             ["宇宙にどんな生物がいるのだろう？"],
             ["各国には歴史の中で作られた文化がある。"],
             ["彼は新しい会社を設立して半年後に破産した。"]],
@@ -523,26 +523,26 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
     var reibunV2 =
         //Group 1
-          [[["Hãy chú ý đến đột quỵ nhiệt."],
-            ["Bạn có ý kiến ​​gì không?"],
-            ["Đã có nhiều sự đồng ý."],
-            ["Kết quả là nó thành công."],
-            ["Tôi không hài lòng với kết luận này."],
-            ["Nhiên liệu cho xe buýt này là khí thiên nhiên."],
-            ["Nhật Bản nhập khẩu nhiên liệu."],
-            ["Kỷ niệm 25 năm kết hôn."],
-            ["Vấn đề của bài kiểm tra này cũng đã xuất hiện trong quá khứ."],
-            ["Mẹ tôi đã gửi một cuộc sống cô đơn."],
-            ["Tôi đang nghiên cứu lịch sử của thời cổ đại."],
-            ["Anh ấy cần tự quản lý."],
-            ["Anh ta lạc quan về tương lai."],
-            ["Trong trường hợp thiên tai, mọi người giữ liên lạc."],
-            ["Phải mất thời gian để chuẩn bị."],
-            ["Thủ đô của Việt Nam là Hà Nội."],
-            ["Kiểm tra khả năng quan sát của trẻ."],
-            ["Những sinh vật nào trong vũ trụ?"],
-            ["Mỗi quốc gia có một nền văn hóa được thực hiện trong lịch sử."],
-            ["Ông bị phá sản trong sáu tháng sau khi ông thành lập một công ty mới."]],
+          [[["Hãy chú ý đến đột quỵ nhiệt."], //1
+            ["Bạn có ý kiến ​​gì không?"],//2
+            ["Đã có nhiều sự đồng ý."],//3
+            ["Kết quả là nó thành công."],//4
+            ["Tôi không hài lòng với kết luận này."],//5
+            ["Nhiên liệu cho xe buýt này là khí thiên nhiên."],//6
+            ["Nhật Bản nhập khẩu nhiên liệu."],//7
+            ["Kỷ niệm 25 năm kết hôn."],//8
+            ["Vấn đề của bài kiểm tra này cũng đã xuất hiện trong quá khứ."],//9
+            ["Mẹ tôi đã gửi một cuộc sống cô đơn."],//10
+            ["Tôi đang nghiên cứu lịch sử của thời cổ đại."],//11
+            ["Anh ấy cần tự quản lý."],//12
+            ["Anh ta lạc quan về tương lai."],//13
+            ["Trong trường hợp thiên tai, mọi người giữ liên lạc."],//14
+            ["Phải mất thời gian để chuẩn bị."],//15
+            ["Thủ đô là trung tâm của đất nước, có một chính quyền trung ương."],//16
+            ["Kiểm tra khả năng quan sát của trẻ em."],//17
+            ["Những sinh vật nào trong vũ trụ?"],//18
+            ["Mỗi quốc gia có một nền văn hóa được thực hiện trong lịch sử."],//19
+            ["Ông bị phá sản trong sáu tháng sau khi ông thành lập một công ty mới."]],//20
         //Group 2
            [["Theo dự báo thời tiết, có vẻ như trời sẽ mưa vào cuối tuần này."],
             ["Ngôi trường đã bị đóng cửa do mưa lớn hôm thứ Sáu tuần trước."],
@@ -656,8 +656,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         
 
 //ローカライズ
-    @IBOutlet weak var toInstruction: UILabel!
+
     @IBOutlet weak var QSelect: UILabel!
+    @IBOutlet weak var toInstruction: UIButton!
     
     @IBOutlet weak var ToRevisionList: UIButton!
     @IBOutlet weak var questionLevel: UITableView!
@@ -676,10 +677,11 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         }
         
         //ローカライズ
-        toInstruction.text = "\(NSLocalizedString("toInstruction", comment: ""))"
+        
+        toInstruction.setTitle("\(NSLocalizedString("toInstrution", comment: ""))", for:UIControl.State.normal)
         QSelect.text = "\(NSLocalizedString("QSelect", comment: ""))"
         //復習リストのボタンを以下に置き換えて、ローカライズ
-        ToRevisionList.setTitle("\(NSLocalizedString("ToRevisionList", comment: ""))", for:UIControlState.normal)
+        ToRevisionList.setTitle("\(NSLocalizedString("ToRevisionList", comment: ""))", for:UIControl.State.normal)
         
         // 行間の変更(正確には行自体の高さを変更している。)
         let lineHeight:CGFloat = 40.0
@@ -687,7 +689,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         paragraphStyle.minimumLineHeight = lineHeight
         paragraphStyle.maximumLineHeight = lineHeight
         let attributedText = NSMutableAttributedString(string: QSelect.text!)
-        attributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
         QSelect.attributedText = attributedText
         QSelect.textAlignment = NSTextAlignment.center //ここで、ローカライズしたあともcenterになるように設定
         
@@ -722,7 +724,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 20)
         //iPhone の文字の大きさ設定
         
-        if height <= 812 {
+        if height <= 900 {
             cell.textLabel!.font = UIFont.boldSystemFont(ofSize: 18)
         //iPad の文字の大きさ設定
         }else{
@@ -787,7 +789,14 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             self.present(pageViewController!, animated: true, completion: nil)
         }
     }
-   
+   //押された時にSafariを起動する
+    @IBAction func toSupportSite(_ sender: Any) {
+        let url = NSURL(string:"https://www.kanetsugo.com/")
+        let app:UIApplication = UIApplication.shared
+        app.canOpenURL(url! as URL)
+        app.open(url! as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
+    }
+    
     // 各セルを選択した時に実行されるメソッド
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -817,3 +826,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
     
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
+}

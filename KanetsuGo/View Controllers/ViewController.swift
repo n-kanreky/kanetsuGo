@@ -189,9 +189,9 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         
         let audioSession = AVAudioSession.sharedInstance()
         // 録音用のカテゴリをセット
-        try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
-        try audioSession.setMode(AVAudioSessionModeDefault)
-        try audioSession.setActive(true, with: .notifyOthersOnDeactivation)
+        try audioSession.setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.playAndRecord)), mode: <#AVAudioSession.Mode#>)
+        try audioSession.setMode(AVAudioSession.Mode.default)
+        try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         let inputNode:AVAudioInputNode = audioEngine.inputNode
 
@@ -378,9 +378,9 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
        
         let skippedQuestionNumber = questionNumber
         //アラートの文言をローカライズ
-        let alertController = UIAlertController(title: "\(NSLocalizedString("SkipQuestion", comment: ""))", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: "\(NSLocalizedString("SkipQuestion", comment: ""))", message: "", preferredStyle: UIAlertController.Style.alert)
         
-        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+        let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
             (action:UIAlertAction!) -> Void in
             // 以降内容をアップデートするとリスト内は自動的に更新される。
             
@@ -426,7 +426,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         })
         
         //アラートが出て、キャンセルを行う
-        let cancelAction = UIAlertAction(title: "cancel", style: UIAlertActionStyle.cancel, handler:{
+        let cancelAction = UIAlertAction(title: "cancel", style: UIAlertAction.Style.cancel, handler:{
             (action:UIAlertAction!) -> Void in
             
             
@@ -486,4 +486,9 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         }
         
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
 }
