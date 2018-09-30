@@ -340,7 +340,7 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="teacher1_02_480" translatesAutoresizingMaskIntoConstraints="NO" id="drN-HG-fVn">
-                                                        <rect key="frame" x="36" y="26" width="400" height="397"/>
+                                                        <rect key="frame" x="36" y="26" width="316" height="397"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </imageView>
                                                 </subviews>
@@ -414,16 +414,11 @@
                                 <rect key="frame" x="0.0" y="-1" width="768" height="96"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaR-av-QcP">
-                                        <rect key="frame" x="45" y="24" width="686" height="72"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="25"/>
-                                        <color key="textColor" red="0.23319956659999999" green="0.5312157273" blue="0.71769320960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50W-Dd-24V">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50W-Dd-24V">
                                         <rect key="frame" x="1" y="24" width="767" height="87"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="To Instruction"/>
                                         <connections>
                                             <action selector="reEntryInstruction:" destination="Swh-pa-gcG" eventType="touchUpInside" id="9aJ-ea-Xja"/>
                                         </connections>
@@ -507,7 +502,7 @@
                         <outlet property="QSelect" destination="IEi-8T-fU7" id="YEL-cA-6jn"/>
                         <outlet property="ToRevisionList" destination="BPX-sj-qzR" id="nib-O2-ifg"/>
                         <outlet property="questionLevel" destination="KmR-ff-qfZ" id="PgJ-ma-7qq"/>
-                        <outlet property="toInstruction" destination="MaR-av-QcP" id="B7b-hx-jvP"/>
+                        <outlet property="toInstruction" destination="50W-Dd-24V" id="cY5-Qf-a5r"/>
                         <segue destination="0Rc-3z-DCt" kind="presentation" identifier="cellSegue" modalTransitionStyle="crossDissolve" id="Y2u-PS-HOu"/>
                     </connections>
                 </viewController>

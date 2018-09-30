@@ -85,9 +85,10 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
             //発音モデルをバッファに読み込んでおく
             player.prepareToPlay()
             let audioSession:AVAudioSession = AVAudioSession.sharedInstance()
-            try! audioSession.setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.playback)), mode: <#AVAudioSession.Mode#>) //try! 例外（エラー）を強制的に無視する
+            try! audioSession.setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.playback)), mode: .default)
             
-        } catch {
+            //try! 例外（エラー）を強制的に無視する
+                } catch {
             //例外（エラー）が起きた時にコンソールに表示
         }
         
