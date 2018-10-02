@@ -136,7 +136,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     override func viewWillAppear(_ animated: Bool) {
         
         label.text = ""
-        setAudio()
+        //setAudio()
         //上記で、このビュウが画面に表示sされるときにラベルが空にされる
         //何度でも呼ばれる
     }
@@ -158,21 +158,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         }
     }
     //Startボタンを押さずに初期設定が録音開始状態とする関数
-    func setAudio(){
-        if audioEngine.isRunning {
-            audioEngine.stop()
-            recognitionRequest?.endAudio()
-            startButton.isEnabled = false
-            startButton.setTitle("停止中", for: .disabled)
-        } else {
-            try! startRecording()
-            startButton.setTitle("STOP", for: [])
-        }
-    }
-    
-    
-    // STARTを押して音声認識を開始
-    @IBAction func startButtonTapped(_ sender: Any) {
+//    func setAudio(){
 //        if audioEngine.isRunning {
 //            audioEngine.stop()
 //            recognitionRequest?.endAudio()
@@ -182,6 +168,20 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
 //            try! startRecording()
 //            startButton.setTitle("STOP", for: [])
 //        }
+//    }
+    
+    
+    // STARTを押して音声認識を開始
+    @IBAction func startButtonTapped(_ sender: Any) {
+        if audioEngine.isRunning {
+            audioEngine.stop()
+            recognitionRequest?.endAudio()
+            startButton.isEnabled = false
+            startButton.setTitle("停止中", for: .disabled)
+        } else {
+            try! startRecording()
+            startButton.setTitle("STOP", for: [])
+        }
         
     }
     //Swift4で、@objc が必要になった
