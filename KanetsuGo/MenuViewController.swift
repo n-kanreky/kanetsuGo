@@ -38,27 +38,16 @@ class MenuViewController: UIViewController {
     }
 
     //押された時にURLを起動
-//    @IBAction func toFAQ(_ sender: Any) {
-//        let url = NSURL(string:"https://www.kanetsugo.com/")
-//        let app:UIApplication = UIApplication.shared
-//        app.canOpenURL(url! as URL)
-//        app.open(url! as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
-//    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func toFAQ(_ sender: Any) {
+        let url = NSURL(string:"https://www.kanetsugo.com/")
+        let app:UIApplication = UIApplication.shared
+        app.canOpenURL(url! as URL)
+        app.open(url! as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
     }
-    
+   
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+}
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+    return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }
