@@ -37,6 +37,14 @@ class MenuViewController: UIViewController {
         LetsStart.textAlignment = NSTextAlignment.center //ここで、ローカライズしたあともcenterになるように設定
     }
 
+    //押された時にURLを起動
+//    @IBAction func toFAQ(_ sender: Any) {
+//        let url = NSURL(string:"https://www.kanetsugo.com/")
+//        let app:UIApplication = UIApplication.shared
+//        app.canOpenURL(url! as URL)
+//        app.open(url! as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
