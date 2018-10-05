@@ -659,6 +659,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
 
     @IBOutlet weak var QSelect: UILabel!
     @IBOutlet weak var toInstruction: UIButton!
+    @IBOutlet weak var ToSupportSite: UIButton!
     
     @IBOutlet weak var ToRevisionList: UIButton!
     @IBOutlet weak var questionLevel: UITableView!
@@ -682,6 +683,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         QSelect.text = "\(NSLocalizedString("QSelect", comment: ""))"
         //復習リストのボタンを以下に置き換えて、ローカライズ
         ToRevisionList.setTitle("\(NSLocalizedString("ToRevisionList", comment: ""))", for:UIControl.State.normal)
+       
         
         // 行間の変更(正確には行自体の高さを変更している。)
         let lineHeight:CGFloat = 40.0
