@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5P0-xH-bVl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5P0-xH-bVl">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1269,7 +1269,7 @@ STARTを押して３回発音します</string>
                                                                 <string key="text">See FAQ
 on
 Support Site</string>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1453,10 +1453,14 @@ Support Site</string>
             </objects>
             <point key="canvasLocation" x="3609.375" y="-150"/>
         </scene>
-        <!--View Controller-->
+        <!--Press Start View Controller-->
         <scene sceneID="XaK-Eg-46S">
             <objects>
-                <viewController id="nU4-rz-47C" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PressStart" id="nU4-rz-47C" customClass="PressStartViewController" customModule="KanetsuGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IED-em-eot"/>
+                        <viewControllerLayoutGuide type="bottom" id="873-qQ-poE"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6dI-oa-aYo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
