@@ -18,7 +18,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
     //ローカライズ
     @IBOutlet weak var PronunciationExamples: UILabel!
     @IBOutlet weak var hintWord: UILabel!
-   
+    //PressStartViewControllerをOUtlet接続する
+    @IBOutlet weak var PressStart: UIView!
     
     //DelegateのSFSpeechRecognizerDelegateとAVAudioPlayerDelegateは、SpeechとAVFoundationのフレームワークの中の機能を使うためにプロトコルを宣言
     var hiddenFlag = false

@@ -350,8 +350,8 @@
 			children = (
 				6AA5D0BA1FEA6D970096966F /* View Controllers */,
 				6AA5D0441FEA62400096966F /* iPhone.storyboard */,
-				6A7E6058219B24FE0031B89E /* PressStartViewController.swift */,
 				6AD4ACCE21172EC200ECAD4F /* iPad.storyboard */,
+				6A7E6058219B24FE0031B89E /* PressStartViewController.swift */,
 				6A21E02220B5B6B5009979D1 /* BackToViewController.swift */,
 				6AD3EB0C20A7E36600A13A95 /* IntroGroupViewController.swift */,
 				6A12269E2091F6E300AEFF86 /* UnderConstruction1ViewController.swift */,
