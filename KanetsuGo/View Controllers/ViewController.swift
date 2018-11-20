@@ -140,6 +140,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         //setAudio()
         //上記で、このビュウが画面に表示sされるときにラベルが空にされる
         //何度でも呼ばれる
+        //[「STARTボタンを押す」]のページを表示する
+        PressStart.isHidden = false
     }
     // 以下で問題の設定　Intはゼロから始まる
     func setQuestions(Int:Int){
@@ -182,6 +184,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         } else {
             try! startRecording()
             startButton.setTitle("STOP", for: [])
+            //[「STARTボタンを押す」]のページを非表示にする
+            PressStart.isHidden = true
         }
         
     }
@@ -441,6 +445,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
 
                 
             }
+            //「STARTボタンを押す」を再提示
+            self.PressStart.isHidden = false
         })
         
         //アラートが出て、キャンセルを行う
