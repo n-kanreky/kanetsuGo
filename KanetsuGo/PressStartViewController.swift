@@ -14,7 +14,7 @@ class PressStartViewController: UIViewController {
         super.viewDidLoad()
         
         
-        self.dismiss(animated: true, completion: nil)
+       // self.dismiss(animated: true, completion: nil) これは不要
     }
     
 }

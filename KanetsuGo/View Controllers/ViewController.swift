@@ -143,6 +143,10 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         //[「STARTボタンを押す」]のページを表示する
         PressStart.isHidden = false
     }
+    //PressStartを点滅させるためのタイマーを使った関数
+    func flickerStart(){
+        
+    }
     // 以下で問題の設定　Intはゼロから始まる
     func setQuestions(Int:Int){
         
@@ -186,6 +190,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
             startButton.setTitle("STOP", for: [])
             //[「STARTボタンを押す」]のページを非表示にする
             PressStart.isHidden = true
+            
         }
         
     }
