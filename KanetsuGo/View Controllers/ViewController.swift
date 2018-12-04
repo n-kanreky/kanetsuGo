@@ -105,6 +105,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         selector: #selector( ViewController.resetCount(_:)),
         name: NSNotification.Name(rawValue: "RESETCOUNT"),
         object: nil)
+        print("正解３回でリセット")
     startButton.isEnabled = false
         
     }
@@ -143,10 +144,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         //[「STARTボタンを押す」]のページを表示する
         PressStart.isHidden = false
     }
-    //PressStartを点滅させるためのタイマーを使った関数
-    func flickerStart(){
-        
-    }
+    
     // 以下で問題の設定　Intはゼロから始まる
     func setQuestions(Int:Int){
         
@@ -201,6 +199,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
         self.correct1.image = UIImage(named:"unfilledCircle")
         self.correct2.image = UIImage(named:"unfilledCircle")
         self.correct3.image = UIImage(named:"unfilledCircle")
+        print ("func resetCountが呼ばれた 1")
+        
     }
     
    
@@ -250,7 +250,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                     // 以下の右辺に値が入っていれば、左辺のrangeに代入する。　str.rangeに求めるワードが入っていたら、true
                     while let range = str.range(of: word, options: .caseInsensitive, range: nextRange){ //正解判定　（true／false）
 
-                        self.count += 1 //正解判定がtureだった場合、カウントを＋１
+                        self.count += 1 //正解判定がtureだった場合、countを＋１
                         if self.gCount < self.count { //1回のループが終わった時に、gCountに文字列が入った＝trueにする、そしてself.countがself.gCountより大きい場合
                             self.correctFlag = true
                             self.gCount = self.count
@@ -262,14 +262,15 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                         
                     }
                     
-                    if self.correctFlag == false { //判定式（＝＝）で、「答え」が間違っていたら、以下を行う
+                if self.correctFlag == false { //判定式（＝＝）で、「答え」が間違っていたら、以下を行う
                         self.label.text = "\(NSLocalizedString("again", comment: ""))"
+                        //gCountとは、正しく発音できた数
                         self.gCount = self.count
                     }
                     
                     self.correctFlag = false //correctFlagをfalseにする
+                    
                 }
-                
                 if self.count == 1 {
                     
                     self.correct1.image = UIImage(named:"tick_orange")
@@ -289,21 +290,23 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                     self.correct2.image = UIImage(named:"tick_orange")
                     self.correct3.image = UIImage(named:"tick_orange")
                     self.reviewCorrectFlag = true
+                    print(self.questions.count)
+                    print(self.questionNumber)
                     if self.questionNumber == self.questions.count {//最後の問題の時は
                         
-                        
-                    }else{
+        
+                    }else{ //最後の問題ではなかったときは、録音を止め、
                         self.stopAudio()
                         self.label.text = ""
                         self.questionNumber += 1
                         self.setQuestions(Int: self.questionNumber)
-                        self.kWord.text = "\(NSLocalizedString("hintWord", comment: ""))"//ヒントをクリアして、初期状態に戻している
+                        self.kWord.text = "\(NSLocalizedString("hintWord", comment: ""))"//ヒントをクリアして、初期状態に戻して、次の問題を提示
                       
                     }
                     sleep(UInt32(0.2)) //０.２秒間処理を遅らせることでエラー回避
+                    //popup(modal)に進む
                     self.performSegue(withIdentifier:"modal", sender:nil)
                     
-                    //ここでprepare for segueを呼び出す
                 }
                 isFinal = result.isFinal //これがtrueになったら、一旦音声認識のループから外れる。
             }
@@ -317,6 +320,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                 self.recognitionTask = nil
                 self.startButton.isEnabled = true
                 self.startButton.setTitle("START", for: [])
+                //label.text = "発音してください。"に初期化
+                self.label.text = ""
             }
         }
   
@@ -414,15 +419,19 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
             self.questionNumber += 1
             self.setQuestions(Int: self.questionNumber)
             self.skipCount += 1
-            self.kWord.text = "\(NSLocalizedString("hintWord", comment: ""))"//ヒントをクリアして、初期状態に戻している
+            self.kWord.text = "\(NSLocalizedString("hintWord", comment: ""))"
+            //ヒントをクリアして、初期状態に戻している
+            //label.text = "発音してください。"に初期化
+            self.label.text = "\(NSLocalizedString("ReadOut", comment: ""))"
             
             let notification: Notification = Notification(name: Notification.Name(rawValue: "RESETCOUNT"), object: nil, userInfo: nil)
+            print("resetCount4 スキップした時に呼ばれる")
             
             NotificationCenter.default.post(notification)
             if self.questionNumber == self.questions.count{
                 self.questionNumber = self.questions.count
                 self.performSegue(withIdentifier: "modal", sender: nil)
-            }
+                print("最終modal")            }
             
             //ここから復習リストへの追加がスタート
             try! self.realm.write {
@@ -444,7 +453,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                 // 音声ファイル
                 self.review.pronunciationJ = self.pronunciationJ[skippedQuestionNumber]
        
-                //            // 書き込み処理
+                // 書き込み処理
                 self.realm.add(self.review, update: true)
                 //
 

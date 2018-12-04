@@ -679,12 +679,12 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         
         //ローカライズ
         
-        toInstruction.setTitle("\(NSLocalizedString("toInstrution", comment: ""))", for:UIControl.State.normal)
+        
         QSelect.text = "\(NSLocalizedString("QSelect", comment: ""))"
         //復習リストのボタンを以下に置き換えて、ローカライズ
         ToRevisionList.setTitle("\(NSLocalizedString("ToRevisionList", comment: ""))", for:UIControl.State.normal)
        
-        
+        toInstruction.setTitle("\(NSLocalizedString("toInstruction", comment: ""))", for:UIControl.State.normal)
         // 行間の変更(正確には行自体の高さを変更している。)
         let lineHeight:CGFloat = 40.0
         let paragraphStyle = NSMutableParagraphStyle()

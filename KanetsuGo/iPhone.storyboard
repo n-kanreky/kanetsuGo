@@ -325,7 +325,7 @@
                                         </constraints>
                                     </imageView>
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAf-i0-8wk">
-                                        <rect key="frame" x="0.0" y="-14" width="414" height="134"/>
+                                        <rect key="frame" x="0.0" y="-25" width="414" height="145"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <connections>
                                             <segue destination="nU4-rz-47C" kind="embed" identifier="PressStart" id="tto-Bm-BkJ"/>
@@ -955,8 +955,8 @@ STARTを押して３回発音します</string>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Qur-UD-EuV">
                                                 <rect key="frame" x="16" y="8" width="312" height="80"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                <state key="normal" title="＞">
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                                <state key="normal" title="次へ進む　＞">
                                                     <color key="titleColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
@@ -999,7 +999,7 @@ STARTを押して３回発音します</string>
                     <connections>
                         <outlet property="addReviewButton" destination="oW4-TX-eY6" id="W37-Hu-iFt"/>
                         <outlet property="correctCountLabel" destination="jnV-Mw-6lK" id="ENT-Jj-f1S"/>
-                        <outlet property="nextLevelButton" destination="Qur-UD-EuV" id="2aH-jk-Uab"/>
+                        <outlet property="nextLevelButton" destination="Qur-UD-EuV" id="FPp-XB-FEE"/>
                         <outlet property="popUpLabel" destination="q6g-yt-N5T" id="YzL-SD-XUr"/>
                     </connections>
                 </viewController>
@@ -1463,11 +1463,11 @@ Support Site</string>
                         <viewControllerLayoutGuide type="bottom" id="873-qQ-poE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6dI-oa-aYo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PressStart" translatesAutoresizingMaskIntoConstraints="NO" id="sID-7T-JDR">
-                                <rect key="frame" x="0.0" y="9" width="202" height="106"/>
+                                <rect key="frame" x="0.0" y="9" width="202" height="117"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>

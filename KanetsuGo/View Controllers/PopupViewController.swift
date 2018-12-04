@@ -42,8 +42,9 @@ class PopupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //復習リストのボタンを以下に置き換えて、ローカライズ
-        popUpLabel.text = "\(NSLocalizedString("GoToNextQuestion", comment: ""))"
+        popUpLabel.text = "\(NSLocalizedString("", comment: ""))"
         addReviewButton.setTitle("\(NSLocalizedString("AddToReviewList", comment: ""))", for: UIControl.State.normal)
+        nextLevelButton.setTitle("\(NSLocalizedString("NextLevelButton", comment: ""))", for:UIControl.State.normal)
         
         //以下でボタンの文字列を複数行にして表示可能とした
         nextLevelButton.titleLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
@@ -73,14 +74,14 @@ class PopupViewController: UIViewController {
                     popUpLabel.text = "\(NSLocalizedString("YouCanDoIt", comment: ""))"
                     correctCountLabel.text = "\(questionCount-skipCount)/\(questionCount)"
 
-        //設定言語の先頭にある言語でローカライズ する　["vi-US" 越語, "ja-US", "en-GB", "fr-US", "en", "ja-JP 日本語"]
-            if (NSLocale.preferredLanguages.first == "ja-JP"){ // "ja-JP"
-                print("ja-JP 日本語")
+            //設定言語の先頭にある言語でローカライズ する　["vi-US" 越語, "ja-US", "en-GB", "fr-US", "en", "ja-JP 日本語"]
+                    if (NSLocale.preferredLanguages.first == "ja-JP"){ // "ja-JP"
+                        print("ja-JP 日本語")
                         correctCountLabel.text = "\(questionCount)問中\(questionCount-skipCount)問正解"
-                }else if
-                       (NSLocale.preferredLanguages.first == "vi-US"){
-                       correctCountLabel.text = "\(questionCount-skipCount) trong số \(questionCount)câu hỏi Câu trả lời đúng"
-                print("ベトナム語")
+                    }else if
+                        (NSLocale.preferredLanguages.first == "vi-US"){
+                        correctCountLabel.text = "\(questionCount-skipCount) trong số \(questionCount)câu hỏi Câu trả lời đúng"
+                        print("ベトナム語")
                 }else if
                        (NSLocale.preferredLanguages.first == "en"){
                         correctCountLabel.text = "Of \(questionCount) question(s)\(questionCount-skipCount) were questios correct"

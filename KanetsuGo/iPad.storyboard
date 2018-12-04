@@ -444,11 +444,11 @@ on
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k36-CG-uxy">
-                                <rect key="frame" x="0.0" y="-1" width="768" height="96"/>
+                                <rect key="frame" x="20" y="-1" width="728" height="96"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50W-Dd-24V">
-                                        <rect key="frame" x="1" y="24" width="767" height="87"/>
+                                        <rect key="frame" x="1" y="24" width="727" height="87"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="To Instruction"/>
@@ -865,7 +865,7 @@ on
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hnM-KP-vbI">
                                                 <rect key="frame" x="16" y="8" width="666" height="94"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="32"/>
                                                 <state key="normal" title="＞">
                                                     <color key="titleColor" red="0.050069082379999998" green="0.53068562539999997" blue="0.7139267319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
@@ -1432,6 +1432,6 @@ STARTを押して３回発音します</string>
         <image name="unfilledCircle" width="115" height="115"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9y9-9p-3PF"/>
+        <segue reference="Y2u-PS-HOu"/>
     </inferredMetricsTieBreakers>
 </document>
