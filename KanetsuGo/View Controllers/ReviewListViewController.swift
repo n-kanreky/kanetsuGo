@@ -25,6 +25,8 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
     var reibunJ2 = ""
     var reibunV1 = ""
     var reibunV2 = ""
+    var furigana1 = ""
+    var furigana2 = ""
     var pronunciationJ = ""
     
     var reviewArray = Array(try! Realm().objects(Review.self).sorted(byKeyPath: "id", ascending: true))
@@ -126,6 +128,8 @@ class ReviewListViewController: UIViewController, UITableViewDelegate, UITableVi
                 viewController.reibunV1 = [[review.reibunV1]]
                 viewController.reibunJ2 = [[review.reibunJ2]]
                 viewController.reibunV2 = [[review.reibunV2]]
+                viewController.furigana1 = [[review.furigana1]]
+                viewController.furigana2 = [[review.furigana2]]
                 
                flag = "ReviewList"
                 

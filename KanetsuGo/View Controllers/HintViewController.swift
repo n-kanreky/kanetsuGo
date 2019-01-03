@@ -20,6 +20,8 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     var reibun_J2 = [""]
     var reibun_V1 = [""]
     var reibun_V2 = [""]
+    var furigana_1 = [""]
+    var furigana_2 = [""]
     
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var pronunciationJ: UILabel!
@@ -27,6 +29,8 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
     @IBOutlet weak var reibunV1: UILabel!
     @IBOutlet weak var reibunJ2: UILabel!
     @IBOutlet weak var reibunV2: UILabel!
+    @IBOutlet weak var furigana1: UILabel!
+    @IBOutlet weak var furigana2: UILabel!
     
     
     override func viewDidLoad() {
@@ -50,8 +54,8 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
         let attributedText2 = NSMutableAttributedString(string: reibunJ2.text!)
         let attributedText3 = NSMutableAttributedString(string: reibunV1.text!)
         let attributedText4 = NSMutableAttributedString(string: reibunV2.text!)
-
-        
+        let attributedText5 = NSMutableAttributedString(string: furigana1.text!)
+        let attributedText6 = NSMutableAttributedString(string: furigana2.text!)
         
         attributedText1.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText1.length))
         attributedText2.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText2.length))
@@ -62,6 +66,8 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
         reibunJ2.attributedText = attributedText2
         reibunV1.attributedText = attributedText3
         reibunV2.attributedText = attributedText4
+        furigana1.attributedText = attributedText5
+        furigana2.attributedText = attributedText6
         // overrideで上書きしたが、もともとあるものも使いたい場合
     TapListen.text = "\(NSLocalizedString("TapListen", comment: ""))"
         // Do any additional setup after loading the view.
@@ -74,6 +80,8 @@ class HintViewController: UIViewController,AVAudioPlayerDelegate {
         reibunJ2.text = reibun_J2[0]
         reibunV1.text = reibun_V1[0]
         reibunV2.text = reibun_V2[0]
+        furigana1.text = furigana_1[0]
+        furigana2.text = furigana_2[0]
         question.text = questionWord
         //端末の中の音声ファイルを指定して取り出す
         let soundFilePath : String = Bundle.main.path(forResource: "\(pronunciation)", ofType: "mp3")!

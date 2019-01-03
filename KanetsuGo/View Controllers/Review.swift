@@ -26,7 +26,8 @@ class Review: Object {
     @objc dynamic var reibunV1 = ""
     @objc dynamic var reibunJ2 = ""
     @objc dynamic var reibunV2 = ""
-    
+    @objc dynamic var furigana1 = ""
+    @objc dynamic var furigana2 = ""
     // 音声ファイル
     @objc dynamic var pronunciationJ = ""
     
