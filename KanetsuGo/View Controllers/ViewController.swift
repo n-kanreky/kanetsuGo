@@ -254,6 +254,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                             self.correctFlag = false
                         }
                         self.label.text = self.question.text! //labelにquestionの値を代入　「正解」の文字列をlabelに入れる
+                        sleep(UInt32(1.0)) //ここで1秒遅らせることで、認識された文字列を１秒間提示できる
                         nextRange = range.upperBound..<str.endIndex //見つけた単語の次(range.upperBound)から元の文字列の最後までの範囲で次を探す
                         
                     }
@@ -289,7 +290,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                     print(self.questions.count)
                     print(self.questionNumber)
                     if self.questionNumber == self.questions.count {//最後の問題の時は
-                        
+                    
         
                     }else{ //最後の問題ではなかったときは、録音を止め、
                         self.stopAudio()
@@ -299,7 +300,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                         self.kWord.text = "\(NSLocalizedString("hintWord", comment: ""))"//ヒントをクリアして、初期状態に戻して、次の問題を提示
                       
                     }
-                    sleep(UInt32(0.2)) //０.２秒間処理を遅らせることでエラー回避
+                    sleep(UInt32(1)) //1秒間処理を遅らせることでエラー回避
                     //popup(modal)に進む
                     self.performSegue(withIdentifier:"modal", sender:nil)
                     
