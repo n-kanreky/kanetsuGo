@@ -351,8 +351,8 @@
 				6AA5D0BA1FEA6D970096966F /* View Controllers */,
 				6AA5D0441FEA62400096966F /* iPhone.storyboard */,
 				6AD4ACCE21172EC200ECAD4F /* iPad.storyboard */,
-				6A7E6058219B24FE0031B89E /* PressStartViewController.swift */,
 				6A21E02220B5B6B5009979D1 /* BackToViewController.swift */,
+				6A7E6058219B24FE0031B89E /* PressStartViewController.swift */,
 				6AD3EB0C20A7E36600A13A95 /* IntroGroupViewController.swift */,
 				6A12269E2091F6E300AEFF86 /* UnderConstruction1ViewController.swift */,
 				6AC6EE07208F55B20033C39D /* MenuViewController.swift */,
@@ -743,7 +743,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KanetsuGo/Pods-KanetsuGo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KanetsuGo/Pods-KanetsuGo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -754,7 +754,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KanetsuGo/Pods-KanetsuGo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KanetsuGo/Pods-KanetsuGo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8AF36704AC4833703AE5D733 /* [CP] Check Pods Manifest.lock */ = {

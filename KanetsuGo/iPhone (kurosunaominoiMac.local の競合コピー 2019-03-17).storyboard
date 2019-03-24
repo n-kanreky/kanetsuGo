@@ -1028,11 +1028,11 @@ STARTを押して３回発音します</string>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Le-9x-Nlm">
-                                                <rect key="frame" x="0.0" y="0.0" width="345" height="121"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="106"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIm-tn-30k">
-                                                        <rect key="frame" x="71" y="25" width="204" height="70"/>
+                                                        <rect key="frame" x="71" y="25" width="204" height="55"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="38"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1042,15 +1042,15 @@ STARTを押して３回発音します</string>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6A-rQ-CU1">
-                                                <rect key="frame" x="-8" y="125" width="362" height="39"/>
+                                                <rect key="frame" x="-8" y="121" width="362" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pqx-ky-ZCh">
-                                                        <rect key="frame" x="0.0" y="-18" width="362" height="40"/>
+                                                        <rect key="frame" x="0.0" y="-18" width="362" height="44"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEE-5Z-SPH">
-                                                                <rect key="frame" x="156" y="8" width="51" height="29"/>
+                                                                <rect key="frame" x="156" y="8" width="51" height="33"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                                 <state key="normal" backgroundImage="speaker"/>
@@ -1093,18 +1093,18 @@ STARTを押して３回発音します</string>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reibunV1" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoR-Pd-IVb">
-                                                                <rect key="frame" x="26" y="128" width="305" height="73"/>
-                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zL-t3-f04">
                                                                 <rect key="frame" x="26" y="70" width="305" height="60"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="13"/>
                                                                 <color key="textColor" red="1" green="0.95715053900000002" blue="0.8214584023" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reibunV1" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoR-Pd-IVb">
+                                                                <rect key="frame" x="26" y="128" width="305" height="73"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -1130,7 +1130,7 @@ STARTを押して３回発音します</string>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfF-mk-MoJ">
                                                                 <rect key="frame" x="28" y="61" width="303" height="63"/>
-                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="13"/>
                                                                 <color key="textColor" red="1" green="0.95715053900000002" blue="0.8214584023" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
@@ -1486,12 +1486,12 @@ Support Site</string>
         </scene>
     </scenes>
     <resources>
-        <image name="HTU1" width="389" height="693"/>
-        <image name="HTU2" width="389" height="693"/>
-        <image name="HTU3" width="387" height="693"/>
-        <image name="HTU4" width="389" height="693"/>
-        <image name="HTU5" width="389" height="693"/>
-        <image name="PressStart" width="424" height="310"/>
+        <image name="HTU1" width="186.72000122070312" height="332.6400146484375"/>
+        <image name="HTU2" width="186.72000122070312" height="332.6400146484375"/>
+        <image name="HTU3" width="185.75999450683594" height="332.6400146484375"/>
+        <image name="HTU4" width="186.72000122070312" height="332.6400146484375"/>
+        <image name="HTU5" width="186.72000122070312" height="332.6400146484375"/>
+        <image name="PressStart" width="203.52000427246094" height="148.80000305175781"/>
         <image name="batten" width="80" height="80"/>
         <image name="speaker" width="93" height="82"/>
         <image name="teacher1_02_480" width="201" height="480"/>
