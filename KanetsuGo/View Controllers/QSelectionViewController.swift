@@ -22,7 +22,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["反応","反映","反射","反対","違反","反省"], //Group 9 反を含む　６語
             ["地面","地球","地上","地震","湿地"],//Group 10 地を含む
             ["費用","人件費","食費","旅費","学費","光熱費"],  //Group 11 費を含む
-            ["活動","動詞","動物","動機","動脈"],  //Group 12 費を含む
+            ["活動","動詞","動物","動機","動作"],  //Group 12 費を含む
             ["鉄道","鉄橋","私鉄","鉄分"],  //Group 13 費を含む
             ["友人","友情","親友","悪友"],  //Group 14 費を含む
             ["信号","信頼","信者","信仰"],  //Group 15 費を含む
@@ -56,7 +56,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["体がハンノウする","ハンエイする","光がハンシャする","ハンタイ意見","ルールにイハンする","ハンセイする"], //Group 9
             ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる"], //Group 10
             ["ヒヨウがかかる","ジンケンヒが高い","ショクヒを増やす","リョヒを払う","ガクヒを払う","コウネツヒが高い"], //Group 11
-            ["カツドウする","日本語のドウシ","ドウブツ園","学習のドウキの研究","ドウミャク"], //Group 12
+            ["カツドウする","日本語のドウシ","ドウブツ園","学習ドウキの研究","ドウサする"], //Group 12
             ["鉄道がトオル","テッキョウを渡る","シテツに乗る"], //Group 13
             ["ユウジンが多い","固いユウジョウ","シンユウ","アクユウ"], //Group 14
             ["交通シンゴウ","シンライする","シンジャが多い","シンコウ心（しん）が強い"], //Group 15）
@@ -85,7 +85,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Phản ứng","Phản ánh","Phản xạ","Phản đối","Vi phạm","Sự phản chiếu"],//Group9
             ["Mặt đất","Trái đất","Trên mặt đất","Đất đai","Đất ngập nước","Đất ở"],//Group10
             ["Chi phí","Chi phí nhân sự","Chi phí ăn uống","Chi phí đi lại","Học phí","Phí tiện ích"],//Group11
-            ["Hoạt động","động từ","Động vật","Động lực","Động mạch"],//Group12
+            ["Hoạt động","động từ","Động vật","Động lực","động tác"],//Group12
             ["Đường sắt","Cầu sắt","Đường sắt tư nhân"],//Group13
             ["Một người bạn","Tình bạn","Bạn thân nhất","Bạn xấu"],//Group14
             ["Tín hiệu","Tin tưởng","Người tin Chúa","Đức tin "],//Group15
@@ -173,7 +173,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["私は留学生として日本で生活している。"],
             ["大地震で多くの生命が奪われた。"],
             ["宇宙飛行士は無事生還した。"],
-            ["その村の人々は、農業だけで生計を立てていた。"]],
+            ["村人たちは、農業をして生計を立てている。"]],
          //Group 7
            [["私の専攻は日本文学だ。"],
             ["彼はギリシャ哲学の研究者だ。"],
@@ -271,7 +271,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["彼は将来を楽観している。"],
             ["災害の場合、人々は連絡を取り合う。"],
             ["準備に時間がかかる。"],
-            ["首都は国の中心であり、中央政府がある。"],
+            ["首都は国の中心だ。"],
             ["子供たちの観察能力をチェックする。"],
             ["宇宙にどんな生物がいるのだろう？"],
             ["各国には歴史の中で作られた文化がある。"],
@@ -328,10 +328,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
          //Group ９
            [["薬が合わなかったらしく拒絶反応を起こした。"],
             ["消費者の意見を反映した商品を開発する。"],
-            ["このクリスタルは光の反射により七色に輝く（かがやく）。"],
+            ["このクリスタルは、光の反射により七色に輝く。"],
             ["彼の意見に賛成の人は反対の人より少ない。"],
             ["それはサッカーのルール違反だ。"],
-            ["「反省」とは、自分の言動（げんどう）を振り返ることです。"]],
+            ["彼は自分の悪い点を反省している。"]],
          //Group 10
            [["地面に落書き(らくがき）をする。"],
             ["月は地球のまわりを回っている。"],
@@ -340,19 +340,19 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["湿地は野菜栽培には適していない。"]],
            
         //Group 11
-           [["このシステムは費用効果が高い。"],
-            ["来年度予算計画では人件費を見直すことになった。"],
+           [["このシステムは、費用にたいして効果が高い。"],
+            ["来年度予算計画では、人件費を見直すことになった。"],
             ["寄付金は難民の食費に使われる。"],
             ["私は旅行会社に旅費を支払った。"],
             ["私は学費を支払うことができなかったので退学した。"],
-            ["光熱費とは電気、ガスの燃料費のことだ。"]],
+            ["光熱費とはガス代、電気代やガス代のことだ。"]],
             
         //Group 12
            [["ボランティア活動に参加する。"],
             ["動詞や名詞などの品詞を学習する。"],
             ["動物の写真を撮る。"],
             ["外国語学習の動機に関する多くの研究がある。"],
-            ["父は動脈硬化で亡くなった。"]],
+            ["ロボットの動作を確認してください。"]],
             
         //Group 13
            [["北米大陸横断鉄道は19世紀半ばに完成した。"],
@@ -437,7 +437,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["わたしは　りゅうがくせいとして　にほんで　せいかつしている。"],
              ["だいじしん/おおじしん　で　おおくの  せいめいが　うばわれた。"],
              ["うちゅうひこうしは　ぶじ　せいかんした。"],
-             ["その村の人々は、農業だけで生計を立てていた。"]],
+             ["むらびとたちは、のうぎょうをしてせいけいをたてている。"]],
             //Group 7
             [["わたしの　せんこうは　にほんぶんがくだ。"],
              ["かれは  ギリシャてつがくの　けんきゅうしゃだ。"],
@@ -462,7 +462,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["じょうけんはんしゃは　がくしゅうによる　せいぶつがくてき　おうとうである。"],
              ["わたしは　そのたいさくに　はんたいする"],
              ["かれは　こうつういはんで　けいさつに　たいほされた。"],
-             ["はんせいてんを　にっきに　かく。"]],
+             ["かれは　じぶんの　わるい　てんを　はんせい　している。"]],
             //Group 10 地
             [["じめんが　ぬれていて、すべりやすいので　きを　つけてください。"],
              ["ちきゅうの　よんぶんの　いちは　りくだ。"],
@@ -483,7 +483,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["どうしの　つかいかたを　まなぶ。"],
              ["このしまには　おおくの　どうぶつが　いる。"],
              ["がくしゅうには　どうきづけが　ひつようだ。"],
-             ["けっかんには　どうみゃくと　じょうみゃくが　ある。"]],
+             ["どうしには どうさどうしや　じょうたいどうしなどがある。"]],
             
             //J1 Group 13 鉄
             [["せんはっぴゃくななじゅうにねん、にほんはつの　てつどうが　しんばしと　よこはまの　あいだに　かいつうした。"],
@@ -533,7 +533,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
           ["かれは　しょうらいを　らっかんしている。"],
           ["さいがいの　ばあい、ひとびとは　れんらくを　とりあう。"],
           ["じゅんびに　じかんが　かかる。"],
-          ["しゅとは　くにの　ちゅうしんであリ、ちゅうおうせいふが　ある。"],
+          ["しゅとは　くにの　ちゅうしんだ。"],
           ["こどもたちの　かんさつのうりょくを　チェックする。"],
           ["うちゅうに　どんなせいぶつが　いるのだろう？"],
           ["かっこくには　れきしの　なかで　つくられた　ぶんかが　ある。"],
@@ -602,19 +602,19 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["しっちは　やさいさいばいには　てきしていない。"]],
             
             //Group 11
-            [["このシステムは　ひようこうかが　たかい。"],
+            [["このシステムは　ひように　たいして　こうかが　たかい。"],
              ["らいねんどよさんけいかくでは　じんけんひを　みなおすことに　なった。"],
-             ["きふきんは　なんみんの　しょくひに　つかわれる。"],
+             ["きふきんは　こまっている　ひとびとの　しょくひに　つかわれる。"],
              ["わたしは　りょこうがいしゃに　りょひを　しはらった。"],
              ["わたしは　がくひを　しはらうことが　できなかったので　たいがくした。"],
-             ["こうねつひとは　でんき、ガスの　ねんりょうひの　ことだ。"]],
+             ["こうねつひとは、でんきだいや　ガスだいの　ことだ。"]],
             
             //Group 12
             [["ボランティアかつどうに　さんかする。"],
              ["どうしや　めいしなどの　ひんしを　がくしゅうする。"],
              ["どうぶつの　しゃしんを  とる。"],
              ["がいこくごがくしゅうの　どうきに　かんする　おおくの けんきゅうが　ある。"],
-             ["ちちは　どうみゃく　こうかで　なくなった。"]],
+             ["ロボットの　どうさを　かくにんしてください。"]],
             
             //Group 13
             [["ほくべいたいりくおうだんてつどうは　じゅうきゅうせいきなかばに　かんせいした。"],
@@ -725,7 +725,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Phản xạ có điều kiện là phản ứng sinh học bằng cách học."],
             ["Tôi phản đối biện pháp đó."],
             ["Anh ta bị cảnh sát bắt vì vi phạm giao thông."],
-            ["Viết điểm phản chiếu trong nhật ký."]],
+            ["Anh ấy đang phản ánh về điểm xấu của mình."]],
          //Group 10
            [["Mặt đất rất trơn, dễ trượt ngã nên hãy cẩn thận."],
             ["Một phần từ trái đất là lục địa."],
@@ -746,7 +746,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Học cách sử dụng động từ."],
             ["Có rất nhiều loài động vật trên hòn đảo này."],
             ["Động lực là cần thiết cho việc học."],
-            ["Mạch máu có động mạch và tĩnh mạch."]],
+            ["Động từ bao gồm động từ hành động và động từ trạng thái."]],
             
         //Group 13
            [["Năm 1872, đường sắt đầu tiên của Nhật Bản mở cửa giữa Shinbashi và Yokohama."],
@@ -797,7 +797,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Anh ta lạc quan về tương lai."],//13
             ["Trong trường hợp thiên tai, mọi người giữ liên lạc."],//14
             ["Phải mất thời gian để chuẩn bị."],//15
-            ["Thủ đô là trung tâm của đất nước, có một chính quyền trung ương."],//16
+            ["Thủ đô là trung tâm của đất nước."],//16
             ["Kiểm tra khả năng quan sát của trẻ em."],//17
             ["Những sinh vật nào trong vũ trụ?"],//18
             ["Mỗi quốc gia có một nền văn hóa được thực hiện trong lịch sử."],//19
@@ -869,17 +869,17 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         //Group 11
            [["Hệ thống này hiệu quả về chi phí."],
             ["Trong kế hoạch ngân sách năm tài chính tiếp theo, chi phí nhân sự sẽ được xem xét."],
-            ["Tiền quyên góp được sử dụng cho chi phí thức ăn của người tỵ nạn."],
+            ["Quyên góp được sử dụng cho chi phí thực phẩm cho những người có nhu cầu."],
             ["Tôi đã trả chi phí đi lại của đại lý du lịch."],
             ["Tôi bỏ học vì tôi không thể trả học phí."],
-            ["Chi phí tiện ích là chi phí nhiên liệu điện và gas."]],
+            ["Chi phí tiện ích là chi phí điện, gas và nước."]],
             
         //Group 12
            [["Tham gia vào các hoạt động tình nguyện."],
             ["Tìm hiểu các phần của lời nói như động từ và danh từ."],
             ["Chụp ảnh động vật."],
             ["Có rất nhiều nghiên cứu về động lực cho việc học ngoại ngữ."],
-            ["Cha tôi chết vì xơ cứng động mạch."]],
+            ["Kiểm tra hoạt động của robot."]],
             
         //Group 13
            [["Tuyến đường sắt Bắc Mỹ được hoàn thành vào giữa thế kỷ 19."],

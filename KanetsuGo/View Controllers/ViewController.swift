@@ -389,6 +389,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                 case .notDetermined:
                     self.startButton.isEnabled = false
                     self.startButton.setTitle("音声認識はまだ許可されていません。", for: .disabled)
+                @unknown default:
+                    <#fatalError()#>
                 }
             }
         }
