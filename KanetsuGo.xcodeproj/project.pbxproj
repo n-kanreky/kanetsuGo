@@ -18,6 +18,7 @@
 		6A319E092022831500F73760 /* WT4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A319E082022831500F73760 /* WT4ViewController.swift */; };
 		6A319E0B2022832A00F73760 /* WT5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A319E0A2022832A00F73760 /* WT5ViewController.swift */; };
 		6A53A4EA2022EA6C002AA049 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A53A4E92022EA6C002AA049 /* PageViewController.swift */; };
+		6A56C4C2227F07DF0005C8F7 /* Dousa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A56C4C1227F07DF0005C8F7 /* Dousa.mp3 */; };
 		6A71962421349891001DA41B /* Hiyou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A7195FA2134988C001DA41B /* Hiyou.mp3 */; };
 		6A71962521349891001DA41B /* Kazoku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A7195FB2134988C001DA41B /* Kazoku.mp3 */; };
 		6A71962621349891001DA41B /* Yuujin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A7195FC2134988D001DA41B /* Yuujin.mp3 */; };
@@ -170,6 +171,7 @@
 		6A319E082022831500F73760 /* WT4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WT4ViewController.swift; sourceTree = "<group>"; };
 		6A319E0A2022832A00F73760 /* WT5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WT5ViewController.swift; sourceTree = "<group>"; };
 		6A53A4E92022EA6C002AA049 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		6A56C4C1227F07DF0005C8F7 /* Dousa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dousa.mp3; sourceTree = "<group>"; };
 		6A7195FA2134988C001DA41B /* Hiyou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hiyou.mp3; sourceTree = "<group>"; };
 		6A7195FB2134988C001DA41B /* Kazoku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kazoku.mp3; sourceTree = "<group>"; };
 		6A7195FC2134988D001DA41B /* Yuujin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yuujin.mp3; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 				6AB2F5B021247EAC00B2763A /* Doui.mp3 */,
 				6A71960A2134988E001DA41B /* Douki.mp3 */,
 				6A71960F2134988F001DA41B /* Doumyaku.mp3 */,
+				6A56C4C1227F07DF0005C8F7 /* Dousa.mp3 */,
 				6A7196032134988E001DA41B /* Doushi.mp3 */,
 				6A71960B2134988E001DA41B /* Gaikokujin.mp3 */,
 				6A71961D21349891001DA41B /* Gakkou.mp3 */,
@@ -620,6 +623,7 @@
 				6A71963721349891001DA41B /* Kounetsuhi.mp3 in Resources */,
 				6AB2F5C421247EB000B2763A /* Nenryou.mp3 in Resources */,
 				6AB2F5C721247EB000B2763A /* Shuukanshi.mp3 in Resources */,
+				6A56C4C2227F07DF0005C8F7 /* Dousa.mp3 in Resources */,
 				6AE2B63820FF751B00E1454E /* Kokuseki.mp3 in Resources */,
 				6AD3CDB020FC7E0E00AB25A3 /* Seizon.mp3 in Resources */,
 				6A71962621349891001DA41B /* Yuujin.mp3 in Resources */,
