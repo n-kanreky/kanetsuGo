@@ -265,7 +265,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["日本は燃料を輸入している。"],
             ["結婚25年を記念する。"],
             ["このテストの問題は過去にも出た。"],
-            ["私の母は孤独な人生を送った。"],
+            ["先生は孤独な生活を送っています。"],
             ["私は古代の歴史を研究している。"],
             ["彼は自己管理が必要だ。"],
             ["彼は将来を楽観している。"],
@@ -287,7 +287,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
            [["私は今日から大学生だ。"],
             ["私は毎日バスで駅に行く。"],
             ["次の会議の日時を教えてください。"],
-            ["散歩は日常的に行っている。"],
+            ["長い休暇が終わり、私の生活は日常に戻った。"],
             ["デパートでも日用品を買うことができます。"]],
          //Group 4
            [["今月中にこの仕事を仕上げなくてはならない。"],
@@ -429,7 +429,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
 //Furigana 1
             //Group 5
             [["にじゅういっせいきに　はいり、つうしんぎじゅつが　さらに　しんぽした。"],
-             ["がっこうからの　せいせき つうちを　うけとる。"],
+             ["今日、私は学校からの成績通知を受け取った。"],
              ["わたしは　こくさいかいぎで、つうやくを　しています。"],
              ["きょうから　こうつうあんぜんしゅうかんが　はじまる。"]],
             //Group 6
@@ -524,7 +524,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
           ["にほんは　ねんりょうを　ゆにゅうしている。"],
           ["けっこん　にじゅうごしゅうねんを　きねんする。"],
           ["このテストの　もんだいは　かこにも　でた。"],
-          ["わたしの　ははは　こどくな　じんせいを　おくった。"],
+          ["せんせいは　こどくな　せいかつを　おくっています。"],
           ["わたしは　こだいの　れきしを　けんきゅうしている。"],
           ["かれは　じこかんりが　ひつようだ。"],
           ["かれは　しょうらいを　らっかんしている。"],
@@ -546,7 +546,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             [["わたしは　きょうから　だいがくせいだ。"],
              ["わたしは　まいにち　バスで　えきに　いく。"],
              ["つぎの　かいぎの　にちじを　おしえて　ください。"],
-             ["さんぽは　にちじょうてきに　おこなっている。"],
+             ["ながい　きゅうかが　おわり、わたしの　せいかつは　にちじょうに　もどった。"],
              ["デパートでも　にちようひんを　かうことが　できます。"]],
             //Group 4
             [["こんげつちゅうに　このしごとを　しあげなくてはならない。"],
@@ -786,7 +786,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Nhật Bản nhập khẩu nhiên liệu."],//7
             ["Kỷ niệm 25 năm kết hôn."],//8
             ["Vấn đề của bài kiểm tra này cũng đã xuất hiện trong quá khứ."],//9
-            ["Mẹ tôi đã gửi một cuộc sống cô đơn."],//10
+            ["Cô giáo sống một cuộc đời cô đơn."],//10
             ["Tôi đang nghiên cứu lịch sử của thời cổ đại."],//11
             ["Anh ấy cần tự quản lý."],//12
             ["Anh ta lạc quan về tương lai."],//13
@@ -820,7 +820,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Tôi đang đi công tác từ cuối tháng trong một tuần."]],
         //Group 5
            [["Công ty này phát triển một hệ thống thông tin liên lạc."],
-            ["Điện thoại này có một tính năng thông báo để bạn biết ai đến từ."],
+            ["Hôm nay tôi nhận được một thông báo điểm từ trường."],
             ["Mệt mỏi với công việc thông dịch."],
             ["Tôi đã đến trường muộn vì tai nạn giao thông."]],
         //Group 6
