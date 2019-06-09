@@ -66,6 +66,9 @@
 "Group15" = "Trong nhóm 15, Các từ bao gồm 信　(Tin) sẽ được liệt kê. đất có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 信（Tin） シン.";
 "Group16" = "Trong nhóm 16, Các từ bao gồm 人　(người ) sẽ được liệt kê. đất có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 人　hay ニン、ジン.";
 "Group17" = "Trong nhóm 17, Các từ bao gồm 家　(gia) sẽ được liệt kê. đất có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 家　hay カ.";
+"Group18" = "Trong nhóm 18, Các từ bao gồm 水　(nước) sẽ được liệt kê. đất có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 水　hay スイ.";
+"Group19" = "Trong nhóm 19, Các từ bao gồm 度　(độ) sẽ được liệt kê. đất có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 度　hay ド.";
+"Group20" = "Trong nhóm 20, Các từ bao gồm 産　(sản) sẽ được liệt kê. đất có nghĩa là ngày hoặc ngày. Tôi phát âm nó như 産　hay サン.";
 
 //始める
 "deleteAndReturn" = "Start";
@@ -88,3 +91,6 @@
 "QSG15" = "Bao gồm 信（Tin）";
 "QSG16" = "Bao gồm 人（người）";
 "QSG17" = "Bao gồm 家（gia）";
+"QSG18" = "Bao gồm 水（nước）";
+"QSG19" = "Bao gồm 度（độ）";
+"QSG20" = "Bao gồm 産（sản）";

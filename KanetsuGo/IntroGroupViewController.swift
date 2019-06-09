@@ -152,7 +152,18 @@ class IntroGroupViewController: UIViewController {
             GroupExp.text = "\(NSLocalizedString("Group17", comment: ""))"
             
             question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG17", comment: ""))"
+        case 17:
+            GroupExp.text = "\(NSLocalizedString("Group18", comment: ""))"
             
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG18", comment: ""))"
+        case 18:
+            GroupExp.text = "\(NSLocalizedString("Group19", comment: ""))"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG19", comment: ""))"
+        case 19:
+            GroupExp.text = "\(NSLocalizedString("Group20", comment: ""))"
+            
+            question.text = "Group \(cellNumber + 1) \(NSLocalizedString("QSG20", comment: ""))"
             
      
         default:

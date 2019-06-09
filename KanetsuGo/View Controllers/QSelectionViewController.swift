@@ -27,9 +27,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["友人","友情","親友","悪友"],  //Group 14 費を含む
             ["信号","信頼","信者","信仰"],  //Group 15 費を含む
             ["人間","人数"," 外国人","日本人","新人","人権"],  //Group 16 費を含む
-            ["政治家","小説家","家族","家電"]]  //Group 17 費を含む
-            //[]] //Group 18
-    
+            ["政治家","小説家","家族","家電"],  //Group 17 費を含む
+            ["飲料水","水滴","温水","冷水","水道"], //Group 18
+            ["経度","緯度","温度","湿度","態度"], //Group 19
+            ["産地","財産","生産","農産物"]]//Group 20
 
     var katakana =
         [["友達にチュウイする","反対イケンを言う","意見にドウイする","試験のケッカ","ケツロンを先に言う","テンネンの温泉（おんせん）","ネンリョウ費（ひ）","キネン日（び）","カコのデータ","コドクなくらし","コダイの文明（ぶんめい）","カンリする","ラッカン的（てき）","レンラクする","ジュンビする","日本のシュト","花をカンサツする ","ウチュウ飛行士","日本のレキシ","会社がハサンする"], // Group 1
@@ -44,11 +45,11 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              "スウガクが得意（とくい）だ",
              "ヤクガクを学ぶ",
              "カガクの実験（じっけん）",
-             "シャカイガク",
-             "セイジガク",
+             "シャカイガクを学ぶ",
+             "セイジガクを学ぶ",
              "政治ガクシャ ",
-             "ガッコウ",
-             "ダイガク"], //Group 7 x 11
+             "ガッコウへ行く",
+             "ダイガク１年生になる"], //Group 7 x 11
             ["コクリツ大学",
              "民主主義（みんしゅしゅぎ）コッカ",
              "コクセキはベトナムだ",
@@ -62,10 +63,35 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["ユウジンが多い","固いユウジョウ","シンユウ","アクユウ"], //Group 14
             ["交通シンゴウ","シンライする","シンジャが多い","シンコウ心（しん）が強い"], //Group 15）
             ["ニンゲン","ニンズウ","ガイコクジン","ニホンジン","シンジン教育","ジンケン週間"], //Group 16
-            ["セイジカになる","有名なショウセツカ","5人カゾク","カデン製品を買う"]] //Group 17”
+            ["セイジカになる","有名なショウセツカ","5人カゾク","カデン製品を買う"],//Group 17”
+            ["インリョウスイを飲む","窓のスイテキ","オンスイを飲む","レイスイを飲む","スイドウ代を払う"],
+            //Group 18”
+            ["地球の東西を表すケイド","地球の南北を表すイド","オンドが上がる","シツドが高い","タイドが悪い"], //Group 19”
+            ["サンチから送る","ザイサンがある","セイサンする","ノウサンブツを売る"]] //Group 20”
     
     var vietnamese =
-           [["chú ý","ý kiến","đồng ý","Kết quả","Kết luận","thiên nhiên","Nhiên liệu","kỷ niệm","quá khứ","cô đơn","cổ đại","Quản lý","Lạc quan","liên lạc","Chuẩn bị","thủ đô","Quan sát","Vũ trụ","Lịch sử","phá sản"], //Group 1
+        
+           [["chú ý",
+             "ý kiến",
+             "đồng ý",
+             "Kết quả",
+             "Kết luận",
+             "thiên nhiên",
+             "Nhiên liệu",
+             "kỷ niệm",
+             "quá khứ",
+             "cô đơn",
+             "cổ đại",
+             "Quản lý",
+             "Lạc quan",
+             "liên lạc",
+             "Chuẩn bị",
+             "thủ đô",
+             "Quan sát",
+             "Vũ trụ",
+             "Lịch sử",
+             "phá sản"], //Group 1
+            
             ["tuần này","tuần trước","Tuần tới","Mỗi tuần","Cuối tuần","Tạp chí hàng tuần"], //Group 2
             ["Ngày này (Hôm nay)","Mỗi ngày","Ngày giờ","Hàng ngày","Nhu yếu phẩm hàng ngày"], //Group 3
             ["Tháng này","Tháng tiếp theo","Tháng trước","Tiền lương hàng tháng","Số tiền hàng tháng","Cuối tháng"], //Group 4
@@ -91,7 +117,24 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Một người bạn","Tình bạn","Bạn thân nhất","Bạn xấu"],//Group14
             ["Tín hiệu","Tin tưởng","Người tin Chúa","Đức tin "],//Group15
             ["Một con người","Số người","Một người nước ngoài","Người Nhật","Người mới đến","Quyền con người"],//Group16
-            ["Chính trị gia","Một tiểu thuyết gia","Một gia đình","Điện tử gia dụng"]]//Group17
+            ["Chính trị gia",
+             "Một tiểu thuyết gia",
+             "Một gia đình",
+             "Điện tử gia dụng"],//Group17
+            ["nước uống",
+             "Giọt nước",
+             "nước nóng",
+             "nước lạnh",
+             "Cấp nước"],//Group18
+            ["Kinh độ",
+             "Vĩ độ",
+             "Nhiệt độ",
+             "Độ ẩm",
+            "Thái độ"], //Group19
+            ["Khu vực sản xuất",
+             "Tài sản",
+             "Sản xuất",
+             "Nông sản"]] //Group20
     
     var pronunciationJ =
         [["Chuui","Iken","Doui","Kekka","Ketsuron","Tennen","Nenryou","Kinen","Kako","Kodoku","Kodai","Kanri","Rakkan","Renraku","Junbi","Shuto","Kansatsu","Uchuu","Rekishi","Hasan"],//Groupo 1
@@ -120,7 +163,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Yuujin","Yuujou","Shinyuu","Akuyuu"], //Group 14
             ["Shingou","Shinrai","Shinja","Shinkou"], //Group 15
             ["Ningen","Ninzuu","Gaikokujin","Nihonjin","Shinjin","Jinken"], //Group 16
-            ["Seijika","Shousetsuka","Kazoku","Kaden"]] //Group 17
+            ["Seijika","Shousetsuka","Kazoku","Kaden"], //Group 17
+            ["Inryousui","Suiteki","Onsui","Reisui","Suidou"], //Group 18
+            ["Keido","Ido","Ondo","Shitsudo","Taido"], //Group 19
+            ["Sanchi","Zaisan","Seisan","Nousanbutsu"]] //Group 20
     
     var reibunJ1 =
         //Group 1
@@ -166,7 +212,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["私は月末に給料を受け取った。"]],
           //Group 5
            [["21世紀に入り、通信技術がさらに進歩した。"],
-            ["学校からの成績通知を受け取る。"],
+            ["今日、私は学校からの成績通知を受け取った。"],
             ["私は国際会議で、通訳をしています。"],
             ["今日から交通安全週間が始まる。"]],
 //Reibun 1
@@ -196,9 +242,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
          //Group 9 反
            [
             ["ファッションは常にその時代を反映していると言える。"],
-            ["私はその対応策に反対します。"],
+            ["彼の提案に皆が反対した。"],
             ["彼は交通違反で警察に逮捕された。"],
-            ["反省点を日記に書く。"]],
+            ["今日の試合については反省点がたくさんあります。"]],
 //Reibun 1
          //Group 10 地
            [["地面がぬれていて、すべりやすいので気をつけてください。"],
@@ -245,12 +291,30 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["あなたの学校には、日本人の先生が何人くらいいますか。"],
             ["新しい映画の主役に新人が選ばれた。"],
             ["人権は人間が持つ当然の権利だ。"]],
-    
-        //Group 17 Reibun1
-           [["私の弟は政治家を目指している。"],
-            ["あなたの国で有名な日本の小説家は誰ですか？"],
-            ["私は新年に家族写真を撮った。"],
-            ["私は家電メーカーに勤めている。"]]]
+        
+           //Group 17 Reibun1
+            [["私の弟は政治家を目指している。"],
+             ["あなたの国で有名な日本の小説家は誰ですか？"],
+             ["私は新年に家族写真を撮った。"],
+             ["私は家電メーカーに勤めている。"]],
+        
+          //Group 18 Reibun1
+            [["これは飲料水なので安全だ。"],
+             ["窓に水滴が付く。"],
+             ["冬は温水プールで泳ぐ。"],
+             ["暑いので冷水シャワーを浴びた。"],
+             ["水道管を修理している。"]],
+        //Group 19 Reibun1
+           [["地球上の東西の位置は経度で示される。"],
+            ["緯度とは、赤道を０°とし、南北へそれぞれ９０°まで表す。"],
+            ["リモコンで部屋の温度を一定にする。"],
+            ["日本の梅雨の時は湿度が高くて蒸し暑い。"],
+            ["相手への感謝の気持ちを態度で示しましょう。"]],
+        //Group 20 Reibun1
+            [["青森県はリンゴの産地として有名です。"],
+             ["彼の財産は困っている人たちに寄付されました。"],
+             ["この工場はオートバイを月に800台生産する。"],
+             ["農産物とは、米や野菜や果物などを指す。"]]]
     
     
     
@@ -263,7 +327,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["私はこの結論に満足していない。"],
             ["このバスの燃料は天然ガスだ。"],
             ["日本は燃料を輸入している。"],
-            ["結婚25年を記念する。"],
+            ["結婚25周年を記念する。"],
             ["このテストの問題は過去にも出た。"],
             ["先生は孤独な生活を送っています。"],
             ["私は古代の歴史を研究している。"],
@@ -317,7 +381,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["あの教授は社会学の研究で有名だ。"],
             ["彼は大学で政治学を学び、国際政治学者になった。"],
             ["有名な海外の学者が講演（こうえん）に招待（しょうたい）された。"],
-            ["日本には小学校、中学校、高等学校がある。"],
+            ["日本には小学校、中学校、高等学校などがある。"],
             ["大学を卒業後、私は大学院修士課程に進んだ。"]],
 //Reibun2
          //Group 8
@@ -325,7 +389,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["試験に合格して、国家公務員（こっかこうむいん）になった。"],
             ["私の国籍はベトナムです。"],
             ["新東京国際空港は千葉県にあります。"],
-            ["国連は1945年に設立された国際機構（こくさいきこう）だ。"]],
+            ["国連は1945年に設立された国際機関だ。"]],
          //Group ９
            [
             ["消費者の意見を反映した商品を開発する。"],
@@ -377,12 +441,29 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["日本人は旅行するたびにお土産を買う。"],
             ["今年、私の会社には三人の新人が入った。"],
             ["基本的人権は尊重されなければならない。"]],
-            
-        //Group 17 ReivunJ２
-           [["彼は日本の政治家だ。"],
-            ["小説家になるのは難しい。"],
-            ["私の家族は五人です。"],
-            ["家電製品とは家庭で使用されるテレビ、冷蔵庫、洗濯機などを指す。"]]]
+        //Group 17 ReibunJ２
+            [["彼は日本の政治家だ。"],
+             ["小説家になるのは難しい。"],
+             ["私の家族は五人です。"],
+             ["家電製品とは家庭で使用されるテレビ、冷蔵庫、洗濯機などを指す。"]],
+        //Group 18 ReibunJ２
+            [["人は飲料水がないと生きられない。"],
+            ["水がしずくとなって落ちることを水滴という。"],
+            ["温水器がこわれてお湯が出ない。"],
+            ["運動の後は冷水が美味しい。"],
+            ["私は外国では水道水を飲まないようにしている。"]],
+        //Group 19 ReibunJ２
+           [["グリニッジ天文台は経度0度だ。"],
+            ["東京の緯度は何度ですか？"],
+            ["温度計で気温を測る。"],
+            ["除湿機で湿度を下げる。"],
+            ["学生の失礼な態度に先生は怒った。"]],
+        //Group 20 ReibunJ２
+            [["ここのスーパーの野菜は産地から直接送っているので、新鮮で値段も安い。"],
+             ["彼は事業に失敗し、財産をすべて失った。"],
+             ["石油の生産量が世界的に減り、石油価格が上がった。"],
+             ["石油の生産量が世界的に減り、石油価格が上がった。"],
+             ["父は畑で採れた農産物を売っている。"]]]
 
     var furigana1 =
         //Group 1
@@ -429,13 +510,13 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
 //Furigana 1
             //Group 5
             [["にじゅういっせいきに　はいり、つうしんぎじゅつが　さらに　しんぽした。"],
-             ["今日、私は学校からの成績通知を受け取った。"],
+             ["きょう　わたしは　がっこうからの　せいせきつうちを　うけとった。"],
              ["わたしは　こくさいかいぎで、つうやくを　しています。"],
              ["きょうから　こうつうあんぜんしゅうかんが　はじまる。"]],
             //Group 6
             [["こどもの　せいぞんを　かくにんする。"],
              ["わたしは　りゅうがくせいとして　にほんで　せいかつしている。"],
-             ["だいじしん/おおじしん　で　おおくの  せいめいが　うばわれた。"],
+             ["おおじしんで　おおくの  せいめいが　うばわれた。"],
              ["うちゅう ひこうしは　ぶじ　せいかんした。"]],
             //Group 7
             [["わたしの　せんこうは　にほんぶんがくだ。"],
@@ -450,7 +531,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["わたしは　かいがいの　がっこうを　そつぎょうした。"],
              ["にほんの　だいがくには　こっこうりつだいがくと　しりつだいがくが　ある。"]],
             //Group 8 国
-            [["あたらしい  こくりつげきじょうだ。"],
+            [["これが　あたらしい  こくりつげきじょうだ。"],
              ["アフリカに　あたらしい  こっかが　うまれた。"],
              ["あなたの　こくせきは　どこですか。"],
              ["わたしの　せんもんは　こくさい　かんけいだ。"],
@@ -458,9 +539,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             //Group 9 反
             [
              ["ファッションは　つねに　そのじだいを　はんえいしていると　いえる。"],
-             ["わたしは　そのたいさくに　はんたいする"],
+             ["かれの　ていあんに　みなが　はんたいした。"],
              ["かれは　こうつういはんで　けいさつに　たいほされた。"],
-             ["かれは　じぶんの　わるい　てんを　はんせい　している。"]],
+             ["きょうの　しあいについては　はんせいてんが　たくさん　あります。"]],
             //Group 10 地
             [["じめんが　ぬれていて、すべりやすいので　きを　つけてください。"],
              ["ちきゅうの　よんぶんの　いちは　りくだ。"],
@@ -483,7 +564,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["いもうとが　わたしの　どうさを　まねて　からだを　うごかした。"]],
             
             //J1 Group 13 鉄
-            [["せんはっぴゃくななじゅうにねん、にほんはつの　てつどうが　しんばしと　よこはまの　あいだに　かいつうした。"],
+        [["せんはっぴゃくななじゅうにねん、にほんはつの　てつどうが　しんばしと　よこはまの　あいだに　かいつうした。"],
              ["てっきょうは　てつで　できている。"],
              ["してつは　みんかんきぎょうが　けいえいする　てつどうだ。"]],
             
@@ -511,7 +592,24 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             [["わたしの　おとうとは　せいじかを　めざしている。"],
              ["あなたの　くにで　ゆうめいな　にほんの　しょうせつかは　だれですか？"],
              ["わたしは　しんねんに　かぞくしゃしんを　とった。"],
-             ["わたしは　かでんメーカーに　つとめている。"]]]
+             ["わたしは　かでんメーカーに　つとめている。"]],
+            //Group 18
+            [["ひとは　いんりょうすいが　ないと　いきられない。"],
+             ["みずが　しずくとなって　おちることを　すいてきと　いう。"],
+             ["おんすいきが　こわれて　おゆが　でない。"],
+             ["うんどうの　あとは　れいすいが　おいしい。"]],
+            //Group 19
+            [["ちきゅうじょうの　とうざいの　いちは　けいどで　しめされる。"],
+            ["いどとは、せきどうを　れいどとし、　なんぼくへ　それぞれ　きゅうじゅうどまで　あらわす。"],
+            ["にほんを　おとずれる　がいこくじんの　かずが　ふえた。"],
+            ["リモコンで　へやの　おんどを　いっていに　する。"],
+            ["にほんの　つゆの　ときは　しつどが　たかくて　むしあつい。"],
+            ["あいてへの　かんしゃの　きもちを　たいどで　しめしましょう。"]],
+            //Group 20
+            [["あおもりけんは　りんごの　さんちとして　ゆうめいです。"],
+             ["かれの　ざいさんは　こまっているひとたちに　きふされました。"],
+             ["このこうじょうは　オートバイを　つきに　はっぴゃくだい　せいさんする。"],
+             ["のうさんぶつとは、こめや　やさいや　くだものなどを　さす。"]]]
     
     var furigana2 =
         //Group 1
@@ -537,7 +635,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
           ["かれは　あたらしい　かいしゃを　せつりつして　はんとしごに　とうさんした。"]],
          //Group 2
             [["てんきよほうによると、こんしゅうは　しゅうまつにかけて　あめが　ふる　そうだ。"],
-             ["てんきよほうによると、こんしゅうは　しゅうまつにかけて　あめが　ふる　そうだ。"],
+             ["せんしゅうの　きんようびは、おおあめのため　きゅうこうに　なった。"],
              ["らいしゅうから　なつやすみが　はじまります。"],
              ["わたしは　まいしゅう　ともだちと　えいがを　みます。"],
              ["わたしは　しゅうまつに　よく　サッカーを　します。"],
@@ -553,7 +651,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["わたしは　らいげつ　けっこんします。"],
              ["かれは　せんげつ　きこくしました。"],
              ["げっきゅうびは　まいつき　にじゅうごにちです。"],
-             ["このアプリの　しようりょうは、げっきゅう　さんびゃくえんです。"],
+             ["このアプリの　しようりょうは、げつがく　さんびゃくえんです。"],
              ["わたしは　こんげつまつから　いっしゅうかん　しゅっちょうする。　"]],
             //Group 5
             [["このかいしゃでは、つうしんシステムを　かいはつしている。"],
@@ -592,7 +690,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["かれは　じぶんの　わるいところを　はんせいしている。"]],
             //Group 10
             [["じめんに　らくがきを　する。"],
-             ["ちきゅうの　まわりを　まわっている。"],
+             ["つきは　ちきゅうの　まわりを　まわっている。"],
              ["ちじょうから　うちゅうに  むかって　しんごうを　おくる。"],
              ["これは　じしんの　ひがいを　ふせぐための　くんれんだ。"],
              ["しっちは　やさい さいばいには　てきしていない。"]],
@@ -637,11 +735,32 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["ことし、わたしの　かいしゃには　さんにんの　しんじんが　はいった。"],
              ["きほんてき　じんけんは　そんちょう　されなければ　ならない。"]],
             
-            //Group 17 ReivunJ２
+            //Group 17 ReibunJ２
             [["かれは  にほんの　せいじかだ。"],
              ["しょうせつかになるのは　むずかしい。"],
              ["わたしの　かぞくは　ごにんです。"],
-             ["かでんせいひんとは　かていで　しようされる　テレビ、れいぞうこ、せんたくきなどを　さす。"]]]
+             ["かでんせいひんとは　かていで　しようされる　テレビ、れいぞうこ、せんたくきなどを　さす。"]],
+            
+            //Group 18 ReibunJ２
+            [["ひとは　いんりょうすいが　ないと　いきられない。"],
+             ["みずが　しずくとなって　おちることを　すいてきと　いう。"],
+             ["おんすいきが　こわれて　おゆが　でない。"],
+             ["うんどうの　あとは　れいすいが　おいしい。"],
+             ["わたしは　がいこくでは　すいどうすいを　のまないように　している。"]],
+            
+            //Group 19 ReibunJ２
+            [["グリニッジてんもんだいは　けいどれいどだ。"],
+             ["とうきょうの　いどは　なんどですか。"],
+             ["おんどけいで　きおんを　はかる。"],
+             ["じょしつきで　しつどを　さげる。"],
+             ["がくせいの　しつれいな　たいどに　せんせいは　おこった。"]],
+            
+            //Group 20 ReibunJ２
+            [["グリニッジてんもんだいは　けいどれいどだ。"],
+             ["とうきょうの　いどは　なんどですか。"],
+             ["おんどけいで　きおんを　はかる。"],
+             ["じょしつきで　しつどを　さげる。"],
+             ["がくせいの　しつれいな　たいどに　せんせいは　おこった。"]]]
     
     var reibunV1 =
         //Group 1
@@ -689,8 +808,8 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
 //Vetonamese 1
          //Group 5
            [["Trong thế kỷ 21, công nghệ truyền thông tiến bộ hơn nữa."],
-            ["Nhận thông báo về kết quả từ trường."],
-            ["Điện thoại này có một tính năng thông báo để bạn biết ai đến từ."],
+            ["Hôm nay tôi nhận được một thông báo điểm từ trường."],
+            ["Tôi là một thông dịch viên tại một hội nghị quốc tế."],
             ["Tuần an toàn giao thông bắt đầu từ hôm nay."]],
          //Group 6
            [["Xác nhận sự sống còn của đứa trẻ."],
@@ -718,10 +837,9 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
          //Group 9
            [
             ["Thời trang thường phản ảnh thời đại đó."],
-            
-            ["Tôi phản đối biện pháp đó."],
+            ["Mọi người phản đối đề nghị của ông."],
             ["Anh ta bị cảnh sát bắt vì vi phạm giao thông."],
-            ["Anh ấy đang phản ánh về điểm xấu của mình."]],
+            ["Có rất nhiều phản ánh về trò chơi ngày nay."]],
          //Group 10
            [["Mặt đất rất trơn, dễ trượt ngã nên hãy cẩn thận."],
             ["Một phần từ trái đất là lục địa."],
@@ -772,8 +890,26 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
            [["Em trai tôi đang nhắm vào các chính trị gia."],
             ["Một tiểu thuyết gia nổi tiếng của Nhật Bản ở nước bạn là ai?"],
             ["Tôi chụp ảnh gia đình trong năm mới."],
-            ["Tôi làm việc cho các nhà sản xuất điện tử gia đình."]]]
+            ["Tôi làm việc cho các nhà sản xuất điện tử gia đình."]],
 
+        //Group 18 Reibun V1
+            [["Điều này là an toàn vì nó là nước uống."],
+            ["Giọt nước trên cửa sổ."],
+            ["Vào mùa đông, bơi trong hồ nước nóng."],
+            ["Tôi tắm nước lạnh vì trời nóng."],
+            ["Tôi đang sửa chữa một đường ống nước."]],
+        //Group 19 Reibun V1
+            [["Làm thế nào để bạn đo kinh độ và vĩ độ? → Vị trí đông-tây trên trái đất được biểu thị bằng kinh độ."],
+            ["Vĩ độ đề cập đến đường xích đạo lần lượt là 0 ° và 90 ° ở phía bắc và phía nam."],
+            ["Làm cho nhiệt độ phòng không đổi với điều khiển từ xa."],
+            ["Vào thời điểm mùa mưa Nhật Bản, độ ẩm cao và nóng và ẩm."],
+            ["Thể hiện thái độ biết ơn của bạn với người khác.."]],
+    
+       //Group 20 Reibun V1
+            [["Em trai tôi đang nhắm vào các chính trị gia."],
+            ["Một tiểu thuyết gia nổi tiếng của Nhật Bản ở nước bạn là ai?"],
+            ["Tôi chụp ảnh gia đình trong năm mới."],
+            ["Tôi làm việc cho các nhà sản xuất điện tử gia đình."]]]
     
     var reibunV2 =
         //Group 1
@@ -786,7 +922,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Nhật Bản nhập khẩu nhiên liệu."],//7
             ["Kỷ niệm 25 năm kết hôn."],//8
             ["Vấn đề của bài kiểm tra này cũng đã xuất hiện trong quá khứ."],//9
-            ["Cô giáo sống một cuộc đời cô đơn."],//10
+            ["Cô giáo sống một cuộc đời cô đơn.周"],//10
             ["Tôi đang nghiên cứu lịch sử của thời cổ đại."],//11
             ["Anh ấy cần tự quản lý."],//12
             ["Anh ta lạc quan về tương lai."],//13
@@ -809,7 +945,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
            [["Tôi là sinh viên đại học từ hôm nay."],
             ["Tôi đi đến nhà ga bằng xe buýt mỗi ngày."],
             ["Vui lòng cho tôi biết ngày và giờ của cuộc họp tiếp theo."],
-            ["Tôi đi bộ hàng ngày."],
+            ["Cuộc sống của tôi đã trở lại với cuộc sống hàng ngày."],
             ["Ngay cả ở các cửa hàng bách hóa, bạn có thể mua các vật dụng hàng ngày."]],
         //Group 4
            [["Tôi phải hoàn thành công việc này trong tháng."],
@@ -817,7 +953,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Anh ấy quay trở lại đất nước hồi tháng trước."],
             ["Ngày thanh toán hàng tháng là ngày 25 hàng tháng."],
             ["Lệ phí hàng tháng cho việc sử dụng ứng dụng này là 300 yên."],
-            ["Tôi đang đi công tác từ cuối tháng trong một tuần."]],
+            ["Tôi sẽ thực hiện một chuyến công tác từ cuối tháng này trong một tuần."]],
         //Group 5
            [["Công ty này phát triển một hệ thống thông tin liên lạc."],
             ["Hôm nay tôi nhận được một thông báo điểm từ trường."],
@@ -904,8 +1040,27 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
            [["Anh ấy là Anh ấy là một chính trị gia Nhật Bản.một chính khách tốt."],
             ["Thật khó để trở thành một tiểu thuyết gia."],
             ["Gia đình tôi là năm người."],
-            ["Điện tử gia dụng dùng để chỉ tivi, tủ lạnh, máy giặt, vv được sử dụng ở nhà."]]]
+            ["Điện tử gia dụng dùng để chỉ tivi, tủ lạnh, máy giặt, vv được sử dụng ở nhà."]],
 
+        //Group 18
+            [["Con người không thể sống mà không uống nước."],
+            ["Nó được gọi là giọt nước mà nước nhỏ giọt và rơi xuống."],
+            ["Máy nước nóng bị hỏng và không có nước nóng."],
+            ["Nước lạnh rất ngon sau khi tập thể dục."],
+            ["Tôi cố gắng không uống nước máy ở nước ngoài."]],
+    
+        //Group 19
+            [["Đài thiên văn Greenwich là 0 độ kinh độ."],
+            ["Vĩ độ của Tokyo là gì?"],
+            ["Đo nhiệt độ bằng nhiệt kế."],
+            ["Giảm độ ẩm bằng máy hút ẩm."],
+            ["Giáo viên nổi giận trước thái độ thô lỗ của học sinh."]],
+    
+        //Group 20
+            [["Bởi vì rau ở đây được gửi trực tiếp từ khu vực sản xuất, chúng tươi và rẻ."],
+            ["Ông thất bại trong kinh doanh và mất tất cả tài sản của mình."],
+            ["Sản lượng dầu giảm trên toàn thế giới và giá dầu tăng."],
+            ["Bố tôi đang bán nông sản từ cánh đồng."]]]
         
 
 //ローカライズ
@@ -1024,10 +1179,14 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG16", comment: ""))"
         case 16:
             cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG17", comment: ""))"
+        case 17:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG18", comment: ""))"
+        case 18:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG19", comment: ""))"
+        case 19:
+            cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG20", comment: ""))"
             
-       // case 17:
-            //cell.textLabel!.text = "Group \(indexPath.row + 1)   \(NSLocalizedString("QSG18", comment: ""))"
-            
+       
             
             
         default:

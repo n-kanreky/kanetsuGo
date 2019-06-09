@@ -5,175 +5,181 @@
 //  Created by クロス尚美 on 2018/04/05.
 //  Copyright © 2018年 NC. All rights reserved.
 //*/
-//// Front Page
-//"LetsStart" = "Let's learn Kanji words and their pronunciation using 漢越Go！";
-////Q Selection
-//"QSelect" = "Select a Question Group";
-//"toInstruction" = "To Instruction";
-//"ToSuportSite" = "To 漢越Go! Support Site";
-////使い方
-//"Instruction" = "Instructions";
-//"Step1" = "Step 1  \nChoose questions.";
-//"Step2" = "Step 2  \nPress START and pronounce the word 3 times.";
-//"Exp4" = "If you are not sure, \nPress the hint button, or listen to the model pronunciation.  \nYou can also skip the question.";
-//"Exp4_skip" = "If you skip, the question will be added to your revision list.";
-//"Begin" = "Now, let us begin!";
-//"Start" = "Start";
-//"ClickHere" = "Click here";
-//"CorrectAnswer" = "Correct!";
-////問題のページ
-//"PronunciationExamples" = "Pronunciation＆Examples";
-//"hintWord" = "Click here for hint";
-//"again" ="Again!";
-//"TapListen" = "Tap and Listen";
-//"ToRevisionList" = "To Revision List";
-//"SkipQuestion" = "Are you sure?";
-//"LetsSelectCourse" = "Select the course";
-//"AllCorrect" = "You've got them all right!";
-//"ReadOut" = "Pronounce the word";
-//"ForN1" = "Preparing for N1";
-//"ForN2" = "Start";
-//"ToSelectQuestions" = "< Select Questions";
-//
-//"ReviewList" = "Review List";
-//"UnderConstruction" = "Sorry! This page is under construction\nPlease come back in a while.";
-//"Delete" = "Delete";
-//"AddedToReviewList" = "Added to the Review List";
-//"AddToReviewList" = "Add to the Review List";
-//"LetsReturnToReviewList" = "Let's Return to the Review List";
-//"ReAddedToRevisionList" = "Re-added to the Revision List";
-//"YouCanDoIt" = "Keep on practicing. You can do it!";
-//"ReturnToQuestionList" = "< Return to the Question List";
-//"LetsGoOnToNextLevel" = "Lets go on to the next group of questions! >";
-//"GoToNextQuestion" = "Go to next question";
-////グループごとの説明
-//"Group1" = "Group 1 lists Kanetsugo and Kango that are similar in pronunciation.";
-//"Group2" = "Group 2 is a collection of Kanetsugo that has 週 （シュウ）and corresponds to tuần.";
-//"Group3" = "Group 3 is a collection of Kanetsugo that has 日 （ニチ）and corresponds to Ngày.";
-//"Group4" = "Group 4 is a collection of Kanetsugo that has 月 （ゲツ、ゲッ） and corresponds to Tháng.";
-//"Group5" = "Group 5 is a collection of Kanetsugo that has 通 （ツウ）and corresponds to thông.";
-//"Group6" = "Group 6 is a collection of Kanetsugo that has 生 （セイ）and corresponds to sống.";
-//"Group7" = "Group 7 is a collection of Kanetsugo that has 学 （ガク、ガッ）and corresponds to học.";
-//"Group8" = "Group 8 is a collection of Kanetsugo that has 国 （コク、コッ）and corresponds to Quốc.";
-//"Group9" = "Group 9 is a collection of Kanetsugo that has 反 （ハン）and corresponds to Phản.";
-//"Group10" = "Group 10 is a collection of Kanetsugo that has 地 （チ、ジ）and corresponds to đất.";
-//"Group11" = "Group 11 is a collection of Kanetsugo that has 費（ヒ）and corresponds to phí.";
-//"Group12" = "Group 12 is a collection of Kanetsugo that has 動 （ドウ）and corresponds to động.";
-//"Group13" = "Group 13 is a collection of Kanetsugo that has 鉄 （テツ、テッ）and corresponds to sắt.";
-//"Group14" = "Group 14 is a collection of Kanetsugo that has 友 （ユウ）and corresponds to bạn.";
-//"Group15" = "Group 15 is a collection of Kanetsugo that has 信 （シン）and corresponds to Tin.";
-//"Group16" = "Group 16 is a collection of Kanetsugo that has 人 （ニン、ジン）and corresponds to người.";
-//"Group17" = "Group 17 is a collection of Kanetsugo that has 家（カ）and corresponds to gia.";
-////始める
-//"deleteAndReturn" = "Start";
-//
-//// Q Selection VCのグループ説明 (短いG3)
-//"QSG1" = "Similar pronunciation";
-//"QSG2" = "With 週（tuần）";
-//"QSG3" = "With 日（Ngày）";
-//"QSG4" = "With 月（Tháng）";
-//"QSG5" = "With 通（thông）";
-//"QSG6" = "With 生（Sống）";
-//"QSG7" = "With 学（học）";
-//"QSG8" = "With 国（Quốc）";
-//"QSG9" = "With 反（Phản）";
-//"QSG10" = "With 地（đất）";
-//"QSG11" = "With 費（phí）";
-//"QSG12" = "With 動（động）";
-//"QSG13" = "With 鉄（sắt）";
-//"QSG14" = "With 友（Bạn）";
-//"QSG15" = "With 信（Tin）";
-//"QSG16" = "With 人（người）";
-//"QSG17" = "With 家（gia）";
-//
-//
-/*
- Localizable.strings
- KanetsuGo
- 
- Created by クロス尚美 on 2018/04/05.
- Copyright © 2018年 NC. All rights reserved.
- */
 // Front Page
-"LetsStart" = "ベトナム語の中の漢語「漢越語」を使って、日本語の中の漢字語とその発音を学びましょう";
+"LetsStart" = "Let's learn Kanji words and their pronunciation using 漢越Go！";
 //Q Selection
-"QSelect" = "練習問題を選ぶ";
-"toInstruction" = "使い方へ";
-"ToSuportSite" = "漢越Go! Support websiteへ";
-
+"QSelect" = "Select a Question Group";
+"toInstruction" = "To Instruction";
+"ToSuportSite" = "To 漢越Go! Support Site";
 //使い方
-"Instruction" = "使い方";
-"Step1" = "ステップ 1  \n問題を選びましょう";
-"Step2" = "ステップ 2  \nSTART を押して、\n３回発音します";
-"Exp4" = "わからなかったら... \nヒントを見たり, お手本の発音を聞いたりしましょう.  \n問題をスキップすることもできます.";
-"Exp4_skip" = "スキップすると、問題は自動的に復習リストに追加されます.";
-"Begin" = "さあ、始めましょう！";
-"Start" = "スタート";
-"ClickHere" = "ここをクリック";
-"CorrectAnswer" = "正解!";
+"Instruction" = "Instructions";
+"Step1" = "Step 1  \nChoose questions.";
+"Step2" = "Step 2  \nPress START and pronounce the word 3 times.";
+"Exp4" = "If you are not sure, \nPress the hint button, or listen to the model pronunciation.  \nYou can also skip the question.";
+"Exp4_skip" = "If you skip, the question will be added to your revision list.";
+"Begin" = "Now, let us begin!";
+"Start" = "Start";
+"ClickHere" = "Click here";
+"CorrectAnswer" = "Correct!";
 //問題のページ
-"PronunciationExamples" = "モデル発音と用例";
-"hintWord" = "ヒントはここをクリック";
-"again" ="もう一度！";
-"TapListen" = "モデル発音を聞く";
-"ToRevisionList" = "復習リスト";
-"SkipQuestion" = "本当にスキップしますか?";
-"LetsSelectCourse" = "コースを選びましょう";
-"AllCorrect" = "おめでとう！全問正解です";
-"ReadOut" = "発音してください";
-"ForN1" = "N1 対応コース";
-"ForN2" = "始める";
-"ToSelectQuestions" = "< 練習問題の選択";
-"ReviewList" = "復習リスト";
-"UnderConstruction" = "申し訳ありません。このページは現在作成中です。\nもうしばらくお待ちください";
-"Delete" = "削除";
-"AddedToReviewList" = "復習リストに追加されました";
-"AddToReviewList" = "復習リストに追加";
-"LetsReturnToReviewList" = "復習リストに戻りましょう";
-"ReAddedToRevisionList" = "復習リストに再登録されました";
-"YouCanDoIt" = "がんばりましょう！";
-"ReturnToQuestionList" = "問題リストに戻りましょう";
-"LetsGoOnToNextLevel" = "次のレベルに進みましょう";
-"GoToNextQuestion" = "次の問題に進みましょう";
-"NextLevelButton" = "次の問題に進みましょう　＞";
+"PronunciationExamples" = "Pronunciation＆Examples";
+"hintWord" = "Click here for hint";
+"again" ="Again!";
+"TapListen" = "Tap and Listen";
+"ToRevisionList" = "To Revision List";
+"SkipQuestion" = "Are you sure?";
+"LetsSelectCourse" = "Select the course";
+"AllCorrect" = "You've got them all right!";
+"ReadOut" = "Pronounce the word";
+"ForN1" = "Preparing for N1";
+"ForN2" = "Start";
+"ToSelectQuestions" = "< Select Questions";
 
+"ReviewList" = "Review List";
+"UnderConstruction" = "Sorry! This page is under construction\nPlease come back in a while.";
+"Delete" = "Delete";
+"AddedToReviewList" = "Added to the Review List";
+"AddToReviewList" = "Add to the Review List";
+"LetsReturnToReviewList" = "Let's Return to the Review List";
+"ReAddedToRevisionList" = "Re-added to the Revision List";
+"YouCanDoIt" = "Keep on practicing. You can do it!";
+"ReturnToQuestionList" = "< Return to the Question List";
+"LetsGoOnToNextLevel" = "Lets go on to the next group of questions! >";
+"GoToNextQuestion" = "Go to next question";
 //グループごとの説明
-"Group1" = "よく使うベトナム語なのに、日本語のことばと発音が似ていると思いませんか？\nこれらは「漢越語」、ベトナム語の中の、もともとは中国語のことばで、意味もよく似ていることがあります。";
-"Group2" = "漢越語の中に「週」という漢字を含むものを集めました。\n\n漢越語の中の「週」Tuần  は、「シュウ」と発音します。";
-"Group3" = "漢越語の中に「日」という漢字を含むものを集めました。\n漢越語の中の「日」Ngày は、「ニチ」と発音します。\n最初の「今日」だけは特別で、「キョウ」と読みます。Ngày này (Hôm nay)という意味です。";
-"Group4" = "漢越語の中に「月」という漢字を含むものを集めました。\n\n漢越語の中の「月」Tháng は、「ゲツ」、「ゲッ」と発音します。";
-"Group5" = "漢越語の中に「通」という漢字を含むものを集めました。\n\n漢越語の中の「通」thông は、「ツウ」と発音します。";
-"Group6" = "漢越語の中に「生」という漢字を含むものを集めました。\n\n漢越語の中の「生」Sống は、「セイ」と発音します。";
-"Group7" = "漢越語の中に「学」という漢字を含むものを集めました。\n\n漢越語の中の「学」học は、「ガク」「ガッ」と発音します。";
-"Group8" = "漢越語の中に「国」という漢字を含むものを集めました。\n\n漢越語の中の「国」Quốc は、「コク」、「コッ」と発音します。";
-"Group9" = "漢越語の中に「反」という漢字を含むものを集めました。\n\n漢越語の中の「反」phản は、「ハン」と発音します。";
-"Group10" = "漢越語の中に「地」という漢字を含むものを集めました。\n\n漢越語の中の「地」đất は、「チ」、「ジ」と発音します。";
-"Group11" = "漢越語の中に「費」という漢字を含むものを集めました。\n\n漢越語の中の「費」phí は、「ヒ」と発音します。";
-"Group12" = "漢越語の中に「動」という漢字を含むものを集めました。\n\n漢越語の中の「動」động は、「ドウ」と発音します。";
-"Group13" = "漢越語の中に「鉄」という漢字を含むものを集めました。\n\n漢越語の中の「鉄」sắt は、「テツ」、「テッ」と発音します。";
-"Group14" = "漢越語の中に「友」という漢字を含むものを集めました。\n\n漢越語の中の「友」bạnは、「ユウ」と発音します。";
-"Group15" = "漢越語の中に「信」という漢字を含むものを集めました。\n\n漢越語の中の「信」Tin は、「シン」と発音します。";
-"Group16" = "漢越語の中に「人」という漢字を含むものを集めました。\n\n漢越語の中の「人」người は、「ニン」、「ジン」と発音します。";
-"Group17" = "漢越語の中に「家」という漢字を含むものを集めました。\n\n漢越語の中の「家」gia は、「カ」と発音します。";
+"Group1" = "Group 1 lists Kanetsugo and Kango that are similar in pronunciation.";
+"Group2" = "Group 2 is a collection of Kanetsugo that has 週 （シュウ）and corresponds to tuần.";
+"Group3" = "Group 3 is a collection of Kanetsugo that has 日 （ニチ）and corresponds to Ngày.";
+"Group4" = "Group 4 is a collection of Kanetsugo that has 月 （ゲツ、ゲッ） and corresponds to Tháng.";
+"Group5" = "Group 5 is a collection of Kanetsugo that has 通 （ツウ）and corresponds to thông.";
+"Group6" = "Group 6 is a collection of Kanetsugo that has 生 （セイ）and corresponds to sống.";
+"Group7" = "Group 7 is a collection of Kanetsugo that has 学 （ガク、ガッ）and corresponds to học.";
+"Group8" = "Group 8 is a collection of Kanetsugo that has 国 （コク、コッ）and corresponds to Quốc.";
+"Group9" = "Group 9 is a collection of Kanetsugo that has 反 （ハン）and corresponds to Phản.";
+"Group10" = "Group 10 is a collection of Kanetsugo that has 地 （チ、ジ）and corresponds to đất.";
+"Group11" = "Group 11 is a collection of Kanetsugo that has 費（ヒ）and corresponds to phí.";
+"Group12" = "Group 12 is a collection of Kanetsugo that has 動 （ドウ）and corresponds to động.";
+"Group13" = "Group 13 is a collection of Kanetsugo that has 鉄 （テツ、テッ）and corresponds to sắt.";
+"Group14" = "Group 14 is a collection of Kanetsugo that has 友 （ユウ）and corresponds to bạn.";
+"Group15" = "Group 15 is a collection of Kanetsugo that has 信 （シン）and corresponds to Tin.";
+"Group16" = "Group 16 is a collection of Kanetsugo that has 人 （ニン、ジン）and corresponds to người.";
+"Group17" = "Group 17 is a collection of Kanetsugo that has 家（カ）and corresponds to gia.";
+"Group18" = "Group 18 is a collection of Kanetsugo that has 水（スイ）and corresponds to nước.";
+"Group19" = "Group 19 is a collection of Kanetsugo that has 度（ド）and corresponds to độ.";
+"Group20" = "Group 20 is a collection of Kanetsugo that has 産（サン）and corresponds to sản.";
 
 //始める
-"deleteAndReturn" = "始める";
+"deleteAndReturn" = "Start";
 
-// Q Selection VCのグループ説明
-"QSG1" = "発音が似ている漢語";
-"QSG2" = "週（tuần）を含む漢語";
-"QSG3" = "日（Ngày）を含む漢語";
-"QSG4" = "月（Tháng）を含む漢語";
-"QSG5" = "通（thông）を含む漢語";
-"QSG6" = "生（Sống）を含む漢語";
-"QSG7" = "学（học）を含む漢語";
-"QSG8" = "国（Quốc）を含む漢語";
-"QSG9" = "反（Phản）を含む漢語";
-"QSG10" = "地（đất）を含む漢語";
-"QSG11" = "費（phí）を含む漢語";
-"QSG12" = "動（động）を含む漢語";
-"QSG13" = "鉄（sắt）を含む漢語";
-"QSG14" = "友（Bạn）を含む漢語";
-"QSG15" = "信（Tin）を含む漢語";
-"QSG16" = "人（người）を含む漢語";
-"QSG17" = "家（gia）を含む漢語";
+// Q Selection VCのグループ説明 (短いG3)
+"QSG1" = "Similar pronunciation";
+"QSG2" = "With 週（tuần）";
+"QSG3" = "With 日（Ngày）";
+"QSG4" = "With 月（Tháng）";
+"QSG5" = "With 通（thông）";
+"QSG6" = "With 生（Sống）";
+"QSG7" = "With 学（học）";
+"QSG8" = "With 国（Quốc）";
+"QSG9" = "With 反（Phản）";
+"QSG10" = "With 地（đất）";
+"QSG11" = "With 費（phí）";
+"QSG12" = "With 動（động）";
+"QSG13" = "With 鉄（sắt）";
+"QSG14" = "With 友（Bạn）";
+"QSG15" = "With 信（Tin）";
+"QSG16" = "With 人（người）";
+"QSG17" = "With 家（gia）";
+"QSG18" = "With 水（nước）";
+"QSG19" = "With 度（độ）";
+"QSG20" = "With 産（sản）";
+
+///*
+// Localizable.strings
+// KanetsuGo
+//
+// Created by クロス尚美 on 2018/04/05.
+// Copyright © 2018年 NC. All rights reserved.
+// */
+//// Front Page
+//"LetsStart" = "ベトナム語の中の漢語「漢越語」を使って、日本語の中の漢字語とその発音を学びましょう";
+////Q Selection
+//"QSelect" = "練習問題を選ぶ";
+//"toInstruction" = "使い方へ";
+//"ToSuportSite" = "漢越Go! Support websiteへ";
+//
+////使い方
+//"Instruction" = "使い方";
+//"Step1" = "ステップ 1  \n問題を選びましょう";
+//"Step2" = "ステップ 2  \nSTART を押して、\n３回発音します";
+//"Exp4" = "わからなかったら... \nヒントを見たり, お手本の発音を聞いたりしましょう.  \n問題をスキップすることもできます.";
+//"Exp4_skip" = "スキップすると、問題は自動的に復習リストに追加されます.";
+//"Begin" = "さあ、始めましょう！";
+//"Start" = "スタート";
+//"ClickHere" = "ここをクリック";
+//"CorrectAnswer" = "正解!";
+////問題のページ
+//"PronunciationExamples" = "モデル発音と用例";
+//"hintWord" = "ヒントはここをクリック";
+//"again" ="もう一度！";
+//"TapListen" = "モデル発音を聞く";
+//"ToRevisionList" = "復習リスト";
+//"SkipQuestion" = "本当にスキップしますか?";
+//"LetsSelectCourse" = "コースを選びましょう";
+//"AllCorrect" = "おめでとう！全問正解です";
+//"ReadOut" = "発音してください";
+//"ForN1" = "N1 対応コース";
+//"ForN2" = "始める";
+//"ToSelectQuestions" = "< 練習問題の選択";
+//"ReviewList" = "復習リスト";
+//"UnderConstruction" = "申し訳ありません。このページは現在作成中です。\nもうしばらくお待ちください";
+//"Delete" = "削除";
+//"AddedToReviewList" = "復習リストに追加されました";
+//"AddToReviewList" = "復習リストに追加";
+//"LetsReturnToReviewList" = "復習リストに戻りましょう";
+//"ReAddedToRevisionList" = "復習リストに再登録されました";
+//"YouCanDoIt" = "がんばりましょう！";
+//"ReturnToQuestionList" = "問題リストに戻りましょう";
+//"LetsGoOnToNextLevel" = "次のレベルに進みましょう";
+//"GoToNextQuestion" = "次の問題に進みましょう";
+//"NextLevelButton" = "次の問題に進みましょう　＞";
+//
+////グループごとの説明
+//"Group1" = "よく使うベトナム語なのに、日本語のことばと発音が似ていると思いませんか？\nこれらは「漢越語」、ベトナム語の中の、もともとは中国語のことばで、意味もよく似ていることがあります。";
+//"Group2" = "漢越語の中に「週」という漢字を含むものを集めました。\n\n漢越語の中の「週」Tuần  は、「シュウ」と発音します。";
+//"Group3" = "漢越語の中に「日」という漢字を含むものを集めました。\n漢越語の中の「日」Ngày は、「ニチ」と発音します。\n最初の「今日」だけは特別で、「キョウ」と読みます。Ngày này (Hôm nay)という意味です。";
+//"Group4" = "漢越語の中に「月」という漢字を含むものを集めました。\n\n漢越語の中の「月」Tháng は、「ゲツ」、「ゲッ」と発音します。";
+//"Group5" = "漢越語の中に「通」という漢字を含むものを集めました。\n\n漢越語の中の「通」thông は、「ツウ」と発音します。";
+//"Group6" = "漢越語の中に「生」という漢字を含むものを集めました。\n\n漢越語の中の「生」Sống は、「セイ」と発音します。";
+//"Group7" = "漢越語の中に「学」という漢字を含むものを集めました。\n\n漢越語の中の「学」học は、「ガク」「ガッ」と発音します。";
+//"Group8" = "漢越語の中に「国」という漢字を含むものを集めました。\n\n漢越語の中の「国」Quốc は、「コク」、「コッ」と発音します。";
+//"Group9" = "漢越語の中に「反」という漢字を含むものを集めました。\n\n漢越語の中の「反」phản は、「ハン」と発音します。";
+//"Group10" = "漢越語の中に「地」という漢字を含むものを集めました。\n\n漢越語の中の「地」đất は、「チ」、「ジ」と発音します。";
+//"Group11" = "漢越語の中に「費」という漢字を含むものを集めました。\n\n漢越語の中の「費」phí は、「ヒ」と発音します。";
+//"Group12" = "漢越語の中に「動」という漢字を含むものを集めました。\n\n漢越語の中の「動」động は、「ドウ」と発音します。";
+//"Group13" = "漢越語の中に「鉄」という漢字を含むものを集めました。\n\n漢越語の中の「鉄」sắt は、「テツ」、「テッ」と発音します。";
+//"Group14" = "漢越語の中に「友」という漢字を含むものを集めました。\n\n漢越語の中の「友」bạnは、「ユウ」と発音します。";
+//"Group15" = "漢越語の中に「信」という漢字を含むものを集めました。\n\n漢越語の中の「信」Tin は、「シン」と発音します。";
+//"Group16" = "漢越語の中に「人」という漢字を含むものを集めました。\n\n漢越語の中の「人」người は、「ニン」、「ジン」と発音します。";
+//"Group17" = "漢越語の中に「家」という漢字を含むものを集めました。\n\n漢越語の中の「家」gia は、「カ」と発音します。";
+//
+////始める
+//"deleteAndReturn" = "始める";
+//
+//// Q Selection VCのグループ説明
+//"QSG1" = "発音が似ている漢語";
+//"QSG2" = "週（tuần）を含む漢語";
+//"QSG3" = "日（Ngày）を含む漢語";
+//"QSG4" = "月（Tháng）を含む漢語";
+//"QSG5" = "通（thông）を含む漢語";
+//"QSG6" = "生（Sống）を含む漢語";
+//"QSG7" = "学（học）を含む漢語";
+//"QSG8" = "国（Quốc）を含む漢語";
+//"QSG9" = "反（Phản）を含む漢語";
+//"QSG10" = "地（đất）を含む漢語";
+//"QSG11" = "費（phí）を含む漢語";
+//"QSG12" = "動（động）を含む漢語";
+//"QSG13" = "鉄（sắt）を含む漢語";
+//"QSG14" = "友（Bạn）を含む漢語";
+//"QSG15" = "信（Tin）を含む漢語";
+//"QSG16" = "人（người）を含む漢語";
+//"QSG17" = "家（gia）を含む漢語";
