@@ -49,10 +49,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              "セイジガクを学ぶ",
              "政治ガクシャ ",
              "ガッコウへ行く",
-             "ダイガク１年生になる"], //Group 7 x 11
+             "ダイガク１年生"], //Group 7 x 11
             ["コクリツ大学",
              "民主主義（みんしゅしゅぎ）コッカ",
-             "コクセキはベトナムだ",
+             "ベトナムコクセキ",
              "コクサイ的に有名",
              "コクレン加盟国（かめいこく）"], //Group 8
             ["ハンエイする","ハンタイ意見","ルールにイハンする","ハンセイする"], //Group 9
@@ -409,7 +409,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["寄付金は困っている人々の食費に使われる。"],
             ["私は旅行会社に旅費を支払った。"],
             ["私は学費を支払うことができなかったので退学した。"],
-            ["光熱費とはガス代、電気代やガス代のことだ。"]],
+            ["光熱費とは、電気代やガス代のことだ。"]],
             
         //Group 12
            [["ボランティア活動に参加する。"],
@@ -956,7 +956,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Tôi sẽ thực hiện một chuyến công tác từ cuối tháng này trong một tuần."]],
         //Group 5
            [["Công ty này phát triển một hệ thống thông tin liên lạc."],
-            ["Hôm nay tôi nhận được một thông báo điểm từ trường."],
+            ["Điện thoại này có một tính năng thông báo để bạn biết ai đến từ."],
             ["Mệt mỏi với công việc thông dịch."],
             ["Tôi đã đến trường muộn vì tai nạn giao thông."]],
         //Group 6
@@ -998,7 +998,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Đất ngập nước không thích hợp cho trồng rau."]],
             
         //Group 11
-           [["Hệ thống này hiệu quả về chi phí."],
+           [["Hệ thống này là hiệu quả chi phí."],
             ["Trong kế hoạch ngân sách năm tài chính tiếp theo, chi phí nhân sự sẽ được xem xét."],
             ["Quyên góp được sử dụng cho chi phí thực phẩm cho những người có nhu cầu."],
             ["Tôi đã trả chi phí đi lại của đại lý du lịch."],
