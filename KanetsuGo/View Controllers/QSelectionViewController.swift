@@ -59,7 +59,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["ジメンに落ちた","チキュウを守る","チジョウに出る","ジシンがおきる","シッチ帯（たい）が広がる"], //Group 10
             ["ヒヨウがかかる","ジンケンヒが高い","ショクヒが高い","リョヒを払う","ガクヒを払う","コウネツヒが高い"], //Group 11
             ["カツドウする","日本語のドウシ","ドウブツ園","ドウサをする"], //Group 12
-            ["鉄道がトオル","テッキョウを渡る","シテツに乗る"], //Group 13
+            ["テツドウが通る","テッキョウを渡る","シテツに乗る"], //Group 13
             ["ユウジンが多い","固いユウジョウ","シンユウ","アクユウ"], //Group 14
             ["交通シンゴウ","シンライする","シンジャが多い","シンコウ心（しん）が強い"], //Group 15）
             ["ニンゲン","ニンズウ","ガイコクジン","ニホンジン","シンジン教育","ジンケン週間"], //Group 16
@@ -282,7 +282,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
            [["信号を無視するのは危険だ。"],
             ["彼は皆に信頼されている"],
             ["彼は信者の罪の告白を聞いた。"],
-            ["仏教徒にとって信仰とは、仏を信じ敬うことだ。"]],
+            ["仏教徒にとって信仰とは、仏を信じて敬うことだ。"]],
             
         //Group 16
            [["私は職場の人間関係に苦しんでいる。"],
@@ -426,7 +426,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
            [["彼は私の友人の一人だ。"],
             ["私は彼との友情を裏切った。"],
             ["私は交通事故で大切な親友を失った。"],
-            ["悪友は一緒に悪いことをする仲間で、その反対は良友という。"]],
+            ["あなたは悪友と一緒に出かけないほうがいい。"]],
             
         //Group 15
            [["交通信号の色は赤、青、黄色だ。"],
@@ -571,7 +571,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             //Group 14 友
             [["ゆうじんの　けっこんしきに　まねかれた。"],
              ["わたしたちは　ゆうじょうで　つながっている。"],
-             ["たなかさんは　こどもじだいから　わたしの　しんゆうだ。"],
+             ["かれは　こどもじだいから　わたしの　しんゆうだ。"],
              ["がくせいのとき、あくゆうと　わたしは　よく　せんせいに　しかられた。"]],
             
             //Group 15 Reibun1
@@ -864,12 +864,12 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
         //Group 13
            [["Năm 1872, đường sắt đầu tiên của Nhật Bản mở cửa giữa Shinbashi và Yokohama."],
             ["Cầu sắt được làm bằng sắt."],
-            ["Đường sắt tư nhân là một tuyến đường sắt do một công ty tư nhân điều hành."]],
+            ["Đường sắt tư nhân là đường sắt được điều hành bởi các công ty tư nhân."]],
             
         //Group 14
            [["Tôi đã được mời đến đám cưới của một người bạn."],
             ["Chúng tôi được kết nối bởi tình bạn."],
-            ["Ông Tanaka là bạn thân nhất của tôi từ khi còn nhỏ."],
+            ["Anh ấy là bạn thân của tôi từ nhỏ."],
             ["Người bạn xấu của tôi và tôi thường bị thầy giáo mắng khi tôi còn là sinh viên."]],
             
         //Group 15
