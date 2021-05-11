@@ -26,7 +26,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["鉄道","鉄橋","私鉄"],  //Group 13 費を含む
             ["友人","友情","親友","悪友"],  //Group 14 費を含む
             ["信号","信頼","信者","信仰"],  //Group 15 費を含む
-            ["人間","人数"," 外国人","日本人","新人","人権"],  //Group 16 費を含む
+            ["人間","人数","外国人","日本人","新人","人権"],  //Group 16 費を含む
             ["政治家","小説家","家族","家電"],  //Group 17 費を含む
             ["飲料水","水滴","温水","冷水","水道"], //Group 18
             ["経度","緯度","温度","湿度","態度"], //Group 19
@@ -302,7 +302,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             [["これは飲料水なので安全だ。"],
              ["窓に水滴が付く。"],
              ["冬は温水プールで泳ぐ。"],
-             ["暑いので冷水シャワーを浴びた。"],
+             ["暑いので冷水のシャワーを浴びた。"],
              ["水道管を修理している。"]],
         //Group 19 Reibun1
            [["地球上の東西の位置は経度で示される。"],
@@ -594,10 +594,11 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["わたしは　しんねんに　かぞくしゃしんを　とった。"],
              ["わたしは　かでんメーカーに　つとめている。"]],
             //Group 18
-            [["ひとは　いんりょうすいが　ないと　いきられない。"],
-             ["みずが　しずくとなって　おちることを　すいてきと　いう。"],
-             ["おんすいきが　こわれて　おゆが　でない。"],
-             ["うんどうの　あとは　れいすいが　おいしい。"]],
+            [["これは　いんりょうすいなので　あんぜんだ。"],
+             ["まどに　すいてきが　つく。"],
+             ["ふゆは　おんすいプールで　およぐ。"],
+             ["あついので　れいすいのシャワーを　あびた。"],
+             ["すいどうかんを　しゅうりしている。"]],
             //Group 19
             [["ちきゅうじょうの　とうざいの　いちは　けいどで　しめされる。"],
             ["いどとは、せきどうを　れいどとし、　なんぼくへ　それぞれ　きゅうじゅうどまで　あらわす。"],
@@ -606,7 +607,7 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["にほんの　つゆの　ときは　しつどが　たかくて　むしあつい。"],
             ["あいてへの　かんしゃの　きもちを　たいどで　しめしましょう。"]],
             //Group 20
-            [["あおもりけんは　りんごの　さんちとして　ゆうめいです。"],
+           [["あおもりけんは　りんごの　さんちとして　ゆうめいです。"],
              ["かれの　ざいさんは　こまっているひとたちに　きふされました。"],
              ["このこうじょうは　オートバイを　つきに　はっぴゃくだい　せいさんする。"],
              ["のうさんぶつとは、こめや　やさいや　くだものなどを　さす。"]]]
@@ -756,11 +757,10 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
              ["がくせいの　しつれいな　たいどに　せんせいは　おこった。"]],
             
             //Group 20 ReibunJ２
-            [["グリニッジてんもんだいは　けいどれいどだ。"],
-             ["とうきょうの　いどは　なんどですか。"],
-             ["おんどけいで　きおんを　はかる。"],
-             ["じょしつきで　しつどを　さげる。"],
-             ["がくせいの　しつれいな　たいどに　せんせいは　おこった。"]]]
+        [["ここの　スーパーの　やさいは　さんちから　ちょくせつ　おくっているので、しんせんで　ねだんも　やすい。"],
+             ["かれは　じぎょうに　しっぱいし、ざいさんを　すべて　うしなった。"],
+             ["せきゆの　せいさんりょうが　せかいてきに　へり、せきゆかかくが　あがった。"],
+             ["ちちは　はたけで　とれた　のうさんぶつを　うっている。"]]]
     
     var reibunV1 =
         //Group 1
@@ -899,17 +899,17 @@ class QSelectionViewController: UIViewController, UITableViewDataSource, UITable
             ["Tôi tắm nước lạnh vì trời nóng."],
             ["Tôi đang sửa chữa một đường ống nước."]],
         //Group 19 Reibun V1
-            [["Làm thế nào để bạn đo kinh độ và vĩ độ? → Vị trí đông-tây trên trái đất được biểu thị bằng kinh độ."],
+            [["Vị trí đông-tây trên trái đất được biểu thị bằng kinh độ."],
             ["Vĩ độ đề cập đến đường xích đạo lần lượt là 0 ° và 90 ° ở phía bắc và phía nam."],
             ["Làm cho nhiệt độ phòng không đổi với điều khiển từ xa."],
             ["Vào thời điểm mùa mưa Nhật Bản, độ ẩm cao và nóng và ẩm."],
-            ["Thể hiện thái độ biết ơn của bạn với người khác.."]],
+            ["Thể hiện thái độ biết ơn của bạn với người khác."]],
     
        //Group 20 Reibun V1
-            [["Em trai tôi đang nhắm vào các chính trị gia."],
-            ["Một tiểu thuyết gia nổi tiếng của Nhật Bản ở nước bạn là ai?"],
-            ["Tôi chụp ảnh gia đình trong năm mới."],
-            ["Tôi làm việc cho các nhà sản xuất điện tử gia đình."]]]
+            [["Tỉnh Aomori nổi tiếng về sản xuất táo."],
+            ["Tài sản của ông đã được tặng cho những người có nhu cầu."],
+            ["Nhà máy sản xuất 800 xe máy mỗi tháng."],
+            ["Nông sản có nghĩa là gạo, rau và trái cây."]]]
     
     var reibunV2 =
         //Group 1

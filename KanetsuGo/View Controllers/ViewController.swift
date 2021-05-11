@@ -232,6 +232,9 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate,AVAudioPlayerD
                 isFinal = result.isFinal //文字列が最後になったら、ループを抜ける
                 if self.questionNumber < self.questions.count{
                     let str = result.bestTranscription.formattedString //strに認識された文字列が入る
+                    //***音声認識のチェック
+                    print(str)
+                    //***
                     //                検索する文字列
                     let word = self.questions[self.questionNumber] //＊＊＊　var を　let　に変えてみた　"Variable "word" was never mutated"　黄色エラーが消えた
                     //var word = self.questions[self.questionNumber]

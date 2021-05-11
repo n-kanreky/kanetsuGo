@@ -46,6 +46,7 @@
 "ReturnToQuestionList" = "< Return to the Question List";
 "LetsGoOnToNextLevel" = "Lets go on to the next group of questions! >";
 "GoToNextQuestion" = "Go to next question";
+"NextLevelButton" = "Move on to the next　＞";
 //グループごとの説明
 "Group1" = "Group 1 lists Kanetsugo and Kango that are similar in pronunciation.";
 "Group2" = "Group 2 is a collection of Kanetsugo that has 週 （シュウ）and corresponds to tuần.";
